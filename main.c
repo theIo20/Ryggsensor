@@ -126,7 +126,7 @@ int main(void)
     mpu6500_getAccel(&vec_temp);
 
     eclic_global_interrupt_enable();
-    timer_interupt_config();
+    timer_interrupt_config();
     
     while(1){
         /* Get accelleration data (Note: Blocking read) puts a force vector with 1G = 4096 into x, y, z directions respectively */
@@ -163,6 +163,7 @@ int main(void)
                /* Otherwise, turn off the LED */
                 gpio_bit_set(GPIOB, GPIO_PIN_0);
                 gpio_bit_set(GPIOB, VIBRATOR_PIN);
+                utanfor = 0;
             }
         }
         
