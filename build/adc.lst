@@ -1,4 +1,4 @@
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s 			page 1
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s 			page 1
 
 
    1              		.file	"adc.c"
@@ -58,7 +58,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s 			page 1
   44      E7800000 
   45              	.LVL4:
    8:adc.c         **** 
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s 			page 2
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s 			page 2
 
 
    9:adc.c         ****     gpio_init(GPIOA, GPIO_MODE_AIN, GPIO_MODE_OUT_PP, GPIO_PIN_3);
@@ -118,7 +118,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s 			page 1
   85              	.LVL11:
   17:adc.c         **** 
   18:adc.c         ****     adc_regular_channel_config(ADC0, 0, ADC_CHANNEL_3, 
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s 			page 3
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s 			page 3
 
 
   86              		.loc 1 18 5
@@ -178,7 +178,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s 			page 1
  124 00fc 9D46     		li	a3,7
  125 00fe 4146     		li	a2,16
  126 0100 8145     		li	a1,0
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s 			page 4
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s 			page 4
 
 
  127 0102 13050440 		addi	a0,s0,1024
@@ -238,7 +238,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s 			page 1
  166              		.text
  167              	.Letext0:
  168              		.file 2 "c:\\kth\\he1043\\toolchain-gd32v-v202-win\\toolchain-gd32v-v202-win\\compiler\\riscv64-un
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s 			page 5
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s 			page 5
 
 
  169              		.file 3 "c:\\kth\\he1043\\toolchain-gd32v-v202-win\\toolchain-gd32v-v202-win\\compiler\\riscv64-un
@@ -247,173 +247,173 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s 			page 1
  172              		.file 6 "./../../firmware/GD32VF103_standard_peripheral/Include/gd32vf103_gpio.h"
  173              		.file 7 "./../../firmware/GD32VF103_standard_peripheral/Include/gd32vf103_adc.h"
  174              		.file 8 "./../../firmware/GD32VF103_standard_peripheral/system_gd32vf103.h"
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s 			page 6
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s 			page 6
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 adc.c
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:13     .text.ADC3powerUpInit:0000000000000000 ADC3powerUpInit
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:17     .text.ADC3powerUpInit:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:19     .text.ADC3powerUpInit:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:20     .text.ADC3powerUpInit:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:21     .text.ADC3powerUpInit:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:23     .text.ADC3powerUpInit:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:25     .text.ADC3powerUpInit:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:28     .text.ADC3powerUpInit:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:31     .text.ADC3powerUpInit:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:33     .text.ADC3powerUpInit:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:34     .text.ADC3powerUpInit:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:36     .text.ADC3powerUpInit:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:39     .text.ADC3powerUpInit:0000000000000016 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:43     .text.ADC3powerUpInit:0000000000000022 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:47     .text.ADC3powerUpInit:000000000000002c .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:55     .text.ADC3powerUpInit:0000000000000042 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:60     .text.ADC3powerUpInit:0000000000000052 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:64     .text.ADC3powerUpInit:000000000000005c .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:70     .text.ADC3powerUpInit:000000000000006c .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:76     .text.ADC3powerUpInit:000000000000007e .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:81     .text.ADC3powerUpInit:000000000000008c .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:87     .text.ADC3powerUpInit:000000000000009c .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:94     .text.ADC3powerUpInit:00000000000000ae .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:100    .text.ADC3powerUpInit:00000000000000c0 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:106    .text.ADC3powerUpInit:00000000000000d0 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:107    .text.ADC3powerUpInit:00000000000000d0 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:109    .text.ADC3powerUpInit:00000000000000d2 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:115    .text.ADC3powerUpInit:00000000000000e4 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:121    .text.ADC3powerUpInit:00000000000000f4 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:124    .text.ADC3powerUpInit:00000000000000fc .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:132    .text.ADC3powerUpInit:000000000000010e .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:137    .text.ADC3powerUpInit:000000000000011e .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:138    .text.ADC3powerUpInit:000000000000011e .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:139    .text.ADC3powerUpInit:000000000000011e .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:143    .text.ADC3powerUpInit:000000000000012a .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:144    .text.ADC3powerUpInit:000000000000012a .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:145    .text.ADC3powerUpInit:000000000000012a .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:147    .text.ADC3powerUpInit:000000000000012e .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:148    .text.ADC3powerUpInit:0000000000000130 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:150    .text.ADC3powerUpInit:0000000000000132 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:152    .text.ADC3powerUpInit:0000000000000134 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:155    .text.ADC3powerUpInit:0000000000000134 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:157    .text.ADC3powerUpInit:0000000000000136 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:159    .text.ADC3powerUpInit:0000000000000138 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:161    .text.ADC3powerUpInit:0000000000000138 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:163    .text.ADC3powerUpInit:0000000000000140 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:166    .text.ADC3powerUpInit:0000000000000140 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:13     .text.ADC3powerUpInit:0000000000000000 ADC3powerUpInit
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:17     .text.ADC3powerUpInit:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:19     .text.ADC3powerUpInit:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:20     .text.ADC3powerUpInit:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:21     .text.ADC3powerUpInit:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:23     .text.ADC3powerUpInit:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:25     .text.ADC3powerUpInit:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:28     .text.ADC3powerUpInit:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:31     .text.ADC3powerUpInit:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:33     .text.ADC3powerUpInit:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:34     .text.ADC3powerUpInit:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:36     .text.ADC3powerUpInit:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:39     .text.ADC3powerUpInit:0000000000000016 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:43     .text.ADC3powerUpInit:0000000000000022 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:47     .text.ADC3powerUpInit:000000000000002c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:55     .text.ADC3powerUpInit:0000000000000042 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:60     .text.ADC3powerUpInit:0000000000000052 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:64     .text.ADC3powerUpInit:000000000000005c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:70     .text.ADC3powerUpInit:000000000000006c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:76     .text.ADC3powerUpInit:000000000000007e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:81     .text.ADC3powerUpInit:000000000000008c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:87     .text.ADC3powerUpInit:000000000000009c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:94     .text.ADC3powerUpInit:00000000000000ae .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:100    .text.ADC3powerUpInit:00000000000000c0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:106    .text.ADC3powerUpInit:00000000000000d0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:107    .text.ADC3powerUpInit:00000000000000d0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:109    .text.ADC3powerUpInit:00000000000000d2 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:115    .text.ADC3powerUpInit:00000000000000e4 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:121    .text.ADC3powerUpInit:00000000000000f4 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:124    .text.ADC3powerUpInit:00000000000000fc .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:132    .text.ADC3powerUpInit:000000000000010e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:137    .text.ADC3powerUpInit:000000000000011e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:138    .text.ADC3powerUpInit:000000000000011e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:139    .text.ADC3powerUpInit:000000000000011e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:143    .text.ADC3powerUpInit:000000000000012a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:144    .text.ADC3powerUpInit:000000000000012a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:145    .text.ADC3powerUpInit:000000000000012a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:147    .text.ADC3powerUpInit:000000000000012e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:148    .text.ADC3powerUpInit:0000000000000130 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:150    .text.ADC3powerUpInit:0000000000000132 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:152    .text.ADC3powerUpInit:0000000000000134 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:155    .text.ADC3powerUpInit:0000000000000134 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:157    .text.ADC3powerUpInit:0000000000000136 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:159    .text.ADC3powerUpInit:0000000000000138 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:161    .text.ADC3powerUpInit:0000000000000138 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:163    .text.ADC3powerUpInit:0000000000000140 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:166    .text.ADC3powerUpInit:0000000000000140 .L0 
                      .debug_frame:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:130    .text.ADC3powerUpInit:000000000000010e .L2
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:908    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1227   .debug_str:0000000000000000 .LASF69
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1259   .debug_str:0000000000000197 .LASF70
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1229   .debug_str:0000000000000088 .LASF71
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1219   .debug_ranges:0000000000000000 .Ldebug_ranges0
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1225   .debug_line:0000000000000000 .Ldebug_line0
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s 			page 7
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:130    .text.ADC3powerUpInit:000000000000010e .L2
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:908    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1227   .debug_str:0000000000000000 .LASF69
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1259   .debug_str:0000000000000197 .LASF70
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1229   .debug_str:0000000000000088 .LASF71
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1219   .debug_ranges:0000000000000000 .Ldebug_ranges0
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1225   .debug_line:0000000000000000 .Ldebug_line0
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s 			page 7
 
 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1319   .debug_str:00000000000002f2 .LASF0
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1313   .debug_str:00000000000002c6 .LASF1
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1371   .debug_str:0000000000000479 .LASF6
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1303   .debug_str:0000000000000285 .LASF2
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1261   .debug_str:000000000000019d .LASF3
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1325   .debug_str:0000000000000321 .LASF4
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1279   .debug_str:0000000000000208 .LASF5
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1255   .debug_str:0000000000000184 .LASF7
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1341   .debug_str:00000000000003ad .LASF8
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1253   .debug_str:0000000000000176 .LASF9
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1315   .debug_str:00000000000002d2 .LASF10
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1263   .debug_str:00000000000001a7 .LASF11
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1317   .debug_str:00000000000002e9 .LASF12
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1231   .debug_str:00000000000000dc .LASF72
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1267   .debug_str:00000000000001b8 .LASF13
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1369   .debug_str:0000000000000472 .LASF14
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1265   .debug_str:00000000000001af .LASF15
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1333   .debug_str:0000000000000362 .LASF16
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1367   .debug_str:000000000000046a .LASF17
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1365   .debug_str:0000000000000461 .LASF18
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1355   .debug_str:0000000000000410 .LASF19
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1289   .debug_str:0000000000000237 .LASF20
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1291   .debug_str:0000000000000242 .LASF21
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1293   .debug_str:000000000000024d .LASF22
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1295   .debug_str:0000000000000258 .LASF23
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1297   .debug_str:0000000000000263 .LASF24
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1299   .debug_str:000000000000026e .LASF25
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1277   .debug_str:00000000000001fe .LASF26
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1283   .debug_str:000000000000021a .LASF27
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1285   .debug_str:0000000000000223 .LASF28
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1351   .debug_str:00000000000003fa .LASF29
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1353   .debug_str:0000000000000405 .LASF30
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1357   .debug_str:000000000000041a .LASF31
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1359   .debug_str:0000000000000424 .LASF32
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1327   .debug_str:0000000000000334 .LASF33
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1329   .debug_str:000000000000033d .LASF34
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1269   .debug_str:00000000000001c0 .LASF35
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1271   .debug_str:00000000000001c9 .LASF36
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1311   .debug_str:00000000000002bd .LASF37
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1323   .debug_str:0000000000000319 .LASF38
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1337   .debug_str:0000000000000382 .LASF39
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1257   .debug_str:000000000000018f .LASF40
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1233   .debug_str:00000000000000ec .LASF41
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1239   .debug_str:000000000000010e .LASF42
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1241   .debug_str:0000000000000118 .LASF43
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1243   .debug_str:0000000000000122 .LASF44
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1245   .debug_str:000000000000012c .LASF45
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1247   .debug_str:0000000000000136 .LASF46
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1307   .debug_str:00000000000002ab .LASF47
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1309   .debug_str:00000000000002b4 .LASF48
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1287   .debug_str:000000000000022c .LASF49
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1281   .debug_str:0000000000000211 .LASF50
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1349   .debug_str:00000000000003ef .LASF51
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1301   .debug_str:0000000000000279 .LASF52
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1237   .debug_str:00000000000000fe .LASF73
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:14     .text.ADC3powerUpInit:0000000000000000 .LFB2
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:164    .text.ADC3powerUpInit:0000000000000140 .LFE2
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s 			page 8
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1319   .debug_str:00000000000002f2 .LASF0
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1313   .debug_str:00000000000002c6 .LASF1
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1371   .debug_str:0000000000000479 .LASF6
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1303   .debug_str:0000000000000285 .LASF2
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1261   .debug_str:000000000000019d .LASF3
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1325   .debug_str:0000000000000321 .LASF4
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1279   .debug_str:0000000000000208 .LASF5
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1255   .debug_str:0000000000000184 .LASF7
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1341   .debug_str:00000000000003ad .LASF8
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1253   .debug_str:0000000000000176 .LASF9
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1315   .debug_str:00000000000002d2 .LASF10
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1263   .debug_str:00000000000001a7 .LASF11
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1317   .debug_str:00000000000002e9 .LASF12
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1231   .debug_str:00000000000000dc .LASF72
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1267   .debug_str:00000000000001b8 .LASF13
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1369   .debug_str:0000000000000472 .LASF14
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1265   .debug_str:00000000000001af .LASF15
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1333   .debug_str:0000000000000362 .LASF16
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1367   .debug_str:000000000000046a .LASF17
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1365   .debug_str:0000000000000461 .LASF18
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1355   .debug_str:0000000000000410 .LASF19
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1289   .debug_str:0000000000000237 .LASF20
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1291   .debug_str:0000000000000242 .LASF21
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1293   .debug_str:000000000000024d .LASF22
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1295   .debug_str:0000000000000258 .LASF23
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1297   .debug_str:0000000000000263 .LASF24
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1299   .debug_str:000000000000026e .LASF25
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1277   .debug_str:00000000000001fe .LASF26
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1283   .debug_str:000000000000021a .LASF27
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1285   .debug_str:0000000000000223 .LASF28
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1351   .debug_str:00000000000003fa .LASF29
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1353   .debug_str:0000000000000405 .LASF30
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1357   .debug_str:000000000000041a .LASF31
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1359   .debug_str:0000000000000424 .LASF32
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1327   .debug_str:0000000000000334 .LASF33
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1329   .debug_str:000000000000033d .LASF34
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1269   .debug_str:00000000000001c0 .LASF35
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1271   .debug_str:00000000000001c9 .LASF36
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1311   .debug_str:00000000000002bd .LASF37
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1323   .debug_str:0000000000000319 .LASF38
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1337   .debug_str:0000000000000382 .LASF39
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1257   .debug_str:000000000000018f .LASF40
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1233   .debug_str:00000000000000ec .LASF41
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1239   .debug_str:000000000000010e .LASF42
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1241   .debug_str:0000000000000118 .LASF43
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1243   .debug_str:0000000000000122 .LASF44
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1245   .debug_str:000000000000012c .LASF45
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1247   .debug_str:0000000000000136 .LASF46
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1307   .debug_str:00000000000002ab .LASF47
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1309   .debug_str:00000000000002b4 .LASF48
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1287   .debug_str:000000000000022c .LASF49
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1281   .debug_str:0000000000000211 .LASF50
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1349   .debug_str:00000000000003ef .LASF51
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1301   .debug_str:0000000000000279 .LASF52
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1237   .debug_str:00000000000000fe .LASF73
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:14     .text.ADC3powerUpInit:0000000000000000 .LFB2
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:164    .text.ADC3powerUpInit:0000000000000140 .LFE2
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s 			page 8
 
 
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1170   .debug_loc:0000000000000000 .LLST0
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1188   .debug_loc:000000000000002c .LLST1
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:37     .text.ADC3powerUpInit:0000000000000016 .LVL2
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:41     .text.ADC3powerUpInit:0000000000000022 .LVL3
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:45     .text.ADC3powerUpInit:000000000000002c .LVL4
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:53     .text.ADC3powerUpInit:0000000000000042 .LVL5
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:58     .text.ADC3powerUpInit:0000000000000052 .LVL6
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:62     .text.ADC3powerUpInit:000000000000005c .LVL7
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:68     .text.ADC3powerUpInit:000000000000006c .LVL8
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:74     .text.ADC3powerUpInit:000000000000007e .LVL9
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:79     .text.ADC3powerUpInit:000000000000008c .LVL10
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:85     .text.ADC3powerUpInit:000000000000009c .LVL11
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:92     .text.ADC3powerUpInit:00000000000000ae .LVL12
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:98     .text.ADC3powerUpInit:00000000000000c0 .LVL13
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:104    .text.ADC3powerUpInit:00000000000000d0 .LVL14
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:113    .text.ADC3powerUpInit:00000000000000e4 .LVL15
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:119    .text.ADC3powerUpInit:00000000000000f4 .LVL16
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:122    .text.ADC3powerUpInit:00000000000000fc .LVL17
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:129    .text.ADC3powerUpInit:000000000000010e .LVL18
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:135    .text.ADC3powerUpInit:000000000000011e .LVL19
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:141    .text.ADC3powerUpInit:000000000000012a .LVL20
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:162    .text.ADC3powerUpInit:0000000000000140 .LVL22
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1305   .debug_str:0000000000000293 .LASF53
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1363   .debug_str:000000000000044c .LASF54
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1347   .debug_str:00000000000003e5 .LASF55
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1235   .debug_str:00000000000000f3 .LASF56
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1273   .debug_str:00000000000001d2 .LASF57
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1251   .debug_str:000000000000015a .LASF58
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1321   .debug_str:00000000000002ff .LASF59
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1249   .debug_str:0000000000000140 .LASF60
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1345   .debug_str:00000000000003ca .LASF61
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1339   .debug_str:000000000000038a .LASF62
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1275   .debug_str:00000000000001e2 .LASF63
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1361   .debug_str:000000000000042e .LASF64
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1373   .debug_str:0000000000000483 .LASF65
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1343   .debug_str:00000000000003bf .LASF66
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1335   .debug_str:000000000000036b .LASF67
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:1331   .debug_str:0000000000000346 .LASF68
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:22     .text.ADC3powerUpInit:0000000000000002 .LCFI0
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:158    .text.ADC3powerUpInit:0000000000000138 .LCFI1
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:18     .text.ADC3powerUpInit:0000000000000000 .LVL0
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:29     .text.ADC3powerUpInit:000000000000000a .LVL1
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:153    .text.ADC3powerUpInit:0000000000000134 .LVL21
-C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s:176    .debug_info:0000000000000000 .Ldebug_info0
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1170   .debug_loc:0000000000000000 .LLST0
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1188   .debug_loc:000000000000002c .LLST1
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:37     .text.ADC3powerUpInit:0000000000000016 .LVL2
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:41     .text.ADC3powerUpInit:0000000000000022 .LVL3
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:45     .text.ADC3powerUpInit:000000000000002c .LVL4
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:53     .text.ADC3powerUpInit:0000000000000042 .LVL5
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:58     .text.ADC3powerUpInit:0000000000000052 .LVL6
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:62     .text.ADC3powerUpInit:000000000000005c .LVL7
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:68     .text.ADC3powerUpInit:000000000000006c .LVL8
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:74     .text.ADC3powerUpInit:000000000000007e .LVL9
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:79     .text.ADC3powerUpInit:000000000000008c .LVL10
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:85     .text.ADC3powerUpInit:000000000000009c .LVL11
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:92     .text.ADC3powerUpInit:00000000000000ae .LVL12
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:98     .text.ADC3powerUpInit:00000000000000c0 .LVL13
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:104    .text.ADC3powerUpInit:00000000000000d0 .LVL14
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:113    .text.ADC3powerUpInit:00000000000000e4 .LVL15
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:119    .text.ADC3powerUpInit:00000000000000f4 .LVL16
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:122    .text.ADC3powerUpInit:00000000000000fc .LVL17
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:129    .text.ADC3powerUpInit:000000000000010e .LVL18
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:135    .text.ADC3powerUpInit:000000000000011e .LVL19
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:141    .text.ADC3powerUpInit:000000000000012a .LVL20
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:162    .text.ADC3powerUpInit:0000000000000140 .LVL22
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1305   .debug_str:0000000000000293 .LASF53
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1363   .debug_str:000000000000044c .LASF54
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1347   .debug_str:00000000000003e5 .LASF55
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1235   .debug_str:00000000000000f3 .LASF56
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1273   .debug_str:00000000000001d2 .LASF57
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1251   .debug_str:000000000000015a .LASF58
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1321   .debug_str:00000000000002ff .LASF59
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1249   .debug_str:0000000000000140 .LASF60
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1345   .debug_str:00000000000003ca .LASF61
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1339   .debug_str:000000000000038a .LASF62
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1275   .debug_str:00000000000001e2 .LASF63
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1361   .debug_str:000000000000042e .LASF64
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1373   .debug_str:0000000000000483 .LASF65
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1343   .debug_str:00000000000003bf .LASF66
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1335   .debug_str:000000000000036b .LASF67
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:1331   .debug_str:0000000000000346 .LASF68
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:22     .text.ADC3powerUpInit:0000000000000002 .LCFI0
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:158    .text.ADC3powerUpInit:0000000000000138 .LCFI1
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:18     .text.ADC3powerUpInit:0000000000000000 .LVL0
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:29     .text.ADC3powerUpInit:000000000000000a .LVL1
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:153    .text.ADC3powerUpInit:0000000000000134 .LVL21
+C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s:176    .debug_info:0000000000000000 .Ldebug_info0
 
 UNDEFINED SYMBOLS
 rcu_periph_clock_enable
@@ -427,7 +427,7 @@ adc_channel_length_config
 adc_regular_channel_config
 adc_external_trigger_source_config
 adc_external_trigger_config
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccdQPq1d.s 			page 9
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDbiEJA.s 			page 9
 
 
 adc_tempsensor_vrefint_enable

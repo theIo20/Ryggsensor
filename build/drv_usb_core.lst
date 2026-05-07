@@ -1,0 +1,1704 @@
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s 			page 1
+
+
+   1              		.file	"drv_usb_core.c"
+   2              		.option nopic
+   3              		.attribute arch, "rv32i2p0_m2p0_a2p0_c2p0"
+   4              		.attribute unaligned_access, 0
+   5              		.attribute stack_align, 16
+   6              		.text
+   7              	.Ltext0:
+   8              		.cfi_sections	.debug_frame
+   9              		.section	.text.usb_basic_init,"ax",@progbits
+  10              		.align	1
+  11              		.globl	usb_basic_init
+  13              	usb_basic_init:
+  14              	.LFB4:
+  15              		.file 1 "drv_usb_core.c"
+   1:drv_usb_core.c **** /*!
+   2:drv_usb_core.c ****     \file  drv_usb_core.c
+   3:drv_usb_core.c ****     \brief USB core driver which can operate in host and device mode
+   4:drv_usb_core.c **** 
+   5:drv_usb_core.c ****     \version 2019-6-5, V1.0.0, firmware for GD32 USBFS&USBHS
+   6:drv_usb_core.c **** */
+   7:drv_usb_core.c **** 
+   8:drv_usb_core.c **** /*
+   9:drv_usb_core.c ****     Copyright (c) 2019, GigaDevice Semiconductor Inc.
+  10:drv_usb_core.c **** 
+  11:drv_usb_core.c ****     Redistribution and use in source and binary forms, with or without modification, 
+  12:drv_usb_core.c **** are permitted provided that the following conditions are met:
+  13:drv_usb_core.c **** 
+  14:drv_usb_core.c ****     1. Redistributions of source code must retain the above copyright notice, this 
+  15:drv_usb_core.c ****        list of conditions and the following disclaimer.
+  16:drv_usb_core.c ****     2. Redistributions in binary form must reproduce the above copyright notice, 
+  17:drv_usb_core.c ****        this list of conditions and the following disclaimer in the documentation 
+  18:drv_usb_core.c ****        and/or other materials provided with the distribution.
+  19:drv_usb_core.c ****     3. Neither the name of the copyright holder nor the names of its contributors 
+  20:drv_usb_core.c ****        may be used to endorse or promote products derived from this software without 
+  21:drv_usb_core.c ****        specific prior written permission.
+  22:drv_usb_core.c **** 
+  23:drv_usb_core.c ****     THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
+  24:drv_usb_core.c **** AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED 
+  25:drv_usb_core.c **** WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. 
+  26:drv_usb_core.c **** IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, 
+  27:drv_usb_core.c **** INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT 
+  28:drv_usb_core.c **** NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR 
+  29:drv_usb_core.c **** PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, 
+  30:drv_usb_core.c **** WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
+  31:drv_usb_core.c **** ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY 
+  32:drv_usb_core.c **** OF SUCH DAMAGE.
+  33:drv_usb_core.c **** */
+  34:drv_usb_core.c **** 
+  35:drv_usb_core.c **** #include "drv_usb_core.h"
+  36:drv_usb_core.c **** #include "drv_usb_hw.h"
+  37:drv_usb_core.c **** #include "drv_usb_regs.h"
+  38:drv_usb_core.c **** /*!
+  39:drv_usb_core.c ****     \brief      config USB core to soft reset
+  40:drv_usb_core.c ****     \param[in]  usb_regs: USB core registers
+  41:drv_usb_core.c ****     \param[out] none
+  42:drv_usb_core.c ****     \retval     none
+  43:drv_usb_core.c **** */
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s 			page 2
+
+
+  44:drv_usb_core.c **** static void usb_core_reset (usb_core_regs *usb_regs)
+  45:drv_usb_core.c **** {
+  46:drv_usb_core.c ****     /* enable core soft reset */
+  47:drv_usb_core.c ****     usb_regs->gr->GRSTCTL |= GRSTCTL_CSRST;
+  48:drv_usb_core.c **** 
+  49:drv_usb_core.c ****     /* wait for the core to be soft reset */
+  50:drv_usb_core.c ****     while (usb_regs->gr->GRSTCTL & GRSTCTL_CSRST);
+  51:drv_usb_core.c **** 
+  52:drv_usb_core.c ****     /* wait for addtional 3 PHY clocks */
+  53:drv_usb_core.c ****     usb_udelay(3);
+  54:drv_usb_core.c **** }
+  55:drv_usb_core.c **** 
+  56:drv_usb_core.c **** /*!
+  57:drv_usb_core.c ****     \brief      config USB core basic 
+  58:drv_usb_core.c ****     \param[in]  usb_basic: pointer to usb capabilities
+  59:drv_usb_core.c ****     \param[in]  usb_regs: USB core registers
+  60:drv_usb_core.c ****     \param[in]  usb_core: USB core
+  61:drv_usb_core.c ****     \param[out] none
+  62:drv_usb_core.c ****     \retval     operation status
+  63:drv_usb_core.c **** */
+  64:drv_usb_core.c **** usb_status usb_basic_init (usb_core_basic *usb_basic, 
+  65:drv_usb_core.c ****                            usb_core_regs  *usb_regs, 
+  66:drv_usb_core.c ****                            usb_core_enum   usb_core)
+  67:drv_usb_core.c **** {
+  16              		.loc 1 67 1
+  17              		.cfi_startproc
+  18              	.LVL0:
+  68:drv_usb_core.c ****     uint32_t i = 0, reg_base = 0;
+  19              		.loc 1 68 5
+  69:drv_usb_core.c **** 
+  70:drv_usb_core.c ****     /* config USB default transfer mode as FIFO mode */
+  71:drv_usb_core.c ****     usb_basic->transfer_mode = USB_USE_FIFO;
+  20              		.loc 1 71 5
+  67:drv_usb_core.c ****     uint32_t i = 0, reg_base = 0;
+  21              		.loc 1 67 1 is_stmt 0
+  22 0000 4111     		addi	sp,sp,-16
+  23              	.LCFI0:
+  24              		.cfi_def_cfa_offset 16
+  25 0002 06C6     		sw	ra,12(sp)
+  26 0004 22C4     		sw	s0,8(sp)
+  27 0006 26C2     		sw	s1,4(sp)
+  28              		.cfi_offset 1, -4
+  29              		.cfi_offset 8, -8
+  30              		.cfi_offset 9, -12
+  72:drv_usb_core.c **** 
+  73:drv_usb_core.c ****     /* USB default speed is full-speed */
+  74:drv_usb_core.c ****     usb_basic->core_speed = USB_SPEED_FULL;
+  31              		.loc 1 74 27
+  32 0008 8947     		li	a5,2
+  71:drv_usb_core.c **** 
+  33              		.loc 1 71 30
+  34 000a 23020500 		sb	zero,4(a0)
+  35              		.loc 1 74 5 is_stmt 1
+  36              		.loc 1 74 27 is_stmt 0
+  37 000e A300F500 		sb	a5,1(a0)
+  75:drv_usb_core.c **** 
+  76:drv_usb_core.c ****     usb_basic->core_enum = usb_core;
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s 			page 3
+
+
+  38              		.loc 1 76 5 is_stmt 1
+  39              		.loc 1 76 26 is_stmt 0
+  40 0012 2300C500 		sb	a2,0(a0)
+  77:drv_usb_core.c **** 
+  78:drv_usb_core.c ****     switch (usb_core) {
+  41              		.loc 1 78 5 is_stmt 1
+  42 0016 11CA     		beq	a2,zero,.L2
+  43 0018 0547     		li	a4,1
+  44 001a 630BE608 		beq	a2,a4,.L3
+  79:drv_usb_core.c ****     case USB_CORE_ENUM_HS:
+  80:drv_usb_core.c ****         reg_base = USBHS_REG_BASE;
+  81:drv_usb_core.c **** 
+  82:drv_usb_core.c ****         /* set the host channel numbers */
+  83:drv_usb_core.c ****         usb_basic->num_pipe = USBHS_MAX_CHANNEL_COUNT;
+  84:drv_usb_core.c **** 
+  85:drv_usb_core.c ****         /* set the device endpoint numbers */
+  86:drv_usb_core.c ****         usb_basic->num_ep = USBHS_MAX_EP_COUNT;
+  87:drv_usb_core.c **** 
+  88:drv_usb_core.c **** #ifdef USB_ULPI_PHY_ENABLED
+  89:drv_usb_core.c ****         usb_basic->phy_itf = USB_ULPI_PHY;
+  90:drv_usb_core.c **** #else
+  91:drv_usb_core.c ****         usb_basic->phy_itf = USB_EMBEDDED_PHY;
+  92:drv_usb_core.c **** #endif /* USB_ULPI_PHY_ENABLED */
+  93:drv_usb_core.c **** 
+  94:drv_usb_core.c **** #ifdef USB_HS_INTERNAL_DMA_ENABLED
+  95:drv_usb_core.c ****         bp->transfer_mode = USB_USE_DMA;
+  96:drv_usb_core.c **** #endif /* USB_HS_INTERNAL_DMA_ENABLED */
+  97:drv_usb_core.c ****         break;
+  98:drv_usb_core.c **** 
+  99:drv_usb_core.c ****     case USB_CORE_ENUM_FS:
+ 100:drv_usb_core.c ****         reg_base = USBFS_REG_BASE;
+ 101:drv_usb_core.c **** 
+ 102:drv_usb_core.c ****         /* set the host channel numbers */
+ 103:drv_usb_core.c ****         usb_basic->num_pipe = USBFS_MAX_CHANNEL_COUNT;
+ 104:drv_usb_core.c **** 
+ 105:drv_usb_core.c ****         /* set the device endpoint numbers */
+ 106:drv_usb_core.c ****         usb_basic->num_ep = USBFS_MAX_EP_COUNT;
+ 107:drv_usb_core.c **** 
+ 108:drv_usb_core.c ****         /* USBFS core use embedded physical layer */
+ 109:drv_usb_core.c ****         usb_basic->phy_itf = USB_EMBEDDED_PHY;
+ 110:drv_usb_core.c ****         break;
+ 111:drv_usb_core.c **** 
+ 112:drv_usb_core.c ****     default:
+ 113:drv_usb_core.c ****         return USB_FAIL;
+  45              		.loc 1 113 16 is_stmt 0
+  46 001e 0545     		li	a0,1
+  47              	.LVL1:
+  48              	.L1:
+ 114:drv_usb_core.c ****     }
+ 115:drv_usb_core.c **** 
+ 116:drv_usb_core.c ****     usb_basic->sof_enable = USB_SOF_OUTPUT;
+ 117:drv_usb_core.c ****     usb_basic->low_power = USB_LOW_POWER;
+ 118:drv_usb_core.c **** 
+ 119:drv_usb_core.c ****     /* assign main registers address */
+ 120:drv_usb_core.c ****     *usb_regs = (usb_core_regs) {
+ 121:drv_usb_core.c ****         .gr          = (usb_gr*) (reg_base + USB_REG_OFFSET_CORE),
+ 122:drv_usb_core.c ****         .hr          = (usb_hr*) (reg_base + USB_REG_OFFSET_HOST),
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s 			page 4
+
+
+ 123:drv_usb_core.c ****         .dr          = (usb_dr*) (reg_base + USB_REG_OFFSET_DEV),
+ 124:drv_usb_core.c **** 
+ 125:drv_usb_core.c ****         .HPCS        = (uint32_t*) (reg_base + USB_REG_OFFSET_PORT),
+ 126:drv_usb_core.c ****         .PWRCLKCTL   = (uint32_t*) (reg_base + USB_REG_OFFSET_PWRCLKCTL)
+ 127:drv_usb_core.c ****     };
+ 128:drv_usb_core.c **** 
+ 129:drv_usb_core.c ****     /* assign device endpoint registers address */
+ 130:drv_usb_core.c ****     for (i = 0; i < usb_basic->num_ep; i++) {
+ 131:drv_usb_core.c ****         usb_regs->er_in[i] = (usb_erin *) \
+ 132:drv_usb_core.c ****             (reg_base + USB_REG_OFFSET_EP_IN + (i * USB_REG_OFFSET_EP));
+ 133:drv_usb_core.c **** 
+ 134:drv_usb_core.c ****         usb_regs->er_out[i] = (usb_erout *)\
+ 135:drv_usb_core.c ****             (reg_base + USB_REG_OFFSET_EP_OUT + (i * USB_REG_OFFSET_EP));
+ 136:drv_usb_core.c ****     }
+ 137:drv_usb_core.c **** 
+ 138:drv_usb_core.c ****     /* assign host pipe registers address */
+ 139:drv_usb_core.c ****     for (i = 0; i < usb_basic->num_pipe; i++) {
+ 140:drv_usb_core.c ****         usb_regs->pr[i] = (usb_pr *) \
+ 141:drv_usb_core.c ****             (reg_base + USB_REG_OFFSET_CH_INOUT + (i * USB_REG_OFFSET_CH));
+ 142:drv_usb_core.c **** 
+ 143:drv_usb_core.c ****         usb_regs->DFIFO[i] = (uint32_t *) \
+ 144:drv_usb_core.c ****             (reg_base + USB_DATA_FIFO_OFFSET + (i * USB_DATA_FIFO_SIZE));
+ 145:drv_usb_core.c ****     }
+ 146:drv_usb_core.c **** 
+ 147:drv_usb_core.c ****     return USB_OK;
+ 148:drv_usb_core.c **** }
+  49              		.loc 1 148 1
+  50 0020 B240     		lw	ra,12(sp)
+  51              		.cfi_remember_state
+  52              		.cfi_restore 1
+  53 0022 2244     		lw	s0,8(sp)
+  54              		.cfi_restore 8
+  55 0024 9244     		lw	s1,4(sp)
+  56              		.cfi_restore 9
+  57 0026 4101     		addi	sp,sp,16
+  58              	.LCFI1:
+  59              		.cfi_def_cfa_offset 0
+  60 0028 8280     		jr	ra
+  61              	.LVL2:
+  62              	.L2:
+  63              	.LCFI2:
+  64              		.cfi_restore_state
+  80:drv_usb_core.c **** 
+  65              		.loc 1 80 9 is_stmt 1
+  83:drv_usb_core.c **** 
+  66              		.loc 1 83 9
+  83:drv_usb_core.c **** 
+  67              		.loc 1 83 29 is_stmt 0
+  68 002a 3147     		li	a4,12
+  69 002c 2301E500 		sb	a4,2(a0)
+  86:drv_usb_core.c **** 
+  70              		.loc 1 86 9 is_stmt 1
+  86:drv_usb_core.c **** 
+  71              		.loc 1 86 27 is_stmt 0
+  72 0030 1947     		li	a4,6
+  73 0032 A301E500 		sb	a4,3(a0)
+  91:drv_usb_core.c **** #endif /* USB_ULPI_PHY_ENABLED */
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s 			page 5
+
+
+  74              		.loc 1 91 9 is_stmt 1
+  91:drv_usb_core.c **** #endif /* USB_ULPI_PHY_ENABLED */
+  75              		.loc 1 91 28 is_stmt 0
+  76 0036 A302F500 		sb	a5,5(a0)
+  97:drv_usb_core.c **** 
+  77              		.loc 1 97 9 is_stmt 1
+  80:drv_usb_core.c **** 
+  78              		.loc 1 80 18 is_stmt 0
+  79 003a B7040440 		li	s1,1074003968
+  80              	.LVL3:
+  81              	.L5:
+  82 003e AE87     		mv	a5,a1
+ 116:drv_usb_core.c ****     usb_basic->low_power = USB_LOW_POWER;
+  83              		.loc 1 116 27
+  84 0040 0547     		li	a4,1
+  85 0042 2303E500 		sb	a4,6(a0)
+ 117:drv_usb_core.c **** 
+  86              		.loc 1 117 26
+  87 0046 A303E500 		sb	a4,7(a0)
+  88 004a 2A84     		mv	s0,a0
+  89              	.LVL4:
+ 116:drv_usb_core.c ****     usb_basic->low_power = USB_LOW_POWER;
+  90              		.loc 1 116 5 is_stmt 1
+ 117:drv_usb_core.c **** 
+  91              		.loc 1 117 5
+ 120:drv_usb_core.c ****         .gr          = (usb_gr*) (reg_base + USB_REG_OFFSET_CORE),
+  92              		.loc 1 120 5
+ 120:drv_usb_core.c ****         .gr          = (usb_gr*) (reg_base + USB_REG_OFFSET_CORE),
+  93              		.loc 1 120 15 is_stmt 0
+  94 004c 1306C00B 		li	a2,188
+  95              	.LVL5:
+  96 0050 8145     		li	a1,0
+  97              	.LVL6:
+  98 0052 3E85     		mv	a0,a5
+  99              	.LVL7:
+ 100 0054 97000000 		call	memset
+ 100      E7800000 
+ 101              	.LVL8:
+ 123:drv_usb_core.c **** 
+ 102              		.loc 1 123 44
+ 103 005c 0567     		li	a4,4096
+ 104 005e 93060780 		addi	a3,a4,-2048
+ 105 0062 A696     		add	a3,s1,a3
+ 120:drv_usb_core.c ****         .gr          = (usb_gr*) (reg_base + USB_REG_OFFSET_CORE),
+ 106              		.loc 1 120 15
+ 107 0064 54C1     		sw	a3,4(a0)
+ 122:drv_usb_core.c ****         .dr          = (usb_dr*) (reg_base + USB_REG_OFFSET_DEV),
+ 108              		.loc 1 122 44
+ 109 0066 93860440 		addi	a3,s1,1024
+ 120:drv_usb_core.c ****         .gr          = (usb_gr*) (reg_base + USB_REG_OFFSET_CORE),
+ 110              		.loc 1 120 15
+ 111 006a 14C5     		sw	a3,8(a0)
+ 125:drv_usb_core.c ****         .PWRCLKCTL   = (uint32_t*) (reg_base + USB_REG_OFFSET_PWRCLKCTL)
+ 112              		.loc 1 125 46
+ 113 006c 93860444 		addi	a3,s1,1088
+ 120:drv_usb_core.c ****         .gr          = (usb_gr*) (reg_base + USB_REG_OFFSET_CORE),
+ 114              		.loc 1 120 15
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s 			page 6
+
+
+ 115 0070 34DD     		sw	a3,120(a0)
+ 126:drv_usb_core.c ****     };
+ 116              		.loc 1 126 46
+ 117 0072 930607E0 		addi	a3,a4,-512
+ 118 0076 A696     		add	a3,s1,a3
+ 120:drv_usb_core.c ****         .gr          = (usb_gr*) (reg_base + USB_REG_OFFSET_CORE),
+ 119              		.loc 1 120 15
+ 120 0078 232CD50A 		sw	a3,184(a0)
+ 130:drv_usb_core.c ****         usb_regs->er_in[i] = (usb_erin *) \
+ 121              		.loc 1 130 5 is_stmt 1
+ 120:drv_usb_core.c ****         .gr          = (usb_gr*) (reg_base + USB_REG_OFFSET_CORE),
+ 122              		.loc 1 120 15 is_stmt 0
+ 123 007c 04C1     		sw	s1,0(a0)
+ 130:drv_usb_core.c ****         usb_regs->er_in[i] = (usb_erin *) \
+ 124              		.loc 1 130 30
+ 125 007e 83453400 		lbu	a1,3(s0)
+ 126 0082 13070790 		addi	a4,a4,-1792
+ 120:drv_usb_core.c ****         .gr          = (usb_gr*) (reg_base + USB_REG_OFFSET_CORE),
+ 127              		.loc 1 120 15
+ 128 0086 AA87     		mv	a5,a0
+ 129 0088 2697     		add	a4,s1,a4
+ 130 008a 9306C500 		addi	a3,a0,12
+ 130:drv_usb_core.c ****         usb_regs->er_in[i] = (usb_erin *) \
+ 131              		.loc 1 130 12
+ 132 008e 0146     		li	a2,0
+ 133              	.LVL9:
+ 134              	.L6:
+ 130:drv_usb_core.c ****         usb_regs->er_in[i] = (usb_erin *) \
+ 135              		.loc 1 130 5 discriminator 1
+ 136 0090 636BB602 		bgtu	a1,a2,.L7
+ 139:drv_usb_core.c ****         usb_regs->pr[i] = (usb_pr *) \
+ 137              		.loc 1 139 30
+ 138 0094 03462400 		lbu	a2,2(s0)
+ 139              	.LVL10:
+ 140 0098 0567     		li	a4,4096
+ 141 009a 93860450 		addi	a3,s1,1280
+ 142 009e 9387C703 		addi	a5,a5,60
+ 143 00a2 BA94     		add	s1,s1,a4
+ 144              	.LVL11:
+ 145 00a4 8565     		li	a1,4096
+ 139:drv_usb_core.c ****         usb_regs->pr[i] = (usb_pr *) \
+ 146              		.loc 1 139 12
+ 147 00a6 0147     		li	a4,0
+ 148              	.LVL12:
+ 149              	.L8:
+ 139:drv_usb_core.c ****         usb_regs->pr[i] = (usb_pr *) \
+ 150              		.loc 1 139 5 discriminator 1
+ 151 00a8 6368C702 		bgtu	a2,a4,.L9
+ 147:drv_usb_core.c **** }
+ 152              		.loc 1 147 12
+ 153 00ac 0145     		li	a0,0
+ 154 00ae 8DBF     		j	.L1
+ 155              	.LVL13:
+ 156              	.L3:
+ 100:drv_usb_core.c **** 
+ 157              		.loc 1 100 9 is_stmt 1
+ 103:drv_usb_core.c **** 
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s 			page 7
+
+
+ 158              		.loc 1 103 9
+ 103:drv_usb_core.c **** 
+ 159              		.loc 1 103 29 is_stmt 0
+ 160 00b0 2147     		li	a4,8
+ 161 00b2 2301E500 		sb	a4,2(a0)
+ 106:drv_usb_core.c **** 
+ 162              		.loc 1 106 9 is_stmt 1
+ 106:drv_usb_core.c **** 
+ 163              		.loc 1 106 27 is_stmt 0
+ 164 00b6 1147     		li	a4,4
+ 165 00b8 A301E500 		sb	a4,3(a0)
+ 109:drv_usb_core.c ****         break;
+ 166              		.loc 1 109 9 is_stmt 1
+ 109:drv_usb_core.c ****         break;
+ 167              		.loc 1 109 28 is_stmt 0
+ 168 00bc A302F500 		sb	a5,5(a0)
+ 110:drv_usb_core.c **** 
+ 169              		.loc 1 110 9 is_stmt 1
+ 100:drv_usb_core.c **** 
+ 170              		.loc 1 100 18 is_stmt 0
+ 171 00c0 B7040050 		li	s1,1342177280
+ 110:drv_usb_core.c **** 
+ 172              		.loc 1 110 9
+ 173 00c4 ADBF     		j	.L5
+ 174              	.LVL14:
+ 175              	.L7:
+ 131:drv_usb_core.c ****             (reg_base + USB_REG_OFFSET_EP_IN + (i * USB_REG_OFFSET_EP));
+ 176              		.loc 1 131 9 is_stmt 1 discriminator 3
+ 134:drv_usb_core.c ****             (reg_base + USB_REG_OFFSET_EP_OUT + (i * USB_REG_OFFSET_EP));
+ 177              		.loc 1 134 29 is_stmt 0 discriminator 3
+ 178 00c6 13050720 		addi	a0,a4,512
+ 131:drv_usb_core.c ****             (reg_base + USB_REG_OFFSET_EP_IN + (i * USB_REG_OFFSET_EP));
+ 179              		.loc 1 131 28 discriminator 3
+ 180 00ca 98C2     		sw	a4,0(a3)
+ 134:drv_usb_core.c ****             (reg_base + USB_REG_OFFSET_EP_OUT + (i * USB_REG_OFFSET_EP));
+ 181              		.loc 1 134 9 is_stmt 1 discriminator 3
+ 134:drv_usb_core.c ****             (reg_base + USB_REG_OFFSET_EP_OUT + (i * USB_REG_OFFSET_EP));
+ 182              		.loc 1 134 29 is_stmt 0 discriminator 3
+ 183 00cc 88CE     		sw	a0,24(a3)
+ 130:drv_usb_core.c ****         usb_regs->er_in[i] = (usb_erin *) \
+ 184              		.loc 1 130 41 discriminator 3
+ 185 00ce 0506     		addi	a2,a2,1
+ 186              	.LVL15:
+ 187 00d0 13070702 		addi	a4,a4,32
+ 188 00d4 9106     		addi	a3,a3,4
+ 189 00d6 6DBF     		j	.L6
+ 190              	.LVL16:
+ 191              	.L9:
+ 140:drv_usb_core.c ****             (reg_base + USB_REG_OFFSET_CH_INOUT + (i * USB_REG_OFFSET_CH));
+ 192              		.loc 1 140 9 is_stmt 1 discriminator 3
+ 140:drv_usb_core.c ****             (reg_base + USB_REG_OFFSET_CH_INOUT + (i * USB_REG_OFFSET_CH));
+ 193              		.loc 1 140 25 is_stmt 0 discriminator 3
+ 194 00d8 94C3     		sw	a3,0(a5)
+ 143:drv_usb_core.c ****             (reg_base + USB_DATA_FIFO_OFFSET + (i * USB_DATA_FIFO_SIZE));
+ 195              		.loc 1 143 9 is_stmt 1 discriminator 3
+ 143:drv_usb_core.c ****             (reg_base + USB_DATA_FIFO_OFFSET + (i * USB_DATA_FIFO_SIZE));
+ 196              		.loc 1 143 28 is_stmt 0 discriminator 3
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s 			page 8
+
+
+ 197 00da A4C3     		sw	s1,64(a5)
+ 139:drv_usb_core.c ****         usb_regs->pr[i] = (usb_pr *) \
+ 198              		.loc 1 139 43 discriminator 3
+ 199 00dc 0507     		addi	a4,a4,1
+ 200              	.LVL17:
+ 201 00de 93860602 		addi	a3,a3,32
+ 202 00e2 9107     		addi	a5,a5,4
+ 203 00e4 AE94     		add	s1,s1,a1
+ 204 00e6 C9B7     		j	.L8
+ 205              		.cfi_endproc
+ 206              	.LFE4:
+ 208              		.section	.text.usb_core_init,"ax",@progbits
+ 209              		.align	1
+ 210              		.globl	usb_core_init
+ 212              	usb_core_init:
+ 213              	.LFB5:
+ 149:drv_usb_core.c **** 
+ 150:drv_usb_core.c **** /*!
+ 151:drv_usb_core.c ****     \brief      initializes the USB controller registers and 
+ 152:drv_usb_core.c ****                 prepares the core device mode or host mode operation
+ 153:drv_usb_core.c ****     \param[in]  bp: usb capabilities
+ 154:drv_usb_core.c ****     \param[in]  core_regs: usb core registers
+ 155:drv_usb_core.c ****     \param[out] none
+ 156:drv_usb_core.c ****     \retval     operation status
+ 157:drv_usb_core.c **** */
+ 158:drv_usb_core.c **** usb_status usb_core_init (usb_core_basic usb_basic, usb_core_regs *usb_regs)
+ 159:drv_usb_core.c **** {
+ 214              		.loc 1 159 1 is_stmt 1
+ 215              		.cfi_startproc
+ 216              	.LVL18:
+ 160:drv_usb_core.c ****     uint32_t reg_value = usb_regs->gr->GCCFG;
+ 217              		.loc 1 160 5
+ 218              		.loc 1 160 34 is_stmt 0
+ 219 0000 1C42     		lw	a5,0(a2)
+ 159:drv_usb_core.c ****     uint32_t reg_value = usb_regs->gr->GCCFG;
+ 220              		.loc 1 159 1
+ 221 0002 0111     		addi	sp,sp,-32
+ 222              	.LCFI3:
+ 223              		.cfi_def_cfa_offset 32
+ 224 0004 2EC6     		sw	a1,12(sp)
+ 225              		.loc 1 160 14
+ 226 0006 985F     		lw	a4,56(a5)
+ 161:drv_usb_core.c **** 
+ 162:drv_usb_core.c ****     /* disable USB global interrupt */
+ 163:drv_usb_core.c ****     usb_regs->gr->GAHBCS &= ~GAHBCS_GINTEN;
+ 227              		.loc 1 163 5 is_stmt 1
+ 228              		.loc 1 163 26 is_stmt 0
+ 229 0008 9847     		lw	a4,8(a5)
+ 164:drv_usb_core.c **** 
+ 165:drv_usb_core.c ****     if (USB_ULPI_PHY == usb_basic.phy_itf) {
+ 230              		.loc 1 165 8
+ 231 000a 8346D100 		lbu	a3,13(sp)
+ 159:drv_usb_core.c ****     uint32_t reg_value = usb_regs->gr->GCCFG;
+ 232              		.loc 1 159 1
+ 233 000e 22CC     		sw	s0,24(sp)
+ 163:drv_usb_core.c **** 
+ 234              		.loc 1 163 26
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s 			page 9
+
+
+ 235 0010 799B     		andi	a4,a4,-2
+ 159:drv_usb_core.c ****     uint32_t reg_value = usb_regs->gr->GCCFG;
+ 236              		.loc 1 159 1
+ 237 0012 06CE     		sw	ra,28(sp)
+ 238 0014 26CA     		sw	s1,20(sp)
+ 239              		.cfi_offset 8, -8
+ 240              		.cfi_offset 1, -4
+ 241              		.cfi_offset 9, -12
+ 163:drv_usb_core.c **** 
+ 242              		.loc 1 163 26
+ 243 0016 98C7     		sw	a4,8(a5)
+ 244              		.loc 1 165 5 is_stmt 1
+ 159:drv_usb_core.c ****     uint32_t reg_value = usb_regs->gr->GCCFG;
+ 245              		.loc 1 159 1 is_stmt 0
+ 246 0018 2AC4     		sw	a0,8(sp)
+ 247              		.loc 1 165 8
+ 248 001a 0547     		li	a4,1
+ 159:drv_usb_core.c ****     uint32_t reg_value = usb_regs->gr->GCCFG;
+ 249              		.loc 1 159 1
+ 250 001c 3284     		mv	s0,a2
+ 251              		.loc 1 165 8
+ 252 001e 6395E606 		bne	a3,a4,.L12
+ 166:drv_usb_core.c ****         reg_value &= ~GCCFG_PWRON;
+ 253              		.loc 1 166 9 is_stmt 1
+ 254              	.LVL19:
+ 167:drv_usb_core.c **** 
+ 168:drv_usb_core.c ****         if (usb_basic.sof_enable) {
+ 255              		.loc 1 168 9
+ 169:drv_usb_core.c ****             reg_value |= GCCFG_SOFOEN;
+ 170:drv_usb_core.c ****         }
+ 171:drv_usb_core.c **** 
+ 172:drv_usb_core.c ****         usb_regs->gr->GCCFG = GCCFG_SOFOEN;
+ 256              		.loc 1 172 9
+ 257              		.loc 1 172 29 is_stmt 0
+ 258 0022 37071000 		li	a4,1048576
+ 259 0026 98DF     		sw	a4,56(a5)
+ 173:drv_usb_core.c **** 
+ 174:drv_usb_core.c ****         /* init the ULPI interface */
+ 175:drv_usb_core.c ****         usb_regs->gr->GUSBCS &= ~(GUSBCS_EMBPHY | GUSBCS_ULPIEOI);
+ 260              		.loc 1 175 9 is_stmt 1
+ 261              		.loc 1 175 30 is_stmt 0
+ 262 0028 D847     		lw	a4,12(a5)
+ 263 002a B706E0FF 		li	a3,-2097152
+ 264 002e 9386F6FB 		addi	a3,a3,-65
+ 265 0032 758F     		and	a4,a4,a3
+ 266 0034 D8C7     		sw	a4,12(a5)
+ 176:drv_usb_core.c **** 
+ 177:drv_usb_core.c **** #ifdef USBHS_EXTERNAL_VBUS_ENABLED
+ 178:drv_usb_core.c ****         /* use external VBUS driver */
+ 179:drv_usb_core.c ****         usb_regs->gr->GUSBCS |= GUSBCS_ULPIEVD;
+ 180:drv_usb_core.c **** #else
+ 181:drv_usb_core.c ****         /* use internal VBUS driver */
+ 182:drv_usb_core.c ****         usb_regs->gr->GUSBCS &= ~GUSBCS_ULPIEVD;
+ 267              		.loc 1 182 9 is_stmt 1
+ 268              		.loc 1 182 30 is_stmt 0
+ 269 0036 D847     		lw	a4,12(a5)
+ 270 0038 B706F0FF 		li	a3,-1048576
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s 			page 10
+
+
+ 271 003c FD16     		addi	a3,a3,-1
+ 272 003e 758F     		and	a4,a4,a3
+ 273 0040 D8C7     		sw	a4,12(a5)
+ 183:drv_usb_core.c **** #endif
+ 184:drv_usb_core.c **** 
+ 185:drv_usb_core.c ****         /* soft reset the core */
+ 186:drv_usb_core.c ****         usb_core_reset (usb_regs);
+ 274              		.loc 1 186 9 is_stmt 1
+ 275              	.LVL20:
+ 276              	.LBB6:
+ 277              	.LBB7:
+  47:drv_usb_core.c **** 
+ 278              		.loc 1 47 5
+  47:drv_usb_core.c **** 
+ 279              		.loc 1 47 27 is_stmt 0
+ 280 0042 984B     		lw	a4,16(a5)
+ 281 0044 13671700 		ori	a4,a4,1
+ 282 0048 98CB     		sw	a4,16(a5)
+  50:drv_usb_core.c **** 
+ 283              		.loc 1 50 5 is_stmt 1
+ 284              	.L13:
+  50:drv_usb_core.c **** 
+ 285              		.loc 1 50 50
+  50:drv_usb_core.c **** 
+ 286              		.loc 1 50 24 is_stmt 0
+ 287 004a 984B     		lw	a4,16(a5)
+  50:drv_usb_core.c **** 
+ 288              		.loc 1 50 34
+ 289 004c 058B     		andi	a4,a4,1
+  50:drv_usb_core.c **** 
+ 290              		.loc 1 50 11
+ 291 004e 75FF     		bne	a4,zero,.L13
+  53:drv_usb_core.c **** }
+ 292              		.loc 1 53 5 is_stmt 1
+ 293 0050 0D45     		li	a0,3
+ 294 0052 97000000 		call	usb_udelay
+ 294      E7800000 
+ 295              	.LVL21:
+ 296              	.L14:
+ 297              	.LBE7:
+ 298              	.LBE6:
+ 187:drv_usb_core.c ****     } else {
+ 188:drv_usb_core.c ****         usb_regs->gr->GUSBCS |= GUSBCS_EMBPHY;
+ 189:drv_usb_core.c **** 
+ 190:drv_usb_core.c ****         /* soft reset the core */
+ 191:drv_usb_core.c ****         usb_core_reset (usb_regs);
+ 192:drv_usb_core.c **** 
+ 193:drv_usb_core.c ****         /* active the transceiver and enable vbus sensing */
+ 194:drv_usb_core.c ****         reg_value = GCCFG_PWRON | GCCFG_VBUSACEN | GCCFG_VBUSBCEN;
+ 195:drv_usb_core.c **** 
+ 196:drv_usb_core.c **** #ifndef VBUS_SENSING_ENABLED
+ 197:drv_usb_core.c ****         reg_value |= GCCFG_VBUSIG;
+ 198:drv_usb_core.c **** #endif /* VBUS_SENSING_ENABLED */
+ 199:drv_usb_core.c **** 
+ 200:drv_usb_core.c ****         /* enable SOF output */
+ 201:drv_usb_core.c ****         if (usb_basic.sof_enable) {
+ 202:drv_usb_core.c ****             reg_value |= GCCFG_SOFOEN;
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s 			page 11
+
+
+ 203:drv_usb_core.c ****         }
+ 204:drv_usb_core.c **** 
+ 205:drv_usb_core.c ****         usb_regs->gr->GCCFG = reg_value;
+ 206:drv_usb_core.c **** 
+ 207:drv_usb_core.c ****         usb_mdelay(20);
+ 208:drv_usb_core.c ****     }
+ 209:drv_usb_core.c **** 
+ 210:drv_usb_core.c ****     if (USB_USE_DMA == usb_basic.transfer_mode) {
+ 299              		.loc 1 210 5
+ 300              		.loc 1 210 8 is_stmt 0
+ 301 005a 0347C100 		lbu	a4,12(sp)
+ 302 005e 8547     		li	a5,1
+ 303 0060 631EF700 		bne	a4,a5,.L17
+ 211:drv_usb_core.c ****         usb_regs->gr->GAHBCS |= GAHBCS_DMAEN;
+ 304              		.loc 1 211 9 is_stmt 1
+ 305              		.loc 1 211 17 is_stmt 0
+ 306 0064 1C40     		lw	a5,0(s0)
+ 307              		.loc 1 211 30
+ 308 0066 9847     		lw	a4,8(a5)
+ 309 0068 13670702 		ori	a4,a4,32
+ 310 006c 98C7     		sw	a4,8(a5)
+ 212:drv_usb_core.c ****         usb_regs->gr->GAHBCS &= ~GAHBCS_BURST;
+ 311              		.loc 1 212 9 is_stmt 1
+ 312              		.loc 1 212 30 is_stmt 0
+ 313 006e 9847     		lw	a4,8(a5)
+ 314 0070 059B     		andi	a4,a4,-31
+ 315 0072 98C7     		sw	a4,8(a5)
+ 213:drv_usb_core.c ****         usb_regs->gr->GAHBCS |= DMA_INCR8;
+ 316              		.loc 1 213 9 is_stmt 1
+ 317              		.loc 1 213 30 is_stmt 0
+ 318 0074 9847     		lw	a4,8(a5)
+ 319 0076 1367A700 		ori	a4,a4,10
+ 320 007a 98C7     		sw	a4,8(a5)
+ 321              	.L17:
+ 214:drv_usb_core.c ****     }
+ 215:drv_usb_core.c **** 
+ 216:drv_usb_core.c **** #ifdef USE_OTG_MODE
+ 217:drv_usb_core.c **** 
+ 218:drv_usb_core.c ****     /* enable USB OTG features */
+ 219:drv_usb_core.c ****     usb_regs->gr->GUSBCS |= GUSBCS_HNPCAP | GUSBCS_SRPCAP;
+ 220:drv_usb_core.c **** 
+ 221:drv_usb_core.c ****     /* enable the USB wakeup and suspend interrupts */
+ 222:drv_usb_core.c ****     usb_regs->gr->GINTF = 0xBFFFFFFFU;
+ 223:drv_usb_core.c **** 
+ 224:drv_usb_core.c ****     usb_regs->gr->GINTEN = GINTEN_WKUPIE | GINTEN_SPIE | \
+ 225:drv_usb_core.c ****                                      GINTEN_OTGIE | GINTEN_SESIE | GINTEN_CIDPSCIE;
+ 226:drv_usb_core.c **** 
+ 227:drv_usb_core.c **** #endif /* USE_OTG_MODE */
+ 228:drv_usb_core.c **** 
+ 229:drv_usb_core.c ****     return USB_OK;
+ 322              		.loc 1 229 5 is_stmt 1
+ 230:drv_usb_core.c **** }
+ 323              		.loc 1 230 1 is_stmt 0
+ 324 007c F240     		lw	ra,28(sp)
+ 325              		.cfi_remember_state
+ 326              		.cfi_restore 1
+ 327 007e 6244     		lw	s0,24(sp)
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s 			page 12
+
+
+ 328              		.cfi_restore 8
+ 329              	.LVL22:
+ 330 0080 D244     		lw	s1,20(sp)
+ 331              		.cfi_restore 9
+ 332 0082 0145     		li	a0,0
+ 333 0084 0561     		addi	sp,sp,32
+ 334              	.LCFI4:
+ 335              		.cfi_def_cfa_offset 0
+ 336              	.LVL23:
+ 337 0086 8280     		jr	ra
+ 338              	.LVL24:
+ 339              	.L12:
+ 340              	.LCFI5:
+ 341              		.cfi_restore_state
+ 188:drv_usb_core.c **** 
+ 342              		.loc 1 188 30
+ 343 0088 D847     		lw	a4,12(a5)
+ 344 008a 93D40501 		srli	s1,a1,16
+ 345 008e 93F4F40F 		andi	s1,s1,0xff
+ 188:drv_usb_core.c **** 
+ 346              		.loc 1 188 9 is_stmt 1
+ 188:drv_usb_core.c **** 
+ 347              		.loc 1 188 30 is_stmt 0
+ 348 0092 13670704 		ori	a4,a4,64
+ 349 0096 D8C7     		sw	a4,12(a5)
+ 191:drv_usb_core.c **** 
+ 350              		.loc 1 191 9 is_stmt 1
+ 351              	.LVL25:
+ 352              	.LBB8:
+ 353              	.LBB9:
+  47:drv_usb_core.c **** 
+ 354              		.loc 1 47 5
+  47:drv_usb_core.c **** 
+ 355              		.loc 1 47 27 is_stmt 0
+ 356 0098 984B     		lw	a4,16(a5)
+ 357 009a 13671700 		ori	a4,a4,1
+ 358 009e 98CB     		sw	a4,16(a5)
+  50:drv_usb_core.c **** 
+ 359              		.loc 1 50 5 is_stmt 1
+ 360              	.L15:
+  50:drv_usb_core.c **** 
+ 361              		.loc 1 50 50
+  50:drv_usb_core.c **** 
+ 362              		.loc 1 50 24 is_stmt 0
+ 363 00a0 984B     		lw	a4,16(a5)
+  50:drv_usb_core.c **** 
+ 364              		.loc 1 50 34
+ 365 00a2 058B     		andi	a4,a4,1
+  50:drv_usb_core.c **** 
+ 366              		.loc 1 50 11
+ 367 00a4 75FF     		bne	a4,zero,.L15
+  53:drv_usb_core.c **** }
+ 368              		.loc 1 53 5 is_stmt 1
+ 369 00a6 0D45     		li	a0,3
+ 370 00a8 97000000 		call	usb_udelay
+ 370      E7800000 
+ 371              	.LVL26:
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s 			page 13
+
+
+ 372              	.LBE9:
+ 373              	.LBE8:
+ 194:drv_usb_core.c **** 
+ 374              		.loc 1 194 9
+ 197:drv_usb_core.c **** #endif /* VBUS_SENSING_ENABLED */
+ 375              		.loc 1 197 9
+ 201:drv_usb_core.c ****             reg_value |= GCCFG_SOFOEN;
+ 376              		.loc 1 201 9
+ 197:drv_usb_core.c **** #endif /* VBUS_SENSING_ENABLED */
+ 377              		.loc 1 197 19 is_stmt 0
+ 378 00b0 B7072D00 		li	a5,2949120
+ 201:drv_usb_core.c ****             reg_value |= GCCFG_SOFOEN;
+ 379              		.loc 1 201 12
+ 380 00b4 99C0     		beq	s1,zero,.L16
+ 202:drv_usb_core.c ****         }
+ 381              		.loc 1 202 23
+ 382 00b6 B7073D00 		li	a5,3997696
+ 383              	.L16:
+ 384              	.LVL27:
+ 205:drv_usb_core.c **** 
+ 385              		.loc 1 205 9 is_stmt 1
+ 205:drv_usb_core.c **** 
+ 386              		.loc 1 205 17 is_stmt 0
+ 387 00ba 1840     		lw	a4,0(s0)
+ 207:drv_usb_core.c ****     }
+ 388              		.loc 1 207 9
+ 389 00bc 5145     		li	a0,20
+ 205:drv_usb_core.c **** 
+ 390              		.loc 1 205 29
+ 391 00be 1CDF     		sw	a5,56(a4)
+ 207:drv_usb_core.c ****     }
+ 392              		.loc 1 207 9 is_stmt 1
+ 393 00c0 97000000 		call	usb_mdelay
+ 393      E7800000 
+ 394              	.LVL28:
+ 395 00c8 49BF     		j	.L14
+ 396              		.cfi_endproc
+ 397              	.LFE5:
+ 399              		.section	.text.usb_txfifo_write,"ax",@progbits
+ 400              		.align	1
+ 401              		.globl	usb_txfifo_write
+ 403              	usb_txfifo_write:
+ 404              	.LFB6:
+ 231:drv_usb_core.c **** 
+ 232:drv_usb_core.c **** /*!
+ 233:drv_usb_core.c ****     \brief      write a packet into the Tx FIFO associated with the endpoint
+ 234:drv_usb_core.c ****     \param[in]  core_regs: usb core registers
+ 235:drv_usb_core.c ****     \param[in]  src_buf: pointer to source buffer
+ 236:drv_usb_core.c ****     \param[in]  fifo_num: FIFO number which is in (0..3)
+ 237:drv_usb_core.c ****     \param[in]  byte_count: packet byte count
+ 238:drv_usb_core.c ****     \param[out] none
+ 239:drv_usb_core.c ****     \retval     operation status
+ 240:drv_usb_core.c **** */
+ 241:drv_usb_core.c **** usb_status usb_txfifo_write (usb_core_regs *usb_regs, 
+ 242:drv_usb_core.c ****                              uint8_t *src_buf, 
+ 243:drv_usb_core.c ****                              uint8_t  fifo_num, 
+ 244:drv_usb_core.c ****                              uint16_t byte_count)
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s 			page 14
+
+
+ 245:drv_usb_core.c **** {
+ 405              		.loc 1 245 1
+ 406              		.cfi_startproc
+ 407              	.LVL29:
+ 246:drv_usb_core.c ****     uint32_t word_count = (byte_count + 3U) / 4U;
+ 408              		.loc 1 246 5
+ 247:drv_usb_core.c ****     uint32_t word;
+ 409              		.loc 1 247 5
+ 248:drv_usb_core.c **** 
+ 249:drv_usb_core.c ****     __IO uint32_t *fifo = usb_regs->DFIFO[fifo_num];
+ 410              		.loc 1 249 5
+ 411              		.loc 1 249 20 is_stmt 0
+ 412 0000 7106     		addi	a2,a2,28
+ 413              	.LVL30:
+ 414 0002 0A06     		slli	a2,a2,2
+ 415 0004 2A96     		add	a2,a0,a2
+ 246:drv_usb_core.c ****     uint32_t word;
+ 416              		.loc 1 246 39
+ 417 0006 8D06     		addi	a3,a3,3
+ 418              	.LVL31:
+ 246:drv_usb_core.c ****     uint32_t word;
+ 419              		.loc 1 246 14
+ 420 0008 8982     		srli	a3,a3,2
+ 421              		.loc 1 249 20
+ 422 000a 5046     		lw	a2,12(a2)
+ 423              	.LVL32:
+ 250:drv_usb_core.c **** 
+ 251:drv_usb_core.c ****     while (word_count-- > 0) {
+ 424              		.loc 1 251 5 is_stmt 1
+ 425 000c 8A06     		slli	a3,a3,2
+ 426 000e AE96     		add	a3,a1,a3
+ 427              	.LVL33:
+ 428              	.L24:
+ 429              		.loc 1 251 11 is_stmt 0
+ 430 0010 6394B600 		bne	a3,a1,.L25
+ 252:drv_usb_core.c ****         word = src_buf[0] | (src_buf[1] << 8) | (src_buf[2] << 16) | (src_buf[3] << 24);
+ 253:drv_usb_core.c ****         *fifo = word;
+ 254:drv_usb_core.c **** 
+ 255:drv_usb_core.c ****         src_buf += 4U;
+ 256:drv_usb_core.c ****     }
+ 257:drv_usb_core.c **** 
+ 258:drv_usb_core.c ****     return USB_OK;
+ 431              		.loc 1 258 5 is_stmt 1
+ 259:drv_usb_core.c **** }
+ 432              		.loc 1 259 1 is_stmt 0
+ 433 0014 0145     		li	a0,0
+ 434              	.LVL34:
+ 435 0016 8280     		ret
+ 436              	.LVL35:
+ 437              	.L25:
+ 252:drv_usb_core.c ****         word = src_buf[0] | (src_buf[1] << 8) | (src_buf[2] << 16) | (src_buf[3] << 24);
+ 438              		.loc 1 252 9 is_stmt 1
+ 439 0018 03C71500 		lbu	a4,1(a1)
+ 440 001c 83C70500 		lbu	a5,0(a1)
+ 255:drv_usb_core.c ****     }
+ 441              		.loc 1 255 17 is_stmt 0
+ 442 0020 9105     		addi	a1,a1,4
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s 			page 15
+
+
+ 443              	.LVL36:
+ 444 0022 2207     		slli	a4,a4,8
+ 445 0024 5D8F     		or	a4,a4,a5
+ 446 0026 83C7E5FF 		lbu	a5,-2(a1)
+ 447 002a C207     		slli	a5,a5,16
+ 448 002c 5D8F     		or	a4,a5,a4
+ 449 002e 83C7F5FF 		lbu	a5,-1(a1)
+ 450 0032 E207     		slli	a5,a5,24
+ 451 0034 D98F     		or	a5,a5,a4
+ 452              	.LVL37:
+ 253:drv_usb_core.c **** 
+ 453              		.loc 1 253 9 is_stmt 1
+ 253:drv_usb_core.c **** 
+ 454              		.loc 1 253 15 is_stmt 0
+ 455 0036 1CC2     		sw	a5,0(a2)
+ 255:drv_usb_core.c ****     }
+ 456              		.loc 1 255 9 is_stmt 1
+ 457              	.LVL38:
+ 458 0038 E1BF     		j	.L24
+ 459              		.cfi_endproc
+ 460              	.LFE6:
+ 462              		.section	.text.usb_rxfifo_read,"ax",@progbits
+ 463              		.align	1
+ 464              		.globl	usb_rxfifo_read
+ 466              	usb_rxfifo_read:
+ 467              	.LFB7:
+ 260:drv_usb_core.c **** 
+ 261:drv_usb_core.c **** /*!
+ 262:drv_usb_core.c ****     \brief      read a packet from the Rx FIFO associated with the endpoint
+ 263:drv_usb_core.c ****     \param[in]  core_regs: usb core registers
+ 264:drv_usb_core.c ****     \param[in]  dest_buf: pointer to destination buffer
+ 265:drv_usb_core.c ****     \param[in]  byte_count: packet byte count
+ 266:drv_usb_core.c ****     \param[out] none
+ 267:drv_usb_core.c ****     \retval     void type pointer
+ 268:drv_usb_core.c **** */
+ 269:drv_usb_core.c **** void *usb_rxfifo_read (usb_core_regs *usb_regs, uint8_t *dest_buf, uint16_t byte_count)
+ 270:drv_usb_core.c **** {
+ 468              		.loc 1 270 1
+ 469              		.cfi_startproc
+ 470              	.LVL39:
+ 271:drv_usb_core.c ****     uint32_t word_count = (byte_count + 3U) / 4U;
+ 471              		.loc 1 271 5
+ 272:drv_usb_core.c ****     uint32_t word;
+ 472              		.loc 1 272 5
+ 273:drv_usb_core.c **** 
+ 274:drv_usb_core.c ****     __IO uint32_t *fifo = usb_regs->DFIFO[0];
+ 473              		.loc 1 274 5
+ 271:drv_usb_core.c ****     uint32_t word;
+ 474              		.loc 1 271 39 is_stmt 0
+ 475 0000 0D06     		addi	a2,a2,3
+ 476              	.LVL40:
+ 271:drv_usb_core.c ****     uint32_t word;
+ 477              		.loc 1 271 14
+ 478 0002 0982     		srli	a2,a2,2
+ 479              		.loc 1 274 20
+ 480 0004 785D     		lw	a4,124(a0)
+ 481              	.LVL41:
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s 			page 16
+
+
+ 275:drv_usb_core.c **** 
+ 276:drv_usb_core.c ****     while (word_count-- > 0) {
+ 482              		.loc 1 276 5 is_stmt 1
+ 483 0006 0A06     		slli	a2,a2,2
+ 484 0008 2E96     		add	a2,a1,a2
+ 485              	.LVL42:
+ 486              	.L27:
+ 487              		.loc 1 276 11 is_stmt 0
+ 488 000a 6394C500 		bne	a1,a2,.L28
+ 277:drv_usb_core.c ****         word = *fifo;
+ 278:drv_usb_core.c ****         dest_buf[0] = word & 0xff;
+ 279:drv_usb_core.c ****         dest_buf[1] = (word >> 8) & 0xff;
+ 280:drv_usb_core.c ****         dest_buf[2] = (word >> 16) & 0xff;
+ 281:drv_usb_core.c ****         dest_buf[3] = (word >> 24) & 0xff;
+ 282:drv_usb_core.c **** 
+ 283:drv_usb_core.c ****         dest_buf += 4U;
+ 284:drv_usb_core.c ****     }
+ 285:drv_usb_core.c **** 
+ 286:drv_usb_core.c ****     return ((void *)dest_buf);
+ 489              		.loc 1 286 5 is_stmt 1
+ 287:drv_usb_core.c **** }
+ 490              		.loc 1 287 1 is_stmt 0
+ 491 000e 2E85     		mv	a0,a1
+ 492              	.LVL43:
+ 493 0010 8280     		ret
+ 494              	.LVL44:
+ 495              	.L28:
+ 277:drv_usb_core.c ****         word = *fifo;
+ 496              		.loc 1 277 9 is_stmt 1
+ 277:drv_usb_core.c ****         word = *fifo;
+ 497              		.loc 1 277 14 is_stmt 0
+ 498 0012 1C43     		lw	a5,0(a4)
+ 499              	.LVL45:
+ 278:drv_usb_core.c ****         dest_buf[1] = (word >> 8) & 0xff;
+ 500              		.loc 1 278 9 is_stmt 1
+ 283:drv_usb_core.c ****     }
+ 501              		.loc 1 283 18 is_stmt 0
+ 502 0014 9105     		addi	a1,a1,4
+ 503              	.LVL46:
+ 279:drv_usb_core.c ****         dest_buf[2] = (word >> 16) & 0xff;
+ 504              		.loc 1 279 29
+ 505 0016 93D68700 		srli	a3,a5,8
+ 278:drv_usb_core.c ****         dest_buf[1] = (word >> 8) & 0xff;
+ 506              		.loc 1 278 21
+ 507 001a 238EF5FE 		sb	a5,-4(a1)
+ 279:drv_usb_core.c ****         dest_buf[2] = (word >> 16) & 0xff;
+ 508              		.loc 1 279 9 is_stmt 1
+ 279:drv_usb_core.c ****         dest_buf[2] = (word >> 16) & 0xff;
+ 509              		.loc 1 279 21 is_stmt 0
+ 510 001e A38ED5FE 		sb	a3,-3(a1)
+ 280:drv_usb_core.c ****         dest_buf[3] = (word >> 24) & 0xff;
+ 511              		.loc 1 280 9 is_stmt 1
+ 280:drv_usb_core.c ****         dest_buf[3] = (word >> 24) & 0xff;
+ 512              		.loc 1 280 29 is_stmt 0
+ 513 0022 93D60701 		srli	a3,a5,16
+ 281:drv_usb_core.c **** 
+ 514              		.loc 1 281 29
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s 			page 17
+
+
+ 515 0026 E183     		srli	a5,a5,24
+ 516              	.LVL47:
+ 280:drv_usb_core.c ****         dest_buf[3] = (word >> 24) & 0xff;
+ 517              		.loc 1 280 21
+ 518 0028 238FD5FE 		sb	a3,-2(a1)
+ 281:drv_usb_core.c **** 
+ 519              		.loc 1 281 9 is_stmt 1
+ 281:drv_usb_core.c **** 
+ 520              		.loc 1 281 21 is_stmt 0
+ 521 002c A38FF5FE 		sb	a5,-1(a1)
+ 283:drv_usb_core.c ****     }
+ 522              		.loc 1 283 9 is_stmt 1
+ 523              	.LVL48:
+ 524 0030 E9BF     		j	.L27
+ 525              		.cfi_endproc
+ 526              	.LFE7:
+ 528              		.section	.text.usb_txfifo_flush,"ax",@progbits
+ 529              		.align	1
+ 530              		.globl	usb_txfifo_flush
+ 532              	usb_txfifo_flush:
+ 533              	.LFB8:
+ 288:drv_usb_core.c **** 
+ 289:drv_usb_core.c **** /*!
+ 290:drv_usb_core.c ****     \brief      flush a Tx FIFO or all Tx FIFOs
+ 291:drv_usb_core.c ****     \param[in]  core_regs: pointer to usb core registers
+ 292:drv_usb_core.c ****     \param[in]  fifo_num: FIFO number which is in (0..3)
+ 293:drv_usb_core.c ****     \param[out] none
+ 294:drv_usb_core.c ****     \retval     operation status
+ 295:drv_usb_core.c **** */
+ 296:drv_usb_core.c **** usb_status usb_txfifo_flush (usb_core_regs *usb_regs, uint8_t fifo_num)
+ 297:drv_usb_core.c **** {
+ 534              		.loc 1 297 1
+ 535              		.cfi_startproc
+ 536              	.LVL49:
+ 298:drv_usb_core.c ****     usb_regs->gr->GRSTCTL = ((uint32_t)fifo_num << 6U) | GRSTCTL_TXFF;
+ 537              		.loc 1 298 5
+ 538              		.loc 1 298 13 is_stmt 0
+ 539 0000 1841     		lw	a4,0(a0)
+ 297:drv_usb_core.c ****     usb_regs->gr->GRSTCTL = ((uint32_t)fifo_num << 6U) | GRSTCTL_TXFF;
+ 540              		.loc 1 297 1
+ 541 0002 4111     		addi	sp,sp,-16
+ 542              	.LCFI6:
+ 543              		.cfi_def_cfa_offset 16
+ 544              		.loc 1 298 49
+ 545 0004 9A05     		slli	a1,a1,6
+ 546              	.LVL50:
+ 297:drv_usb_core.c ****     usb_regs->gr->GRSTCTL = ((uint32_t)fifo_num << 6U) | GRSTCTL_TXFF;
+ 547              		.loc 1 297 1
+ 548 0006 06C6     		sw	ra,12(sp)
+ 549              		.cfi_offset 1, -4
+ 550              		.loc 1 298 56
+ 551 0008 93E50502 		ori	a1,a1,32
+ 552              		.loc 1 298 27
+ 553 000c 0CCB     		sw	a1,16(a4)
+ 299:drv_usb_core.c **** 
+ 300:drv_usb_core.c ****     /* wait for Tx FIFO flush bit is set */
+ 301:drv_usb_core.c ****     while (usb_regs->gr->GRSTCTL & GRSTCTL_TXFF);
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s 			page 18
+
+
+ 554              		.loc 1 301 5 is_stmt 1
+ 555              	.L30:
+ 556              		.loc 1 301 49 discriminator 1
+ 557              		.loc 1 301 24 is_stmt 0 discriminator 1
+ 558 000e 1C4B     		lw	a5,16(a4)
+ 559              		.loc 1 301 34 discriminator 1
+ 560 0010 93F70702 		andi	a5,a5,32
+ 561              		.loc 1 301 11 discriminator 1
+ 562 0014 EDFF     		bne	a5,zero,.L30
+ 302:drv_usb_core.c **** 
+ 303:drv_usb_core.c ****     /* wait for 3 PHY clocks*/
+ 304:drv_usb_core.c ****     usb_udelay(3);
+ 563              		.loc 1 304 5 is_stmt 1
+ 564 0016 0D45     		li	a0,3
+ 565              	.LVL51:
+ 566 0018 97000000 		call	usb_udelay
+ 566      E7800000 
+ 567              	.LVL52:
+ 305:drv_usb_core.c **** 
+ 306:drv_usb_core.c ****     return USB_OK;
+ 568              		.loc 1 306 5
+ 307:drv_usb_core.c **** }
+ 569              		.loc 1 307 1 is_stmt 0
+ 570 0020 B240     		lw	ra,12(sp)
+ 571              		.cfi_restore 1
+ 572 0022 0145     		li	a0,0
+ 573 0024 4101     		addi	sp,sp,16
+ 574              	.LCFI7:
+ 575              		.cfi_def_cfa_offset 0
+ 576 0026 8280     		jr	ra
+ 577              		.cfi_endproc
+ 578              	.LFE8:
+ 580              		.section	.text.usb_rxfifo_flush,"ax",@progbits
+ 581              		.align	1
+ 582              		.globl	usb_rxfifo_flush
+ 584              	usb_rxfifo_flush:
+ 585              	.LFB9:
+ 308:drv_usb_core.c **** 
+ 309:drv_usb_core.c **** /*!
+ 310:drv_usb_core.c ****     \brief      flush the entire Rx FIFO
+ 311:drv_usb_core.c ****     \param[in]  core_regs: pointer to usb core registers
+ 312:drv_usb_core.c ****     \param[out] none
+ 313:drv_usb_core.c ****     \retval     operation status
+ 314:drv_usb_core.c **** */
+ 315:drv_usb_core.c **** usb_status usb_rxfifo_flush (usb_core_regs *usb_regs)
+ 316:drv_usb_core.c **** {
+ 586              		.loc 1 316 1 is_stmt 1
+ 587              		.cfi_startproc
+ 588              	.LVL53:
+ 317:drv_usb_core.c ****     usb_regs->gr->GRSTCTL = GRSTCTL_RXFF;
+ 589              		.loc 1 317 5
+ 590              		.loc 1 317 13 is_stmt 0
+ 591 0000 1841     		lw	a4,0(a0)
+ 316:drv_usb_core.c ****     usb_regs->gr->GRSTCTL = GRSTCTL_RXFF;
+ 592              		.loc 1 316 1
+ 593 0002 4111     		addi	sp,sp,-16
+ 594              	.LCFI8:
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s 			page 19
+
+
+ 595              		.cfi_def_cfa_offset 16
+ 596 0004 06C6     		sw	ra,12(sp)
+ 597              		.cfi_offset 1, -4
+ 598              		.loc 1 317 27
+ 599 0006 C147     		li	a5,16
+ 600 0008 1CCB     		sw	a5,16(a4)
+ 318:drv_usb_core.c **** 
+ 319:drv_usb_core.c ****     /* wait for Rx FIFO flush bit is set */
+ 320:drv_usb_core.c ****     while (usb_regs->gr->GRSTCTL & GRSTCTL_RXFF);
+ 601              		.loc 1 320 5 is_stmt 1
+ 602              	.L34:
+ 603              		.loc 1 320 49 discriminator 1
+ 604              		.loc 1 320 24 is_stmt 0 discriminator 1
+ 605 000a 1C4B     		lw	a5,16(a4)
+ 606              		.loc 1 320 34 discriminator 1
+ 607 000c C18B     		andi	a5,a5,16
+ 608              		.loc 1 320 11 discriminator 1
+ 609 000e F5FF     		bne	a5,zero,.L34
+ 321:drv_usb_core.c **** 
+ 322:drv_usb_core.c ****     /* wait for 3 PHY clocks */
+ 323:drv_usb_core.c ****     usb_udelay(3);
+ 610              		.loc 1 323 5 is_stmt 1
+ 611 0010 0D45     		li	a0,3
+ 612              	.LVL54:
+ 613 0012 97000000 		call	usb_udelay
+ 613      E7800000 
+ 614              	.LVL55:
+ 324:drv_usb_core.c **** 
+ 325:drv_usb_core.c ****     return USB_OK;
+ 615              		.loc 1 325 5
+ 326:drv_usb_core.c **** }
+ 616              		.loc 1 326 1 is_stmt 0
+ 617 001a B240     		lw	ra,12(sp)
+ 618              		.cfi_restore 1
+ 619 001c 0145     		li	a0,0
+ 620 001e 4101     		addi	sp,sp,16
+ 621              	.LCFI9:
+ 622              		.cfi_def_cfa_offset 0
+ 623 0020 8280     		jr	ra
+ 624              		.cfi_endproc
+ 625              	.LFE9:
+ 627              		.text
+ 628              	.Letext0:
+ 629              		.file 2 "c:\\kth\\he1043\\toolchain-gd32v-v202-win\\toolchain-gd32v-v202-win\\compiler\\riscv64-un
+ 630              		.file 3 "c:\\kth\\he1043\\toolchain-gd32v-v202-win\\toolchain-gd32v-v202-win\\compiler\\riscv64-un
+ 631              		.file 4 "drv_usb_regs.h"
+ 632              		.file 5 "./../../firmware/GD32VF103_standard_peripheral/system_gd32vf103.h"
+ 633              		.file 6 "drv_usb_core.h"
+ 634              		.file 7 "drv_usb_hw.h"
+ 635              		.file 8 "<built-in>"
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s 			page 20
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 drv_usb_core.c
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:13     .text.usb_basic_init:0000000000000000 usb_basic_init
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:17     .text.usb_basic_init:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:19     .text.usb_basic_init:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:20     .text.usb_basic_init:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:21     .text.usb_basic_init:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:22     .text.usb_basic_init:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:24     .text.usb_basic_init:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:28     .text.usb_basic_init:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:29     .text.usb_basic_init:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:30     .text.usb_basic_init:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:32     .text.usb_basic_init:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:34     .text.usb_basic_init:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:36     .text.usb_basic_init:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:37     .text.usb_basic_init:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:39     .text.usb_basic_init:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:40     .text.usb_basic_init:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:42     .text.usb_basic_init:0000000000000016 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:46     .text.usb_basic_init:000000000000001e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:50     .text.usb_basic_init:0000000000000020 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:51     .text.usb_basic_init:0000000000000022 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:52     .text.usb_basic_init:0000000000000022 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:54     .text.usb_basic_init:0000000000000024 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:56     .text.usb_basic_init:0000000000000026 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:59     .text.usb_basic_init:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:64     .text.usb_basic_init:000000000000002a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:66     .text.usb_basic_init:000000000000002a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:67     .text.usb_basic_init:000000000000002a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:68     .text.usb_basic_init:000000000000002a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:71     .text.usb_basic_init:0000000000000030 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:72     .text.usb_basic_init:0000000000000030 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:75     .text.usb_basic_init:0000000000000036 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:76     .text.usb_basic_init:0000000000000036 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:78     .text.usb_basic_init:000000000000003a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:79     .text.usb_basic_init:000000000000003a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:84     .text.usb_basic_init:0000000000000040 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:87     .text.usb_basic_init:0000000000000046 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:91     .text.usb_basic_init:000000000000004c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:92     .text.usb_basic_init:000000000000004c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:93     .text.usb_basic_init:000000000000004c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:94     .text.usb_basic_init:000000000000004c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:103    .text.usb_basic_init:000000000000005c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:107    .text.usb_basic_init:0000000000000064 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:109    .text.usb_basic_init:0000000000000066 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:111    .text.usb_basic_init:000000000000006a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:113    .text.usb_basic_init:000000000000006c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:115    .text.usb_basic_init:0000000000000070 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:117    .text.usb_basic_init:0000000000000072 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:120    .text.usb_basic_init:0000000000000078 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:122    .text.usb_basic_init:000000000000007c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:123    .text.usb_basic_init:000000000000007c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:125    .text.usb_basic_init:000000000000007e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:128    .text.usb_basic_init:0000000000000086 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:132    .text.usb_basic_init:000000000000008e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:136    .text.usb_basic_init:0000000000000090 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:138    .text.usb_basic_init:0000000000000094 .L0 
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s 			page 21
+
+
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:147    .text.usb_basic_init:00000000000000a6 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:151    .text.usb_basic_init:00000000000000a8 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:153    .text.usb_basic_init:00000000000000ac .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:158    .text.usb_basic_init:00000000000000b0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:159    .text.usb_basic_init:00000000000000b0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:160    .text.usb_basic_init:00000000000000b0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:163    .text.usb_basic_init:00000000000000b6 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:164    .text.usb_basic_init:00000000000000b6 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:167    .text.usb_basic_init:00000000000000bc .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:168    .text.usb_basic_init:00000000000000bc .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:170    .text.usb_basic_init:00000000000000c0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:171    .text.usb_basic_init:00000000000000c0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:173    .text.usb_basic_init:00000000000000c4 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:177    .text.usb_basic_init:00000000000000c6 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:178    .text.usb_basic_init:00000000000000c6 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:180    .text.usb_basic_init:00000000000000ca .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:182    .text.usb_basic_init:00000000000000cc .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:183    .text.usb_basic_init:00000000000000cc .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:185    .text.usb_basic_init:00000000000000ce .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:193    .text.usb_basic_init:00000000000000d8 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:194    .text.usb_basic_init:00000000000000d8 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:196    .text.usb_basic_init:00000000000000da .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:197    .text.usb_basic_init:00000000000000da .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:199    .text.usb_basic_init:00000000000000dc .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:205    .text.usb_basic_init:00000000000000e8 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:212    .text.usb_core_init:0000000000000000 usb_core_init
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:215    .text.usb_core_init:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:217    .text.usb_core_init:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:218    .text.usb_core_init:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:219    .text.usb_core_init:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:221    .text.usb_core_init:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:223    .text.usb_core_init:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:226    .text.usb_core_init:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:228    .text.usb_core_init:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:229    .text.usb_core_init:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:231    .text.usb_core_init:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:233    .text.usb_core_init:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:235    .text.usb_core_init:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:237    .text.usb_core_init:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:239    .text.usb_core_init:0000000000000016 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:240    .text.usb_core_init:0000000000000016 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:241    .text.usb_core_init:0000000000000016 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:243    .text.usb_core_init:0000000000000016 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:245    .text.usb_core_init:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:246    .text.usb_core_init:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:248    .text.usb_core_init:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:250    .text.usb_core_init:000000000000001c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:252    .text.usb_core_init:000000000000001e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:255    .text.usb_core_init:0000000000000022 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:256    .text.usb_core_init:0000000000000022 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:257    .text.usb_core_init:0000000000000022 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:258    .text.usb_core_init:0000000000000022 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:261    .text.usb_core_init:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:262    .text.usb_core_init:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:268    .text.usb_core_init:0000000000000036 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:269    .text.usb_core_init:0000000000000036 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:278    .text.usb_core_init:0000000000000042 .L0 
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s 			page 22
+
+
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:279    .text.usb_core_init:0000000000000042 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:280    .text.usb_core_init:0000000000000042 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:285    .text.usb_core_init:000000000000004a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:286    .text.usb_core_init:000000000000004a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:287    .text.usb_core_init:000000000000004a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:289    .text.usb_core_init:000000000000004c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:291    .text.usb_core_init:000000000000004e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:293    .text.usb_core_init:0000000000000050 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:300    .text.usb_core_init:000000000000005a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:301    .text.usb_core_init:000000000000005a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:305    .text.usb_core_init:0000000000000064 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:306    .text.usb_core_init:0000000000000064 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:308    .text.usb_core_init:0000000000000066 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:312    .text.usb_core_init:000000000000006e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:313    .text.usb_core_init:000000000000006e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:317    .text.usb_core_init:0000000000000074 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:318    .text.usb_core_init:0000000000000074 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:323    .text.usb_core_init:000000000000007c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:324    .text.usb_core_init:000000000000007c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:325    .text.usb_core_init:000000000000007e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:326    .text.usb_core_init:000000000000007e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:328    .text.usb_core_init:0000000000000080 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:331    .text.usb_core_init:0000000000000082 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:335    .text.usb_core_init:0000000000000086 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:341    .text.usb_core_init:0000000000000088 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:343    .text.usb_core_init:0000000000000088 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:347    .text.usb_core_init:0000000000000092 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:348    .text.usb_core_init:0000000000000092 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:354    .text.usb_core_init:0000000000000098 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:355    .text.usb_core_init:0000000000000098 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:356    .text.usb_core_init:0000000000000098 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:361    .text.usb_core_init:00000000000000a0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:362    .text.usb_core_init:00000000000000a0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:363    .text.usb_core_init:00000000000000a0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:365    .text.usb_core_init:00000000000000a2 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:367    .text.usb_core_init:00000000000000a4 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:369    .text.usb_core_init:00000000000000a6 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:375    .text.usb_core_init:00000000000000b0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:376    .text.usb_core_init:00000000000000b0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:377    .text.usb_core_init:00000000000000b0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:378    .text.usb_core_init:00000000000000b0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:380    .text.usb_core_init:00000000000000b4 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:382    .text.usb_core_init:00000000000000b6 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:386    .text.usb_core_init:00000000000000ba .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:387    .text.usb_core_init:00000000000000ba .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:389    .text.usb_core_init:00000000000000bc .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:391    .text.usb_core_init:00000000000000be .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:393    .text.usb_core_init:00000000000000c0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:396    .text.usb_core_init:00000000000000ca .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:403    .text.usb_txfifo_write:0000000000000000 usb_txfifo_write
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:406    .text.usb_txfifo_write:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:408    .text.usb_txfifo_write:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:409    .text.usb_txfifo_write:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:410    .text.usb_txfifo_write:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:411    .text.usb_txfifo_write:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:412    .text.usb_txfifo_write:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:417    .text.usb_txfifo_write:0000000000000006 .L0 
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s 			page 23
+
+
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:420    .text.usb_txfifo_write:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:422    .text.usb_txfifo_write:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:425    .text.usb_txfifo_write:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:430    .text.usb_txfifo_write:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:432    .text.usb_txfifo_write:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:433    .text.usb_txfifo_write:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:439    .text.usb_txfifo_write:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:442    .text.usb_txfifo_write:0000000000000020 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:454    .text.usb_txfifo_write:0000000000000036 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:455    .text.usb_txfifo_write:0000000000000036 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:458    .text.usb_txfifo_write:0000000000000038 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:459    .text.usb_txfifo_write:000000000000003a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:466    .text.usb_rxfifo_read:0000000000000000 usb_rxfifo_read
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:469    .text.usb_rxfifo_read:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:471    .text.usb_rxfifo_read:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:472    .text.usb_rxfifo_read:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:473    .text.usb_rxfifo_read:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:474    .text.usb_rxfifo_read:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:475    .text.usb_rxfifo_read:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:478    .text.usb_rxfifo_read:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:480    .text.usb_rxfifo_read:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:483    .text.usb_rxfifo_read:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:488    .text.usb_rxfifo_read:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:490    .text.usb_rxfifo_read:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:491    .text.usb_rxfifo_read:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:497    .text.usb_rxfifo_read:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:498    .text.usb_rxfifo_read:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:501    .text.usb_rxfifo_read:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:502    .text.usb_rxfifo_read:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:505    .text.usb_rxfifo_read:0000000000000016 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:507    .text.usb_rxfifo_read:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:509    .text.usb_rxfifo_read:000000000000001e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:510    .text.usb_rxfifo_read:000000000000001e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:512    .text.usb_rxfifo_read:0000000000000022 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:513    .text.usb_rxfifo_read:0000000000000022 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:515    .text.usb_rxfifo_read:0000000000000026 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:518    .text.usb_rxfifo_read:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:520    .text.usb_rxfifo_read:000000000000002c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:521    .text.usb_rxfifo_read:000000000000002c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:524    .text.usb_rxfifo_read:0000000000000030 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:525    .text.usb_rxfifo_read:0000000000000032 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:532    .text.usb_txfifo_flush:0000000000000000 usb_txfifo_flush
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:535    .text.usb_txfifo_flush:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:537    .text.usb_txfifo_flush:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:538    .text.usb_txfifo_flush:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:539    .text.usb_txfifo_flush:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:541    .text.usb_txfifo_flush:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:543    .text.usb_txfifo_flush:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:545    .text.usb_txfifo_flush:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:548    .text.usb_txfifo_flush:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:549    .text.usb_txfifo_flush:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:551    .text.usb_txfifo_flush:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:553    .text.usb_txfifo_flush:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:556    .text.usb_txfifo_flush:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:557    .text.usb_txfifo_flush:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:558    .text.usb_txfifo_flush:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:560    .text.usb_txfifo_flush:0000000000000010 .L0 
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s 			page 24
+
+
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:562    .text.usb_txfifo_flush:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:564    .text.usb_txfifo_flush:0000000000000016 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:569    .text.usb_txfifo_flush:0000000000000020 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:570    .text.usb_txfifo_flush:0000000000000020 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:571    .text.usb_txfifo_flush:0000000000000022 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:575    .text.usb_txfifo_flush:0000000000000026 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:577    .text.usb_txfifo_flush:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:584    .text.usb_rxfifo_flush:0000000000000000 usb_rxfifo_flush
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:587    .text.usb_rxfifo_flush:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:589    .text.usb_rxfifo_flush:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:590    .text.usb_rxfifo_flush:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:591    .text.usb_rxfifo_flush:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:593    .text.usb_rxfifo_flush:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:595    .text.usb_rxfifo_flush:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:597    .text.usb_rxfifo_flush:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:599    .text.usb_rxfifo_flush:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:603    .text.usb_rxfifo_flush:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:604    .text.usb_rxfifo_flush:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:605    .text.usb_rxfifo_flush:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:607    .text.usb_rxfifo_flush:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:609    .text.usb_rxfifo_flush:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:611    .text.usb_rxfifo_flush:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:616    .text.usb_rxfifo_flush:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:617    .text.usb_rxfifo_flush:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:618    .text.usb_rxfifo_flush:000000000000001c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:622    .text.usb_rxfifo_flush:0000000000000020 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:624    .text.usb_rxfifo_flush:0000000000000022 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:208    .text.usb_basic_init:00000000000000e8 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:399    .text.usb_core_init:00000000000000ca .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:462    .text.usb_txfifo_write:000000000000003a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:528    .text.usb_rxfifo_read:0000000000000032 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:580    .text.usb_txfifo_flush:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:627    .text.usb_rxfifo_flush:0000000000000022 .L0 
+                     .debug_frame:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:62     .text.usb_basic_init:000000000000002a .L2
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:156    .text.usb_basic_init:00000000000000b0 .L3
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:175    .text.usb_basic_init:00000000000000c6 .L7
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:191    .text.usb_basic_init:00000000000000d8 .L9
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:48     .text.usb_basic_init:0000000000000020 .L1
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:81     .text.usb_basic_init:000000000000003e .L5
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:134    .text.usb_basic_init:0000000000000090 .L6
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:149    .text.usb_basic_init:00000000000000a8 .L8
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:339    .text.usb_core_init:0000000000000088 .L12
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:284    .text.usb_core_init:000000000000004a .L13
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:321    .text.usb_core_init:000000000000007c .L17
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:360    .text.usb_core_init:00000000000000a0 .L15
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:383    .text.usb_core_init:00000000000000ba .L16
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:296    .text.usb_core_init:000000000000005a .L14
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:437    .text.usb_txfifo_write:0000000000000018 .L25
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:428    .text.usb_txfifo_write:0000000000000010 .L24
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:495    .text.usb_rxfifo_read:0000000000000012 .L28
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:486    .text.usb_rxfifo_read:000000000000000a .L27
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:555    .text.usb_txfifo_flush:000000000000000e .L30
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:602    .text.usb_rxfifo_flush:000000000000000a .L34
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:2201   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3746   .debug_str:00000000000005aa .LASF142
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3566   .debug_str:0000000000000189 .LASF143
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s 			page 25
+
+
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3702   .debug_str:000000000000047d .LASF144
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3486   .debug_ranges:0000000000000000 .Ldebug_ranges0
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3502   .debug_line:0000000000000000 .Ldebug_line0
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3600   .debug_str:000000000000023b .LASF0
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3540   .debug_str:00000000000000db .LASF1
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3510   .debug_str:0000000000000023 .LASF4
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3682   .debug_str:0000000000000414 .LASF2
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3690   .debug_str:0000000000000441 .LASF3
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3730   .debug_str:0000000000000550 .LASF5
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3750   .debug_str:0000000000000639 .LASF6
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3556   .debug_str:0000000000000147 .LASF7
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3592   .debug_str:0000000000000212 .LASF8
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3610   .debug_str:0000000000000275 .LASF9
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3538   .debug_str:00000000000000cd .LASF10
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3544   .debug_str:00000000000000fb .LASF11
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3776   .debug_str:00000000000006bc .LASF12
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3576   .debug_str:00000000000001c9 .LASF13
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3716   .debug_str:0000000000000508 .LASF14
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3604   .debug_str:0000000000000252 .LASF100
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3724   .debug_str:0000000000000535 .LASF15
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3620   .debug_str:00000000000002c2 .LASF16
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3534   .debug_str:00000000000000ac .LASF17
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3638   .debug_str:0000000000000329 .LASF18
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3674   .debug_str:00000000000003f3 .LASF102
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3654   .debug_str:000000000000038a .LASF19
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3568   .debug_str:0000000000000198 .LASF20
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3616   .debug_str:0000000000000298 .LASF21
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3784   .debug_str:00000000000006e1 .LASF22
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3734   .debug_str:000000000000056a .LASF23
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3652   .debug_str:0000000000000376 .LASF24
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3526   .debug_str:000000000000007f .LASF25
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3542   .debug_str:00000000000000e7 .LASF26
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3618   .debug_str:00000000000002aa .LASF27
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3564   .debug_str:0000000000000170 .LASF28
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3790   .debug_str:0000000000000704 .LASF29
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3794   .debug_str:000000000000071a .LASF30
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3614   .debug_str:0000000000000291 .LASF31
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3712   .debug_str:00000000000004fa .LASF32
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3628   .debug_str:00000000000002f2 .LASF33
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3528   .debug_str:0000000000000091 .LASF34
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3714   .debug_str:0000000000000501 .LASF35
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3740   .debug_str:000000000000058f .LASF36
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3738   .debug_str:0000000000000587 .LASF37
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3708   .debug_str:00000000000004e9 .LASF38
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3524   .debug_str:000000000000006b .LASF39
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3670   .debug_str:00000000000003de .LASF40
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3664   .debug_str:00000000000003c4 .LASF41
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3788   .debug_str:00000000000006fe .LASF42
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3698   .debug_str:0000000000000468 .LASF43
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3798   .debug_str:000000000000072a .LASF44
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3672   .debug_str:00000000000003e9 .LASF45
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3678   .debug_str:0000000000000407 .LASF46
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3676   .debug_str:0000000000000402 .LASF47
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3720   .debug_str:0000000000000522 .LASF48
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3686   .debug_str:000000000000042d .LASF49
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3700   .debug_str:0000000000000473 .LASF50
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3726   .debug_str:0000000000000541 .LASF51
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s 			page 26
+
+
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3648   .debug_str:0000000000000364 .LASF52
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3728   .debug_str:0000000000000549 .LASF53
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3736   .debug_str:0000000000000580 .LASF54
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3656   .debug_str:000000000000039e .LASF55
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3774   .debug_str:00000000000006b4 .LASF56
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3640   .debug_str:0000000000000337 .LASF57
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3554   .debug_str:0000000000000140 .LASF58
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3580   .debug_str:00000000000001d8 .LASF59
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3514   .debug_str:0000000000000032 .LASF60
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3748   .debug_str:0000000000000632 .LASF61
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3570   .debug_str:00000000000001ab .LASF62
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3752   .debug_str:000000000000064c .LASF63
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3668   .debug_str:00000000000003d8 .LASF64
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3558   .debug_str:0000000000000150 .LASF65
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3612   .debug_str:0000000000000287 .LASF66
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3658   .debug_str:00000000000003a7 .LASF67
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3688   .debug_str:0000000000000439 .LASF68
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3642   .debug_str:0000000000000340 .LASF69
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3760   .debug_str:000000000000066f .LASF70
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3632   .debug_str:0000000000000302 .LASF71
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3772   .debug_str:00000000000006ac .LASF72
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3606   .debug_str:0000000000000262 .LASF73
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3630   .debug_str:00000000000002fa .LASF74
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3504   .debug_str:0000000000000000 .LASF75
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3694   .debug_str:0000000000000456 .LASF76
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3626   .debug_str:00000000000002e8 .LASF77
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3562   .debug_str:0000000000000165 .LASF78
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3622   .debug_str:00000000000002d3 .LASF79
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3586   .debug_str:00000000000001f3 .LASF80
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3582   .debug_str:00000000000001e3 .LASF81
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3650   .debug_str:000000000000036e .LASF82
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3548   .debug_str:0000000000000123 .LASF83
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3518   .debug_str:000000000000004c .LASF84
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3786   .debug_str:00000000000006f6 .LASF85
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3506   .debug_str:000000000000000c .LASF86
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3508   .debug_str:0000000000000018 .LASF87
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3584   .debug_str:00000000000001ea .LASF88
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3764   .debug_str:0000000000000684 .LASF89
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3552   .debug_str:0000000000000137 .LASF90
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3588   .debug_str:00000000000001fe .LASF91
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3722   .debug_str:0000000000000529 .LASF92
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3560   .debug_str:000000000000015b .LASF93
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3572   .debug_str:00000000000001b0 .LASF145
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3578   .debug_str:00000000000001d2 .LASF94
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3754   .debug_str:0000000000000651 .LASF95
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3512   .debug_str:000000000000002d .LASF96
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3680   .debug_str:000000000000040e .LASF97
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3696   .debug_str:000000000000045e .LASF98
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3744   .debug_str:000000000000059c .LASF99
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3710   .debug_str:00000000000004f0 .LASF101
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3624   .debug_str:00000000000002de .LASF103
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3766   .debug_str:000000000000068c .LASF104
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3756   .debug_str:0000000000000658 .LASF105
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3792   .debug_str:000000000000070b .LASF106
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3574   .debug_str:00000000000001ba .LASF107
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3770   .debug_str:00000000000006a5 .LASF108
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3704   .debug_str:00000000000004d1 .LASF109
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s 			page 27
+
+
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3692   .debug_str:000000000000044b .LASF110
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3594   .debug_str:000000000000021d .LASF111
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3590   .debug_str:0000000000000206 .LASF112
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3530   .debug_str:0000000000000097 .LASF113
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3520   .debug_str:0000000000000055 .LASF114
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3596   .debug_str:000000000000022a .LASF115
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3796   .debug_str:0000000000000723 .LASF116
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3634   .debug_str:000000000000030d .LASF117
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3598   .debug_str:0000000000000233 .LASF118
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3522   .debug_str:0000000000000060 .LASF119
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3800   .debug_str:0000000000000732 .LASF120
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3732   .debug_str:000000000000055b .LASF121
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3718   .debug_str:0000000000000511 .LASF122
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:585    .text.usb_rxfifo_flush:0000000000000000 .LFB9
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:625    .text.usb_rxfifo_flush:0000000000000022 .LFE9
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:2874   .debug_loc:0000000000000000 .LLST24
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3782   .debug_str:00000000000006d8 .LASF124
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:2892   .debug_loc:000000000000002c .LLST25
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:614    .text.usb_rxfifo_flush:000000000000001a .LVL55
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3546   .debug_str:0000000000000112 .LASF123
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:533    .text.usb_txfifo_flush:0000000000000000 .LFB8
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:578    .text.usb_txfifo_flush:0000000000000028 .LFE8
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:2906   .debug_loc:000000000000004d .LLST21
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:2924   .debug_loc:0000000000000079 .LLST22
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3758   .debug_str:0000000000000666 .LASF125
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:2938   .debug_loc:000000000000009a .LLST23
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:567    .text.usb_txfifo_flush:0000000000000020 .LVL52
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3536   .debug_str:00000000000000bd .LASF126
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:467    .text.usb_rxfifo_read:0000000000000000 .LFB7
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:526    .text.usb_rxfifo_read:0000000000000032 .LFE7
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:2952   .debug_loc:00000000000000bb .LLST16
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3644   .debug_str:000000000000034a .LASF127
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:2970   .debug_loc:00000000000000e7 .LLST17
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3684   .debug_str:0000000000000422 .LASF128
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:2987   .debug_loc:0000000000000112 .LLST18
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3608   .debug_str:000000000000026a .LASF129
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3001   .debug_loc:0000000000000133 .LLST19
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3742   .debug_str:0000000000000597 .LASF130
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3031   .debug_loc:0000000000000166 .LLST20
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3778   .debug_str:00000000000006c4 .LASF131
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3646   .debug_str:0000000000000353 .LASF132
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:404    .text.usb_txfifo_write:0000000000000000 .LFB6
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:460    .text.usb_txfifo_write:000000000000003a .LFE6
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3038   .debug_loc:0000000000000179 .LLST11
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3660   .debug_str:00000000000003b1 .LASF133
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3056   .debug_loc:00000000000001a5 .LLST12
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3073   .debug_loc:00000000000001d0 .LLST13
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3087   .debug_loc:00000000000001f1 .LLST14
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3101   .debug_loc:0000000000000212 .LLST15
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3636   .debug_str:000000000000031b .LASF134
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:213    .text.usb_core_init:0000000000000000 .LFB5
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:397    .text.usb_core_init:00000000000000ca .LFE5
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3131   .debug_loc:0000000000000245 .LLST6
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3762   .debug_str:000000000000067a .LASF135
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3154   .debug_loc:000000000000027d .LLST7
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3218   .debug_loc:00000000000002e5 .LLST8
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3602   .debug_str:0000000000000248 .LASF136
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s 			page 28
+
+
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3240   .debug_loc:000000000000031c .LLST9
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:276    .text.usb_core_init:0000000000000042 .LBB6
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:298    .text.usb_core_init:000000000000005a .LBE6
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3255   .debug_loc:000000000000033e .LLST10
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:295    .text.usb_core_init:000000000000005a .LVL21
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:352    .text.usb_core_init:0000000000000098 .LBB8
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:373    .text.usb_core_init:00000000000000b0 .LBE8
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:371    .text.usb_core_init:00000000000000b0 .LVL26
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:394    .text.usb_core_init:00000000000000c8 .LVL28
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3706   .debug_str:00000000000004da .LASF137
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:14     .text.usb_basic_init:0000000000000000 .LFB4
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:206    .text.usb_basic_init:00000000000000e8 .LFE4
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3266   .debug_loc:000000000000035c .LLST0
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3289   .debug_loc:0000000000000394 .LLST1
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3319   .debug_loc:00000000000003e1 .LLST2
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3550   .debug_str:000000000000012e .LASF138
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3359   .debug_loc:000000000000043f .LLST3
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3395   .debug_loc:0000000000000492 .LLST4
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3666   .debug_str:00000000000003cf .LASF139
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3429   .debug_loc:00000000000004ea .LLST5
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:101    .text.usb_basic_init:000000000000005c .LVL8
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3780   .debug_str:00000000000006c9 .LASF146
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3532   .debug_str:00000000000000a1 .LASF140
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3662   .debug_str:00000000000003b9 .LASF141
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3768   .debug_str:000000000000069e .LASF147
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:3516   .debug_str:000000000000003b .LASF148
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:594    .text.usb_rxfifo_flush:0000000000000004 .LCFI8
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:621    .text.usb_rxfifo_flush:0000000000000020 .LCFI9
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:588    .text.usb_rxfifo_flush:0000000000000000 .LVL53
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:612    .text.usb_rxfifo_flush:0000000000000012 .LVL54
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:542    .text.usb_txfifo_flush:0000000000000004 .LCFI6
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:574    .text.usb_txfifo_flush:0000000000000026 .LCFI7
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:536    .text.usb_txfifo_flush:0000000000000000 .LVL49
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:565    .text.usb_txfifo_flush:0000000000000018 .LVL51
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:546    .text.usb_txfifo_flush:0000000000000006 .LVL50
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:470    .text.usb_rxfifo_read:0000000000000000 .LVL39
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:492    .text.usb_rxfifo_read:0000000000000010 .LVL43
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:494    .text.usb_rxfifo_read:0000000000000012 .LVL44
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:503    .text.usb_rxfifo_read:0000000000000016 .LVL46
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:523    .text.usb_rxfifo_read:0000000000000030 .LVL48
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:476    .text.usb_rxfifo_read:0000000000000002 .LVL40
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:485    .text.usb_rxfifo_read:000000000000000a .LVL42
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:499    .text.usb_rxfifo_read:0000000000000014 .LVL45
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:516    .text.usb_rxfifo_read:0000000000000028 .LVL47
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:407    .text.usb_txfifo_write:0000000000000000 .LVL29
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:434    .text.usb_txfifo_write:0000000000000016 .LVL34
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:436    .text.usb_txfifo_write:0000000000000018 .LVL35
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:443    .text.usb_txfifo_write:0000000000000022 .LVL36
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:457    .text.usb_txfifo_write:0000000000000038 .LVL38
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:413    .text.usb_txfifo_write:0000000000000002 .LVL30
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:418    .text.usb_txfifo_write:0000000000000008 .LVL31
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:427    .text.usb_txfifo_write:0000000000000010 .LVL33
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:222    .text.usb_core_init:0000000000000004 .LCFI3
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:334    .text.usb_core_init:0000000000000086 .LCFI4
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:340    .text.usb_core_init:0000000000000088 .LCFI5
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:216    .text.usb_core_init:0000000000000000 .LVL18
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:336    .text.usb_core_init:0000000000000086 .LVL23
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s 			page 29
+
+
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:338    .text.usb_core_init:0000000000000088 .LVL24
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:329    .text.usb_core_init:0000000000000080 .LVL22
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:384    .text.usb_core_init:00000000000000ba .LVL27
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:275    .text.usb_core_init:0000000000000042 .LVL20
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:23     .text.usb_basic_init:0000000000000002 .LCFI0
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:58     .text.usb_basic_init:0000000000000028 .LCFI1
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:63     .text.usb_basic_init:000000000000002a .LCFI2
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:18     .text.usb_basic_init:0000000000000000 .LVL0
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:47     .text.usb_basic_init:0000000000000020 .LVL1
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:61     .text.usb_basic_init:000000000000002a .LVL2
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:99     .text.usb_basic_init:0000000000000054 .LVL7
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:155    .text.usb_basic_init:00000000000000b0 .LVL13
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:174    .text.usb_basic_init:00000000000000c6 .LVL14
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:97     .text.usb_basic_init:0000000000000052 .LVL6
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:95     .text.usb_basic_init:0000000000000050 .LVL5
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:133    .text.usb_basic_init:0000000000000090 .LVL9
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:139    .text.usb_basic_init:0000000000000098 .LVL10
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:148    .text.usb_basic_init:00000000000000a8 .LVL12
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:190    .text.usb_basic_init:00000000000000d8 .LVL16
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:80     .text.usb_basic_init:000000000000003e .LVL3
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:89     .text.usb_basic_init:000000000000004c .LVL4
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:144    .text.usb_basic_init:00000000000000a4 .LVL11
+C:\Users\Uzair\AppData\Local\Temp\cc4wiJsn.s:637    .debug_info:0000000000000000 .Ldebug_info0
+
+UNDEFINED SYMBOLS
+memset
+usb_udelay
+usb_mdelay

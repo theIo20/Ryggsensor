@@ -37,6 +37,8 @@ OF SUCH DAMAGE.
 #include "lcd.h"
 #include "delay.h"
 #include "gd32v_mpu6500_if.h"
+#include "usb_serial_if.h"
+#include "usb_delay.h"
 
 
 #define GRAPH_HEIGHT    30
@@ -94,6 +96,7 @@ void TIMER1_IRQHandler(void)
 }
 
 
+
 int main(void)
 {
     /* The related data structure for the IMU, contains a vector of x, y, z floats*/
@@ -102,9 +105,13 @@ int main(void)
     float nollvinkel = 0.0;
     int har_kalibrerat = 0;
     int utanfor = 0;
+
+    configure_usb_serial();
+    while(!usb_serial_available()) usb_delay_1ms(100);
+    usb_delay_1ms(1000);
         
     rcu_periph_clock_enable(RCU_GPIOA);
-    gpio_init(GPIOA, GPIO_MODE_IN_FLOATING, GPIO_OSPEED_50MHZ, GPIO_PIN_1);
+    gpio_init(GPIOA, GPIO_MODE_IPU, GPIO_OSPEED_50MHZ, GPIO_PIN_1);
 
     rcu_periph_clock_enable(RCU_GPIOB);
     gpio_init(GPIOB, GPIO_MODE_OUT_PP, GPIO_OSPEED_50MHZ, GPIO_PIN_0);
@@ -126,12 +133,11 @@ int main(void)
     mpu6500_getAccel(&vec_temp);
 
     eclic_global_interrupt_enable();
-    timer_interrupt_config();
+    interrupt_config();
     
     while(1){
-        /* Get accelleration data (Note: Blocking read) puts a force vector with 1G = 4096 into x, y, z directions respectively */
-        //gpio_bit_set(GPIOB, GPIO_PIN_0);
-        
+        /* Get accelleration data (Note: Blocking read) puts a force vector with 1G = 4096 into x, y, z directions respectively */    
+
         mpu6500_getAccel(&vec);
         float nuvarande_vinkel = -atan2(vec.y, vec.z) * (180.0 / M_PI);
 
@@ -142,13 +148,28 @@ int main(void)
             delay_1ms(200);
         }
 
-        float avvikelse = nuvarande_vinkel - nollvinkel;
+
+
+       float avvikelse = nuvarande_vinkel - nollvinkel;
         
+
+       
+        printf("X: %d  Y: %d  Z: %d\n", (int)vec.x, (int)vec.y, (int)vec.z);
+        printf("Avvikelse: %d  Nollvinkel: %d  Kalibrerad: %d  Knapp: %d\n",
+        (int)avvikelse,
+        (int)nollvinkel,
+        har_kalibrerat,
+        (int)gpio_input_bit_get(GPIOA, GPIO_PIN_1));
+        fflush(0);
+        
+        usb_delay_1ms(100); // Skicka 1 gånger per sekund
+
+
         if (har_kalibrerat==1) {
             /* If the angle is greater than 20 degrees, turn on the LED */
-            if (fabs(avvikelse) >15){
-                gpio_bit_reset(GPIOB, GPIO_PIN_0);
-                gpio_bit_reset(GPIOB, VIBRATOR_PIN);
+            if (fabs(avvikelse) >25){
+                gpio_bit_set(GPIOB, GPIO_PIN_0);
+                gpio_bit_set(GPIOB, VIBRATOR_PIN);
 
                 if (utanfor==0) {
                     utanfor = 1;
@@ -157,18 +178,17 @@ int main(void)
                         logg[antal_avvikelser].sekunder = (millis % 60000) / 1000;
                         logg[antal_avvikelser].avvikelse = avvikelse;
                         antal_avvikelser++;
-                    }
-                }
-            } else {
+                   }
+               }
+                } else {
                /* Otherwise, turn off the LED */
-                gpio_bit_set(GPIOB, GPIO_PIN_0);
-                gpio_bit_set(GPIOB, VIBRATOR_PIN);
-                utanfor = 0;
-            }
+                    gpio_bit_reset(GPIOB, GPIO_PIN_0);
+                    gpio_bit_reset(GPIOB, VIBRATOR_PIN);
+                    utanfor = 0;
+                }
         }
         
   
-        //gpio_bit_set(GPIOB, VIBRATOR_PIN);
 
 
         /* Do some fancy math to make a nice display */

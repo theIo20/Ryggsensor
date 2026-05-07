@@ -1,4 +1,4 @@
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 1
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 1
 
 
    1              		.file	"gd32vf103_gpio.c"
@@ -58,7 +58,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 1
   41:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c **** #define PCF_POSITION_MASK                  ((uint32_t)0x000F0000U)  /*!< AFIO_PCF register position
   42:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c **** #define PCF_SWJCFG_MASK                    ((uint32_t)0xF0FFFFFFU)  /*!< AFIO_PCF register SWJCFG m
   43:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c **** #define PCF_LOCATION1_MASK                 ((uint32_t)0x00200000U)  /*!< AFIO_PCF register location
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 2
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 2
 
 
   44:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c **** #define PCF_LOCATION2_MASK                 ((uint32_t)0x00100000U)  /*!< AFIO_PCF register location
@@ -118,7 +118,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 1
   78:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****         /* reset GPIOE */
   79:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****         rcu_periph_reset_enable(RCU_GPIOERST);
   80:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****         rcu_periph_reset_disable(RCU_GPIOERST);
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 3
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 3
 
 
   81:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****         break;
@@ -178,7 +178,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 1
   80:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****         break;
   77              		.loc 1 80 9
   78 0060 17030000 		tail	rcu_periph_reset_disable
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 4
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 4
 
 
   78      67000300 
@@ -238,7 +238,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 1
   91:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****     \retval     none
   92:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c **** */
   93:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c **** void gpio_afio_deinit(void)
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 5
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 5
 
 
   94:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c **** {
@@ -298,7 +298,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 1
  107:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****       \arg        GPIO_MODE_IPU: pull-up input mode
  108:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****       \arg        GPIO_MODE_OUT_OD: GPIO output with open-drain
  109:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****       \arg        GPIO_MODE_OUT_PP: GPIO output with push-pull
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 6
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 6
 
 
  110:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****       \arg        GPIO_MODE_AF_OD: AFIO output with open-drain
@@ -358,7 +358,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 1
  126:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****     uint16_t i;
  178              		.loc 1 126 1 is_stmt 0
  179 000e 8147     		li	a5,0
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 7
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 7
 
 
  142:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****         if ((1U << i) & pin) {
@@ -418,7 +418,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 1
  146:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****             /* set the specified pin mode bits */
  209              		.loc 1 146 17
  210 0036 33785800 		and	a6,a6,t0
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 8
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 8
 
 
  211              	.LVL22:
@@ -478,7 +478,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 1
  238              		.loc 1 175 16
  239 0054 130F8002 		li	t5,40
  176:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****                 /* reset the corresponding OCTL bit */
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 9
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 9
 
 
  177:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****                 GPIO_BC(gpio_periph) = (uint32_t) ((1U << i) & pin);
@@ -538,7 +538,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 1
  274              		.loc 1 175 13 is_stmt 1
  175:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****                 /* reset the corresponding OCTL bit */
  275              		.loc 1 175 16 is_stmt 0
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 10
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 10
 
 
  276 0084 639CE501 		bne	a1,t5,.L20
@@ -598,7 +598,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 1
  312              		.section	.text.gpio_bit_set,"ax",@progbits
  313              		.align	1
  314              		.globl	gpio_bit_set
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 11
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 11
 
 
  316              	gpio_bit_set:
@@ -658,7 +658,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 1
  344              	.LFE6:
  346              		.section	.text.gpio_bit_write,"ax",@progbits
  347              		.align	1
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 12
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 12
 
 
  348              		.globl	gpio_bit_write
@@ -718,7 +718,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 1
  245:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****     \retval     none
  246:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c **** */
  247:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c **** void gpio_port_write(uint32_t gpio_periph, uint16_t data)
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 13
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 13
 
 
  248:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c **** {
@@ -778,7 +778,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 1
  414              	.LFB10:
  269:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c **** 
  270:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c **** /*!
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 14
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 14
 
 
  271:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****     \brief      get GPIO port input status
@@ -838,7 +838,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 1
  444              		.loc 1 297 1
  445 0004 3335A000 		snez	a0,a0
  446 0008 8280     		ret
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 15
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 15
 
 
  447              		.cfi_endproc
@@ -898,7 +898,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 1
  327:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****       \arg        GPIO_TIMER3_REMAP: TIMER3 remapping
  328:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****       \arg        GPIO_CAN0_PARTIAL_REMAP: CAN0 partial remapping
  329:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****       \arg        GPIO_CAN0_FULL_REMAP: CAN0 full remapping
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 16
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 16
 
 
  330:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****       \arg        GPIO_PD01_REMAP: PD01 remapping
@@ -958,7 +958,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 1
  355:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****     remap1 = remap & LSB_16BIT_MASK;
  498              		.loc 1 355 12
  499 0016 4183     		srli	a4,a4,16
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 17
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 17
 
 
  500              	.LVL47:
@@ -1018,7 +1018,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 1
  376:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****     if (AFIO_PCF1_FIELDS == (remap & AFIO_PCF1_FIELDS)) {
  535              		.loc 1 376 5 is_stmt 1
  377:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****         /* set AFIO_PCF1 regiter value */
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 18
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 18
 
 
  378:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****         AFIO_PCF1 = temp_reg;
@@ -1078,7 +1078,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 1
  575              		.loc 1 368 18 is_stmt 0
  576 006e B706000F 		li	a3,251658240
  577 0072 D58F     		or	a5,a5,a3
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 19
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 19
 
 
  578              	.LVL58:
@@ -1138,7 +1138,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 1
  400:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****     uint32_t source = 0U;
  609              		.loc 1 400 5
  401:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c ****     source = ((uint32_t) 0x0FU)
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 20
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 20
 
 
  610              		.loc 1 401 5
@@ -1198,7 +1198,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 1
  650              		.loc 1 414 9 is_stmt 1
  651              		.loc 1 414 22 is_stmt 0
  652 003c D847     		lw	a4,12(a5)
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 21
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 21
 
 
  653 003e 598D     		or	a0,a4,a0
@@ -1258,7 +1258,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 1
  692              		.globl	gpio_event_output_config
  694              	gpio_event_output_config:
  695              	.LFB15:
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 22
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 22
 
 
  431:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c **** 
@@ -1318,7 +1318,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 1
  720              		.loc 1 458 13 is_stmt 0
  721 0010 0CC3     		sw	a1,0(a4)
  459:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c **** }
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 23
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 23
 
 
  722              		.loc 1 459 1
@@ -1378,7 +1378,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 1
  759 000a 1CC3     		sw	a5,0(a4)
  481:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c **** }
  760              		.loc 1 481 1
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 24
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 24
 
 
  761 000c 8280     		ret
@@ -1438,7 +1438,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 1
  503:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_gpio.c **** }
  796              		.loc 1 503 1
  797 000e 8280     		ret
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 25
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 25
 
 
  798              		.cfi_endproc
@@ -1451,637 +1451,637 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 1
  806              		.file 5 "./../../firmware/GD32VF103_standard_peripheral/Include/gd32vf103_rcu.h"
  807              		.file 6 "./../../firmware/GD32VF103_standard_peripheral/Include/gd32vf103_gpio.h"
  808              		.file 7 "./../../firmware/GD32VF103_standard_peripheral/system_gd32vf103.h"
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 26
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 26
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 gd32vf103_gpio.c
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:13     .text.gpio_deinit:0000000000000000 gpio_deinit
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:17     .text.gpio_deinit:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:19     .text.gpio_deinit:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:20     .text.gpio_deinit:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:21     .text.gpio_deinit:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:23     .text.gpio_deinit:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:25     .text.gpio_deinit:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:27     .text.gpio_deinit:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:36     .text.gpio_deinit:0000000000000020 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:37     .text.gpio_deinit:0000000000000022 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:38     .text.gpio_deinit:0000000000000022 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:41     .text.gpio_deinit:0000000000000024 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:45     .text.gpio_deinit:0000000000000026 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:47     .text.gpio_deinit:0000000000000026 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:53     .text.gpio_deinit:000000000000003a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:58     .text.gpio_deinit:0000000000000046 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:63     .text.gpio_deinit:000000000000004c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:68     .text.gpio_deinit:0000000000000058 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:71     .text.gpio_deinit:000000000000005c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:72     .text.gpio_deinit:000000000000005e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:73     .text.gpio_deinit:000000000000005e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:76     .text.gpio_deinit:0000000000000060 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:78     .text.gpio_deinit:0000000000000060 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:82     .text.gpio_deinit:0000000000000068 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:84     .text.gpio_deinit:0000000000000068 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:89     .text.gpio_deinit:0000000000000074 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:94     .text.gpio_deinit:000000000000007a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:99     .text.gpio_deinit:0000000000000086 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:104    .text.gpio_deinit:000000000000008c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:109    .text.gpio_deinit:0000000000000098 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:111    .text.gpio_deinit:000000000000009e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:118    .text.gpio_afio_deinit:0000000000000000 gpio_afio_deinit
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:121    .text.gpio_afio_deinit:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:122    .text.gpio_afio_deinit:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:123    .text.gpio_afio_deinit:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:124    .text.gpio_afio_deinit:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:126    .text.gpio_afio_deinit:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:128    .text.gpio_afio_deinit:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:130    .text.gpio_afio_deinit:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:131    .text.gpio_afio_deinit:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:133    .text.gpio_afio_deinit:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:136    .text.gpio_afio_deinit:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:137    .text.gpio_afio_deinit:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:138    .text.gpio_afio_deinit:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:140    .text.gpio_afio_deinit:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:142    .text.gpio_afio_deinit:0000000000000016 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:144    .text.gpio_afio_deinit:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:146    .text.gpio_afio_deinit:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:148    .text.gpio_afio_deinit:0000000000000020 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:155    .text.gpio_init:0000000000000000 gpio_init
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:158    .text.gpio_init:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:160    .text.gpio_init:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:161    .text.gpio_init:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:162    .text.gpio_init:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:163    .text.gpio_init:0000000000000000 .L0 
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 27
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:13     .text.gpio_deinit:0000000000000000 gpio_deinit
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:17     .text.gpio_deinit:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:19     .text.gpio_deinit:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:20     .text.gpio_deinit:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:21     .text.gpio_deinit:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:23     .text.gpio_deinit:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:25     .text.gpio_deinit:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:27     .text.gpio_deinit:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:36     .text.gpio_deinit:0000000000000020 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:37     .text.gpio_deinit:0000000000000022 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:38     .text.gpio_deinit:0000000000000022 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:41     .text.gpio_deinit:0000000000000024 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:45     .text.gpio_deinit:0000000000000026 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:47     .text.gpio_deinit:0000000000000026 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:53     .text.gpio_deinit:000000000000003a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:58     .text.gpio_deinit:0000000000000046 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:63     .text.gpio_deinit:000000000000004c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:68     .text.gpio_deinit:0000000000000058 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:71     .text.gpio_deinit:000000000000005c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:72     .text.gpio_deinit:000000000000005e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:73     .text.gpio_deinit:000000000000005e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:76     .text.gpio_deinit:0000000000000060 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:78     .text.gpio_deinit:0000000000000060 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:82     .text.gpio_deinit:0000000000000068 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:84     .text.gpio_deinit:0000000000000068 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:89     .text.gpio_deinit:0000000000000074 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:94     .text.gpio_deinit:000000000000007a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:99     .text.gpio_deinit:0000000000000086 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:104    .text.gpio_deinit:000000000000008c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:109    .text.gpio_deinit:0000000000000098 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:111    .text.gpio_deinit:000000000000009e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:118    .text.gpio_afio_deinit:0000000000000000 gpio_afio_deinit
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:121    .text.gpio_afio_deinit:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:122    .text.gpio_afio_deinit:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:123    .text.gpio_afio_deinit:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:124    .text.gpio_afio_deinit:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:126    .text.gpio_afio_deinit:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:128    .text.gpio_afio_deinit:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:130    .text.gpio_afio_deinit:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:131    .text.gpio_afio_deinit:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:133    .text.gpio_afio_deinit:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:136    .text.gpio_afio_deinit:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:137    .text.gpio_afio_deinit:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:138    .text.gpio_afio_deinit:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:140    .text.gpio_afio_deinit:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:142    .text.gpio_afio_deinit:0000000000000016 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:144    .text.gpio_afio_deinit:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:146    .text.gpio_afio_deinit:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:148    .text.gpio_afio_deinit:0000000000000020 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:155    .text.gpio_init:0000000000000000 gpio_init
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:158    .text.gpio_init:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:160    .text.gpio_init:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:161    .text.gpio_init:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:162    .text.gpio_init:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:163    .text.gpio_init:0000000000000000 .L0 
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 27
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:164    .text.gpio_init:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:165    .text.gpio_init:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:167    .text.gpio_init:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:170    .text.gpio_init:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:171    .text.gpio_init:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:173    .text.gpio_init:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:174    .text.gpio_init:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:178    .text.gpio_init:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:179    .text.gpio_init:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:181    .text.gpio_init:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:183    .text.gpio_init:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:185    .text.gpio_init:0000000000000014 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:187    .text.gpio_init:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:189    .text.gpio_init:000000000000001c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:193    .text.gpio_init:000000000000001e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:194    .text.gpio_init:000000000000001e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:196    .text.gpio_init:0000000000000022 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:198    .text.gpio_init:0000000000000024 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:200    .text.gpio_init:0000000000000026 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:202    .text.gpio_init:000000000000002a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:205    .text.gpio_init:000000000000002e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:206    .text.gpio_init:000000000000002e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:208    .text.gpio_init:0000000000000032 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:210    .text.gpio_init:0000000000000036 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:213    .text.gpio_init:000000000000003a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:214    .text.gpio_init:000000000000003a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:216    .text.gpio_init:000000000000003e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:219    .text.gpio_init:0000000000000042 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:220    .text.gpio_init:0000000000000042 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:222    .text.gpio_init:0000000000000046 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:223    .text.gpio_init:0000000000000046 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:226    .text.gpio_init:0000000000000048 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:227    .text.gpio_init:0000000000000048 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:233    .text.gpio_init:000000000000004c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:235    .text.gpio_init:0000000000000050 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:237    .text.gpio_init:0000000000000052 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:239    .text.gpio_init:0000000000000054 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:241    .text.gpio_init:0000000000000058 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:243    .text.gpio_init:000000000000005c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:247    .text.gpio_init:000000000000005e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:248    .text.gpio_init:000000000000005e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:250    .text.gpio_init:0000000000000062 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:252    .text.gpio_init:0000000000000064 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:254    .text.gpio_init:0000000000000066 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:255    .text.gpio_init:0000000000000066 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:258    .text.gpio_init:000000000000006c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:261    .text.gpio_init:0000000000000070 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:262    .text.gpio_init:0000000000000070 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:264    .text.gpio_init:0000000000000074 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:266    .text.gpio_init:0000000000000078 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:269    .text.gpio_init:000000000000007c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:270    .text.gpio_init:000000000000007c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:272    .text.gpio_init:0000000000000080 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:275    .text.gpio_init:0000000000000084 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:276    .text.gpio_init:0000000000000084 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:278    .text.gpio_init:0000000000000088 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:279    .text.gpio_init:0000000000000088 .L0 
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 28
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:164    .text.gpio_init:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:165    .text.gpio_init:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:167    .text.gpio_init:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:170    .text.gpio_init:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:171    .text.gpio_init:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:173    .text.gpio_init:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:174    .text.gpio_init:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:178    .text.gpio_init:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:179    .text.gpio_init:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:181    .text.gpio_init:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:183    .text.gpio_init:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:185    .text.gpio_init:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:187    .text.gpio_init:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:189    .text.gpio_init:000000000000001c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:193    .text.gpio_init:000000000000001e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:194    .text.gpio_init:000000000000001e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:196    .text.gpio_init:0000000000000022 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:198    .text.gpio_init:0000000000000024 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:200    .text.gpio_init:0000000000000026 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:202    .text.gpio_init:000000000000002a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:205    .text.gpio_init:000000000000002e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:206    .text.gpio_init:000000000000002e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:208    .text.gpio_init:0000000000000032 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:210    .text.gpio_init:0000000000000036 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:213    .text.gpio_init:000000000000003a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:214    .text.gpio_init:000000000000003a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:216    .text.gpio_init:000000000000003e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:219    .text.gpio_init:0000000000000042 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:220    .text.gpio_init:0000000000000042 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:222    .text.gpio_init:0000000000000046 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:223    .text.gpio_init:0000000000000046 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:226    .text.gpio_init:0000000000000048 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:227    .text.gpio_init:0000000000000048 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:233    .text.gpio_init:000000000000004c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:235    .text.gpio_init:0000000000000050 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:237    .text.gpio_init:0000000000000052 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:239    .text.gpio_init:0000000000000054 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:241    .text.gpio_init:0000000000000058 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:243    .text.gpio_init:000000000000005c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:247    .text.gpio_init:000000000000005e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:248    .text.gpio_init:000000000000005e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:250    .text.gpio_init:0000000000000062 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:252    .text.gpio_init:0000000000000064 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:254    .text.gpio_init:0000000000000066 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:255    .text.gpio_init:0000000000000066 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:258    .text.gpio_init:000000000000006c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:261    .text.gpio_init:0000000000000070 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:262    .text.gpio_init:0000000000000070 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:264    .text.gpio_init:0000000000000074 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:266    .text.gpio_init:0000000000000078 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:269    .text.gpio_init:000000000000007c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:270    .text.gpio_init:000000000000007c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:272    .text.gpio_init:0000000000000080 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:275    .text.gpio_init:0000000000000084 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:276    .text.gpio_init:0000000000000084 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:278    .text.gpio_init:0000000000000088 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:279    .text.gpio_init:0000000000000088 .L0 
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 28
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:282    .text.gpio_init:000000000000008a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:283    .text.gpio_init:000000000000008a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:289    .text.gpio_init:000000000000008e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:291    .text.gpio_init:0000000000000092 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:295    .text.gpio_init:0000000000000094 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:296    .text.gpio_init:0000000000000094 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:298    .text.gpio_init:0000000000000098 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:299    .text.gpio_init:0000000000000098 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:303    .text.gpio_init:000000000000009c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:304    .text.gpio_init:000000000000009c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:306    .text.gpio_init:00000000000000a0 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:307    .text.gpio_init:00000000000000a0 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:309    .text.gpio_init:00000000000000a4 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:316    .text.gpio_bit_set:0000000000000000 gpio_bit_set
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:319    .text.gpio_bit_set:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:321    .text.gpio_bit_set:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:322    .text.gpio_bit_set:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:323    .text.gpio_bit_set:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:325    .text.gpio_bit_set:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:326    .text.gpio_bit_set:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:333    .text.gpio_bit_reset:0000000000000000 gpio_bit_reset
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:336    .text.gpio_bit_reset:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:338    .text.gpio_bit_reset:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:339    .text.gpio_bit_reset:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:340    .text.gpio_bit_reset:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:342    .text.gpio_bit_reset:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:343    .text.gpio_bit_reset:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:350    .text.gpio_bit_write:0000000000000000 gpio_bit_write
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:353    .text.gpio_bit_write:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:355    .text.gpio_bit_write:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:356    .text.gpio_bit_write:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:357    .text.gpio_bit_write:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:359    .text.gpio_bit_write:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:360    .text.gpio_bit_write:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:364    .text.gpio_bit_write:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:365    .text.gpio_bit_write:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:367    .text.gpio_bit_write:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:368    .text.gpio_bit_write:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:375    .text.gpio_port_write:0000000000000000 gpio_port_write
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:378    .text.gpio_port_write:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:380    .text.gpio_port_write:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:381    .text.gpio_port_write:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:382    .text.gpio_port_write:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:384    .text.gpio_port_write:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:385    .text.gpio_port_write:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:392    .text.gpio_input_bit_get:0000000000000000 gpio_input_bit_get
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:395    .text.gpio_input_bit_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:397    .text.gpio_input_bit_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:398    .text.gpio_input_bit_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:399    .text.gpio_input_bit_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:402    .text.gpio_input_bit_get:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:404    .text.gpio_input_bit_get:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:406    .text.gpio_input_bit_get:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:413    .text.gpio_input_port_get:0000000000000000 gpio_input_port_get
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:416    .text.gpio_input_port_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:418    .text.gpio_input_port_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:419    .text.gpio_input_port_get:0000000000000000 .L0 
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 29
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:282    .text.gpio_init:000000000000008a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:283    .text.gpio_init:000000000000008a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:289    .text.gpio_init:000000000000008e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:291    .text.gpio_init:0000000000000092 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:295    .text.gpio_init:0000000000000094 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:296    .text.gpio_init:0000000000000094 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:298    .text.gpio_init:0000000000000098 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:299    .text.gpio_init:0000000000000098 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:303    .text.gpio_init:000000000000009c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:304    .text.gpio_init:000000000000009c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:306    .text.gpio_init:00000000000000a0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:307    .text.gpio_init:00000000000000a0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:309    .text.gpio_init:00000000000000a4 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:316    .text.gpio_bit_set:0000000000000000 gpio_bit_set
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:319    .text.gpio_bit_set:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:321    .text.gpio_bit_set:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:322    .text.gpio_bit_set:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:323    .text.gpio_bit_set:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:325    .text.gpio_bit_set:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:326    .text.gpio_bit_set:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:333    .text.gpio_bit_reset:0000000000000000 gpio_bit_reset
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:336    .text.gpio_bit_reset:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:338    .text.gpio_bit_reset:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:339    .text.gpio_bit_reset:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:340    .text.gpio_bit_reset:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:342    .text.gpio_bit_reset:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:343    .text.gpio_bit_reset:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:350    .text.gpio_bit_write:0000000000000000 gpio_bit_write
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:353    .text.gpio_bit_write:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:355    .text.gpio_bit_write:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:356    .text.gpio_bit_write:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:357    .text.gpio_bit_write:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:359    .text.gpio_bit_write:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:360    .text.gpio_bit_write:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:364    .text.gpio_bit_write:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:365    .text.gpio_bit_write:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:367    .text.gpio_bit_write:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:368    .text.gpio_bit_write:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:375    .text.gpio_port_write:0000000000000000 gpio_port_write
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:378    .text.gpio_port_write:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:380    .text.gpio_port_write:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:381    .text.gpio_port_write:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:382    .text.gpio_port_write:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:384    .text.gpio_port_write:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:385    .text.gpio_port_write:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:392    .text.gpio_input_bit_get:0000000000000000 gpio_input_bit_get
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:395    .text.gpio_input_bit_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:397    .text.gpio_input_bit_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:398    .text.gpio_input_bit_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:399    .text.gpio_input_bit_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:402    .text.gpio_input_bit_get:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:404    .text.gpio_input_bit_get:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:406    .text.gpio_input_bit_get:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:413    .text.gpio_input_port_get:0000000000000000 gpio_input_port_get
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:416    .text.gpio_input_port_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:418    .text.gpio_input_port_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:419    .text.gpio_input_port_get:0000000000000000 .L0 
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 29
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:420    .text.gpio_input_port_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:423    .text.gpio_input_port_get:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:426    .text.gpio_input_port_get:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:433    .text.gpio_output_bit_get:0000000000000000 gpio_output_bit_get
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:436    .text.gpio_output_bit_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:438    .text.gpio_output_bit_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:439    .text.gpio_output_bit_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:440    .text.gpio_output_bit_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:443    .text.gpio_output_bit_get:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:445    .text.gpio_output_bit_get:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:447    .text.gpio_output_bit_get:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:454    .text.gpio_output_port_get:0000000000000000 gpio_output_port_get
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:457    .text.gpio_output_port_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:459    .text.gpio_output_port_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:460    .text.gpio_output_port_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:461    .text.gpio_output_port_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:464    .text.gpio_output_port_get:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:467    .text.gpio_output_port_get:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:474    .text.gpio_pin_remap_config:0000000000000000 gpio_pin_remap_config
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:477    .text.gpio_pin_remap_config:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:479    .text.gpio_pin_remap_config:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:480    .text.gpio_pin_remap_config:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:481    .text.gpio_pin_remap_config:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:482    .text.gpio_pin_remap_config:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:484    .text.gpio_pin_remap_config:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:486    .text.gpio_pin_remap_config:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:487    .text.gpio_pin_remap_config:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:491    .text.gpio_pin_remap_config:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:492    .text.gpio_pin_remap_config:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:493    .text.gpio_pin_remap_config:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:495    .text.gpio_pin_remap_config:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:497    .text.gpio_pin_remap_config:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:499    .text.gpio_pin_remap_config:0000000000000016 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:502    .text.gpio_pin_remap_config:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:503    .text.gpio_pin_remap_config:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:505    .text.gpio_pin_remap_config:000000000000001c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:506    .text.gpio_pin_remap_config:000000000000001c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:509    .text.gpio_pin_remap_config:0000000000000022 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:511    .text.gpio_pin_remap_config:0000000000000026 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:514    .text.gpio_pin_remap_config:000000000000002a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:515    .text.gpio_pin_remap_config:000000000000002a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:521    .text.gpio_pin_remap_config:0000000000000034 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:522    .text.gpio_pin_remap_config:0000000000000034 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:524    .text.gpio_pin_remap_config:0000000000000036 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:525    .text.gpio_pin_remap_config:0000000000000036 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:527    .text.gpio_pin_remap_config:000000000000003a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:529    .text.gpio_pin_remap_config:000000000000003c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:532    .text.gpio_pin_remap_config:0000000000000040 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:536    .text.gpio_pin_remap_config:0000000000000042 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:537    .text.gpio_pin_remap_config:0000000000000042 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:539    .text.gpio_pin_remap_config:0000000000000046 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:541    .text.gpio_pin_remap_config:000000000000004a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:542    .text.gpio_pin_remap_config:000000000000004a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:547    .text.gpio_pin_remap_config:000000000000004e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:548    .text.gpio_pin_remap_config:000000000000004e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:554    .text.gpio_pin_remap_config:0000000000000052 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:555    .text.gpio_pin_remap_config:0000000000000052 .L0 
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 30
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:420    .text.gpio_input_port_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:423    .text.gpio_input_port_get:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:426    .text.gpio_input_port_get:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:433    .text.gpio_output_bit_get:0000000000000000 gpio_output_bit_get
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:436    .text.gpio_output_bit_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:438    .text.gpio_output_bit_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:439    .text.gpio_output_bit_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:440    .text.gpio_output_bit_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:443    .text.gpio_output_bit_get:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:445    .text.gpio_output_bit_get:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:447    .text.gpio_output_bit_get:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:454    .text.gpio_output_port_get:0000000000000000 gpio_output_port_get
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:457    .text.gpio_output_port_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:459    .text.gpio_output_port_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:460    .text.gpio_output_port_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:461    .text.gpio_output_port_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:464    .text.gpio_output_port_get:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:467    .text.gpio_output_port_get:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:474    .text.gpio_pin_remap_config:0000000000000000 gpio_pin_remap_config
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:477    .text.gpio_pin_remap_config:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:479    .text.gpio_pin_remap_config:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:480    .text.gpio_pin_remap_config:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:481    .text.gpio_pin_remap_config:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:482    .text.gpio_pin_remap_config:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:484    .text.gpio_pin_remap_config:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:486    .text.gpio_pin_remap_config:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:487    .text.gpio_pin_remap_config:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:491    .text.gpio_pin_remap_config:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:492    .text.gpio_pin_remap_config:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:493    .text.gpio_pin_remap_config:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:495    .text.gpio_pin_remap_config:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:497    .text.gpio_pin_remap_config:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:499    .text.gpio_pin_remap_config:0000000000000016 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:502    .text.gpio_pin_remap_config:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:503    .text.gpio_pin_remap_config:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:505    .text.gpio_pin_remap_config:000000000000001c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:506    .text.gpio_pin_remap_config:000000000000001c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:509    .text.gpio_pin_remap_config:0000000000000022 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:511    .text.gpio_pin_remap_config:0000000000000026 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:514    .text.gpio_pin_remap_config:000000000000002a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:515    .text.gpio_pin_remap_config:000000000000002a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:521    .text.gpio_pin_remap_config:0000000000000034 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:522    .text.gpio_pin_remap_config:0000000000000034 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:524    .text.gpio_pin_remap_config:0000000000000036 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:525    .text.gpio_pin_remap_config:0000000000000036 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:527    .text.gpio_pin_remap_config:000000000000003a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:529    .text.gpio_pin_remap_config:000000000000003c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:532    .text.gpio_pin_remap_config:0000000000000040 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:536    .text.gpio_pin_remap_config:0000000000000042 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:537    .text.gpio_pin_remap_config:0000000000000042 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:539    .text.gpio_pin_remap_config:0000000000000046 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:541    .text.gpio_pin_remap_config:000000000000004a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:542    .text.gpio_pin_remap_config:000000000000004a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:547    .text.gpio_pin_remap_config:000000000000004e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:548    .text.gpio_pin_remap_config:000000000000004e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:554    .text.gpio_pin_remap_config:0000000000000052 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:555    .text.gpio_pin_remap_config:0000000000000052 .L0 
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 30
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:559    .text.gpio_pin_remap_config:000000000000005a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:560    .text.gpio_pin_remap_config:000000000000005a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:561    .text.gpio_pin_remap_config:000000000000005a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:563    .text.gpio_pin_remap_config:000000000000005e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:565    .text.gpio_pin_remap_config:0000000000000062 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:570    .text.gpio_pin_remap_config:0000000000000068 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:572    .text.gpio_pin_remap_config:000000000000006c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:575    .text.gpio_pin_remap_config:000000000000006e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:576    .text.gpio_pin_remap_config:000000000000006e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:583    .text.gpio_pin_remap_config:0000000000000076 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:584    .text.gpio_pin_remap_config:0000000000000076 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:586    .text.gpio_pin_remap_config:000000000000007a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:588    .text.gpio_pin_remap_config:000000000000007c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:593    .text.gpio_pin_remap_config:0000000000000082 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:594    .text.gpio_pin_remap_config:0000000000000082 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:596    .text.gpio_pin_remap_config:0000000000000084 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:597    .text.gpio_pin_remap_config:0000000000000086 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:604    .text.gpio_exti_source_select:0000000000000000 gpio_exti_source_select
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:607    .text.gpio_exti_source_select:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:609    .text.gpio_exti_source_select:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:610    .text.gpio_exti_source_select:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:611    .text.gpio_exti_source_select:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:612    .text.gpio_exti_source_select:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:614    .text.gpio_exti_source_select:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:617    .text.gpio_exti_source_select:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:618    .text.gpio_exti_source_select:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:623    .text.gpio_exti_source_select:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:628    .text.gpio_exti_source_select:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:629    .text.gpio_exti_source_select:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:634    .text.gpio_exti_source_select:0000000000000024 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:635    .text.gpio_exti_source_select:0000000000000024 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:641    .text.gpio_exti_source_select:000000000000002c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:642    .text.gpio_exti_source_select:000000000000002c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:645    .text.gpio_exti_source_select:0000000000000032 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:646    .text.gpio_exti_source_select:0000000000000032 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:651    .text.gpio_exti_source_select:000000000000003c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:652    .text.gpio_exti_source_select:000000000000003c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:658    .text.gpio_exti_source_select:0000000000000044 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:659    .text.gpio_exti_source_select:0000000000000044 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:662    .text.gpio_exti_source_select:000000000000004a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:663    .text.gpio_exti_source_select:000000000000004a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:668    .text.gpio_exti_source_select:0000000000000054 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:669    .text.gpio_exti_source_select:0000000000000054 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:675    .text.gpio_exti_source_select:000000000000005c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:676    .text.gpio_exti_source_select:000000000000005c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:681    .text.gpio_exti_source_select:0000000000000066 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:682    .text.gpio_exti_source_select:0000000000000066 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:686    .text.gpio_exti_source_select:000000000000006c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:687    .text.gpio_exti_source_select:000000000000006e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:694    .text.gpio_event_output_config:0000000000000000 gpio_event_output_config
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:697    .text.gpio_event_output_config:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:699    .text.gpio_event_output_config:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:700    .text.gpio_event_output_config:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:701    .text.gpio_event_output_config:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:702    .text.gpio_event_output_config:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:706    .text.gpio_event_output_config:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:707    .text.gpio_event_output_config:0000000000000006 .L0 
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 31
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:559    .text.gpio_pin_remap_config:000000000000005a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:560    .text.gpio_pin_remap_config:000000000000005a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:561    .text.gpio_pin_remap_config:000000000000005a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:563    .text.gpio_pin_remap_config:000000000000005e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:565    .text.gpio_pin_remap_config:0000000000000062 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:570    .text.gpio_pin_remap_config:0000000000000068 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:572    .text.gpio_pin_remap_config:000000000000006c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:575    .text.gpio_pin_remap_config:000000000000006e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:576    .text.gpio_pin_remap_config:000000000000006e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:583    .text.gpio_pin_remap_config:0000000000000076 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:584    .text.gpio_pin_remap_config:0000000000000076 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:586    .text.gpio_pin_remap_config:000000000000007a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:588    .text.gpio_pin_remap_config:000000000000007c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:593    .text.gpio_pin_remap_config:0000000000000082 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:594    .text.gpio_pin_remap_config:0000000000000082 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:596    .text.gpio_pin_remap_config:0000000000000084 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:597    .text.gpio_pin_remap_config:0000000000000086 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:604    .text.gpio_exti_source_select:0000000000000000 gpio_exti_source_select
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:607    .text.gpio_exti_source_select:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:609    .text.gpio_exti_source_select:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:610    .text.gpio_exti_source_select:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:611    .text.gpio_exti_source_select:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:612    .text.gpio_exti_source_select:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:614    .text.gpio_exti_source_select:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:617    .text.gpio_exti_source_select:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:618    .text.gpio_exti_source_select:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:623    .text.gpio_exti_source_select:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:628    .text.gpio_exti_source_select:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:629    .text.gpio_exti_source_select:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:634    .text.gpio_exti_source_select:0000000000000024 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:635    .text.gpio_exti_source_select:0000000000000024 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:641    .text.gpio_exti_source_select:000000000000002c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:642    .text.gpio_exti_source_select:000000000000002c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:645    .text.gpio_exti_source_select:0000000000000032 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:646    .text.gpio_exti_source_select:0000000000000032 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:651    .text.gpio_exti_source_select:000000000000003c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:652    .text.gpio_exti_source_select:000000000000003c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:658    .text.gpio_exti_source_select:0000000000000044 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:659    .text.gpio_exti_source_select:0000000000000044 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:662    .text.gpio_exti_source_select:000000000000004a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:663    .text.gpio_exti_source_select:000000000000004a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:668    .text.gpio_exti_source_select:0000000000000054 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:669    .text.gpio_exti_source_select:0000000000000054 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:675    .text.gpio_exti_source_select:000000000000005c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:676    .text.gpio_exti_source_select:000000000000005c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:681    .text.gpio_exti_source_select:0000000000000066 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:682    .text.gpio_exti_source_select:0000000000000066 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:686    .text.gpio_exti_source_select:000000000000006c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:687    .text.gpio_exti_source_select:000000000000006e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:694    .text.gpio_event_output_config:0000000000000000 gpio_event_output_config
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:697    .text.gpio_event_output_config:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:699    .text.gpio_event_output_config:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:700    .text.gpio_event_output_config:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:701    .text.gpio_event_output_config:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:702    .text.gpio_event_output_config:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:706    .text.gpio_event_output_config:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:707    .text.gpio_event_output_config:0000000000000006 .L0 
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 31
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:708    .text.gpio_event_output_config:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:709    .text.gpio_event_output_config:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:712    .text.gpio_event_output_config:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:717    .text.gpio_event_output_config:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:720    .text.gpio_event_output_config:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:721    .text.gpio_event_output_config:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:723    .text.gpio_event_output_config:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:724    .text.gpio_event_output_config:0000000000000014 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:731    .text.gpio_event_output_enable:0000000000000000 gpio_event_output_enable
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:734    .text.gpio_event_output_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:735    .text.gpio_event_output_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:736    .text.gpio_event_output_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:737    .text.gpio_event_output_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:742    .text.gpio_event_output_enable:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:743    .text.gpio_event_output_enable:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:750    .text.gpio_event_output_disable:0000000000000000 gpio_event_output_disable
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:753    .text.gpio_event_output_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:754    .text.gpio_event_output_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:755    .text.gpio_event_output_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:756    .text.gpio_event_output_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:761    .text.gpio_event_output_disable:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:762    .text.gpio_event_output_disable:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:769    .text.gpio_pin_lock:0000000000000000 gpio_pin_lock
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:772    .text.gpio_pin_lock:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:774    .text.gpio_pin_lock:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:775    .text.gpio_pin_lock:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:776    .text.gpio_pin_lock:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:777    .text.gpio_pin_lock:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:781    .text.gpio_pin_lock:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:782    .text.gpio_pin_lock:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:784    .text.gpio_pin_lock:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:785    .text.gpio_pin_lock:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:787    .text.gpio_pin_lock:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:788    .text.gpio_pin_lock:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:790    .text.gpio_pin_lock:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:791    .text.gpio_pin_lock:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:794    .text.gpio_pin_lock:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:795    .text.gpio_pin_lock:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:797    .text.gpio_pin_lock:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:798    .text.gpio_pin_lock:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:114    .text.gpio_deinit:000000000000009e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:151    .text.gpio_afio_deinit:0000000000000020 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:312    .text.gpio_init:00000000000000a4 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:329    .text.gpio_bit_set:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:346    .text.gpio_bit_reset:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:371    .text.gpio_bit_write:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:388    .text.gpio_port_write:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:409    .text.gpio_input_bit_get:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:429    .text.gpio_input_port_get:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:450    .text.gpio_output_bit_get:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:470    .text.gpio_output_port_get:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:600    .text.gpio_pin_remap_config:0000000000000086 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:690    .text.gpio_exti_source_select:000000000000006e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:727    .text.gpio_event_output_config:0000000000000014 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:746    .text.gpio_event_output_enable:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:765    .text.gpio_event_output_disable:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:801    .text.gpio_pin_lock:0000000000000010 .L0 
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 32
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:708    .text.gpio_event_output_config:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:709    .text.gpio_event_output_config:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:712    .text.gpio_event_output_config:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:717    .text.gpio_event_output_config:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:720    .text.gpio_event_output_config:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:721    .text.gpio_event_output_config:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:723    .text.gpio_event_output_config:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:724    .text.gpio_event_output_config:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:731    .text.gpio_event_output_enable:0000000000000000 gpio_event_output_enable
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:734    .text.gpio_event_output_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:735    .text.gpio_event_output_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:736    .text.gpio_event_output_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:737    .text.gpio_event_output_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:742    .text.gpio_event_output_enable:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:743    .text.gpio_event_output_enable:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:750    .text.gpio_event_output_disable:0000000000000000 gpio_event_output_disable
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:753    .text.gpio_event_output_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:754    .text.gpio_event_output_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:755    .text.gpio_event_output_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:756    .text.gpio_event_output_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:761    .text.gpio_event_output_disable:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:762    .text.gpio_event_output_disable:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:769    .text.gpio_pin_lock:0000000000000000 gpio_pin_lock
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:772    .text.gpio_pin_lock:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:774    .text.gpio_pin_lock:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:775    .text.gpio_pin_lock:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:776    .text.gpio_pin_lock:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:777    .text.gpio_pin_lock:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:781    .text.gpio_pin_lock:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:782    .text.gpio_pin_lock:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:784    .text.gpio_pin_lock:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:785    .text.gpio_pin_lock:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:787    .text.gpio_pin_lock:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:788    .text.gpio_pin_lock:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:790    .text.gpio_pin_lock:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:791    .text.gpio_pin_lock:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:794    .text.gpio_pin_lock:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:795    .text.gpio_pin_lock:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:797    .text.gpio_pin_lock:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:798    .text.gpio_pin_lock:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:114    .text.gpio_deinit:000000000000009e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:151    .text.gpio_afio_deinit:0000000000000020 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:312    .text.gpio_init:00000000000000a4 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:329    .text.gpio_bit_set:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:346    .text.gpio_bit_reset:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:371    .text.gpio_bit_write:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:388    .text.gpio_port_write:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:409    .text.gpio_input_bit_get:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:429    .text.gpio_input_port_get:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:450    .text.gpio_output_bit_get:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:470    .text.gpio_output_port_get:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:600    .text.gpio_pin_remap_config:0000000000000086 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:690    .text.gpio_exti_source_select:000000000000006e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:727    .text.gpio_event_output_config:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:746    .text.gpio_event_output_enable:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:765    .text.gpio_event_output_disable:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:801    .text.gpio_pin_lock:0000000000000010 .L0 
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 32
 
 
                      .debug_frame:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:92     .text.gpio_deinit:000000000000007a .L2
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:43     .text.gpio_deinit:0000000000000026 .L3
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:61     .text.gpio_deinit:000000000000004c .L4
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:80     .text.gpio_deinit:0000000000000068 .L5
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:102    .text.gpio_deinit:000000000000008c .L7
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:34     .text.gpio_deinit:0000000000000020 .L1
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:69     .text.gpio_deinit:000000000000005c .L10
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:176    .text.gpio_init:000000000000000e .L14
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:229    .text.gpio_init:000000000000004a .L15
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:293    .text.gpio_init:0000000000000094 .L16
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:191    .text.gpio_init:000000000000001e .L18
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:285    .text.gpio_init:000000000000008c .L19
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:301    .text.gpio_init:000000000000009c .L20
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:244    .text.gpio_init:000000000000005e .L22
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:224    .text.gpio_init:0000000000000048 .L17
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:280    .text.gpio_init:000000000000008a .L21
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:362    .text.gpio_bit_write:0000000000000006 .L37
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:545    .text.gpio_pin_remap_config:000000000000004e .L45
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:552    .text.gpio_pin_remap_config:0000000000000052 .L47
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:534    .text.gpio_pin_remap_config:0000000000000042 .L50
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:591    .text.gpio_pin_remap_config:0000000000000082 .L51
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:489    .text.gpio_pin_remap_config:000000000000000a .L46
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:581    .text.gpio_pin_remap_config:0000000000000076 .L49
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:519    .text.gpio_pin_remap_config:0000000000000034 .L48
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:568    .text.gpio_pin_remap_config:0000000000000068 .L56
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:639    .text.gpio_exti_source_select:000000000000002c .L58
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:656    .text.gpio_exti_source_select:0000000000000044 .L60
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:673    .text.gpio_exti_source_select:000000000000005c .L61
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:1699   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2855   .debug_str:0000000000000021 .LASF89
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:3019   .debug_str:0000000000000510 .LASF90
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2857   .debug_str:00000000000000a9 .LASF91
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2811   .debug_ranges:0000000000000000 .Ldebug_ranges0
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2849   .debug_line:0000000000000000 .Ldebug_line0
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2949   .debug_str:000000000000034c .LASF0
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2937   .debug_str:00000000000002f2 .LASF1
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2913   .debug_str:0000000000000259 .LASF4
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2929   .debug_str:00000000000002b6 .LASF2
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2891   .debug_str:00000000000001db .LASF3
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2885   .debug_str:00000000000001ac .LASF5
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2963   .debug_str:000000000000039d .LASF6
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2907   .debug_str:0000000000000238 .LASF7
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2877   .debug_str:0000000000000185 .LASF8
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2993   .debug_str:000000000000046f .LASF9
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2905   .debug_str:000000000000022a .LASF10
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2941   .debug_str:0000000000000309 .LASF11
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2893   .debug_str:00000000000001e5 .LASF12
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2951   .debug_str:0000000000000359 .LASF13
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2945   .debug_str:000000000000032d .LASF14
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2983   .debug_str:0000000000000429 .LASF92
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2895   .debug_str:00000000000001ed .LASF15
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:3031   .debug_str:000000000000059b .LASF16
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2969   .debug_str:00000000000003d2 .LASF17
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:3009   .debug_str:00000000000004d7 .LASF18
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:3027   .debug_str:0000000000000584 .LASF19
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2867   .debug_str:000000000000012e .LASF20
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 33
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:92     .text.gpio_deinit:000000000000007a .L2
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:43     .text.gpio_deinit:0000000000000026 .L3
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:61     .text.gpio_deinit:000000000000004c .L4
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:80     .text.gpio_deinit:0000000000000068 .L5
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:102    .text.gpio_deinit:000000000000008c .L7
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:34     .text.gpio_deinit:0000000000000020 .L1
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:69     .text.gpio_deinit:000000000000005c .L10
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:176    .text.gpio_init:000000000000000e .L14
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:229    .text.gpio_init:000000000000004a .L15
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:293    .text.gpio_init:0000000000000094 .L16
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:191    .text.gpio_init:000000000000001e .L18
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:285    .text.gpio_init:000000000000008c .L19
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:301    .text.gpio_init:000000000000009c .L20
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:244    .text.gpio_init:000000000000005e .L22
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:224    .text.gpio_init:0000000000000048 .L17
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:280    .text.gpio_init:000000000000008a .L21
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:362    .text.gpio_bit_write:0000000000000006 .L37
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:545    .text.gpio_pin_remap_config:000000000000004e .L45
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:552    .text.gpio_pin_remap_config:0000000000000052 .L47
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:534    .text.gpio_pin_remap_config:0000000000000042 .L50
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:591    .text.gpio_pin_remap_config:0000000000000082 .L51
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:489    .text.gpio_pin_remap_config:000000000000000a .L46
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:581    .text.gpio_pin_remap_config:0000000000000076 .L49
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:519    .text.gpio_pin_remap_config:0000000000000034 .L48
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:568    .text.gpio_pin_remap_config:0000000000000068 .L56
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:639    .text.gpio_exti_source_select:000000000000002c .L58
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:656    .text.gpio_exti_source_select:0000000000000044 .L60
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:673    .text.gpio_exti_source_select:000000000000005c .L61
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:1699   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2855   .debug_str:0000000000000021 .LASF89
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:3019   .debug_str:0000000000000510 .LASF90
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2857   .debug_str:00000000000000a9 .LASF91
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2811   .debug_ranges:0000000000000000 .Ldebug_ranges0
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2849   .debug_line:0000000000000000 .Ldebug_line0
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2949   .debug_str:000000000000034c .LASF0
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2937   .debug_str:00000000000002f2 .LASF1
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2913   .debug_str:0000000000000259 .LASF4
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2929   .debug_str:00000000000002b6 .LASF2
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2891   .debug_str:00000000000001db .LASF3
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2885   .debug_str:00000000000001ac .LASF5
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2963   .debug_str:000000000000039d .LASF6
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2907   .debug_str:0000000000000238 .LASF7
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2877   .debug_str:0000000000000185 .LASF8
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2993   .debug_str:000000000000046f .LASF9
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2905   .debug_str:000000000000022a .LASF10
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2941   .debug_str:0000000000000309 .LASF11
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2893   .debug_str:00000000000001e5 .LASF12
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2951   .debug_str:0000000000000359 .LASF13
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2945   .debug_str:000000000000032d .LASF14
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2983   .debug_str:0000000000000429 .LASF92
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2895   .debug_str:00000000000001ed .LASF15
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:3031   .debug_str:000000000000059b .LASF16
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2969   .debug_str:00000000000003d2 .LASF17
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:3009   .debug_str:00000000000004d7 .LASF18
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:3027   .debug_str:0000000000000584 .LASF19
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2867   .debug_str:000000000000012e .LASF20
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 33
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2971   .debug_str:00000000000003e0 .LASF21
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2897   .debug_str:00000000000001f5 .LASF22
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2921   .debug_str:000000000000027e .LASF23
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2917   .debug_str:000000000000026a .LASF24
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2981   .debug_str:000000000000041b .LASF25
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:3025   .debug_str:0000000000000576 .LASF26
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:3035   .debug_str:00000000000005b0 .LASF27
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2871   .debug_str:0000000000000147 .LASF28
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2911   .debug_str:000000000000024d .LASF29
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2989   .debug_str:000000000000044d .LASF30
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:3033   .debug_str:00000000000005a2 .LASF31
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2995   .debug_str:0000000000000481 .LASF32
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2859   .debug_str:00000000000000fd .LASF33
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:3029   .debug_str:000000000000058f .LASF34
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:3003   .debug_str:00000000000004b6 .LASF35
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2863   .debug_str:0000000000000117 .LASF36
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2901   .debug_str:0000000000000210 .LASF37
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2869   .debug_str:000000000000013b .LASF38
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:3005   .debug_str:00000000000004c2 .LASF39
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2939   .debug_str:00000000000002fe .LASF40
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2931   .debug_str:00000000000002c4 .LASF41
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2943   .debug_str:0000000000000320 .LASF42
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2999   .debug_str:000000000000049f .LASF43
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2861   .debug_str:000000000000010a .LASF44
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2899   .debug_str:0000000000000203 .LASF45
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2953   .debug_str:0000000000000362 .LASF46
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2959   .debug_str:000000000000037c .LASF47
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:3011   .debug_str:00000000000004dd .LASF48
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2853   .debug_str:0000000000000013 .LASF49
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:3015   .debug_str:00000000000004f5 .LASF50
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2925   .debug_str:000000000000029c .LASF51
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2927   .debug_str:00000000000002aa .LASF52
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2865   .debug_str:0000000000000123 .LASF53
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2903   .debug_str:000000000000021c .LASF57
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:770    .text.gpio_pin_lock:0000000000000000 .LFB18
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:799    .text.gpio_pin_lock:0000000000000010 .LFE18
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2933   .debug_str:00000000000002ce .LASF54
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2979   .debug_str:0000000000000416 .LASF61
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2235   .debug_loc:0000000000000000 .LLST20
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2889   .debug_str:00000000000001c1 .LASF55
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:751    .text.gpio_event_output_disable:0000000000000000 .LFB17
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:763    .text.gpio_event_output_disable:000000000000000e .LFE17
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2875   .debug_str:000000000000016c .LASF56
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:732    .text.gpio_event_output_enable:0000000000000000 .LFB16
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:744    .text.gpio_event_output_enable:000000000000000e .LFE16
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2967   .debug_str:00000000000003b9 .LASF58
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:695    .text.gpio_event_output_config:0000000000000000 .LFB15
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:725    .text.gpio_event_output_config:0000000000000014 .LFE15
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2909   .debug_str:0000000000000241 .LASF59
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2249   .debug_loc:0000000000000021 .LLST17
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2973   .debug_str:00000000000003ee .LASF60
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2263   .debug_loc:0000000000000042 .LLST18
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2277   .debug_loc:0000000000000063 .LLST19
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2935   .debug_str:00000000000002da .LASF62
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:605    .text.gpio_exti_source_select:0000000000000000 .LFB14
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:688    .text.gpio_exti_source_select:000000000000006e .LFE14
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2324   .debug_loc:00000000000000b3 .LLST15
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 34
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2971   .debug_str:00000000000003e0 .LASF21
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2897   .debug_str:00000000000001f5 .LASF22
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2921   .debug_str:000000000000027e .LASF23
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2917   .debug_str:000000000000026a .LASF24
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2981   .debug_str:000000000000041b .LASF25
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:3025   .debug_str:0000000000000576 .LASF26
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:3035   .debug_str:00000000000005b0 .LASF27
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2871   .debug_str:0000000000000147 .LASF28
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2911   .debug_str:000000000000024d .LASF29
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2989   .debug_str:000000000000044d .LASF30
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:3033   .debug_str:00000000000005a2 .LASF31
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2995   .debug_str:0000000000000481 .LASF32
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2859   .debug_str:00000000000000fd .LASF33
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:3029   .debug_str:000000000000058f .LASF34
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:3003   .debug_str:00000000000004b6 .LASF35
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2863   .debug_str:0000000000000117 .LASF36
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2901   .debug_str:0000000000000210 .LASF37
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2869   .debug_str:000000000000013b .LASF38
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:3005   .debug_str:00000000000004c2 .LASF39
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2939   .debug_str:00000000000002fe .LASF40
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2931   .debug_str:00000000000002c4 .LASF41
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2943   .debug_str:0000000000000320 .LASF42
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2999   .debug_str:000000000000049f .LASF43
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2861   .debug_str:000000000000010a .LASF44
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2899   .debug_str:0000000000000203 .LASF45
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2953   .debug_str:0000000000000362 .LASF46
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2959   .debug_str:000000000000037c .LASF47
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:3011   .debug_str:00000000000004dd .LASF48
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2853   .debug_str:0000000000000013 .LASF49
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:3015   .debug_str:00000000000004f5 .LASF50
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2925   .debug_str:000000000000029c .LASF51
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2927   .debug_str:00000000000002aa .LASF52
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2865   .debug_str:0000000000000123 .LASF53
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2903   .debug_str:000000000000021c .LASF57
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:770    .text.gpio_pin_lock:0000000000000000 .LFB18
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:799    .text.gpio_pin_lock:0000000000000010 .LFE18
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2933   .debug_str:00000000000002ce .LASF54
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2979   .debug_str:0000000000000416 .LASF61
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2235   .debug_loc:0000000000000000 .LLST20
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2889   .debug_str:00000000000001c1 .LASF55
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:751    .text.gpio_event_output_disable:0000000000000000 .LFB17
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:763    .text.gpio_event_output_disable:000000000000000e .LFE17
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2875   .debug_str:000000000000016c .LASF56
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:732    .text.gpio_event_output_enable:0000000000000000 .LFB16
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:744    .text.gpio_event_output_enable:000000000000000e .LFE16
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2967   .debug_str:00000000000003b9 .LASF58
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:695    .text.gpio_event_output_config:0000000000000000 .LFB15
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:725    .text.gpio_event_output_config:0000000000000014 .LFE15
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2909   .debug_str:0000000000000241 .LASF59
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2249   .debug_loc:0000000000000021 .LLST17
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2973   .debug_str:00000000000003ee .LASF60
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2263   .debug_loc:0000000000000042 .LLST18
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2277   .debug_loc:0000000000000063 .LLST19
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2935   .debug_str:00000000000002da .LASF62
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:605    .text.gpio_exti_source_select:0000000000000000 .LFB14
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:688    .text.gpio_exti_source_select:000000000000006e .LFE14
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2324   .debug_loc:00000000000000b3 .LLST15
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 34
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2915   .debug_str:0000000000000263 .LASF63
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2338   .debug_loc:00000000000000d4 .LLST16
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2947   .debug_str:0000000000000336 .LASF64
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:475    .text.gpio_pin_remap_config:0000000000000000 .LFB13
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:598    .text.gpio_pin_remap_config:0000000000000086 .LFE13
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2919   .debug_str:0000000000000278 .LASF65
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2965   .debug_str:00000000000003b0 .LASF66
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:3021   .debug_str:0000000000000557 .LASF67
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2366   .debug_loc:000000000000010a .LLST11
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2957   .debug_str:0000000000000375 .LASF68
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2407   .debug_loc:0000000000000162 .LLST12
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2975   .debug_str:00000000000003f9 .LASF69
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2437   .debug_loc:00000000000001a1 .LLST13
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:3007   .debug_str:00000000000004cd .LASF70
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2474   .debug_loc:0000000000000203 .LLST14
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2961   .debug_str:0000000000000388 .LASF71
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:455    .text.gpio_output_port_get:0000000000000000 .LFB12
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:468    .text.gpio_output_port_get:0000000000000008 .LFE12
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2507   .debug_loc:0000000000000245 .LLST10
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2977   .debug_str:0000000000000402 .LASF72
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:434    .text.gpio_output_bit_get:0000000000000000 .LFB11
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:448    .text.gpio_output_bit_get:000000000000000a .LFE11
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2521   .debug_loc:0000000000000266 .LLST9
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2991   .debug_str:000000000000045b .LASF73
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:414    .text.gpio_input_port_get:0000000000000000 .LFB10
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:427    .text.gpio_input_port_get:0000000000000008 .LFE10
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2535   .debug_loc:0000000000000287 .LLST8
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2851   .debug_str:0000000000000000 .LASF74
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:393    .text.gpio_input_bit_get:0000000000000000 .LFB9
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:407    .text.gpio_input_bit_get:000000000000000a .LFE9
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2549   .debug_loc:00000000000002a8 .LLST7
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2923   .debug_str:000000000000028c .LASF75
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:376    .text.gpio_port_write:0000000000000000 .LFB8
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:386    .text.gpio_port_write:0000000000000004 .LFE8
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2987   .debug_str:0000000000000448 .LASF76
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:3017   .debug_str:0000000000000501 .LASF77
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:351    .text.gpio_bit_write:0000000000000000 .LFB7
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:369    .text.gpio_bit_write:000000000000000a .LFE7
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2887   .debug_str:00000000000001b7 .LASF78
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2985   .debug_str:0000000000000439 .LASF79
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:334    .text.gpio_bit_reset:0000000000000000 .LFB6
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:344    .text.gpio_bit_reset:0000000000000004 .LFE6
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2879   .debug_str:0000000000000190 .LASF80
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:317    .text.gpio_bit_set:0000000000000000 .LFB5
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:327    .text.gpio_bit_set:0000000000000004 .LFE5
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:3001   .debug_str:00000000000004ac .LASF81
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:156    .text.gpio_init:0000000000000000 .LFB4
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:310    .text.gpio_init:00000000000000a4 .LFE4
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2881   .debug_str:000000000000019d .LASF82
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2955   .debug_str:000000000000036f .LASF83
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2563   .debug_loc:00000000000002c9 .LLST3
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2577   .debug_loc:00000000000002ea .LLST4
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2883   .debug_str:00000000000001a2 .LASF84
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2609   .debug_loc:0000000000000339 .LLST5
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2621   .debug_loc:0000000000000358 .LLST6
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2997   .debug_str:000000000000048e .LASF85
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:119    .text.gpio_afio_deinit:0000000000000000 .LFB3
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 35
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2915   .debug_str:0000000000000263 .LASF63
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2338   .debug_loc:00000000000000d4 .LLST16
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2947   .debug_str:0000000000000336 .LASF64
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:475    .text.gpio_pin_remap_config:0000000000000000 .LFB13
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:598    .text.gpio_pin_remap_config:0000000000000086 .LFE13
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2919   .debug_str:0000000000000278 .LASF65
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2965   .debug_str:00000000000003b0 .LASF66
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:3021   .debug_str:0000000000000557 .LASF67
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2366   .debug_loc:000000000000010a .LLST11
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2957   .debug_str:0000000000000375 .LASF68
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2407   .debug_loc:0000000000000162 .LLST12
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2975   .debug_str:00000000000003f9 .LASF69
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2437   .debug_loc:00000000000001a1 .LLST13
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:3007   .debug_str:00000000000004cd .LASF70
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2474   .debug_loc:0000000000000203 .LLST14
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2961   .debug_str:0000000000000388 .LASF71
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:455    .text.gpio_output_port_get:0000000000000000 .LFB12
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:468    .text.gpio_output_port_get:0000000000000008 .LFE12
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2507   .debug_loc:0000000000000245 .LLST10
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2977   .debug_str:0000000000000402 .LASF72
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:434    .text.gpio_output_bit_get:0000000000000000 .LFB11
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:448    .text.gpio_output_bit_get:000000000000000a .LFE11
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2521   .debug_loc:0000000000000266 .LLST9
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2991   .debug_str:000000000000045b .LASF73
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:414    .text.gpio_input_port_get:0000000000000000 .LFB10
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:427    .text.gpio_input_port_get:0000000000000008 .LFE10
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2535   .debug_loc:0000000000000287 .LLST8
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2851   .debug_str:0000000000000000 .LASF74
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:393    .text.gpio_input_bit_get:0000000000000000 .LFB9
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:407    .text.gpio_input_bit_get:000000000000000a .LFE9
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2549   .debug_loc:00000000000002a8 .LLST7
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2923   .debug_str:000000000000028c .LASF75
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:376    .text.gpio_port_write:0000000000000000 .LFB8
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:386    .text.gpio_port_write:0000000000000004 .LFE8
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2987   .debug_str:0000000000000448 .LASF76
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:3017   .debug_str:0000000000000501 .LASF77
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:351    .text.gpio_bit_write:0000000000000000 .LFB7
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:369    .text.gpio_bit_write:000000000000000a .LFE7
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2887   .debug_str:00000000000001b7 .LASF78
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2985   .debug_str:0000000000000439 .LASF79
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:334    .text.gpio_bit_reset:0000000000000000 .LFB6
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:344    .text.gpio_bit_reset:0000000000000004 .LFE6
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2879   .debug_str:0000000000000190 .LASF80
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:317    .text.gpio_bit_set:0000000000000000 .LFB5
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:327    .text.gpio_bit_set:0000000000000004 .LFE5
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:3001   .debug_str:00000000000004ac .LASF81
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:156    .text.gpio_init:0000000000000000 .LFB4
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:310    .text.gpio_init:00000000000000a4 .LFE4
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2881   .debug_str:000000000000019d .LASF82
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2955   .debug_str:000000000000036f .LASF83
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2563   .debug_loc:00000000000002c9 .LLST3
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2577   .debug_loc:00000000000002ea .LLST4
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2883   .debug_str:00000000000001a2 .LASF84
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2609   .debug_loc:0000000000000339 .LLST5
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2621   .debug_loc:0000000000000358 .LLST6
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2997   .debug_str:000000000000048e .LASF85
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:119    .text.gpio_afio_deinit:0000000000000000 .LFB3
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 35
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:149    .text.gpio_afio_deinit:0000000000000020 .LFE3
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2657   .debug_loc:00000000000003b9 .LLST2
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:134    .text.gpio_afio_deinit:0000000000000010 .LVL15
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:147    .text.gpio_afio_deinit:0000000000000020 .LVL16
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:3013   .debug_str:00000000000004e9 .LASF86
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:14     .text.gpio_deinit:0000000000000000 .LFB2
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:112    .text.gpio_deinit:000000000000009e .LFE2
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2675   .debug_loc:00000000000003e5 .LLST0
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2708   .debug_loc:0000000000000435 .LLST1
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:56     .text.gpio_deinit:0000000000000046 .LVL2
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:66     .text.gpio_deinit:0000000000000058 .LVL5
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:79     .text.gpio_deinit:0000000000000068 .LVL6
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:87     .text.gpio_deinit:0000000000000074 .LVL8
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:97     .text.gpio_deinit:0000000000000086 .LVL11
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:107    .text.gpio_deinit:0000000000000098 .LVL14
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:3023   .debug_str:000000000000055e .LASF87
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:2873   .debug_str:0000000000000153 .LASF88
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:773    .text.gpio_pin_lock:0000000000000000 .LVL71
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:779    .text.gpio_pin_lock:0000000000000004 .LVL72
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:792    .text.gpio_pin_lock:000000000000000c .LVL73
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:698    .text.gpio_event_output_config:0000000000000000 .LVL65
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:710    .text.gpio_event_output_config:0000000000000008 .LVL67
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:715    .text.gpio_event_output_config:000000000000000e .LVL69
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:704    .text.gpio_event_output_config:0000000000000006 .LVL66
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:713    .text.gpio_event_output_config:000000000000000c .LVL68
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:718    .text.gpio_event_output_config:0000000000000010 .LVL70
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:608    .text.gpio_exti_source_select:0000000000000000 .LVL61
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:621    .text.gpio_exti_source_select:0000000000000010 .LVL63
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:615    .text.gpio_exti_source_select:0000000000000006 .LVL62
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:624    .text.gpio_exti_source_select:0000000000000012 .LVL64
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:478    .text.gpio_pin_remap_config:0000000000000000 .LVL45
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:500    .text.gpio_pin_remap_config:0000000000000018 .LVL47
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:530    .text.gpio_pin_remap_config:0000000000000040 .LVL50
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:544    .text.gpio_pin_remap_config:000000000000004e .LVL52
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:551    .text.gpio_pin_remap_config:0000000000000052 .LVL54
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:590    .text.gpio_pin_remap_config:0000000000000082 .LVL60
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:518    .text.gpio_pin_remap_config:0000000000000034 .LVL49
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:558    .text.gpio_pin_remap_config:000000000000005a .LVL55
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:567    .text.gpio_pin_remap_config:0000000000000068 .LVL56
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:580    .text.gpio_pin_remap_config:0000000000000076 .LVL59
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:488    .text.gpio_pin_remap_config:000000000000000a .LVL46
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:512    .text.gpio_pin_remap_config:000000000000002a .LVL48
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:549    .text.gpio_pin_remap_config:0000000000000050 .LVL53
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:573    .text.gpio_pin_remap_config:000000000000006e .LVL57
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:458    .text.gpio_output_port_get:0000000000000000 .LVL43
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:462    .text.gpio_output_port_get:0000000000000002 .LVL44
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:437    .text.gpio_output_bit_get:0000000000000000 .LVL41
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:441    .text.gpio_output_bit_get:0000000000000002 .LVL42
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:417    .text.gpio_input_port_get:0000000000000000 .LVL39
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:421    .text.gpio_input_port_get:0000000000000002 .LVL40
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:396    .text.gpio_input_bit_get:0000000000000000 .LVL37
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:400    .text.gpio_input_bit_get:0000000000000002 .LVL38
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:159    .text.gpio_init:0000000000000000 .LVL17
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:190    .text.gpio_init:000000000000001e .LVL20
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:175    .text.gpio_init:000000000000000e .LVL19
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:228    .text.gpio_init:000000000000004a .LVL24
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:231    .text.gpio_init:000000000000004c .LVL25
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s 			page 36
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:149    .text.gpio_afio_deinit:0000000000000020 .LFE3
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2657   .debug_loc:00000000000003b9 .LLST2
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:134    .text.gpio_afio_deinit:0000000000000010 .LVL15
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:147    .text.gpio_afio_deinit:0000000000000020 .LVL16
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:3013   .debug_str:00000000000004e9 .LASF86
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:14     .text.gpio_deinit:0000000000000000 .LFB2
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:112    .text.gpio_deinit:000000000000009e .LFE2
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2675   .debug_loc:00000000000003e5 .LLST0
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2708   .debug_loc:0000000000000435 .LLST1
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:56     .text.gpio_deinit:0000000000000046 .LVL2
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:66     .text.gpio_deinit:0000000000000058 .LVL5
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:79     .text.gpio_deinit:0000000000000068 .LVL6
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:87     .text.gpio_deinit:0000000000000074 .LVL8
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:97     .text.gpio_deinit:0000000000000086 .LVL11
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:107    .text.gpio_deinit:0000000000000098 .LVL14
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:3023   .debug_str:000000000000055e .LASF87
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:2873   .debug_str:0000000000000153 .LASF88
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:773    .text.gpio_pin_lock:0000000000000000 .LVL71
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:779    .text.gpio_pin_lock:0000000000000004 .LVL72
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:792    .text.gpio_pin_lock:000000000000000c .LVL73
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:698    .text.gpio_event_output_config:0000000000000000 .LVL65
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:710    .text.gpio_event_output_config:0000000000000008 .LVL67
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:715    .text.gpio_event_output_config:000000000000000e .LVL69
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:704    .text.gpio_event_output_config:0000000000000006 .LVL66
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:713    .text.gpio_event_output_config:000000000000000c .LVL68
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:718    .text.gpio_event_output_config:0000000000000010 .LVL70
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:608    .text.gpio_exti_source_select:0000000000000000 .LVL61
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:621    .text.gpio_exti_source_select:0000000000000010 .LVL63
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:615    .text.gpio_exti_source_select:0000000000000006 .LVL62
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:624    .text.gpio_exti_source_select:0000000000000012 .LVL64
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:478    .text.gpio_pin_remap_config:0000000000000000 .LVL45
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:500    .text.gpio_pin_remap_config:0000000000000018 .LVL47
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:530    .text.gpio_pin_remap_config:0000000000000040 .LVL50
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:544    .text.gpio_pin_remap_config:000000000000004e .LVL52
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:551    .text.gpio_pin_remap_config:0000000000000052 .LVL54
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:590    .text.gpio_pin_remap_config:0000000000000082 .LVL60
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:518    .text.gpio_pin_remap_config:0000000000000034 .LVL49
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:558    .text.gpio_pin_remap_config:000000000000005a .LVL55
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:567    .text.gpio_pin_remap_config:0000000000000068 .LVL56
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:580    .text.gpio_pin_remap_config:0000000000000076 .LVL59
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:488    .text.gpio_pin_remap_config:000000000000000a .LVL46
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:512    .text.gpio_pin_remap_config:000000000000002a .LVL48
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:549    .text.gpio_pin_remap_config:0000000000000050 .LVL53
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:573    .text.gpio_pin_remap_config:000000000000006e .LVL57
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:458    .text.gpio_output_port_get:0000000000000000 .LVL43
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:462    .text.gpio_output_port_get:0000000000000002 .LVL44
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:437    .text.gpio_output_bit_get:0000000000000000 .LVL41
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:441    .text.gpio_output_bit_get:0000000000000002 .LVL42
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:417    .text.gpio_input_port_get:0000000000000000 .LVL39
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:421    .text.gpio_input_port_get:0000000000000002 .LVL40
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:396    .text.gpio_input_bit_get:0000000000000000 .LVL37
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:400    .text.gpio_input_bit_get:0000000000000002 .LVL38
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:159    .text.gpio_init:0000000000000000 .LVL17
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:190    .text.gpio_init:000000000000001e .LVL20
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:175    .text.gpio_init:000000000000000e .LVL19
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:228    .text.gpio_init:000000000000004a .LVL24
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:231    .text.gpio_init:000000000000004c .LVL25
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s 			page 36
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:245    .text.gpio_init:000000000000005e .LVL26
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:284    .text.gpio_init:000000000000008c .LVL30
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:287    .text.gpio_init:000000000000008e .LVL31
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:292    .text.gpio_init:0000000000000094 .LVL32
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:168    .text.gpio_init:0000000000000008 .LVL18
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:203    .text.gpio_init:000000000000002e .LVL21
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:211    .text.gpio_init:000000000000003a .LVL22
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:217    .text.gpio_init:0000000000000042 .LVL23
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:259    .text.gpio_init:0000000000000070 .LVL27
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:267    .text.gpio_init:000000000000007c .LVL28
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:273    .text.gpio_init:0000000000000084 .LVL29
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:125    .text.gpio_afio_deinit:0000000000000002 .LCFI5
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:143    .text.gpio_afio_deinit:0000000000000018 .LCFI6
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:22     .text.gpio_deinit:0000000000000002 .LCFI0
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:40     .text.gpio_deinit:0000000000000024 .LCFI1
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:44     .text.gpio_deinit:0000000000000026 .LCFI2
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:75     .text.gpio_deinit:0000000000000060 .LCFI3
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:81     .text.gpio_deinit:0000000000000068 .LCFI4
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:18     .text.gpio_deinit:0000000000000000 .LVL0
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:54     .text.gpio_deinit:000000000000003e .LVL1
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:60     .text.gpio_deinit:000000000000004c .LVL3
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:64     .text.gpio_deinit:0000000000000050 .LVL4
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:85     .text.gpio_deinit:000000000000006c .LVL7
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:91     .text.gpio_deinit:000000000000007a .LVL9
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:95     .text.gpio_deinit:000000000000007e .LVL10
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:101    .text.gpio_deinit:000000000000008c .LVL12
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:105    .text.gpio_deinit:0000000000000090 .LVL13
-C:\Users\Uzair\AppData\Local\Temp\cc6fX7Xp.s:810    .debug_info:0000000000000000 .Ldebug_info0
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:245    .text.gpio_init:000000000000005e .LVL26
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:284    .text.gpio_init:000000000000008c .LVL30
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:287    .text.gpio_init:000000000000008e .LVL31
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:292    .text.gpio_init:0000000000000094 .LVL32
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:168    .text.gpio_init:0000000000000008 .LVL18
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:203    .text.gpio_init:000000000000002e .LVL21
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:211    .text.gpio_init:000000000000003a .LVL22
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:217    .text.gpio_init:0000000000000042 .LVL23
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:259    .text.gpio_init:0000000000000070 .LVL27
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:267    .text.gpio_init:000000000000007c .LVL28
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:273    .text.gpio_init:0000000000000084 .LVL29
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:125    .text.gpio_afio_deinit:0000000000000002 .LCFI5
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:143    .text.gpio_afio_deinit:0000000000000018 .LCFI6
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:22     .text.gpio_deinit:0000000000000002 .LCFI0
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:40     .text.gpio_deinit:0000000000000024 .LCFI1
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:44     .text.gpio_deinit:0000000000000026 .LCFI2
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:75     .text.gpio_deinit:0000000000000060 .LCFI3
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:81     .text.gpio_deinit:0000000000000068 .LCFI4
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:18     .text.gpio_deinit:0000000000000000 .LVL0
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:54     .text.gpio_deinit:000000000000003e .LVL1
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:60     .text.gpio_deinit:000000000000004c .LVL3
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:64     .text.gpio_deinit:0000000000000050 .LVL4
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:85     .text.gpio_deinit:000000000000006c .LVL7
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:91     .text.gpio_deinit:000000000000007a .LVL9
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:95     .text.gpio_deinit:000000000000007e .LVL10
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:101    .text.gpio_deinit:000000000000008c .LVL12
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:105    .text.gpio_deinit:0000000000000090 .LVL13
+C:\Users\Uzair\AppData\Local\Temp\cc5ZGsuQ.s:810    .debug_info:0000000000000000 .Ldebug_info0
 
 UNDEFINED SYMBOLS
 rcu_periph_reset_enable

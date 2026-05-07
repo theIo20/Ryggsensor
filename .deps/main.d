@@ -27,7 +27,10 @@ build/main.o: main.c \
  ../../firmware/RISCV/drivers/n200_timer.h \
  ../../firmware/RISCV/drivers/n200_eclic.h \
  ../../firmware/RISCV/drivers/riscv_const.h lcd.h delay.h \
- gd32v_mpu6500_if.h mpu6500_driver.h mpu6500_registers.h
+ gd32v_mpu6500_if.h mpu6500_driver.h mpu6500_registers.h usb_serial_if.h \
+ cdc_acm_core.h usbd_enum.h usbd_core.h drv_usb_core.h drv_usb_regs.h \
+ usb_conf.h usb_ch9_std.h drv_usb_dev.h usbd_conf.h usbd_transc.h \
+ usb_delay.h
 
 ../../firmware/GD32VF103_standard_peripheral/gd32vf103.h:
 
@@ -94,3 +97,27 @@ gd32v_mpu6500_if.h:
 mpu6500_driver.h:
 
 mpu6500_registers.h:
+
+usb_serial_if.h:
+
+cdc_acm_core.h:
+
+usbd_enum.h:
+
+usbd_core.h:
+
+drv_usb_core.h:
+
+drv_usb_regs.h:
+
+usb_conf.h:
+
+usb_ch9_std.h:
+
+drv_usb_dev.h:
+
+usbd_conf.h:
+
+usbd_transc.h:
+
+usb_delay.h:

@@ -1,4 +1,4 @@
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 1
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s 			page 1
 
 
    1              		.file	"gd32vf103_bkp.c"
@@ -58,7 +58,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 1
   41:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_bkp.c **** /*!
   42:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_bkp.c ****     \brief      reset BKP registers
   43:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_bkp.c ****     \param[in]  none
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 2
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s 			page 2
 
 
   44:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_bkp.c ****     \param[out] none
@@ -118,7 +118,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 1
   47              		.loc 1 64 1 is_stmt 1
   48              		.cfi_startproc
   49              	.LVL2:
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 3
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s 			page 3
 
 
   65:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_bkp.c ****     if((register_number >= BKP_DATA_10) && (register_number <= BKP_DATA_41)){
@@ -178,7 +178,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 1
   76:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_bkp.c ****     \param[in]  register_number: refer to bkp_data_register_enum
   77:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_bkp.c ****                 only one parameter can be selected which is shown as below:
   78:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_bkp.c ****       \arg        BKP_DATA_x(x = 0..41): bkp data register number x
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 4
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s 			page 4
 
 
   79:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_bkp.c ****     \param[out] none
@@ -238,7 +238,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 1
  126              		.loc 1 89 11 is_stmt 1
   89:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_bkp.c ****         data = BKP_DATA0_9((uint32_t)register_number - 1U);
  127              		.loc 1 89 46 is_stmt 0
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 5
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s 			page 5
 
 
  128 0022 1307F5FF 		addi	a4,a0,-1
@@ -298,7 +298,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 1
  108:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_bkp.c **** /*!
  109:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_bkp.c ****     \brief      disable RTC clock calibration output
  110:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_bkp.c ****     \param[in]  none
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 6
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s 			page 6
 
 
  111:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_bkp.c ****     \param[out] none
@@ -358,7 +358,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 1
  209              	bkp_rtc_signal_output_disable:
  210              	.LFB8:
  129:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_bkp.c **** 
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 7
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s 			page 7
 
 
  130:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_bkp.c **** /*!
@@ -418,7 +418,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 1
  241 0004 8357C7C2 		lhu	a5,-980(a4)
  242 0008 C207     		slli	a5,a5,16
  243 000a C183     		srli	a5,a5,16
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 8
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s 			page 8
 
 
  244              	.LVL12:
@@ -478,7 +478,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 1
  279 000c C207     		slli	a5,a5,16
  280 000e C183     		srli	a5,a5,16
  281              	.LVL17:
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 9
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s 			page 9
 
 
  174:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_bkp.c ****     ctl &= (uint16_t)~BKP_OCTL_RCCV;
@@ -538,7 +538,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 1
  191:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_bkp.c ****     \brief      disable tamper detection
  192:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_bkp.c ****     \param[in]  none
  193:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_bkp.c ****     \param[out] none
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 10
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s 			page 10
 
 
  194:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_bkp.c ****     \retval     none
@@ -598,7 +598,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 1
  216:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_bkp.c ****     ctl &= (uint16_t)~BKP_TPCTL_TPAL;
  357              		.loc 1 216 5 is_stmt 1
  358              		.loc 1 216 9 is_stmt 0
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 11
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s 			page 11
 
 
  359 000c F59B     		andi	a5,a5,-3
@@ -658,7 +658,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 1
  236:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_bkp.c ****     \retval     none
  237:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_bkp.c **** */
  238:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_bkp.c **** void bkp_interrupt_disable(void)
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 12
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s 			page 12
 
 
  239:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_bkp.c **** {
@@ -718,7 +718,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 1
  437              		.globl	bkp_flag_clear
  439              	bkp_flag_clear:
  440              	.LFB17:
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 13
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s 			page 13
 
 
  257:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_bkp.c **** 
@@ -778,7 +778,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 1
  471              		.cfi_endproc
  472              	.LFE18:
  474              		.section	.text.bkp_interrupt_flag_clear,"ax",@progbits
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 14
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s 			page 14
 
 
  475              		.align	1
@@ -816,402 +816,402 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 1
  498              		.file 5 "./../../firmware/GD32VF103_standard_peripheral/Include/gd32vf103_bkp.h"
  499              		.file 6 "./../../firmware/GD32VF103_standard_peripheral/Include/gd32vf103_rcu.h"
  500              		.file 7 "./../../firmware/GD32VF103_standard_peripheral/system_gd32vf103.h"
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 15
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s 			page 15
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 gd32vf103_bkp.c
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:13     .text.bkp_deinit:0000000000000000 bkp_deinit
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:17     .text.bkp_deinit:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:18     .text.bkp_deinit:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:19     .text.bkp_deinit:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:20     .text.bkp_deinit:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:22     .text.bkp_deinit:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:24     .text.bkp_deinit:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:26     .text.bkp_deinit:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:29     .text.bkp_deinit:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:30     .text.bkp_deinit:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:31     .text.bkp_deinit:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:34     .text.bkp_deinit:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:36     .text.bkp_deinit:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:38     .text.bkp_deinit:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:45     .text.bkp_data_write:0000000000000000 bkp_data_write
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:48     .text.bkp_data_write:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:50     .text.bkp_data_write:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:51     .text.bkp_data_write:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:52     .text.bkp_data_write:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:54     .text.bkp_data_write:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:57     .text.bkp_data_write:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:61     .text.bkp_data_write:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:65     .text.bkp_data_write:0000000000000016 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:68     .text.bkp_data_write:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:69     .text.bkp_data_write:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:73     .text.bkp_data_write:000000000000001c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:74     .text.bkp_data_write:000000000000001c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:76     .text.bkp_data_write:0000000000000020 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:79     .text.bkp_data_write:0000000000000026 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:82     .text.bkp_data_write:0000000000000030 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:89     .text.bkp_data_read:0000000000000000 bkp_data_read
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:92     .text.bkp_data_read:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:94     .text.bkp_data_read:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:95     .text.bkp_data_read:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:96     .text.bkp_data_read:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:97     .text.bkp_data_read:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:99     .text.bkp_data_read:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:101    .text.bkp_data_read:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:103    .text.bkp_data_read:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:105    .text.bkp_data_read:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:106    .text.bkp_data_read:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:111    .text.bkp_data_read:0000000000000014 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:115    .text.bkp_data_read:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:121    .text.bkp_data_read:0000000000000020 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:122    .text.bkp_data_read:0000000000000020 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:123    .text.bkp_data_read:0000000000000020 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:127    .text.bkp_data_read:0000000000000022 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:128    .text.bkp_data_read:0000000000000022 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:130    .text.bkp_data_read:0000000000000026 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:132    .text.bkp_data_read:0000000000000028 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:135    .text.bkp_data_read:000000000000002a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:137    .text.bkp_data_read:000000000000002e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:138    .text.bkp_data_read:000000000000002e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:141    .text.bkp_data_read:0000000000000038 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:148    .text.bkp_rtc_calibration_output_enable:0000000000000000 bkp_rtc_calibration_output_enable
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 16
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:13     .text.bkp_deinit:0000000000000000 bkp_deinit
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:17     .text.bkp_deinit:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:18     .text.bkp_deinit:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:19     .text.bkp_deinit:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:20     .text.bkp_deinit:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:22     .text.bkp_deinit:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:24     .text.bkp_deinit:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:26     .text.bkp_deinit:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:29     .text.bkp_deinit:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:30     .text.bkp_deinit:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:31     .text.bkp_deinit:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:34     .text.bkp_deinit:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:36     .text.bkp_deinit:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:38     .text.bkp_deinit:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:45     .text.bkp_data_write:0000000000000000 bkp_data_write
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:48     .text.bkp_data_write:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:50     .text.bkp_data_write:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:51     .text.bkp_data_write:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:52     .text.bkp_data_write:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:54     .text.bkp_data_write:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:57     .text.bkp_data_write:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:61     .text.bkp_data_write:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:65     .text.bkp_data_write:0000000000000016 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:68     .text.bkp_data_write:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:69     .text.bkp_data_write:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:73     .text.bkp_data_write:000000000000001c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:74     .text.bkp_data_write:000000000000001c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:76     .text.bkp_data_write:0000000000000020 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:79     .text.bkp_data_write:0000000000000026 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:82     .text.bkp_data_write:0000000000000030 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:89     .text.bkp_data_read:0000000000000000 bkp_data_read
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:92     .text.bkp_data_read:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:94     .text.bkp_data_read:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:95     .text.bkp_data_read:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:96     .text.bkp_data_read:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:97     .text.bkp_data_read:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:99     .text.bkp_data_read:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:101    .text.bkp_data_read:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:103    .text.bkp_data_read:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:105    .text.bkp_data_read:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:106    .text.bkp_data_read:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:111    .text.bkp_data_read:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:115    .text.bkp_data_read:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:121    .text.bkp_data_read:0000000000000020 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:122    .text.bkp_data_read:0000000000000020 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:123    .text.bkp_data_read:0000000000000020 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:127    .text.bkp_data_read:0000000000000022 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:128    .text.bkp_data_read:0000000000000022 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:130    .text.bkp_data_read:0000000000000026 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:132    .text.bkp_data_read:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:135    .text.bkp_data_read:000000000000002a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:137    .text.bkp_data_read:000000000000002e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:138    .text.bkp_data_read:000000000000002e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:141    .text.bkp_data_read:0000000000000038 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:148    .text.bkp_rtc_calibration_output_enable:0000000000000000 bkp_rtc_calibration_output_enable
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s 			page 16
 
 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:151    .text.bkp_rtc_calibration_output_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:152    .text.bkp_rtc_calibration_output_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:153    .text.bkp_rtc_calibration_output_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:154    .text.bkp_rtc_calibration_output_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:159    .text.bkp_rtc_calibration_output_enable:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:160    .text.bkp_rtc_calibration_output_enable:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:167    .text.bkp_rtc_calibration_output_disable:0000000000000000 bkp_rtc_calibration_output_disable
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:170    .text.bkp_rtc_calibration_output_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:171    .text.bkp_rtc_calibration_output_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:172    .text.bkp_rtc_calibration_output_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:173    .text.bkp_rtc_calibration_output_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:182    .text.bkp_rtc_calibration_output_disable:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:183    .text.bkp_rtc_calibration_output_disable:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:190    .text.bkp_rtc_signal_output_enable:0000000000000000 bkp_rtc_signal_output_enable
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:193    .text.bkp_rtc_signal_output_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:194    .text.bkp_rtc_signal_output_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:195    .text.bkp_rtc_signal_output_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:196    .text.bkp_rtc_signal_output_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:201    .text.bkp_rtc_signal_output_enable:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:202    .text.bkp_rtc_signal_output_enable:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:209    .text.bkp_rtc_signal_output_disable:0000000000000000 bkp_rtc_signal_output_disable
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:212    .text.bkp_rtc_signal_output_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:213    .text.bkp_rtc_signal_output_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:214    .text.bkp_rtc_signal_output_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:215    .text.bkp_rtc_signal_output_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:224    .text.bkp_rtc_signal_output_disable:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:225    .text.bkp_rtc_signal_output_disable:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:232    .text.bkp_rtc_output_select:0000000000000000 bkp_rtc_output_select
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:235    .text.bkp_rtc_output_select:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:237    .text.bkp_rtc_output_select:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:238    .text.bkp_rtc_output_select:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:239    .text.bkp_rtc_output_select:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:240    .text.bkp_rtc_output_select:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:246    .text.bkp_rtc_output_select:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:247    .text.bkp_rtc_output_select:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:250    .text.bkp_rtc_output_select:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:251    .text.bkp_rtc_output_select:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:254    .text.bkp_rtc_output_select:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:255    .text.bkp_rtc_output_select:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:257    .text.bkp_rtc_output_select:0000000000000016 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:258    .text.bkp_rtc_output_select:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:265    .text.bkp_rtc_calibration_value_set:0000000000000000 bkp_rtc_calibration_value_set
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:268    .text.bkp_rtc_calibration_value_set:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:270    .text.bkp_rtc_calibration_value_set:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:271    .text.bkp_rtc_calibration_value_set:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:272    .text.bkp_rtc_calibration_value_set:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:273    .text.bkp_rtc_calibration_value_set:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:276    .text.bkp_rtc_calibration_value_set:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:279    .text.bkp_rtc_calibration_value_set:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:283    .text.bkp_rtc_calibration_value_set:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:284    .text.bkp_rtc_calibration_value_set:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:285    .text.bkp_rtc_calibration_value_set:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:288    .text.bkp_rtc_calibration_value_set:0000000000000014 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:291    .text.bkp_rtc_calibration_value_set:0000000000000016 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:292    .text.bkp_rtc_calibration_value_set:0000000000000016 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:294    .text.bkp_rtc_calibration_value_set:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:295    .text.bkp_rtc_calibration_value_set:000000000000001c .L0 
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 17
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:151    .text.bkp_rtc_calibration_output_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:152    .text.bkp_rtc_calibration_output_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:153    .text.bkp_rtc_calibration_output_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:154    .text.bkp_rtc_calibration_output_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:159    .text.bkp_rtc_calibration_output_enable:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:160    .text.bkp_rtc_calibration_output_enable:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:167    .text.bkp_rtc_calibration_output_disable:0000000000000000 bkp_rtc_calibration_output_disable
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:170    .text.bkp_rtc_calibration_output_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:171    .text.bkp_rtc_calibration_output_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:172    .text.bkp_rtc_calibration_output_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:173    .text.bkp_rtc_calibration_output_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:182    .text.bkp_rtc_calibration_output_disable:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:183    .text.bkp_rtc_calibration_output_disable:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:190    .text.bkp_rtc_signal_output_enable:0000000000000000 bkp_rtc_signal_output_enable
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:193    .text.bkp_rtc_signal_output_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:194    .text.bkp_rtc_signal_output_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:195    .text.bkp_rtc_signal_output_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:196    .text.bkp_rtc_signal_output_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:201    .text.bkp_rtc_signal_output_enable:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:202    .text.bkp_rtc_signal_output_enable:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:209    .text.bkp_rtc_signal_output_disable:0000000000000000 bkp_rtc_signal_output_disable
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:212    .text.bkp_rtc_signal_output_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:213    .text.bkp_rtc_signal_output_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:214    .text.bkp_rtc_signal_output_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:215    .text.bkp_rtc_signal_output_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:224    .text.bkp_rtc_signal_output_disable:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:225    .text.bkp_rtc_signal_output_disable:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:232    .text.bkp_rtc_output_select:0000000000000000 bkp_rtc_output_select
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:235    .text.bkp_rtc_output_select:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:237    .text.bkp_rtc_output_select:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:238    .text.bkp_rtc_output_select:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:239    .text.bkp_rtc_output_select:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:240    .text.bkp_rtc_output_select:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:246    .text.bkp_rtc_output_select:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:247    .text.bkp_rtc_output_select:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:250    .text.bkp_rtc_output_select:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:251    .text.bkp_rtc_output_select:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:254    .text.bkp_rtc_output_select:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:255    .text.bkp_rtc_output_select:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:257    .text.bkp_rtc_output_select:0000000000000016 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:258    .text.bkp_rtc_output_select:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:265    .text.bkp_rtc_calibration_value_set:0000000000000000 bkp_rtc_calibration_value_set
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:268    .text.bkp_rtc_calibration_value_set:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:270    .text.bkp_rtc_calibration_value_set:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:271    .text.bkp_rtc_calibration_value_set:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:272    .text.bkp_rtc_calibration_value_set:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:273    .text.bkp_rtc_calibration_value_set:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:276    .text.bkp_rtc_calibration_value_set:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:279    .text.bkp_rtc_calibration_value_set:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:283    .text.bkp_rtc_calibration_value_set:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:284    .text.bkp_rtc_calibration_value_set:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:285    .text.bkp_rtc_calibration_value_set:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:288    .text.bkp_rtc_calibration_value_set:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:291    .text.bkp_rtc_calibration_value_set:0000000000000016 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:292    .text.bkp_rtc_calibration_value_set:0000000000000016 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:294    .text.bkp_rtc_calibration_value_set:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:295    .text.bkp_rtc_calibration_value_set:000000000000001c .L0 
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s 			page 17
 
 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:302    .text.bkp_tamper_detection_enable:0000000000000000 bkp_tamper_detection_enable
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:305    .text.bkp_tamper_detection_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:306    .text.bkp_tamper_detection_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:307    .text.bkp_tamper_detection_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:308    .text.bkp_tamper_detection_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:313    .text.bkp_tamper_detection_enable:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:314    .text.bkp_tamper_detection_enable:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:321    .text.bkp_tamper_detection_disable:0000000000000000 bkp_tamper_detection_disable
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:324    .text.bkp_tamper_detection_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:325    .text.bkp_tamper_detection_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:326    .text.bkp_tamper_detection_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:327    .text.bkp_tamper_detection_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:336    .text.bkp_tamper_detection_disable:0000000000000016 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:337    .text.bkp_tamper_detection_disable:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:344    .text.bkp_tamper_active_level_set:0000000000000000 bkp_tamper_active_level_set
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:347    .text.bkp_tamper_active_level_set:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:349    .text.bkp_tamper_active_level_set:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:350    .text.bkp_tamper_active_level_set:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:351    .text.bkp_tamper_active_level_set:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:352    .text.bkp_tamper_active_level_set:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:358    .text.bkp_tamper_active_level_set:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:359    .text.bkp_tamper_active_level_set:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:362    .text.bkp_tamper_active_level_set:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:363    .text.bkp_tamper_active_level_set:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:366    .text.bkp_tamper_active_level_set:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:367    .text.bkp_tamper_active_level_set:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:369    .text.bkp_tamper_active_level_set:0000000000000014 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:370    .text.bkp_tamper_active_level_set:0000000000000016 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:377    .text.bkp_interrupt_enable:0000000000000000 bkp_interrupt_enable
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:380    .text.bkp_interrupt_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:381    .text.bkp_interrupt_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:382    .text.bkp_interrupt_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:383    .text.bkp_interrupt_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:388    .text.bkp_interrupt_enable:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:389    .text.bkp_interrupt_enable:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:396    .text.bkp_interrupt_disable:0000000000000000 bkp_interrupt_disable
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:399    .text.bkp_interrupt_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:400    .text.bkp_interrupt_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:401    .text.bkp_interrupt_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:402    .text.bkp_interrupt_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:411    .text.bkp_interrupt_disable:0000000000000016 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:412    .text.bkp_interrupt_disable:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:419    .text.bkp_flag_get:0000000000000000 bkp_flag_get
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:422    .text.bkp_flag_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:423    .text.bkp_flag_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:424    .text.bkp_flag_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:425    .text.bkp_flag_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:428    .text.bkp_flag_get:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:430    .text.bkp_flag_get:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:432    .text.bkp_flag_get:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:439    .text.bkp_flag_clear:0000000000000000 bkp_flag_clear
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:442    .text.bkp_flag_clear:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:443    .text.bkp_flag_clear:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:444    .text.bkp_flag_clear:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:445    .text.bkp_flag_clear:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:450    .text.bkp_flag_clear:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:451    .text.bkp_flag_clear:0000000000000012 .L0 
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 18
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:302    .text.bkp_tamper_detection_enable:0000000000000000 bkp_tamper_detection_enable
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:305    .text.bkp_tamper_detection_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:306    .text.bkp_tamper_detection_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:307    .text.bkp_tamper_detection_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:308    .text.bkp_tamper_detection_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:313    .text.bkp_tamper_detection_enable:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:314    .text.bkp_tamper_detection_enable:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:321    .text.bkp_tamper_detection_disable:0000000000000000 bkp_tamper_detection_disable
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:324    .text.bkp_tamper_detection_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:325    .text.bkp_tamper_detection_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:326    .text.bkp_tamper_detection_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:327    .text.bkp_tamper_detection_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:336    .text.bkp_tamper_detection_disable:0000000000000016 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:337    .text.bkp_tamper_detection_disable:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:344    .text.bkp_tamper_active_level_set:0000000000000000 bkp_tamper_active_level_set
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:347    .text.bkp_tamper_active_level_set:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:349    .text.bkp_tamper_active_level_set:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:350    .text.bkp_tamper_active_level_set:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:351    .text.bkp_tamper_active_level_set:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:352    .text.bkp_tamper_active_level_set:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:358    .text.bkp_tamper_active_level_set:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:359    .text.bkp_tamper_active_level_set:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:362    .text.bkp_tamper_active_level_set:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:363    .text.bkp_tamper_active_level_set:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:366    .text.bkp_tamper_active_level_set:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:367    .text.bkp_tamper_active_level_set:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:369    .text.bkp_tamper_active_level_set:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:370    .text.bkp_tamper_active_level_set:0000000000000016 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:377    .text.bkp_interrupt_enable:0000000000000000 bkp_interrupt_enable
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:380    .text.bkp_interrupt_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:381    .text.bkp_interrupt_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:382    .text.bkp_interrupt_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:383    .text.bkp_interrupt_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:388    .text.bkp_interrupt_enable:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:389    .text.bkp_interrupt_enable:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:396    .text.bkp_interrupt_disable:0000000000000000 bkp_interrupt_disable
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:399    .text.bkp_interrupt_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:400    .text.bkp_interrupt_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:401    .text.bkp_interrupt_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:402    .text.bkp_interrupt_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:411    .text.bkp_interrupt_disable:0000000000000016 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:412    .text.bkp_interrupt_disable:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:419    .text.bkp_flag_get:0000000000000000 bkp_flag_get
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:422    .text.bkp_flag_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:423    .text.bkp_flag_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:424    .text.bkp_flag_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:425    .text.bkp_flag_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:428    .text.bkp_flag_get:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:430    .text.bkp_flag_get:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:432    .text.bkp_flag_get:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:439    .text.bkp_flag_clear:0000000000000000 bkp_flag_clear
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:442    .text.bkp_flag_clear:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:443    .text.bkp_flag_clear:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:444    .text.bkp_flag_clear:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:445    .text.bkp_flag_clear:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:450    .text.bkp_flag_clear:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:451    .text.bkp_flag_clear:0000000000000012 .L0 
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s 			page 18
 
 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:458    .text.bkp_interrupt_flag_get:0000000000000000 bkp_interrupt_flag_get
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:461    .text.bkp_interrupt_flag_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:462    .text.bkp_interrupt_flag_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:463    .text.bkp_interrupt_flag_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:464    .text.bkp_interrupt_flag_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:467    .text.bkp_interrupt_flag_get:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:469    .text.bkp_interrupt_flag_get:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:471    .text.bkp_interrupt_flag_get:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:478    .text.bkp_interrupt_flag_clear:0000000000000000 bkp_interrupt_flag_clear
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:481    .text.bkp_interrupt_flag_clear:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:482    .text.bkp_interrupt_flag_clear:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:483    .text.bkp_interrupt_flag_clear:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:484    .text.bkp_interrupt_flag_clear:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:489    .text.bkp_interrupt_flag_clear:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:490    .text.bkp_interrupt_flag_clear:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:41     .text.bkp_deinit:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:85     .text.bkp_data_write:0000000000000030 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:144    .text.bkp_data_read:0000000000000038 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:163    .text.bkp_rtc_calibration_output_enable:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:186    .text.bkp_rtc_calibration_output_disable:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:205    .text.bkp_rtc_signal_output_enable:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:228    .text.bkp_rtc_signal_output_disable:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:261    .text.bkp_rtc_output_select:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:298    .text.bkp_rtc_calibration_value_set:000000000000001c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:317    .text.bkp_tamper_detection_enable:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:340    .text.bkp_tamper_detection_disable:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:373    .text.bkp_tamper_active_level_set:0000000000000016 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:392    .text.bkp_interrupt_enable:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:415    .text.bkp_interrupt_disable:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:435    .text.bkp_flag_get:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:454    .text.bkp_flag_clear:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:474    .text.bkp_interrupt_flag_get:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:493    .text.bkp_interrupt_flag_clear:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:458    .text.bkp_interrupt_flag_get:0000000000000000 bkp_interrupt_flag_get
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:461    .text.bkp_interrupt_flag_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:462    .text.bkp_interrupt_flag_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:463    .text.bkp_interrupt_flag_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:464    .text.bkp_interrupt_flag_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:467    .text.bkp_interrupt_flag_get:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:469    .text.bkp_interrupt_flag_get:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:471    .text.bkp_interrupt_flag_get:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:478    .text.bkp_interrupt_flag_clear:0000000000000000 bkp_interrupt_flag_clear
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:481    .text.bkp_interrupt_flag_clear:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:482    .text.bkp_interrupt_flag_clear:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:483    .text.bkp_interrupt_flag_clear:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:484    .text.bkp_interrupt_flag_clear:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:489    .text.bkp_interrupt_flag_clear:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:490    .text.bkp_interrupt_flag_clear:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:41     .text.bkp_deinit:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:85     .text.bkp_data_write:0000000000000030 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:144    .text.bkp_data_read:0000000000000038 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:163    .text.bkp_rtc_calibration_output_enable:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:186    .text.bkp_rtc_calibration_output_disable:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:205    .text.bkp_rtc_signal_output_enable:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:228    .text.bkp_rtc_signal_output_disable:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:261    .text.bkp_rtc_output_select:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:298    .text.bkp_rtc_calibration_value_set:000000000000001c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:317    .text.bkp_tamper_detection_enable:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:340    .text.bkp_tamper_detection_disable:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:373    .text.bkp_tamper_active_level_set:0000000000000016 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:392    .text.bkp_interrupt_enable:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:415    .text.bkp_interrupt_disable:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:435    .text.bkp_flag_get:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:454    .text.bkp_flag_clear:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:474    .text.bkp_interrupt_flag_get:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:493    .text.bkp_interrupt_flag_clear:0000000000000012 .L0 
                      .debug_frame:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:71     .text.bkp_data_write:000000000000001c .L4
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:67     .text.bkp_data_write:000000000000001a .L3
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:59     .text.bkp_data_write:0000000000000012 .L6
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:125    .text.bkp_data_read:0000000000000022 .L8
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:119    .text.bkp_data_read:0000000000000020 .L9
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:109    .text.bkp_data_read:0000000000000014 .L11
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1109   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1783   .debug_str:0000000000000032 .LASF85
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1801   .debug_str:0000000000000179 .LASF86
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1785   .debug_str:00000000000000ba .LASF87
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1737   .debug_ranges:0000000000000000 .Ldebug_ranges0
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1777   .debug_line:0000000000000000 .Ldebug_line0
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1883   .debug_str:000000000000041b .LASF0
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1787   .debug_str:000000000000010e .LASF1
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1841   .debug_str:00000000000002dc .LASF4
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1855   .debug_str:000000000000035e .LASF2
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1829   .debug_str:0000000000000265 .LASF3
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1799   .debug_str:000000000000016e .LASF5
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1907   .debug_str:00000000000004aa .LASF6
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1835   .debug_str:000000000000029b .LASF7
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1927   .debug_str:0000000000000556 .LASF8
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1921   .debug_str:000000000000052c .LASF9
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1833   .debug_str:000000000000028d .LASF10
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 19
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:71     .text.bkp_data_write:000000000000001c .L4
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:67     .text.bkp_data_write:000000000000001a .L3
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:59     .text.bkp_data_write:0000000000000012 .L6
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:125    .text.bkp_data_read:0000000000000022 .L8
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:119    .text.bkp_data_read:0000000000000020 .L9
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:109    .text.bkp_data_read:0000000000000014 .L11
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1109   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1783   .debug_str:0000000000000032 .LASF85
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1801   .debug_str:0000000000000179 .LASF86
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1785   .debug_str:00000000000000ba .LASF87
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1737   .debug_ranges:0000000000000000 .Ldebug_ranges0
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1777   .debug_line:0000000000000000 .Ldebug_line0
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1883   .debug_str:000000000000041b .LASF0
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1787   .debug_str:000000000000010e .LASF1
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1841   .debug_str:00000000000002dc .LASF4
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1855   .debug_str:000000000000035e .LASF2
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1829   .debug_str:0000000000000265 .LASF3
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1799   .debug_str:000000000000016e .LASF5
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1907   .debug_str:00000000000004aa .LASF6
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1835   .debug_str:000000000000029b .LASF7
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1927   .debug_str:0000000000000556 .LASF8
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1921   .debug_str:000000000000052c .LASF9
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1833   .debug_str:000000000000028d .LASF10
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s 			page 19
 
 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1877   .debug_str:00000000000003e4 .LASF11
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1935   .debug_str:000000000000057c .LASF12
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1885   .debug_str:0000000000000428 .LASF13
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1879   .debug_str:00000000000003fb .LASF14
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1913   .debug_str:00000000000004df .LASF88
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1933   .debug_str:0000000000000576 .LASF15
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1943   .debug_str:00000000000005b1 .LASF16
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1851   .debug_str:0000000000000335 .LASF17
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1887   .debug_str:0000000000000431 .LASF18
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1889   .debug_str:000000000000043c .LASF19
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1891   .debug_str:0000000000000447 .LASF20
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1893   .debug_str:0000000000000452 .LASF21
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1895   .debug_str:000000000000045d .LASF22
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1897   .debug_str:0000000000000468 .LASF23
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1825   .debug_str:000000000000023d .LASF24
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1901   .debug_str:0000000000000489 .LASF25
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1903   .debug_str:0000000000000494 .LASF26
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1905   .debug_str:000000000000049f .LASF27
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1939   .debug_str:0000000000000599 .LASF28
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1941   .debug_str:00000000000005a5 .LASF29
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1795   .debug_str:0000000000000158 .LASF30
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1945   .debug_str:00000000000005bc .LASF31
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1947   .debug_str:00000000000005c8 .LASF32
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1949   .debug_str:00000000000005d4 .LASF33
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1951   .debug_str:00000000000005e0 .LASF34
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1953   .debug_str:00000000000005ec .LASF35
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1955   .debug_str:00000000000005f8 .LASF36
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1957   .debug_str:0000000000000604 .LASF37
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1805   .debug_str:00000000000001c5 .LASF38
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1807   .debug_str:00000000000001d1 .LASF39
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1809   .debug_str:00000000000001dd .LASF40
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1811   .debug_str:00000000000001e9 .LASF41
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1813   .debug_str:00000000000001f5 .LASF42
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1815   .debug_str:0000000000000201 .LASF43
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1817   .debug_str:000000000000020d .LASF44
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1819   .debug_str:0000000000000219 .LASF45
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1821   .debug_str:0000000000000225 .LASF46
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1823   .debug_str:0000000000000231 .LASF47
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1857   .debug_str:000000000000036c .LASF48
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1859   .debug_str:0000000000000378 .LASF49
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1861   .debug_str:0000000000000384 .LASF50
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1863   .debug_str:0000000000000390 .LASF51
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1865   .debug_str:000000000000039c .LASF52
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1867   .debug_str:00000000000003a8 .LASF53
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1869   .debug_str:00000000000003b4 .LASF54
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1871   .debug_str:00000000000003c0 .LASF55
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1873   .debug_str:00000000000003cc .LASF56
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1875   .debug_str:00000000000003d8 .LASF57
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1923   .debug_str:000000000000053e .LASF58
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1925   .debug_str:000000000000054a .LASF59
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1911   .debug_str:00000000000004c8 .LASF60
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1791   .debug_str:000000000000012f .LASF61
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:479    .text.bkp_interrupt_flag_clear:0000000000000000 .LFB19
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:491    .text.bkp_interrupt_flag_clear:0000000000000012 .LFE19
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1881   .debug_str:0000000000000404 .LASF63
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:459    .text.bkp_interrupt_flag_get:0000000000000000 .LFB18
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:472    .text.bkp_interrupt_flag_get:000000000000000e .LFE18
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 20
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1877   .debug_str:00000000000003e4 .LASF11
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1935   .debug_str:000000000000057c .LASF12
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1885   .debug_str:0000000000000428 .LASF13
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1879   .debug_str:00000000000003fb .LASF14
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1913   .debug_str:00000000000004df .LASF88
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1933   .debug_str:0000000000000576 .LASF15
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1943   .debug_str:00000000000005b1 .LASF16
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1851   .debug_str:0000000000000335 .LASF17
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1887   .debug_str:0000000000000431 .LASF18
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1889   .debug_str:000000000000043c .LASF19
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1891   .debug_str:0000000000000447 .LASF20
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1893   .debug_str:0000000000000452 .LASF21
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1895   .debug_str:000000000000045d .LASF22
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1897   .debug_str:0000000000000468 .LASF23
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1825   .debug_str:000000000000023d .LASF24
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1901   .debug_str:0000000000000489 .LASF25
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1903   .debug_str:0000000000000494 .LASF26
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1905   .debug_str:000000000000049f .LASF27
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1939   .debug_str:0000000000000599 .LASF28
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1941   .debug_str:00000000000005a5 .LASF29
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1795   .debug_str:0000000000000158 .LASF30
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1945   .debug_str:00000000000005bc .LASF31
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1947   .debug_str:00000000000005c8 .LASF32
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1949   .debug_str:00000000000005d4 .LASF33
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1951   .debug_str:00000000000005e0 .LASF34
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1953   .debug_str:00000000000005ec .LASF35
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1955   .debug_str:00000000000005f8 .LASF36
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1957   .debug_str:0000000000000604 .LASF37
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1805   .debug_str:00000000000001c5 .LASF38
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1807   .debug_str:00000000000001d1 .LASF39
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1809   .debug_str:00000000000001dd .LASF40
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1811   .debug_str:00000000000001e9 .LASF41
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1813   .debug_str:00000000000001f5 .LASF42
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1815   .debug_str:0000000000000201 .LASF43
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1817   .debug_str:000000000000020d .LASF44
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1819   .debug_str:0000000000000219 .LASF45
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1821   .debug_str:0000000000000225 .LASF46
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1823   .debug_str:0000000000000231 .LASF47
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1857   .debug_str:000000000000036c .LASF48
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1859   .debug_str:0000000000000378 .LASF49
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1861   .debug_str:0000000000000384 .LASF50
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1863   .debug_str:0000000000000390 .LASF51
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1865   .debug_str:000000000000039c .LASF52
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1867   .debug_str:00000000000003a8 .LASF53
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1869   .debug_str:00000000000003b4 .LASF54
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1871   .debug_str:00000000000003c0 .LASF55
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1873   .debug_str:00000000000003cc .LASF56
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1875   .debug_str:00000000000003d8 .LASF57
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1923   .debug_str:000000000000053e .LASF58
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1925   .debug_str:000000000000054a .LASF59
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1911   .debug_str:00000000000004c8 .LASF60
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1791   .debug_str:000000000000012f .LASF61
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:479    .text.bkp_interrupt_flag_clear:0000000000000000 .LFB19
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:491    .text.bkp_interrupt_flag_clear:0000000000000012 .LFE19
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1881   .debug_str:0000000000000404 .LASF63
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:459    .text.bkp_interrupt_flag_get:0000000000000000 .LFB18
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:472    .text.bkp_interrupt_flag_get:000000000000000e .LFE18
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s 			page 20
 
 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1929   .debug_str:0000000000000561 .LASF62
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:440    .text.bkp_flag_clear:0000000000000000 .LFB17
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:452    .text.bkp_flag_clear:0000000000000012 .LFE17
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1845   .debug_str:00000000000002fc .LASF64
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:420    .text.bkp_flag_get:0000000000000000 .LFB16
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:433    .text.bkp_flag_get:000000000000000e .LFE16
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1899   .debug_str:0000000000000473 .LASF65
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:397    .text.bkp_interrupt_disable:0000000000000000 .LFB15
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:413    .text.bkp_interrupt_disable:0000000000000018 .LFE15
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1789   .debug_str:000000000000011a .LASF66
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:378    .text.bkp_interrupt_enable:0000000000000000 .LFB14
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:390    .text.bkp_interrupt_enable:0000000000000012 .LFE14
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1837   .debug_str:00000000000002a4 .LASF69
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:345    .text.bkp_tamper_active_level_set:0000000000000000 .LFB13
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:371    .text.bkp_tamper_active_level_set:0000000000000016 .LFE13
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1931   .debug_str:0000000000000570 .LASF71
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1521   .debug_loc:0000000000000000 .LLST8
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1535   .debug_loc:0000000000000021 .LLST9
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1853   .debug_str:0000000000000341 .LASF67
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:322    .text.bkp_tamper_detection_disable:0000000000000000 .LFB12
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:338    .text.bkp_tamper_detection_disable:0000000000000018 .LFE12
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1839   .debug_str:00000000000002c0 .LASF68
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:303    .text.bkp_tamper_detection_enable:0000000000000000 .LFB11
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:315    .text.bkp_tamper_detection_enable:0000000000000012 .LFE11
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1831   .debug_str:000000000000026f .LASF70
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:266    .text.bkp_rtc_calibration_value_set:0000000000000000 .LFB10
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:296    .text.bkp_rtc_calibration_value_set:000000000000001c .LFE10
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1803   .debug_str:00000000000001bf .LASF72
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1551   .debug_loc:000000000000004b .LLST6
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1565   .debug_loc:000000000000006c .LLST7
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1917   .debug_str:00000000000004f4 .LASF73
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:233    .text.bkp_rtc_output_select:0000000000000000 .LFB9
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:259    .text.bkp_rtc_output_select:0000000000000018 .LFE9
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1797   .debug_str:0000000000000164 .LASF74
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1581   .debug_loc:000000000000008f .LLST4
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1595   .debug_loc:00000000000000b0 .LLST5
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1847   .debug_str:0000000000000309 .LASF75
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:210    .text.bkp_rtc_signal_output_disable:0000000000000000 .LFB8
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:226    .text.bkp_rtc_signal_output_disable:000000000000001a .LFE8
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1827   .debug_str:0000000000000248 .LASF76
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:191    .text.bkp_rtc_signal_output_enable:0000000000000000 .LFB7
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:203    .text.bkp_rtc_signal_output_enable:0000000000000012 .LFE7
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1781   .debug_str:000000000000000f .LASF77
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:168    .text.bkp_rtc_calibration_output_disable:0000000000000000 .LFB6
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:184    .text.bkp_rtc_calibration_output_disable:000000000000001a .LFE6
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1919   .debug_str:000000000000050a .LASF78
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:149    .text.bkp_rtc_calibration_output_enable:0000000000000000 .LFB5
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:161    .text.bkp_rtc_calibration_output_enable:0000000000000012 .LFE5
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1849   .debug_str:0000000000000327 .LASF89
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:90     .text.bkp_data_read:0000000000000000 .LFB4
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:142    .text.bkp_data_read:0000000000000038 .LFE4
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1793   .debug_str:0000000000000148 .LASF79
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1611   .debug_loc:00000000000000da .LLST2
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1915   .debug_str:00000000000004ef .LASF80
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1637   .debug_loc:000000000000011c .LLST3
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1779   .debug_str:0000000000000000 .LASF81
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:46     .text.bkp_data_write:0000000000000000 .LFB3
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s 			page 21
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1929   .debug_str:0000000000000561 .LASF62
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:440    .text.bkp_flag_clear:0000000000000000 .LFB17
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:452    .text.bkp_flag_clear:0000000000000012 .LFE17
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1845   .debug_str:00000000000002fc .LASF64
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:420    .text.bkp_flag_get:0000000000000000 .LFB16
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:433    .text.bkp_flag_get:000000000000000e .LFE16
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1899   .debug_str:0000000000000473 .LASF65
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:397    .text.bkp_interrupt_disable:0000000000000000 .LFB15
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:413    .text.bkp_interrupt_disable:0000000000000018 .LFE15
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1789   .debug_str:000000000000011a .LASF66
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:378    .text.bkp_interrupt_enable:0000000000000000 .LFB14
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:390    .text.bkp_interrupt_enable:0000000000000012 .LFE14
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1837   .debug_str:00000000000002a4 .LASF69
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:345    .text.bkp_tamper_active_level_set:0000000000000000 .LFB13
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:371    .text.bkp_tamper_active_level_set:0000000000000016 .LFE13
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1931   .debug_str:0000000000000570 .LASF71
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1521   .debug_loc:0000000000000000 .LLST8
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1535   .debug_loc:0000000000000021 .LLST9
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1853   .debug_str:0000000000000341 .LASF67
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:322    .text.bkp_tamper_detection_disable:0000000000000000 .LFB12
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:338    .text.bkp_tamper_detection_disable:0000000000000018 .LFE12
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1839   .debug_str:00000000000002c0 .LASF68
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:303    .text.bkp_tamper_detection_enable:0000000000000000 .LFB11
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:315    .text.bkp_tamper_detection_enable:0000000000000012 .LFE11
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1831   .debug_str:000000000000026f .LASF70
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:266    .text.bkp_rtc_calibration_value_set:0000000000000000 .LFB10
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:296    .text.bkp_rtc_calibration_value_set:000000000000001c .LFE10
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1803   .debug_str:00000000000001bf .LASF72
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1551   .debug_loc:000000000000004b .LLST6
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1565   .debug_loc:000000000000006c .LLST7
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1917   .debug_str:00000000000004f4 .LASF73
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:233    .text.bkp_rtc_output_select:0000000000000000 .LFB9
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:259    .text.bkp_rtc_output_select:0000000000000018 .LFE9
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1797   .debug_str:0000000000000164 .LASF74
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1581   .debug_loc:000000000000008f .LLST4
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1595   .debug_loc:00000000000000b0 .LLST5
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1847   .debug_str:0000000000000309 .LASF75
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:210    .text.bkp_rtc_signal_output_disable:0000000000000000 .LFB8
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:226    .text.bkp_rtc_signal_output_disable:000000000000001a .LFE8
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1827   .debug_str:0000000000000248 .LASF76
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:191    .text.bkp_rtc_signal_output_enable:0000000000000000 .LFB7
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:203    .text.bkp_rtc_signal_output_enable:0000000000000012 .LFE7
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1781   .debug_str:000000000000000f .LASF77
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:168    .text.bkp_rtc_calibration_output_disable:0000000000000000 .LFB6
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:184    .text.bkp_rtc_calibration_output_disable:000000000000001a .LFE6
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1919   .debug_str:000000000000050a .LASF78
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:149    .text.bkp_rtc_calibration_output_enable:0000000000000000 .LFB5
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:161    .text.bkp_rtc_calibration_output_enable:0000000000000012 .LFE5
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1849   .debug_str:0000000000000327 .LASF89
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:90     .text.bkp_data_read:0000000000000000 .LFB4
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:142    .text.bkp_data_read:0000000000000038 .LFE4
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1793   .debug_str:0000000000000148 .LASF79
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1611   .debug_loc:00000000000000da .LLST2
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1915   .debug_str:00000000000004ef .LASF80
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1637   .debug_loc:000000000000011c .LLST3
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1779   .debug_str:0000000000000000 .LASF81
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:46     .text.bkp_data_write:0000000000000000 .LFB3
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s 			page 21
 
 
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:83     .text.bkp_data_write:0000000000000030 .LFE3
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1654   .debug_loc:0000000000000147 .LLST1
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1909   .debug_str:00000000000004bd .LASF82
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:14     .text.bkp_deinit:0000000000000000 .LFB2
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:39     .text.bkp_deinit:0000000000000018 .LFE2
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1672   .debug_loc:0000000000000173 .LLST0
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:27     .text.bkp_deinit:000000000000000c .LVL0
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:37     .text.bkp_deinit:0000000000000018 .LVL1
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1937   .debug_str:0000000000000584 .LASF83
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:1843   .debug_str:00000000000002e6 .LASF84
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:348    .text.bkp_tamper_active_level_set:0000000000000000 .LVL20
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:364    .text.bkp_tamper_active_level_set:0000000000000010 .LVL23
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:356    .text.bkp_tamper_active_level_set:000000000000000c .LVL21
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:269    .text.bkp_rtc_calibration_value_set:0000000000000000 .LVL15
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:277    .text.bkp_rtc_calibration_value_set:000000000000000c .LVL16
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:281    .text.bkp_rtc_calibration_value_set:0000000000000010 .LVL17
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:286    .text.bkp_rtc_calibration_value_set:0000000000000014 .LVL18
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:289    .text.bkp_rtc_calibration_value_set:0000000000000016 .LVL19
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:236    .text.bkp_rtc_output_select:0000000000000000 .LVL11
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:252    .text.bkp_rtc_output_select:0000000000000012 .LVL14
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:244    .text.bkp_rtc_output_select:000000000000000c .LVL12
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:93     .text.bkp_data_read:0000000000000000 .LVL5
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:107    .text.bkp_data_read:0000000000000010 .LVL6
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:112    .text.bkp_data_read:0000000000000016 .LVL7
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:124    .text.bkp_data_read:0000000000000022 .LVL9
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:133    .text.bkp_data_read:000000000000002a .LVL10
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:118    .text.bkp_data_read:0000000000000020 .LVL8
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:49     .text.bkp_data_write:0000000000000000 .LVL2
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:62     .text.bkp_data_write:0000000000000014 .LVL3
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:70     .text.bkp_data_write:000000000000001c .LVL4
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:21     .text.bkp_deinit:0000000000000002 .LCFI0
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:33     .text.bkp_deinit:0000000000000010 .LCFI1
-C:\Users\Uzair\AppData\Local\Temp\cciLp45r.s:502    .debug_info:0000000000000000 .Ldebug_info0
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:83     .text.bkp_data_write:0000000000000030 .LFE3
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1654   .debug_loc:0000000000000147 .LLST1
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1909   .debug_str:00000000000004bd .LASF82
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:14     .text.bkp_deinit:0000000000000000 .LFB2
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:39     .text.bkp_deinit:0000000000000018 .LFE2
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1672   .debug_loc:0000000000000173 .LLST0
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:27     .text.bkp_deinit:000000000000000c .LVL0
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:37     .text.bkp_deinit:0000000000000018 .LVL1
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1937   .debug_str:0000000000000584 .LASF83
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:1843   .debug_str:00000000000002e6 .LASF84
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:348    .text.bkp_tamper_active_level_set:0000000000000000 .LVL20
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:364    .text.bkp_tamper_active_level_set:0000000000000010 .LVL23
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:356    .text.bkp_tamper_active_level_set:000000000000000c .LVL21
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:269    .text.bkp_rtc_calibration_value_set:0000000000000000 .LVL15
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:277    .text.bkp_rtc_calibration_value_set:000000000000000c .LVL16
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:281    .text.bkp_rtc_calibration_value_set:0000000000000010 .LVL17
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:286    .text.bkp_rtc_calibration_value_set:0000000000000014 .LVL18
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:289    .text.bkp_rtc_calibration_value_set:0000000000000016 .LVL19
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:236    .text.bkp_rtc_output_select:0000000000000000 .LVL11
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:252    .text.bkp_rtc_output_select:0000000000000012 .LVL14
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:244    .text.bkp_rtc_output_select:000000000000000c .LVL12
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:93     .text.bkp_data_read:0000000000000000 .LVL5
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:107    .text.bkp_data_read:0000000000000010 .LVL6
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:112    .text.bkp_data_read:0000000000000016 .LVL7
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:124    .text.bkp_data_read:0000000000000022 .LVL9
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:133    .text.bkp_data_read:000000000000002a .LVL10
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:118    .text.bkp_data_read:0000000000000020 .LVL8
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:49     .text.bkp_data_write:0000000000000000 .LVL2
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:62     .text.bkp_data_write:0000000000000014 .LVL3
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:70     .text.bkp_data_write:000000000000001c .LVL4
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:21     .text.bkp_deinit:0000000000000002 .LCFI0
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:33     .text.bkp_deinit:0000000000000010 .LCFI1
+C:\Users\Uzair\AppData\Local\Temp\cc3QKGl6.s:502    .debug_info:0000000000000000 .Ldebug_info0
 
 UNDEFINED SYMBOLS
 rcu_bkp_reset_enable

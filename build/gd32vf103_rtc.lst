@@ -1,4 +1,4 @@
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s 			page 1
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s 			page 1
 
 
    1              		.file	"gd32vf103_rtc.c"
@@ -58,7 +58,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s 			page 1
   41:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c **** 
   42:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c **** /* RTC register high bits offset */
   43:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c **** #define RTC_HIGH_BITS_OFFSET       ((uint32_t)16U)
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s 			page 2
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s 			page 2
 
 
   44:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c **** 
@@ -118,7 +118,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s 			page 1
   52              	rtc_counter_set:
   53              	.LFB4:
   66:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c **** 
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s 			page 3
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s 			page 3
 
 
   67:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c **** /*!
@@ -178,7 +178,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s 			page 1
   85 0020 4181     		srli	a0,a0,16
   79:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c ****     rtc_configuration_mode_exit();
   86              		.loc 1 79 14
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s 			page 4
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s 			page 4
 
 
   87 0022 23AEA780 		sw	a0,-2020(a5)
@@ -238,7 +238,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s 			page 1
  125 0010 37370040 		li	a4,1073754112
   94:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c ****     /* set the RTC prescaler low bits */
   95:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c ****     RTC_PSCL = (psc & RTC_LOW_BITS_MASK);
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s 			page 5
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s 			page 5
 
 
   96:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c ****     rtc_configuration_mode_exit();
@@ -298,7 +298,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s 			page 1
  108:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c ****     while(RESET == (RTC_CTL & RTC_CTL_LWOFF)){
  161              		.loc 1 108 5
  162              		.loc 1 108 21 is_stmt 0
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s 			page 6
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s 			page 6
 
 
  163 0000 37370040 		li	a4,1073754112
@@ -358,7 +358,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s 			page 1
  123:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c ****     }
  198              		.loc 1 123 10 discriminator 1
  199 0014 EDDF     		beq	a5,zero,.L12
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s 			page 7
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s 			page 7
 
 
  125:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c **** }
@@ -418,7 +418,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s 			page 1
  235 0016 13570501 		srli	a4,a0,16
  139:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c ****     rtc_configuration_mode_exit();
  236              		.loc 1 139 24
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s 			page 8
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s 			page 8
 
 
  237 001a 4205     		slli	a0,a0,16
@@ -478,7 +478,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s 			page 1
  273              		.loc 1 154 14 is_stmt 0
  274 0008 83A78781 		lw	a5,-2024(a5)
  275              	.LVL14:
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s 			page 9
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s 			page 9
 
 
  155:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c ****     return temp;
@@ -538,7 +538,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s 			page 1
  314 0014 5D8D     		or	a0,a5,a0
  315              	.LVL20:
  316 0016 8280     		ret
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s 			page 10
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s 			page 10
 
 
  317              		.cfi_endproc
@@ -598,7 +598,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s 			page 1
  199:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c ****       \arg        RTC_FLAG_ALARM: alarm interrupt flag
  200:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c ****       \arg        RTC_FLAG_OVERFLOW: overflow interrupt flag
  201:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c ****       \arg        RTC_FLAG_RSYN: registers synchronized flag
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s 			page 11
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s 			page 11
 
 
  202:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c ****     \param[out] none
@@ -658,7 +658,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s 			page 1
  213:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c ****     \param[in]  flag: specify which flag status to get
  214:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c ****                 only one parameter can be selected which is shown as below:
  215:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c ****       \arg        RTC_INT_FLAG_SECOND: second interrupt flag
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s 			page 12
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s 			page 12
 
 
  216:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_rtc.c ****       \arg        RTC_INT_FLAG_ALARM: alarm interrupt flag
@@ -718,7 +718,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s 			page 1
  405              		.loc 1 259 1
  406 000e 8280     		ret
  407              		.cfi_endproc
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s 			page 13
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s 			page 13
 
 
  408              	.LFE15:
@@ -766,334 +766,334 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s 			page 1
  438              		.file 3 "c:\\kth\\he1043\\toolchain-gd32v-v202-win\\toolchain-gd32v-v202-win\\compiler\\riscv64-un
  439              		.file 4 "./../../firmware/GD32VF103_standard_peripheral/gd32vf103.h"
  440              		.file 5 "./../../firmware/GD32VF103_standard_peripheral/system_gd32vf103.h"
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s 			page 14
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s 			page 14
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 gd32vf103_rtc.c
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:13     .text.rtc_configuration_mode_enter:0000000000000000 rtc_configuration_mode_enter
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:17     .text.rtc_configuration_mode_enter:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:18     .text.rtc_configuration_mode_enter:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:19     .text.rtc_configuration_mode_enter:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:20     .text.rtc_configuration_mode_enter:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:25     .text.rtc_configuration_mode_enter:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:26     .text.rtc_configuration_mode_enter:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:33     .text.rtc_configuration_mode_exit:0000000000000000 rtc_configuration_mode_exit
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:36     .text.rtc_configuration_mode_exit:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:37     .text.rtc_configuration_mode_exit:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:38     .text.rtc_configuration_mode_exit:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:39     .text.rtc_configuration_mode_exit:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:44     .text.rtc_configuration_mode_exit:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:45     .text.rtc_configuration_mode_exit:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:52     .text.rtc_counter_set:0000000000000000 rtc_counter_set
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:55     .text.rtc_counter_set:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:57     .text.rtc_counter_set:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:58     .text.rtc_counter_set:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:59     .text.rtc_counter_set:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:61     .text.rtc_counter_set:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:63     .text.rtc_counter_set:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:65     .text.rtc_counter_set:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:67     .text.rtc_counter_set:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:70     .text.rtc_counter_set:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:71     .text.rtc_counter_set:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:73     .text.rtc_counter_set:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:75     .text.rtc_counter_set:0000000000000014 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:76     .text.rtc_counter_set:0000000000000016 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:78     .text.rtc_counter_set:0000000000000016 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:80     .text.rtc_counter_set:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:82     .text.rtc_counter_set:000000000000001c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:84     .text.rtc_counter_set:0000000000000020 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:85     .text.rtc_counter_set:0000000000000020 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:87     .text.rtc_counter_set:0000000000000022 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:89     .text.rtc_counter_set:0000000000000026 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:90     .text.rtc_counter_set:0000000000000026 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:92     .text.rtc_counter_set:0000000000000028 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:95     .text.rtc_counter_set:0000000000000028 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:97     .text.rtc_counter_set:0000000000000030 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:104    .text.rtc_prescaler_set:0000000000000000 rtc_prescaler_set
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:107    .text.rtc_prescaler_set:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:109    .text.rtc_prescaler_set:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:110    .text.rtc_prescaler_set:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:111    .text.rtc_prescaler_set:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:113    .text.rtc_prescaler_set:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:115    .text.rtc_prescaler_set:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:117    .text.rtc_prescaler_set:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:119    .text.rtc_prescaler_set:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:122    .text.rtc_prescaler_set:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:123    .text.rtc_prescaler_set:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:125    .text.rtc_prescaler_set:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:127    .text.rtc_prescaler_set:0000000000000014 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:128    .text.rtc_prescaler_set:0000000000000016 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:130    .text.rtc_prescaler_set:0000000000000016 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:133    .text.rtc_prescaler_set:000000000000001c .L0 
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s 			page 15
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:13     .text.rtc_configuration_mode_enter:0000000000000000 rtc_configuration_mode_enter
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:17     .text.rtc_configuration_mode_enter:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:18     .text.rtc_configuration_mode_enter:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:19     .text.rtc_configuration_mode_enter:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:20     .text.rtc_configuration_mode_enter:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:25     .text.rtc_configuration_mode_enter:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:26     .text.rtc_configuration_mode_enter:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:33     .text.rtc_configuration_mode_exit:0000000000000000 rtc_configuration_mode_exit
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:36     .text.rtc_configuration_mode_exit:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:37     .text.rtc_configuration_mode_exit:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:38     .text.rtc_configuration_mode_exit:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:39     .text.rtc_configuration_mode_exit:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:44     .text.rtc_configuration_mode_exit:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:45     .text.rtc_configuration_mode_exit:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:52     .text.rtc_counter_set:0000000000000000 rtc_counter_set
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:55     .text.rtc_counter_set:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:57     .text.rtc_counter_set:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:58     .text.rtc_counter_set:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:59     .text.rtc_counter_set:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:61     .text.rtc_counter_set:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:63     .text.rtc_counter_set:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:65     .text.rtc_counter_set:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:67     .text.rtc_counter_set:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:70     .text.rtc_counter_set:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:71     .text.rtc_counter_set:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:73     .text.rtc_counter_set:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:75     .text.rtc_counter_set:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:76     .text.rtc_counter_set:0000000000000016 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:78     .text.rtc_counter_set:0000000000000016 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:80     .text.rtc_counter_set:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:82     .text.rtc_counter_set:000000000000001c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:84     .text.rtc_counter_set:0000000000000020 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:85     .text.rtc_counter_set:0000000000000020 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:87     .text.rtc_counter_set:0000000000000022 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:89     .text.rtc_counter_set:0000000000000026 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:90     .text.rtc_counter_set:0000000000000026 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:92     .text.rtc_counter_set:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:95     .text.rtc_counter_set:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:97     .text.rtc_counter_set:0000000000000030 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:104    .text.rtc_prescaler_set:0000000000000000 rtc_prescaler_set
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:107    .text.rtc_prescaler_set:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:109    .text.rtc_prescaler_set:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:110    .text.rtc_prescaler_set:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:111    .text.rtc_prescaler_set:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:113    .text.rtc_prescaler_set:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:115    .text.rtc_prescaler_set:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:117    .text.rtc_prescaler_set:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:119    .text.rtc_prescaler_set:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:122    .text.rtc_prescaler_set:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:123    .text.rtc_prescaler_set:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:125    .text.rtc_prescaler_set:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:127    .text.rtc_prescaler_set:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:128    .text.rtc_prescaler_set:0000000000000016 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:130    .text.rtc_prescaler_set:0000000000000016 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:133    .text.rtc_prescaler_set:000000000000001c .L0 
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s 			page 15
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:135    .text.rtc_prescaler_set:000000000000001e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:137    .text.rtc_prescaler_set:0000000000000022 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:138    .text.rtc_prescaler_set:0000000000000022 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:140    .text.rtc_prescaler_set:0000000000000024 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:142    .text.rtc_prescaler_set:0000000000000028 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:143    .text.rtc_prescaler_set:0000000000000028 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:145    .text.rtc_prescaler_set:000000000000002a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:148    .text.rtc_prescaler_set:000000000000002a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:150    .text.rtc_prescaler_set:0000000000000032 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:157    .text.rtc_lwoff_wait:0000000000000000 rtc_lwoff_wait
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:160    .text.rtc_lwoff_wait:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:161    .text.rtc_lwoff_wait:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:162    .text.rtc_lwoff_wait:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:163    .text.rtc_lwoff_wait:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:166    .text.rtc_lwoff_wait:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:167    .text.rtc_lwoff_wait:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:169    .text.rtc_lwoff_wait:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:171    .text.rtc_lwoff_wait:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:173    .text.rtc_lwoff_wait:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:174    .text.rtc_lwoff_wait:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:181    .text.rtc_register_sync_wait:0000000000000000 rtc_register_sync_wait
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:184    .text.rtc_register_sync_wait:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:185    .text.rtc_register_sync_wait:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:186    .text.rtc_register_sync_wait:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:187    .text.rtc_register_sync_wait:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:193    .text.rtc_register_sync_wait:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:194    .text.rtc_register_sync_wait:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:195    .text.rtc_register_sync_wait:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:197    .text.rtc_register_sync_wait:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:199    .text.rtc_register_sync_wait:0000000000000014 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:201    .text.rtc_register_sync_wait:0000000000000016 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:202    .text.rtc_register_sync_wait:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:209    .text.rtc_alarm_config:0000000000000000 rtc_alarm_config
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:212    .text.rtc_alarm_config:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:214    .text.rtc_alarm_config:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:215    .text.rtc_alarm_config:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:216    .text.rtc_alarm_config:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:218    .text.rtc_alarm_config:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:220    .text.rtc_alarm_config:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:222    .text.rtc_alarm_config:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:224    .text.rtc_alarm_config:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:227    .text.rtc_alarm_config:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:228    .text.rtc_alarm_config:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:230    .text.rtc_alarm_config:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:232    .text.rtc_alarm_config:0000000000000014 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:233    .text.rtc_alarm_config:0000000000000016 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:235    .text.rtc_alarm_config:0000000000000016 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:237    .text.rtc_alarm_config:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:239    .text.rtc_alarm_config:000000000000001c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:241    .text.rtc_alarm_config:0000000000000020 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:242    .text.rtc_alarm_config:0000000000000020 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:244    .text.rtc_alarm_config:0000000000000022 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:246    .text.rtc_alarm_config:0000000000000026 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:247    .text.rtc_alarm_config:0000000000000026 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:249    .text.rtc_alarm_config:0000000000000028 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:252    .text.rtc_alarm_config:0000000000000028 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:254    .text.rtc_alarm_config:0000000000000030 .L0 
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s 			page 16
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:135    .text.rtc_prescaler_set:000000000000001e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:137    .text.rtc_prescaler_set:0000000000000022 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:138    .text.rtc_prescaler_set:0000000000000022 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:140    .text.rtc_prescaler_set:0000000000000024 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:142    .text.rtc_prescaler_set:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:143    .text.rtc_prescaler_set:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:145    .text.rtc_prescaler_set:000000000000002a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:148    .text.rtc_prescaler_set:000000000000002a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:150    .text.rtc_prescaler_set:0000000000000032 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:157    .text.rtc_lwoff_wait:0000000000000000 rtc_lwoff_wait
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:160    .text.rtc_lwoff_wait:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:161    .text.rtc_lwoff_wait:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:162    .text.rtc_lwoff_wait:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:163    .text.rtc_lwoff_wait:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:166    .text.rtc_lwoff_wait:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:167    .text.rtc_lwoff_wait:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:169    .text.rtc_lwoff_wait:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:171    .text.rtc_lwoff_wait:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:173    .text.rtc_lwoff_wait:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:174    .text.rtc_lwoff_wait:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:181    .text.rtc_register_sync_wait:0000000000000000 rtc_register_sync_wait
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:184    .text.rtc_register_sync_wait:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:185    .text.rtc_register_sync_wait:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:186    .text.rtc_register_sync_wait:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:187    .text.rtc_register_sync_wait:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:193    .text.rtc_register_sync_wait:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:194    .text.rtc_register_sync_wait:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:195    .text.rtc_register_sync_wait:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:197    .text.rtc_register_sync_wait:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:199    .text.rtc_register_sync_wait:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:201    .text.rtc_register_sync_wait:0000000000000016 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:202    .text.rtc_register_sync_wait:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:209    .text.rtc_alarm_config:0000000000000000 rtc_alarm_config
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:212    .text.rtc_alarm_config:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:214    .text.rtc_alarm_config:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:215    .text.rtc_alarm_config:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:216    .text.rtc_alarm_config:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:218    .text.rtc_alarm_config:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:220    .text.rtc_alarm_config:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:222    .text.rtc_alarm_config:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:224    .text.rtc_alarm_config:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:227    .text.rtc_alarm_config:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:228    .text.rtc_alarm_config:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:230    .text.rtc_alarm_config:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:232    .text.rtc_alarm_config:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:233    .text.rtc_alarm_config:0000000000000016 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:235    .text.rtc_alarm_config:0000000000000016 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:237    .text.rtc_alarm_config:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:239    .text.rtc_alarm_config:000000000000001c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:241    .text.rtc_alarm_config:0000000000000020 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:242    .text.rtc_alarm_config:0000000000000020 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:244    .text.rtc_alarm_config:0000000000000022 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:246    .text.rtc_alarm_config:0000000000000026 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:247    .text.rtc_alarm_config:0000000000000026 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:249    .text.rtc_alarm_config:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:252    .text.rtc_alarm_config:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:254    .text.rtc_alarm_config:0000000000000030 .L0 
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s 			page 16
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:261    .text.rtc_counter_get:0000000000000000 rtc_counter_get
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:264    .text.rtc_counter_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:265    .text.rtc_counter_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:267    .text.rtc_counter_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:268    .text.rtc_counter_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:269    .text.rtc_counter_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:273    .text.rtc_counter_get:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:274    .text.rtc_counter_get:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:277    .text.rtc_counter_get:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:278    .text.rtc_counter_get:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:281    .text.rtc_counter_get:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:284    .text.rtc_counter_get:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:291    .text.rtc_divider_get:0000000000000000 rtc_divider_get
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:294    .text.rtc_divider_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:295    .text.rtc_divider_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:297    .text.rtc_divider_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:298    .text.rtc_divider_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:299    .text.rtc_divider_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:302    .text.rtc_divider_get:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:304    .text.rtc_divider_get:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:306    .text.rtc_divider_get:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:309    .text.rtc_divider_get:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:310    .text.rtc_divider_get:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:313    .text.rtc_divider_get:0000000000000014 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:314    .text.rtc_divider_get:0000000000000014 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:317    .text.rtc_divider_get:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:324    .text.rtc_flag_get:0000000000000000 rtc_flag_get
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:327    .text.rtc_flag_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:329    .text.rtc_flag_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:330    .text.rtc_flag_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:331    .text.rtc_flag_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:334    .text.rtc_flag_get:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:337    .text.rtc_flag_get:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:339    .text.rtc_flag_get:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:346    .text.rtc_flag_clear:0000000000000000 rtc_flag_clear
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:349    .text.rtc_flag_clear:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:351    .text.rtc_flag_clear:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:352    .text.rtc_flag_clear:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:353    .text.rtc_flag_clear:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:356    .text.rtc_flag_clear:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:359    .text.rtc_flag_clear:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:363    .text.rtc_flag_clear:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:364    .text.rtc_flag_clear:0000000000000014 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:371    .text.rtc_interrupt_flag_get:0000000000000000 rtc_interrupt_flag_get
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:373    .text.rtc_interrupt_flag_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:375    .text.rtc_interrupt_flag_get:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:382    .text.rtc_interrupt_flag_clear:0000000000000000 rtc_interrupt_flag_clear
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:384    .text.rtc_interrupt_flag_clear:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:386    .text.rtc_interrupt_flag_clear:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:393    .text.rtc_interrupt_enable:0000000000000000 rtc_interrupt_enable
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:396    .text.rtc_interrupt_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:398    .text.rtc_interrupt_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:399    .text.rtc_interrupt_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:400    .text.rtc_interrupt_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:406    .text.rtc_interrupt_enable:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:407    .text.rtc_interrupt_enable:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:414    .text.rtc_interrupt_disable:0000000000000000 rtc_interrupt_disable
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s 			page 17
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:261    .text.rtc_counter_get:0000000000000000 rtc_counter_get
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:264    .text.rtc_counter_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:265    .text.rtc_counter_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:267    .text.rtc_counter_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:268    .text.rtc_counter_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:269    .text.rtc_counter_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:273    .text.rtc_counter_get:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:274    .text.rtc_counter_get:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:277    .text.rtc_counter_get:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:278    .text.rtc_counter_get:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:281    .text.rtc_counter_get:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:284    .text.rtc_counter_get:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:291    .text.rtc_divider_get:0000000000000000 rtc_divider_get
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:294    .text.rtc_divider_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:295    .text.rtc_divider_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:297    .text.rtc_divider_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:298    .text.rtc_divider_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:299    .text.rtc_divider_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:302    .text.rtc_divider_get:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:304    .text.rtc_divider_get:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:306    .text.rtc_divider_get:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:309    .text.rtc_divider_get:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:310    .text.rtc_divider_get:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:313    .text.rtc_divider_get:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:314    .text.rtc_divider_get:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:317    .text.rtc_divider_get:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:324    .text.rtc_flag_get:0000000000000000 rtc_flag_get
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:327    .text.rtc_flag_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:329    .text.rtc_flag_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:330    .text.rtc_flag_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:331    .text.rtc_flag_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:334    .text.rtc_flag_get:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:337    .text.rtc_flag_get:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:339    .text.rtc_flag_get:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:346    .text.rtc_flag_clear:0000000000000000 rtc_flag_clear
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:349    .text.rtc_flag_clear:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:351    .text.rtc_flag_clear:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:352    .text.rtc_flag_clear:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:353    .text.rtc_flag_clear:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:356    .text.rtc_flag_clear:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:359    .text.rtc_flag_clear:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:363    .text.rtc_flag_clear:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:364    .text.rtc_flag_clear:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:371    .text.rtc_interrupt_flag_get:0000000000000000 rtc_interrupt_flag_get
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:373    .text.rtc_interrupt_flag_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:375    .text.rtc_interrupt_flag_get:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:382    .text.rtc_interrupt_flag_clear:0000000000000000 rtc_interrupt_flag_clear
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:384    .text.rtc_interrupt_flag_clear:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:386    .text.rtc_interrupt_flag_clear:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:393    .text.rtc_interrupt_enable:0000000000000000 rtc_interrupt_enable
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:396    .text.rtc_interrupt_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:398    .text.rtc_interrupt_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:399    .text.rtc_interrupt_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:400    .text.rtc_interrupt_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:406    .text.rtc_interrupt_enable:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:407    .text.rtc_interrupt_enable:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:414    .text.rtc_interrupt_disable:0000000000000000 rtc_interrupt_disable
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s 			page 17
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:417    .text.rtc_interrupt_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:419    .text.rtc_interrupt_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:420    .text.rtc_interrupt_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:421    .text.rtc_interrupt_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:424    .text.rtc_interrupt_disable:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:427    .text.rtc_interrupt_disable:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:431    .text.rtc_interrupt_disable:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:432    .text.rtc_interrupt_disable:0000000000000014 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:29     .text.rtc_configuration_mode_enter:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:48     .text.rtc_configuration_mode_exit:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:100    .text.rtc_counter_set:0000000000000030 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:153    .text.rtc_prescaler_set:0000000000000032 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:177    .text.rtc_lwoff_wait:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:205    .text.rtc_register_sync_wait:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:257    .text.rtc_alarm_config:0000000000000030 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:287    .text.rtc_counter_get:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:320    .text.rtc_divider_get:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:342    .text.rtc_flag_get:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:367    .text.rtc_flag_clear:0000000000000014 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:410    .text.rtc_interrupt_enable:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:435    .text.rtc_interrupt_disable:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:417    .text.rtc_interrupt_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:419    .text.rtc_interrupt_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:420    .text.rtc_interrupt_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:421    .text.rtc_interrupt_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:424    .text.rtc_interrupt_disable:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:427    .text.rtc_interrupt_disable:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:431    .text.rtc_interrupt_disable:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:432    .text.rtc_interrupt_disable:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:29     .text.rtc_configuration_mode_enter:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:48     .text.rtc_configuration_mode_exit:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:100    .text.rtc_counter_set:0000000000000030 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:153    .text.rtc_prescaler_set:0000000000000032 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:177    .text.rtc_lwoff_wait:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:205    .text.rtc_register_sync_wait:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:257    .text.rtc_alarm_config:0000000000000030 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:287    .text.rtc_counter_get:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:320    .text.rtc_divider_get:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:342    .text.rtc_flag_get:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:367    .text.rtc_flag_clear:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:410    .text.rtc_interrupt_enable:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:435    .text.rtc_interrupt_disable:0000000000000014 .L0 
                      .debug_frame:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:164    .text.rtc_lwoff_wait:0000000000000004 .L8
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:192    .text.rtc_register_sync_wait:000000000000000e .L12
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:842    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1592   .debug_str:0000000000000238 .LASF31
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1572   .debug_str:0000000000000161 .LASF32
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1560   .debug_str:00000000000000c5 .LASF33
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1502   .debug_ranges:0000000000000000 .Ldebug_ranges0
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1532   .debug_line:0000000000000000 .Ldebug_line0
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1580   .debug_str:00000000000001c7 .LASF0
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1602   .debug_str:00000000000002f5 .LASF1
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1570   .debug_str:0000000000000153 .LASF2
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1590   .debug_str:000000000000022e .LASF3
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1552   .debug_str:000000000000008f .LASF4
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1596   .debug_str:00000000000002c9 .LASF5
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1576   .debug_str:00000000000001b7 .LASF9
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1564   .debug_str:0000000000000136 .LASF6
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1554   .debug_str:00000000000000a2 .LASF7
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1582   .debug_str:00000000000001d4 .LASF8
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1594   .debug_str:00000000000002c0 .LASF10
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1588   .debug_str:000000000000021e .LASF34
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1568   .debug_str:000000000000014d .LASF11
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1558   .debug_str:00000000000000ba .LASF12
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1600   .debug_str:00000000000002e9 .LASF13
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1542   .debug_str:0000000000000041 .LASF14
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:415    .text.rtc_interrupt_disable:0000000000000000 .LFB16
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:433    .text.rtc_interrupt_disable:0000000000000014 .LFE16
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1556   .debug_str:00000000000000b0 .LASF16
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1238   .debug_loc:0000000000000000 .LLST11
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1548   .debug_str:000000000000006a .LASF15
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:394    .text.rtc_interrupt_enable:0000000000000000 .LFB15
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:408    .text.rtc_interrupt_enable:0000000000000010 .LFE15
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1259   .debug_loc:000000000000002f .LLST10
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1604   .debug_str:0000000000000301 .LASF35
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1578   .debug_str:00000000000001c2 .LASF17
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1598   .debug_str:00000000000002d2 .LASF36
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s 			page 18
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:164    .text.rtc_lwoff_wait:0000000000000004 .L8
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:192    .text.rtc_register_sync_wait:000000000000000e .L12
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:842    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1592   .debug_str:0000000000000238 .LASF31
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1572   .debug_str:0000000000000161 .LASF32
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1560   .debug_str:00000000000000c5 .LASF33
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1502   .debug_ranges:0000000000000000 .Ldebug_ranges0
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1532   .debug_line:0000000000000000 .Ldebug_line0
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1580   .debug_str:00000000000001c7 .LASF0
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1602   .debug_str:00000000000002f5 .LASF1
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1570   .debug_str:0000000000000153 .LASF2
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1590   .debug_str:000000000000022e .LASF3
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1552   .debug_str:000000000000008f .LASF4
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1596   .debug_str:00000000000002c9 .LASF5
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1576   .debug_str:00000000000001b7 .LASF9
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1564   .debug_str:0000000000000136 .LASF6
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1554   .debug_str:00000000000000a2 .LASF7
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1582   .debug_str:00000000000001d4 .LASF8
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1594   .debug_str:00000000000002c0 .LASF10
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1588   .debug_str:000000000000021e .LASF34
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1568   .debug_str:000000000000014d .LASF11
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1558   .debug_str:00000000000000ba .LASF12
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1600   .debug_str:00000000000002e9 .LASF13
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1542   .debug_str:0000000000000041 .LASF14
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:415    .text.rtc_interrupt_disable:0000000000000000 .LFB16
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:433    .text.rtc_interrupt_disable:0000000000000014 .LFE16
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1556   .debug_str:00000000000000b0 .LASF16
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1238   .debug_loc:0000000000000000 .LLST11
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1548   .debug_str:000000000000006a .LASF15
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:394    .text.rtc_interrupt_enable:0000000000000000 .LFB15
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:408    .text.rtc_interrupt_enable:0000000000000010 .LFE15
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1259   .debug_loc:000000000000002f .LLST10
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1604   .debug_str:0000000000000301 .LASF35
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1578   .debug_str:00000000000001c2 .LASF17
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1598   .debug_str:00000000000002d2 .LASF36
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s 			page 18
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1536   .debug_str:0000000000000011 .LASF18
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:347    .text.rtc_flag_clear:0000000000000000 .LFB12
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:365    .text.rtc_flag_clear:0000000000000014 .LFE12
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1273   .debug_loc:0000000000000050 .LLST9
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1546   .debug_str:000000000000005d .LASF19
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:325    .text.rtc_flag_get:0000000000000000 .LFB11
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:340    .text.rtc_flag_get:0000000000000010 .LFE11
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1294   .debug_loc:000000000000007f .LLST8
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1574   .debug_str:00000000000001a7 .LASF20
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:292    .text.rtc_divider_get:0000000000000000 .LFB10
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:318    .text.rtc_divider_get:0000000000000018 .LFE10
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1566   .debug_str:0000000000000148 .LASF22
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1308   .debug_loc:00000000000000a0 .LLST7
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1606   .debug_str:000000000000031a .LASF21
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:262    .text.rtc_counter_get:0000000000000000 .LFB9
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:285    .text.rtc_counter_get:0000000000000012 .LFE9
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1333   .debug_loc:00000000000000da .LLST6
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1534   .debug_str:0000000000000000 .LASF23
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:210    .text.rtc_alarm_config:0000000000000000 .LFB8
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:255    .text.rtc_alarm_config:0000000000000030 .LFE8
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1360   .debug_loc:0000000000000116 .LLST4
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1544   .debug_str:0000000000000057 .LASF24
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1378   .debug_loc:0000000000000142 .LLST5
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:225    .text.rtc_alarm_config:000000000000000e .LVL9
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:253    .text.rtc_alarm_config:0000000000000030 .LVL11
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1586   .debug_str:0000000000000207 .LASF25
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:182    .text.rtc_register_sync_wait:0000000000000000 .LFB7
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:203    .text.rtc_register_sync_wait:0000000000000018 .LFE7
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1538   .debug_str:0000000000000020 .LASF26
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:158    .text.rtc_lwoff_wait:0000000000000000 .LFB6
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:175    .text.rtc_lwoff_wait:0000000000000010 .LFE6
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1540   .debug_str:000000000000002f .LASF27
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:105    .text.rtc_prescaler_set:0000000000000000 .LFB5
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:151    .text.rtc_prescaler_set:0000000000000032 .LFE5
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1395   .debug_loc:000000000000016d .LLST2
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1413   .debug_loc:0000000000000199 .LLST3
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:120    .text.rtc_prescaler_set:000000000000000e .LVL5
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:149    .text.rtc_prescaler_set:0000000000000032 .LVL7
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1550   .debug_str:000000000000007f .LASF28
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:53     .text.rtc_counter_set:0000000000000000 .LFB4
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:98     .text.rtc_counter_set:0000000000000030 .LFE4
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1430   .debug_loc:00000000000001c4 .LLST0
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1448   .debug_loc:00000000000001f0 .LLST1
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:68     .text.rtc_counter_set:000000000000000e .LVL1
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:96     .text.rtc_counter_set:0000000000000030 .LVL3
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1584   .debug_str:00000000000001eb .LASF29
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:34     .text.rtc_configuration_mode_exit:0000000000000000 .LFB3
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:46     .text.rtc_configuration_mode_exit:0000000000000010 .LFE3
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:1562   .debug_str:0000000000000119 .LASF30
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:14     .text.rtc_configuration_mode_enter:0000000000000000 .LFB2
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:27     .text.rtc_configuration_mode_enter:0000000000000012 .LFE2
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:418    .text.rtc_interrupt_disable:0000000000000000 .LVL28
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:425    .text.rtc_interrupt_disable:000000000000000c .LVL29
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:428    .text.rtc_interrupt_disable:000000000000000e .LVL30
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:397    .text.rtc_interrupt_enable:0000000000000000 .LVL26
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:403    .text.rtc_interrupt_enable:000000000000000a .LVL27
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:350    .text.rtc_flag_clear:0000000000000000 .LVL23
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s 			page 19
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1536   .debug_str:0000000000000011 .LASF18
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:347    .text.rtc_flag_clear:0000000000000000 .LFB12
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:365    .text.rtc_flag_clear:0000000000000014 .LFE12
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1273   .debug_loc:0000000000000050 .LLST9
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1546   .debug_str:000000000000005d .LASF19
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:325    .text.rtc_flag_get:0000000000000000 .LFB11
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:340    .text.rtc_flag_get:0000000000000010 .LFE11
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1294   .debug_loc:000000000000007f .LLST8
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1574   .debug_str:00000000000001a7 .LASF20
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:292    .text.rtc_divider_get:0000000000000000 .LFB10
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:318    .text.rtc_divider_get:0000000000000018 .LFE10
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1566   .debug_str:0000000000000148 .LASF22
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1308   .debug_loc:00000000000000a0 .LLST7
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1606   .debug_str:000000000000031a .LASF21
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:262    .text.rtc_counter_get:0000000000000000 .LFB9
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:285    .text.rtc_counter_get:0000000000000012 .LFE9
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1333   .debug_loc:00000000000000da .LLST6
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1534   .debug_str:0000000000000000 .LASF23
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:210    .text.rtc_alarm_config:0000000000000000 .LFB8
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:255    .text.rtc_alarm_config:0000000000000030 .LFE8
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1360   .debug_loc:0000000000000116 .LLST4
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1544   .debug_str:0000000000000057 .LASF24
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1378   .debug_loc:0000000000000142 .LLST5
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:225    .text.rtc_alarm_config:000000000000000e .LVL9
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:253    .text.rtc_alarm_config:0000000000000030 .LVL11
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1586   .debug_str:0000000000000207 .LASF25
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:182    .text.rtc_register_sync_wait:0000000000000000 .LFB7
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:203    .text.rtc_register_sync_wait:0000000000000018 .LFE7
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1538   .debug_str:0000000000000020 .LASF26
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:158    .text.rtc_lwoff_wait:0000000000000000 .LFB6
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:175    .text.rtc_lwoff_wait:0000000000000010 .LFE6
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1540   .debug_str:000000000000002f .LASF27
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:105    .text.rtc_prescaler_set:0000000000000000 .LFB5
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:151    .text.rtc_prescaler_set:0000000000000032 .LFE5
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1395   .debug_loc:000000000000016d .LLST2
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1413   .debug_loc:0000000000000199 .LLST3
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:120    .text.rtc_prescaler_set:000000000000000e .LVL5
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:149    .text.rtc_prescaler_set:0000000000000032 .LVL7
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1550   .debug_str:000000000000007f .LASF28
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:53     .text.rtc_counter_set:0000000000000000 .LFB4
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:98     .text.rtc_counter_set:0000000000000030 .LFE4
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1430   .debug_loc:00000000000001c4 .LLST0
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1448   .debug_loc:00000000000001f0 .LLST1
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:68     .text.rtc_counter_set:000000000000000e .LVL1
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:96     .text.rtc_counter_set:0000000000000030 .LVL3
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1584   .debug_str:00000000000001eb .LASF29
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:34     .text.rtc_configuration_mode_exit:0000000000000000 .LFB3
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:46     .text.rtc_configuration_mode_exit:0000000000000010 .LFE3
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:1562   .debug_str:0000000000000119 .LASF30
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:14     .text.rtc_configuration_mode_enter:0000000000000000 .LFB2
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:27     .text.rtc_configuration_mode_enter:0000000000000012 .LFE2
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:418    .text.rtc_interrupt_disable:0000000000000000 .LVL28
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:425    .text.rtc_interrupt_disable:000000000000000c .LVL29
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:428    .text.rtc_interrupt_disable:000000000000000e .LVL30
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:397    .text.rtc_interrupt_enable:0000000000000000 .LVL26
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:403    .text.rtc_interrupt_enable:000000000000000a .LVL27
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:350    .text.rtc_flag_clear:0000000000000000 .LVL23
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s 			page 19
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:357    .text.rtc_flag_clear:000000000000000c .LVL24
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:360    .text.rtc_flag_clear:000000000000000e .LVL25
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:328    .text.rtc_flag_get:0000000000000000 .LVL21
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:335    .text.rtc_flag_get:000000000000000a .LVL22
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:296    .text.rtc_divider_get:0000000000000000 .LVL17
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:307    .text.rtc_divider_get:0000000000000010 .LVL18
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:311    .text.rtc_divider_get:0000000000000014 .LVL19
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:315    .text.rtc_divider_get:0000000000000016 .LVL20
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:266    .text.rtc_counter_get:0000000000000000 .LVL12
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:271    .text.rtc_counter_get:0000000000000008 .LVL13
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:275    .text.rtc_counter_get:000000000000000c .LVL14
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:279    .text.rtc_counter_get:000000000000000e .LVL15
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:282    .text.rtc_counter_get:0000000000000010 .LVL16
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:217    .text.rtc_alarm_config:0000000000000002 .LCFI4
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:248    .text.rtc_alarm_config:0000000000000028 .LCFI5
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:213    .text.rtc_alarm_config:0000000000000000 .LVL8
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:250    .text.rtc_alarm_config:0000000000000028 .LVL10
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:112    .text.rtc_prescaler_set:0000000000000002 .LCFI2
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:144    .text.rtc_prescaler_set:000000000000002a .LCFI3
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:108    .text.rtc_prescaler_set:0000000000000000 .LVL4
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:146    .text.rtc_prescaler_set:000000000000002a .LVL6
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:60     .text.rtc_counter_set:0000000000000002 .LCFI0
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:91     .text.rtc_counter_set:0000000000000028 .LCFI1
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:56     .text.rtc_counter_set:0000000000000000 .LVL0
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:93     .text.rtc_counter_set:0000000000000028 .LVL2
-C:\Users\Uzair\AppData\Local\Temp\cc0BHR0a.s:442    .debug_info:0000000000000000 .Ldebug_info0
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:357    .text.rtc_flag_clear:000000000000000c .LVL24
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:360    .text.rtc_flag_clear:000000000000000e .LVL25
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:328    .text.rtc_flag_get:0000000000000000 .LVL21
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:335    .text.rtc_flag_get:000000000000000a .LVL22
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:296    .text.rtc_divider_get:0000000000000000 .LVL17
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:307    .text.rtc_divider_get:0000000000000010 .LVL18
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:311    .text.rtc_divider_get:0000000000000014 .LVL19
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:315    .text.rtc_divider_get:0000000000000016 .LVL20
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:266    .text.rtc_counter_get:0000000000000000 .LVL12
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:271    .text.rtc_counter_get:0000000000000008 .LVL13
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:275    .text.rtc_counter_get:000000000000000c .LVL14
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:279    .text.rtc_counter_get:000000000000000e .LVL15
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:282    .text.rtc_counter_get:0000000000000010 .LVL16
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:217    .text.rtc_alarm_config:0000000000000002 .LCFI4
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:248    .text.rtc_alarm_config:0000000000000028 .LCFI5
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:213    .text.rtc_alarm_config:0000000000000000 .LVL8
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:250    .text.rtc_alarm_config:0000000000000028 .LVL10
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:112    .text.rtc_prescaler_set:0000000000000002 .LCFI2
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:144    .text.rtc_prescaler_set:000000000000002a .LCFI3
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:108    .text.rtc_prescaler_set:0000000000000000 .LVL4
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:146    .text.rtc_prescaler_set:000000000000002a .LVL6
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:60     .text.rtc_counter_set:0000000000000002 .LCFI0
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:91     .text.rtc_counter_set:0000000000000028 .LCFI1
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:56     .text.rtc_counter_set:0000000000000000 .LVL0
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:93     .text.rtc_counter_set:0000000000000028 .LVL2
+C:\Users\Uzair\AppData\Local\Temp\ccdhsdJv.s:442    .debug_info:0000000000000000 .Ldebug_info0
 
 NO UNDEFINED SYMBOLS
