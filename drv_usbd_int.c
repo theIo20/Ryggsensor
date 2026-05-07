@@ -4,7 +4,7 @@
 
     \version 2019-6-5, V1.0.0, firmware for GD32 USBFS&USBHS
 */
-
+ 
 /*
     Copyright (c) 2019, GigaDevice Semiconductor Inc.
 

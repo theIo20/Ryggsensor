@@ -3,7 +3,7 @@
 
 #include "mpu6500_driver.h"
 
-
+ 
 
 
 #define I2C_MASTER_SCL_IO 			19               /*!< gpio number for I2C master clock */
