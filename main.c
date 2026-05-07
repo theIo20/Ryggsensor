@@ -155,10 +155,9 @@ int main(void)
 
        
         printf("X: %d  Y: %d  Z: %d\n", (int)vec.x, (int)vec.y, (int)vec.z);
-        printf("Avvikelse: %d  Nollvinkel: %d  Kalibrerad: %d  Knapp: %d\n",
+        printf("Avvikelse: %d  Nollvinkel: %d  Knapp: %d\n",
         (int)avvikelse,
         (int)nollvinkel,
-        har_kalibrerat,
         (int)gpio_input_bit_get(GPIOA, GPIO_PIN_1));
         fflush(0);
         
