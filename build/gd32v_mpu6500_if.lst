@@ -1,4 +1,4 @@
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 1
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s 			page 1
 
 
    1              		.file	"gd32v_mpu6500_if.c"
@@ -25,7 +25,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 1
    2:gd32v_mpu6500_if.c **** #include "mpu6500_driver.h"
    3:gd32v_mpu6500_if.c **** #include "gd32vf103.h"
    4:gd32v_mpu6500_if.c **** 
-   5:gd32v_mpu6500_if.c **** 
+   5:gd32v_mpu6500_if.c ****  
    6:gd32v_mpu6500_if.c **** uint32_t i2c_port;
    7:gd32v_mpu6500_if.c **** 
    8:gd32v_mpu6500_if.c **** 
@@ -58,7 +58,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 1
   30              		.cfi_def_cfa_offset 48
   31 0002 4AD0     		sw	s2,32(sp)
   32 0004 4ECE     		sw	s3,28(sp)
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 2
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s 			page 2
 
 
   33 0006 5AC8     		sw	s6,16(sp)
@@ -118,7 +118,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 1
   77              	.LVL5:
   78 0042 83A94700 		lw	s3,%lo(.LC0+4)(a5)
   79 0046 B70B0000 		lui	s7,%hi(SystemCoreClock)
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 3
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s 			page 3
 
 
   80              	.L4:
@@ -178,7 +178,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 1
  124 00a0 2A86     		mv	a2,a0
  125 00a2 AE86     		mv	a3,a1
  126 00a4 5285     		mv	a0,s4
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 4
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s 			page 4
 
 
  127 00a6 D685     		mv	a1,s5
@@ -238,7 +238,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 1
  176              		.cfi_def_cfa_offset 32
  177 0002 22CC     		sw	s0,24(sp)
  178              		.cfi_offset 8, -8
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 5
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s 			page 5
 
 
  179              		.loc 1 37 20
@@ -298,7 +298,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 1
  217              		.loc 1 48 38 is_stmt 0
  218 0032 8604     		slli	s1,s1,1
  219              		.loc 1 48 5
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 6
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s 			page 6
 
 
  220 0034 7956     		li	a2,-2
@@ -358,7 +358,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 1
  259 007c 93057050 		li	a1,1287
  260 0080 2285     		mv	a0,s0
  261 0082 97000000 		call	i2c_flag_get
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 7
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s 			page 7
 
 
  261      E7800000 
@@ -418,7 +418,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 1
  301 00d2 8545     		li	a1,1
  302 00d4 2285     		mv	a0,s0
  303 00d6 97000000 		call	i2c_ack_config
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 8
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s 			page 8
 
 
  303      E7800000 
@@ -478,7 +478,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 1
  343              		.cfi_restore 19
  344 0104 224A     		lw	s4,8(sp)
  345              		.cfi_restore 20
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 9
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s 			page 9
 
 
  346 0106 0561     		addi	sp,sp,32
@@ -538,7 +538,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 1
  387              	.LFE8:
  389              		.section	.text.i2c_master_write_register,"ax",@progbits
  390              		.align	1
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 10
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s 			page 10
 
 
  391              		.globl	i2c_master_write_register
@@ -598,7 +598,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 1
  433              		.loc 1 88 10 discriminator 1
  434 0026 6DF9     		bne	a0,zero,.L36
   89:gd32v_mpu6500_if.c **** 
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 11
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s 			page 11
 
 
   90:gd32v_mpu6500_if.c ****     /* send a start condition to I2C bus */
@@ -658,7 +658,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 1
  473              		.loc 1 100 12 is_stmt 0 discriminator 1
  474 0070 93057050 		li	a1,1287
  475 0074 2285     		mv	a0,s0
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 12
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s 			page 12
 
 
  476 0076 97000000 		call	i2c_flag_get
@@ -718,7 +718,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 1
  513 00ae 93F70720 		andi	a5,a5,512
  514              		.loc 1 113 10 discriminator 1
  515 00b2 EDFF     		bne	a5,zero,.L44
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 13
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s 			page 13
 
 
  114:gd32v_mpu6500_if.c **** }...
@@ -778,7 +778,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 1
  561              	.LBE5:
  562              		.cfi_endproc
  563              	.LFE9:
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 14
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s 			page 14
 
 
  565              		.section	.text.i2c_master_init,"ax",@progbits
@@ -838,7 +838,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 1
  608              	.LFE6:
  610              		.section	.text.mpu6500_install,"ax",@progbits
  611              		.align	1
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 15
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s 			page 15
 
 
  612              		.globl	mpu6500_install
@@ -898,7 +898,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 1
  653 0036 4101     		addi	sp,sp,16
  654              	.LCFI11:
  655              		.cfi_def_cfa_offset 0
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 16
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s 			page 16
 
 
   12:gd32v_mpu6500_if.c **** 	mpu6500_init(&i2c_master_read_register, &i2c_master_write_register, &mpu_delay, (void*)&i2c_port);
@@ -926,614 +926,614 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 1
  677              		.file 9 "./../../firmware/GD32VF103_standard_peripheral/Include/gd32vf103_i2c.h"
  678              		.file 10 "./../../firmware/RISCV/drivers/n200_func.h"
  679              		.file 11 "mpu6500_driver.h"
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 17
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s 			page 17
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 gd32v_mpu6500_if.c
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:19     .text.mpu_delay:0000000000000000 mpu_delay
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:23     .text.mpu_delay:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:25     .text.mpu_delay:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:26     .text.mpu_delay:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:27     .text.mpu_delay:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:28     .text.mpu_delay:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:30     .text.mpu_delay:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:42     .text.mpu_delay:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:43     .text.mpu_delay:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:44     .text.mpu_delay:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:45     .text.mpu_delay:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:46     .text.mpu_delay:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:47     .text.mpu_delay:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:48     .text.mpu_delay:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:49     .text.mpu_delay:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:50     .text.mpu_delay:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:51     .text.mpu_delay:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:52     .text.mpu_delay:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:54     .text.mpu_delay:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:56     .text.mpu_delay:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:63     .text.mpu_delay:0000000000000026 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:64     .text.mpu_delay:0000000000000026 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:65     .text.mpu_delay:0000000000000026 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:71     .text.mpu_delay:0000000000000032 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:75     .text.mpu_delay:000000000000003a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:82     .text.mpu_delay:000000000000004a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:83     .text.mpu_delay:000000000000004a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:84     .text.mpu_delay:000000000000004a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:88     .text.mpu_delay:0000000000000054 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:94     .text.mpu_delay:000000000000005c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:99     .text.mpu_delay:0000000000000068 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:101    .text.mpu_delay:000000000000006c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:103    .text.mpu_delay:000000000000006e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:111    .text.mpu_delay:0000000000000084 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:113    .text.mpu_delay:0000000000000086 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:115    .text.mpu_delay:0000000000000088 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:124    .text.mpu_delay:00000000000000a0 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:132    .text.mpu_delay:00000000000000b4 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:133    .text.mpu_delay:00000000000000b6 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:135    .text.mpu_delay:00000000000000b8 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:138    .text.mpu_delay:00000000000000ba .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:140    .text.mpu_delay:00000000000000bc .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:142    .text.mpu_delay:00000000000000be .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:144    .text.mpu_delay:00000000000000c0 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:146    .text.mpu_delay:00000000000000c2 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:148    .text.mpu_delay:00000000000000c4 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:151    .text.mpu_delay:00000000000000c6 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:153    .text.mpu_delay:00000000000000c8 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:155    .text.mpu_delay:00000000000000ca .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:158    .text.mpu_delay:00000000000000cc .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:160    .text.mpu_delay:00000000000000ce .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:167    .text.i2c_master_read_register:0000000000000000 i2c_master_read_register
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:170    .text.i2c_master_read_register:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:172    .text.i2c_master_read_register:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:173    .text.i2c_master_read_register:0000000000000000 .L0 
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 18
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:19     .text.mpu_delay:0000000000000000 mpu_delay
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:23     .text.mpu_delay:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:25     .text.mpu_delay:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:26     .text.mpu_delay:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:27     .text.mpu_delay:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:28     .text.mpu_delay:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:30     .text.mpu_delay:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:42     .text.mpu_delay:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:43     .text.mpu_delay:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:44     .text.mpu_delay:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:45     .text.mpu_delay:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:46     .text.mpu_delay:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:47     .text.mpu_delay:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:48     .text.mpu_delay:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:49     .text.mpu_delay:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:50     .text.mpu_delay:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:51     .text.mpu_delay:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:52     .text.mpu_delay:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:54     .text.mpu_delay:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:56     .text.mpu_delay:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:63     .text.mpu_delay:0000000000000026 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:64     .text.mpu_delay:0000000000000026 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:65     .text.mpu_delay:0000000000000026 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:71     .text.mpu_delay:0000000000000032 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:75     .text.mpu_delay:000000000000003a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:82     .text.mpu_delay:000000000000004a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:83     .text.mpu_delay:000000000000004a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:84     .text.mpu_delay:000000000000004a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:88     .text.mpu_delay:0000000000000054 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:94     .text.mpu_delay:000000000000005c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:99     .text.mpu_delay:0000000000000068 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:101    .text.mpu_delay:000000000000006c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:103    .text.mpu_delay:000000000000006e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:111    .text.mpu_delay:0000000000000084 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:113    .text.mpu_delay:0000000000000086 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:115    .text.mpu_delay:0000000000000088 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:124    .text.mpu_delay:00000000000000a0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:132    .text.mpu_delay:00000000000000b4 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:133    .text.mpu_delay:00000000000000b6 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:135    .text.mpu_delay:00000000000000b8 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:138    .text.mpu_delay:00000000000000ba .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:140    .text.mpu_delay:00000000000000bc .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:142    .text.mpu_delay:00000000000000be .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:144    .text.mpu_delay:00000000000000c0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:146    .text.mpu_delay:00000000000000c2 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:148    .text.mpu_delay:00000000000000c4 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:151    .text.mpu_delay:00000000000000c6 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:153    .text.mpu_delay:00000000000000c8 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:155    .text.mpu_delay:00000000000000ca .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:158    .text.mpu_delay:00000000000000cc .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:160    .text.mpu_delay:00000000000000ce .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:167    .text.i2c_master_read_register:0000000000000000 i2c_master_read_register
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:170    .text.i2c_master_read_register:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:172    .text.i2c_master_read_register:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:173    .text.i2c_master_read_register:0000000000000000 .L0 
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s 			page 18
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:174    .text.i2c_master_read_register:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:176    .text.i2c_master_read_register:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:178    .text.i2c_master_read_register:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:180    .text.i2c_master_read_register:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:183    .text.i2c_master_read_register:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:184    .text.i2c_master_read_register:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:187    .text.i2c_master_read_register:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:190    .text.i2c_master_read_register:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:193    .text.i2c_master_read_register:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:194    .text.i2c_master_read_register:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:195    .text.i2c_master_read_register:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:196    .text.i2c_master_read_register:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:197    .text.i2c_master_read_register:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:199    .text.i2c_master_read_register:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:204    .text.i2c_master_read_register:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:208    .text.i2c_master_read_register:0000000000000022 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:209    .text.i2c_master_read_register:0000000000000022 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:210    .text.i2c_master_read_register:0000000000000022 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:215    .text.i2c_master_read_register:0000000000000030 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:217    .text.i2c_master_read_register:0000000000000032 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:218    .text.i2c_master_read_register:0000000000000032 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:220    .text.i2c_master_read_register:0000000000000034 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:227    .text.i2c_master_read_register:0000000000000042 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:228    .text.i2c_master_read_register:0000000000000042 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:229    .text.i2c_master_read_register:0000000000000042 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:234    .text.i2c_master_read_register:0000000000000050 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:236    .text.i2c_master_read_register:0000000000000052 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:242    .text.i2c_master_read_register:0000000000000060 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:243    .text.i2c_master_read_register:0000000000000060 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:244    .text.i2c_master_read_register:0000000000000060 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:249    .text.i2c_master_read_register:000000000000006e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:251    .text.i2c_master_read_register:0000000000000070 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:257    .text.i2c_master_read_register:000000000000007c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:258    .text.i2c_master_read_register:000000000000007c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:259    .text.i2c_master_read_register:000000000000007c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:264    .text.i2c_master_read_register:000000000000008a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:266    .text.i2c_master_read_register:000000000000008c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:271    .text.i2c_master_read_register:0000000000000096 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:272    .text.i2c_master_read_register:0000000000000096 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:273    .text.i2c_master_read_register:0000000000000096 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:278    .text.i2c_master_read_register:00000000000000a4 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:280    .text.i2c_master_read_register:00000000000000a6 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:287    .text.i2c_master_read_register:00000000000000b4 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:288    .text.i2c_master_read_register:00000000000000b4 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:289    .text.i2c_master_read_register:00000000000000b4 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:294    .text.i2c_master_read_register:00000000000000c2 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:296    .text.i2c_master_read_register:00000000000000c4 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:301    .text.i2c_master_read_register:00000000000000d2 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:307    .text.i2c_master_read_register:00000000000000de .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:308    .text.i2c_master_read_register:00000000000000de .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:309    .text.i2c_master_read_register:00000000000000de .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:311    .text.i2c_master_read_register:00000000000000e0 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:315    .text.i2c_master_read_register:00000000000000e4 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:318    .text.i2c_master_read_register:00000000000000e8 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:323    .text.i2c_master_read_register:00000000000000f2 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:324    .text.i2c_master_read_register:00000000000000f2 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:325    .text.i2c_master_read_register:00000000000000f2 .L0 
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 19
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:174    .text.i2c_master_read_register:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:176    .text.i2c_master_read_register:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:178    .text.i2c_master_read_register:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:180    .text.i2c_master_read_register:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:183    .text.i2c_master_read_register:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:184    .text.i2c_master_read_register:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:187    .text.i2c_master_read_register:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:190    .text.i2c_master_read_register:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:193    .text.i2c_master_read_register:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:194    .text.i2c_master_read_register:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:195    .text.i2c_master_read_register:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:196    .text.i2c_master_read_register:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:197    .text.i2c_master_read_register:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:199    .text.i2c_master_read_register:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:204    .text.i2c_master_read_register:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:208    .text.i2c_master_read_register:0000000000000022 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:209    .text.i2c_master_read_register:0000000000000022 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:210    .text.i2c_master_read_register:0000000000000022 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:215    .text.i2c_master_read_register:0000000000000030 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:217    .text.i2c_master_read_register:0000000000000032 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:218    .text.i2c_master_read_register:0000000000000032 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:220    .text.i2c_master_read_register:0000000000000034 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:227    .text.i2c_master_read_register:0000000000000042 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:228    .text.i2c_master_read_register:0000000000000042 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:229    .text.i2c_master_read_register:0000000000000042 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:234    .text.i2c_master_read_register:0000000000000050 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:236    .text.i2c_master_read_register:0000000000000052 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:242    .text.i2c_master_read_register:0000000000000060 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:243    .text.i2c_master_read_register:0000000000000060 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:244    .text.i2c_master_read_register:0000000000000060 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:249    .text.i2c_master_read_register:000000000000006e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:251    .text.i2c_master_read_register:0000000000000070 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:257    .text.i2c_master_read_register:000000000000007c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:258    .text.i2c_master_read_register:000000000000007c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:259    .text.i2c_master_read_register:000000000000007c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:264    .text.i2c_master_read_register:000000000000008a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:266    .text.i2c_master_read_register:000000000000008c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:271    .text.i2c_master_read_register:0000000000000096 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:272    .text.i2c_master_read_register:0000000000000096 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:273    .text.i2c_master_read_register:0000000000000096 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:278    .text.i2c_master_read_register:00000000000000a4 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:280    .text.i2c_master_read_register:00000000000000a6 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:287    .text.i2c_master_read_register:00000000000000b4 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:288    .text.i2c_master_read_register:00000000000000b4 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:289    .text.i2c_master_read_register:00000000000000b4 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:294    .text.i2c_master_read_register:00000000000000c2 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:296    .text.i2c_master_read_register:00000000000000c4 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:301    .text.i2c_master_read_register:00000000000000d2 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:307    .text.i2c_master_read_register:00000000000000de .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:308    .text.i2c_master_read_register:00000000000000de .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:309    .text.i2c_master_read_register:00000000000000de .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:311    .text.i2c_master_read_register:00000000000000e0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:315    .text.i2c_master_read_register:00000000000000e4 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:318    .text.i2c_master_read_register:00000000000000e8 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:323    .text.i2c_master_read_register:00000000000000f2 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:324    .text.i2c_master_read_register:00000000000000f2 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:325    .text.i2c_master_read_register:00000000000000f2 .L0 
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s 			page 19
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:327    .text.i2c_master_read_register:00000000000000f4 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:329    .text.i2c_master_read_register:00000000000000f8 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:331    .text.i2c_master_read_register:00000000000000fa .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:332    .text.i2c_master_read_register:00000000000000fc .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:333    .text.i2c_master_read_register:00000000000000fc .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:335    .text.i2c_master_read_register:00000000000000fe .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:338    .text.i2c_master_read_register:0000000000000100 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:341    .text.i2c_master_read_register:0000000000000102 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:343    .text.i2c_master_read_register:0000000000000104 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:345    .text.i2c_master_read_register:0000000000000106 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:348    .text.i2c_master_read_register:0000000000000108 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:353    .text.i2c_master_read_register:000000000000010a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:356    .text.i2c_master_read_register:000000000000010a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:357    .text.i2c_master_read_register:000000000000010a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:359    .text.i2c_master_read_register:000000000000010e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:365    .text.i2c_master_read_register:000000000000011a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:366    .text.i2c_master_read_register:000000000000011a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:371    .text.i2c_master_read_register:0000000000000128 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:374    .text.i2c_master_read_register:000000000000012a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:375    .text.i2c_master_read_register:000000000000012a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:379    .text.i2c_master_read_register:0000000000000134 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:382    .text.i2c_master_read_register:000000000000013c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:386    .text.i2c_master_read_register:0000000000000140 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:393    .text.i2c_master_write_register:0000000000000000 i2c_master_write_register
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:396    .text.i2c_master_write_register:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:398    .text.i2c_master_write_register:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:399    .text.i2c_master_write_register:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:400    .text.i2c_master_write_register:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:402    .text.i2c_master_write_register:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:404    .text.i2c_master_write_register:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:406    .text.i2c_master_write_register:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:409    .text.i2c_master_write_register:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:410    .text.i2c_master_write_register:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:415    .text.i2c_master_write_register:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:416    .text.i2c_master_write_register:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:417    .text.i2c_master_write_register:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:418    .text.i2c_master_write_register:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:419    .text.i2c_master_write_register:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:421    .text.i2c_master_write_register:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:428    .text.i2c_master_write_register:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:429    .text.i2c_master_write_register:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:434    .text.i2c_master_write_register:0000000000000026 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:436    .text.i2c_master_write_register:0000000000000028 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:441    .text.i2c_master_write_register:0000000000000032 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:442    .text.i2c_master_write_register:0000000000000032 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:443    .text.i2c_master_write_register:0000000000000032 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:448    .text.i2c_master_write_register:0000000000000040 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:450    .text.i2c_master_write_register:0000000000000042 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:457    .text.i2c_master_write_register:0000000000000052 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:458    .text.i2c_master_write_register:0000000000000052 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:459    .text.i2c_master_write_register:0000000000000052 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:464    .text.i2c_master_write_register:0000000000000060 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:466    .text.i2c_master_write_register:0000000000000062 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:472    .text.i2c_master_write_register:0000000000000070 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:473    .text.i2c_master_write_register:0000000000000070 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:474    .text.i2c_master_write_register:0000000000000070 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:479    .text.i2c_master_write_register:000000000000007e .L0 
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 20
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:327    .text.i2c_master_read_register:00000000000000f4 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:329    .text.i2c_master_read_register:00000000000000f8 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:331    .text.i2c_master_read_register:00000000000000fa .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:332    .text.i2c_master_read_register:00000000000000fc .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:333    .text.i2c_master_read_register:00000000000000fc .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:335    .text.i2c_master_read_register:00000000000000fe .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:338    .text.i2c_master_read_register:0000000000000100 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:341    .text.i2c_master_read_register:0000000000000102 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:343    .text.i2c_master_read_register:0000000000000104 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:345    .text.i2c_master_read_register:0000000000000106 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:348    .text.i2c_master_read_register:0000000000000108 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:353    .text.i2c_master_read_register:000000000000010a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:356    .text.i2c_master_read_register:000000000000010a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:357    .text.i2c_master_read_register:000000000000010a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:359    .text.i2c_master_read_register:000000000000010e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:365    .text.i2c_master_read_register:000000000000011a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:366    .text.i2c_master_read_register:000000000000011a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:371    .text.i2c_master_read_register:0000000000000128 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:374    .text.i2c_master_read_register:000000000000012a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:375    .text.i2c_master_read_register:000000000000012a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:379    .text.i2c_master_read_register:0000000000000134 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:382    .text.i2c_master_read_register:000000000000013c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:386    .text.i2c_master_read_register:0000000000000140 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:393    .text.i2c_master_write_register:0000000000000000 i2c_master_write_register
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:396    .text.i2c_master_write_register:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:398    .text.i2c_master_write_register:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:399    .text.i2c_master_write_register:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:400    .text.i2c_master_write_register:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:402    .text.i2c_master_write_register:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:404    .text.i2c_master_write_register:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:406    .text.i2c_master_write_register:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:409    .text.i2c_master_write_register:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:410    .text.i2c_master_write_register:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:415    .text.i2c_master_write_register:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:416    .text.i2c_master_write_register:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:417    .text.i2c_master_write_register:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:418    .text.i2c_master_write_register:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:419    .text.i2c_master_write_register:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:421    .text.i2c_master_write_register:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:428    .text.i2c_master_write_register:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:429    .text.i2c_master_write_register:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:434    .text.i2c_master_write_register:0000000000000026 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:436    .text.i2c_master_write_register:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:441    .text.i2c_master_write_register:0000000000000032 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:442    .text.i2c_master_write_register:0000000000000032 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:443    .text.i2c_master_write_register:0000000000000032 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:448    .text.i2c_master_write_register:0000000000000040 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:450    .text.i2c_master_write_register:0000000000000042 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:457    .text.i2c_master_write_register:0000000000000052 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:458    .text.i2c_master_write_register:0000000000000052 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:459    .text.i2c_master_write_register:0000000000000052 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:464    .text.i2c_master_write_register:0000000000000060 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:466    .text.i2c_master_write_register:0000000000000062 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:472    .text.i2c_master_write_register:0000000000000070 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:473    .text.i2c_master_write_register:0000000000000070 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:474    .text.i2c_master_write_register:0000000000000070 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:479    .text.i2c_master_write_register:000000000000007e .L0 
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s 			page 20
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:481    .text.i2c_master_write_register:0000000000000080 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:487    .text.i2c_master_write_register:000000000000008c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:488    .text.i2c_master_write_register:000000000000008c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:489    .text.i2c_master_write_register:000000000000008c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:494    .text.i2c_master_write_register:000000000000009a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:497    .text.i2c_master_write_register:000000000000009c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:501    .text.i2c_master_write_register:000000000000009e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:504    .text.i2c_master_write_register:00000000000000a2 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:509    .text.i2c_master_write_register:00000000000000ac .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:510    .text.i2c_master_write_register:00000000000000ac .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:511    .text.i2c_master_write_register:00000000000000ac .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:513    .text.i2c_master_write_register:00000000000000ae .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:515    .text.i2c_master_write_register:00000000000000b2 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:517    .text.i2c_master_write_register:00000000000000b4 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:518    .text.i2c_master_write_register:00000000000000b6 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:519    .text.i2c_master_write_register:00000000000000b6 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:521    .text.i2c_master_write_register:00000000000000b8 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:524    .text.i2c_master_write_register:00000000000000ba .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:527    .text.i2c_master_write_register:00000000000000bc .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:529    .text.i2c_master_write_register:00000000000000be .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:531    .text.i2c_master_write_register:00000000000000c0 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:534    .text.i2c_master_write_register:00000000000000c2 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:539    .text.i2c_master_write_register:00000000000000c4 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:542    .text.i2c_master_write_register:00000000000000c4 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:549    .text.i2c_master_write_register:00000000000000d6 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:550    .text.i2c_master_write_register:00000000000000d6 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:551    .text.i2c_master_write_register:00000000000000d6 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:556    .text.i2c_master_write_register:00000000000000e4 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:558    .text.i2c_master_write_register:00000000000000e6 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:562    .text.i2c_master_write_register:00000000000000ea .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:569    .text.i2c_master_init:0000000000000000 i2c_master_init
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:572    .text.i2c_master_init:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:574    .text.i2c_master_init:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:575    .text.i2c_master_init:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:577    .text.i2c_master_init:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:579    .text.i2c_master_init:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:581    .text.i2c_master_init:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:584    .text.i2c_master_init:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:586    .text.i2c_master_init:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:587    .text.i2c_master_init:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:589    .text.i2c_master_init:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:591    .text.i2c_master_init:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:594    .text.i2c_master_init:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:596    .text.i2c_master_init:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:597    .text.i2c_master_init:000000000000001c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:600    .text.i2c_master_init:000000000000001e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:603    .text.i2c_master_init:0000000000000020 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:605    .text.i2c_master_init:0000000000000020 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:607    .text.i2c_master_init:0000000000000028 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:614    .text.mpu6500_install:0000000000000000 mpu6500_install
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:617    .text.mpu6500_install:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:619    .text.mpu6500_install:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:620    .text.mpu6500_install:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:621    .text.mpu6500_install:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:623    .text.mpu6500_install:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:625    .text.mpu6500_install:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:481    .text.i2c_master_write_register:0000000000000080 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:487    .text.i2c_master_write_register:000000000000008c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:488    .text.i2c_master_write_register:000000000000008c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:489    .text.i2c_master_write_register:000000000000008c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:494    .text.i2c_master_write_register:000000000000009a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:497    .text.i2c_master_write_register:000000000000009c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:501    .text.i2c_master_write_register:000000000000009e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:504    .text.i2c_master_write_register:00000000000000a2 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:509    .text.i2c_master_write_register:00000000000000ac .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:510    .text.i2c_master_write_register:00000000000000ac .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:511    .text.i2c_master_write_register:00000000000000ac .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:513    .text.i2c_master_write_register:00000000000000ae .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:515    .text.i2c_master_write_register:00000000000000b2 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:517    .text.i2c_master_write_register:00000000000000b4 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:518    .text.i2c_master_write_register:00000000000000b6 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:519    .text.i2c_master_write_register:00000000000000b6 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:521    .text.i2c_master_write_register:00000000000000b8 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:524    .text.i2c_master_write_register:00000000000000ba .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:527    .text.i2c_master_write_register:00000000000000bc .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:529    .text.i2c_master_write_register:00000000000000be .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:531    .text.i2c_master_write_register:00000000000000c0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:534    .text.i2c_master_write_register:00000000000000c2 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:539    .text.i2c_master_write_register:00000000000000c4 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:542    .text.i2c_master_write_register:00000000000000c4 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:549    .text.i2c_master_write_register:00000000000000d6 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:550    .text.i2c_master_write_register:00000000000000d6 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:551    .text.i2c_master_write_register:00000000000000d6 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:556    .text.i2c_master_write_register:00000000000000e4 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:558    .text.i2c_master_write_register:00000000000000e6 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:562    .text.i2c_master_write_register:00000000000000ea .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:569    .text.i2c_master_init:0000000000000000 i2c_master_init
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:572    .text.i2c_master_init:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:574    .text.i2c_master_init:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:575    .text.i2c_master_init:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:577    .text.i2c_master_init:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:579    .text.i2c_master_init:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:581    .text.i2c_master_init:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:584    .text.i2c_master_init:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:586    .text.i2c_master_init:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:587    .text.i2c_master_init:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:589    .text.i2c_master_init:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:591    .text.i2c_master_init:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:594    .text.i2c_master_init:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:596    .text.i2c_master_init:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:597    .text.i2c_master_init:000000000000001c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:600    .text.i2c_master_init:000000000000001e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:603    .text.i2c_master_init:0000000000000020 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:605    .text.i2c_master_init:0000000000000020 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:607    .text.i2c_master_init:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:614    .text.mpu6500_install:0000000000000000 mpu6500_install
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:617    .text.mpu6500_install:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:619    .text.mpu6500_install:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:620    .text.mpu6500_install:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:621    .text.mpu6500_install:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:623    .text.mpu6500_install:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:625    .text.mpu6500_install:0000000000000004 .L0 
                             *COM*:0000000000000004 i2c_port
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 21
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s 			page 21
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:627    .text.mpu6500_install:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:629    .text.mpu6500_install:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:630    .text.mpu6500_install:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:632    .text.mpu6500_install:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:634    .text.mpu6500_install:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:637    .text.mpu6500_install:0000000000000016 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:639    .text.mpu6500_install:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:640    .text.mpu6500_install:000000000000001c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:642    .text.mpu6500_install:000000000000001e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:644    .text.mpu6500_install:000000000000001e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:648    .text.mpu6500_install:000000000000002a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:649    .text.mpu6500_install:000000000000002a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:653    .text.mpu6500_install:0000000000000036 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:655    .text.mpu6500_install:0000000000000038 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:657    .text.mpu6500_install:0000000000000038 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:659    .text.mpu6500_install:0000000000000040 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:163    .text.mpu_delay:00000000000000ce .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:389    .text.i2c_master_read_register:0000000000000140 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:565    .text.i2c_master_write_register:00000000000000ea .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:610    .text.i2c_master_init:0000000000000028 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:663    .text.mpu6500_install:0000000000000040 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:627    .text.mpu6500_install:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:629    .text.mpu6500_install:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:630    .text.mpu6500_install:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:632    .text.mpu6500_install:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:634    .text.mpu6500_install:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:637    .text.mpu6500_install:0000000000000016 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:639    .text.mpu6500_install:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:640    .text.mpu6500_install:000000000000001c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:642    .text.mpu6500_install:000000000000001e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:644    .text.mpu6500_install:000000000000001e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:648    .text.mpu6500_install:000000000000002a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:649    .text.mpu6500_install:000000000000002a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:653    .text.mpu6500_install:0000000000000036 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:655    .text.mpu6500_install:0000000000000038 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:657    .text.mpu6500_install:0000000000000038 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:659    .text.mpu6500_install:0000000000000040 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:163    .text.mpu_delay:00000000000000ce .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:389    .text.i2c_master_read_register:0000000000000140 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:565    .text.i2c_master_write_register:00000000000000ea .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:610    .text.i2c_master_init:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:663    .text.mpu6500_install:0000000000000040 .L0 
                      .debug_frame:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:665    .rodata.mpu_delay.cst8:0000000000000000 .LC0
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:73     .text.mpu_delay:000000000000003a .L3
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:61     .text.mpu_delay:0000000000000026 .L2
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:80     .text.mpu_delay:000000000000004a .L4
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:207    .text.i2c_master_read_register:0000000000000022 .L8
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:226    .text.i2c_master_read_register:0000000000000042 .L9
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:241    .text.i2c_master_read_register:0000000000000060 .L10
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:256    .text.i2c_master_read_register:000000000000007c .L11
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:270    .text.i2c_master_read_register:0000000000000096 .L12
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:286    .text.i2c_master_read_register:00000000000000b4 .L13
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:351    .text.i2c_master_read_register:000000000000010a .L17
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:322    .text.i2c_master_read_register:00000000000000f2 .L18
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:363    .text.i2c_master_read_register:000000000000011a .L16
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:313    .text.i2c_master_read_register:00000000000000e4 .L14
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:426    .text.i2c_master_write_register:0000000000000018 .L36
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:440    .text.i2c_master_write_register:0000000000000032 .L37
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:456    .text.i2c_master_write_register:0000000000000052 .L38
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:471    .text.i2c_master_write_register:0000000000000070 .L39
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:486    .text.i2c_master_write_register:000000000000008c .L40
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:537    .text.i2c_master_write_register:00000000000000c4 .L43
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:508    .text.i2c_master_write_register:00000000000000ac .L44
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:548    .text.i2c_master_write_register:00000000000000d6 .L42
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:499    .text.i2c_master_write_register:000000000000009e .L41
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:3087   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4558   .debug_str:00000000000006bd .LASF176
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4388   .debug_str:00000000000002e9 .LASF177
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4502   .debug_str:0000000000000562 .LASF178
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4224   .debug_ranges:0000000000000000 .Ldebug_ranges0
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4250   .debug_line:0000000000000000 .Ldebug_line0
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4308   .debug_str:000000000000014e .LASF0
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4270   .debug_str:0000000000000066 .LASF4
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4476   .debug_str:00000000000004dc .LASF1
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4254   .debug_str:000000000000000c .LASF2
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4564   .debug_str:000000000000075f .LASF3
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4296   .debug_str:0000000000000109 .LASF5
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 22
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:665    .rodata.mpu_delay.cst8:0000000000000000 .LC0
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:73     .text.mpu_delay:000000000000003a .L3
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:61     .text.mpu_delay:0000000000000026 .L2
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:80     .text.mpu_delay:000000000000004a .L4
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:207    .text.i2c_master_read_register:0000000000000022 .L8
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:226    .text.i2c_master_read_register:0000000000000042 .L9
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:241    .text.i2c_master_read_register:0000000000000060 .L10
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:256    .text.i2c_master_read_register:000000000000007c .L11
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:270    .text.i2c_master_read_register:0000000000000096 .L12
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:286    .text.i2c_master_read_register:00000000000000b4 .L13
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:351    .text.i2c_master_read_register:000000000000010a .L17
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:322    .text.i2c_master_read_register:00000000000000f2 .L18
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:363    .text.i2c_master_read_register:000000000000011a .L16
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:313    .text.i2c_master_read_register:00000000000000e4 .L14
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:426    .text.i2c_master_write_register:0000000000000018 .L36
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:440    .text.i2c_master_write_register:0000000000000032 .L37
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:456    .text.i2c_master_write_register:0000000000000052 .L38
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:471    .text.i2c_master_write_register:0000000000000070 .L39
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:486    .text.i2c_master_write_register:000000000000008c .L40
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:537    .text.i2c_master_write_register:00000000000000c4 .L43
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:508    .text.i2c_master_write_register:00000000000000ac .L44
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:548    .text.i2c_master_write_register:00000000000000d6 .L42
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:499    .text.i2c_master_write_register:000000000000009e .L41
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:3087   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4558   .debug_str:00000000000006bd .LASF176
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4388   .debug_str:00000000000002e9 .LASF177
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4502   .debug_str:0000000000000562 .LASF178
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4224   .debug_ranges:0000000000000000 .Ldebug_ranges0
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4250   .debug_line:0000000000000000 .Ldebug_line0
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4308   .debug_str:000000000000014e .LASF0
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4270   .debug_str:0000000000000066 .LASF4
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4476   .debug_str:00000000000004dc .LASF1
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4254   .debug_str:000000000000000c .LASF2
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4564   .debug_str:000000000000075f .LASF3
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4296   .debug_str:0000000000000109 .LASF5
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s 			page 22
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4328   .debug_str:00000000000001ae .LASF6
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4352   .debug_str:0000000000000226 .LASF7
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4380   .debug_str:00000000000002b2 .LASF8
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4340   .debug_str:00000000000001e4 .LASF9
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4454   .debug_str:000000000000044f .LASF10
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4284   .debug_str:00000000000000c4 .LASF11
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4546   .debug_str:0000000000000683 .LASF12
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4534   .debug_str:000000000000064e .LASF13
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4520   .debug_str:0000000000000605 .LASF14
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4430   .debug_str:00000000000003bf .LASF15
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4532   .debug_str:0000000000000646 .LASF16
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4586   .debug_str:00000000000007e6 .LASF17
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4408   .debug_str:0000000000000358 .LASF18
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4372   .debug_str:000000000000028b .LASF19
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4522   .debug_str:000000000000060c .LASF20
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4524   .debug_str:0000000000000614 .LASF21
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4464   .debug_str:0000000000000489 .LASF22
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4428   .debug_str:00000000000003b7 .LASF23
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4466   .debug_str:0000000000000494 .LASF24
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4484   .debug_str:0000000000000507 .LASF25
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4362   .debug_str:0000000000000258 .LASF30
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4552   .debug_str:000000000000069e .LASF26
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4514   .debug_str:00000000000005f0 .LASF27
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4550   .debug_str:0000000000000698 .LASF28
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4580   .debug_str:00000000000007c8 .LASF29
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4370   .debug_str:0000000000000286 .LASF31
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4302   .debug_str:0000000000000130 .LASF32
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4566   .debug_str:0000000000000772 .LASF33
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4316   .debug_str:0000000000000171 .LASF34
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4612   .debug_str:0000000000000863 .LASF35
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4442   .debug_str:000000000000040a .LASF36
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4422   .debug_str:0000000000000393 .LASF37
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4528   .debug_str:0000000000000622 .LASF38
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4486   .debug_str:0000000000000510 .LASF39
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4598   .debug_str:0000000000000818 .LASF40
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4320   .debug_str:0000000000000180 .LASF41
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4260   .debug_str:000000000000002b .LASF42
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4252   .debug_str:0000000000000000 .LASF43
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4560   .debug_str:0000000000000745 .LASF44
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4334   .debug_str:00000000000001cb .LASF45
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4444   .debug_str:0000000000000413 .LASF46
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4504   .debug_str:00000000000005b6 .LASF47
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4350   .debug_str:0000000000000221 .LASF48
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4488   .debug_str:000000000000051a .LASF49
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4314   .debug_str:000000000000016b .LASF50
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4544   .debug_str:000000000000067d .LASF51
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4494   .debug_str:0000000000000530 .LASF52
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4332   .debug_str:00000000000001c4 .LASF53
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4382   .debug_str:00000000000002c4 .LASF54
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4286   .debug_str:00000000000000db .LASF55
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4322   .debug_str:000000000000018e .LASF56
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4368   .debug_str:0000000000000280 .LASF57
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4420   .debug_str:000000000000038c .LASF58
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4526   .debug_str:000000000000061c .LASF59
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4306   .debug_str:0000000000000147 .LASF60
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4310   .debug_str:000000000000015a .LASF61
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4592   .debug_str:0000000000000803 .LASF62
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 23
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4328   .debug_str:00000000000001ae .LASF6
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4352   .debug_str:0000000000000226 .LASF7
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4380   .debug_str:00000000000002b2 .LASF8
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4340   .debug_str:00000000000001e4 .LASF9
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4454   .debug_str:000000000000044f .LASF10
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4284   .debug_str:00000000000000c4 .LASF11
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4546   .debug_str:0000000000000683 .LASF12
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4534   .debug_str:000000000000064e .LASF13
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4520   .debug_str:0000000000000605 .LASF14
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4430   .debug_str:00000000000003bf .LASF15
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4532   .debug_str:0000000000000646 .LASF16
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4586   .debug_str:00000000000007e6 .LASF17
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4408   .debug_str:0000000000000358 .LASF18
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4372   .debug_str:000000000000028b .LASF19
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4522   .debug_str:000000000000060c .LASF20
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4524   .debug_str:0000000000000614 .LASF21
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4464   .debug_str:0000000000000489 .LASF22
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4428   .debug_str:00000000000003b7 .LASF23
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4466   .debug_str:0000000000000494 .LASF24
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4484   .debug_str:0000000000000507 .LASF25
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4362   .debug_str:0000000000000258 .LASF30
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4552   .debug_str:000000000000069e .LASF26
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4514   .debug_str:00000000000005f0 .LASF27
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4550   .debug_str:0000000000000698 .LASF28
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4580   .debug_str:00000000000007c8 .LASF29
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4370   .debug_str:0000000000000286 .LASF31
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4302   .debug_str:0000000000000130 .LASF32
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4566   .debug_str:0000000000000772 .LASF33
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4316   .debug_str:0000000000000171 .LASF34
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4612   .debug_str:0000000000000863 .LASF35
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4442   .debug_str:000000000000040a .LASF36
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4422   .debug_str:0000000000000393 .LASF37
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4528   .debug_str:0000000000000622 .LASF38
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4486   .debug_str:0000000000000510 .LASF39
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4598   .debug_str:0000000000000818 .LASF40
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4320   .debug_str:0000000000000180 .LASF41
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4260   .debug_str:000000000000002b .LASF42
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4252   .debug_str:0000000000000000 .LASF43
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4560   .debug_str:0000000000000745 .LASF44
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4334   .debug_str:00000000000001cb .LASF45
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4444   .debug_str:0000000000000413 .LASF46
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4504   .debug_str:00000000000005b6 .LASF47
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4350   .debug_str:0000000000000221 .LASF48
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4488   .debug_str:000000000000051a .LASF49
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4314   .debug_str:000000000000016b .LASF50
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4544   .debug_str:000000000000067d .LASF51
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4494   .debug_str:0000000000000530 .LASF52
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4332   .debug_str:00000000000001c4 .LASF53
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4382   .debug_str:00000000000002c4 .LASF54
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4286   .debug_str:00000000000000db .LASF55
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4322   .debug_str:000000000000018e .LASF56
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4368   .debug_str:0000000000000280 .LASF57
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4420   .debug_str:000000000000038c .LASF58
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4526   .debug_str:000000000000061c .LASF59
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4306   .debug_str:0000000000000147 .LASF60
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4310   .debug_str:000000000000015a .LASF61
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4592   .debug_str:0000000000000803 .LASF62
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s 			page 23
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4542   .debug_str:0000000000000674 .LASF63
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4344   .debug_str:00000000000001fa .LASF64
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4390   .debug_str:00000000000002fc .LASF65
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4412   .debug_str:0000000000000363 .LASF66
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4496   .debug_str:0000000000000538 .LASF67
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4490   .debug_str:0000000000000521 .LASF68
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4516   .debug_str:00000000000005f8 .LASF69
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4538   .debug_str:0000000000000668 .LASF70
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4336   .debug_str:00000000000001d3 .LASF71
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4376   .debug_str:00000000000002a2 .LASF72
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4360   .debug_str:0000000000000250 .LASF73
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4256   .debug_str:0000000000000016 .LASF74
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4266   .debug_str:000000000000004a .LASF75
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4510   .debug_str:00000000000005cd .LASF76
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4506   .debug_str:00000000000005bb .LASF77
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4446   .debug_str:000000000000041b .LASF78
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4508   .debug_str:00000000000005c3 .LASF79
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4406   .debug_str:0000000000000350 .LASF80
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4338   .debug_str:00000000000001da .LASF81
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4608   .debug_str:000000000000084e .LASF82
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4462   .debug_str:000000000000047f .LASF83
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4378   .debug_str:00000000000002aa .LASF84
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4342   .debug_str:00000000000001f2 .LASF85
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4410   .debug_str:000000000000035e .LASF86
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4276   .debug_str:000000000000008f .LASF87
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4590   .debug_str:00000000000007f9 .LASF88
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4326   .debug_str:00000000000001a6 .LASF89
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4318   .debug_str:000000000000017b .LASF90
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4540   .debug_str:000000000000066f .LASF91
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4492   .debug_str:0000000000000529 .LASF92
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4582   .debug_str:00000000000007cd .LASF93
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4392   .debug_str:0000000000000302 .LASF94
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4478   .debug_str:00000000000004ea .LASF95
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4262   .debug_str:0000000000000033 .LASF96
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4518   .debug_str:00000000000005ff .LASF97
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4414   .debug_str:0000000000000369 .LASF98
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4568   .debug_str:000000000000077b .LASF99
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4578   .debug_str:00000000000007bb .LASF100
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4554   .debug_str:00000000000006a4 .LASF101
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4402   .debug_str:000000000000033e .LASF102
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4600   .debug_str:0000000000000823 .LASF103
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4448   .debug_str:0000000000000426 .LASF104
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4398   .debug_str:0000000000000327 .LASF105
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4604   .debug_str:000000000000083b .LASF106
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4470   .debug_str:00000000000004b7 .LASF107
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4606   .debug_str:0000000000000840 .LASF108
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4300   .debug_str:0000000000000122 .LASF109
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4588   .debug_str:00000000000007ef .LASF110
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4400   .debug_str:0000000000000332 .LASF111
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4274   .debug_str:0000000000000082 .LASF112
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4348   .debug_str:0000000000000213 .LASF113
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4298   .debug_str:0000000000000113 .LASF114
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4346   .debug_str:0000000000000202 .LASF115
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4280   .debug_str:00000000000000a4 .LASF116
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4282   .debug_str:00000000000000b3 .LASF117
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4482   .debug_str:00000000000004fe .LASF118
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4436   .debug_str:00000000000003e5 .LASF119
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 24
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4542   .debug_str:0000000000000674 .LASF63
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4344   .debug_str:00000000000001fa .LASF64
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4390   .debug_str:00000000000002fc .LASF65
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4412   .debug_str:0000000000000363 .LASF66
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4496   .debug_str:0000000000000538 .LASF67
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4490   .debug_str:0000000000000521 .LASF68
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4516   .debug_str:00000000000005f8 .LASF69
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4538   .debug_str:0000000000000668 .LASF70
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4336   .debug_str:00000000000001d3 .LASF71
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4376   .debug_str:00000000000002a2 .LASF72
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4360   .debug_str:0000000000000250 .LASF73
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4256   .debug_str:0000000000000016 .LASF74
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4266   .debug_str:000000000000004a .LASF75
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4510   .debug_str:00000000000005cd .LASF76
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4506   .debug_str:00000000000005bb .LASF77
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4446   .debug_str:000000000000041b .LASF78
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4508   .debug_str:00000000000005c3 .LASF79
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4406   .debug_str:0000000000000350 .LASF80
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4338   .debug_str:00000000000001da .LASF81
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4608   .debug_str:000000000000084e .LASF82
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4462   .debug_str:000000000000047f .LASF83
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4378   .debug_str:00000000000002aa .LASF84
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4342   .debug_str:00000000000001f2 .LASF85
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4410   .debug_str:000000000000035e .LASF86
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4276   .debug_str:000000000000008f .LASF87
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4590   .debug_str:00000000000007f9 .LASF88
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4326   .debug_str:00000000000001a6 .LASF89
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4318   .debug_str:000000000000017b .LASF90
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4540   .debug_str:000000000000066f .LASF91
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4492   .debug_str:0000000000000529 .LASF92
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4582   .debug_str:00000000000007cd .LASF93
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4392   .debug_str:0000000000000302 .LASF94
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4478   .debug_str:00000000000004ea .LASF95
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4262   .debug_str:0000000000000033 .LASF96
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4518   .debug_str:00000000000005ff .LASF97
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4414   .debug_str:0000000000000369 .LASF98
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4568   .debug_str:000000000000077b .LASF99
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4578   .debug_str:00000000000007bb .LASF100
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4554   .debug_str:00000000000006a4 .LASF101
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4402   .debug_str:000000000000033e .LASF102
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4600   .debug_str:0000000000000823 .LASF103
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4448   .debug_str:0000000000000426 .LASF104
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4398   .debug_str:0000000000000327 .LASF105
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4604   .debug_str:000000000000083b .LASF106
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4470   .debug_str:00000000000004b7 .LASF107
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4606   .debug_str:0000000000000840 .LASF108
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4300   .debug_str:0000000000000122 .LASF109
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4588   .debug_str:00000000000007ef .LASF110
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4400   .debug_str:0000000000000332 .LASF111
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4274   .debug_str:0000000000000082 .LASF112
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4348   .debug_str:0000000000000213 .LASF113
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4298   .debug_str:0000000000000113 .LASF114
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4346   .debug_str:0000000000000202 .LASF115
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4280   .debug_str:00000000000000a4 .LASF116
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4282   .debug_str:00000000000000b3 .LASF117
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4482   .debug_str:00000000000004fe .LASF118
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4436   .debug_str:00000000000003e5 .LASF119
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s 			page 24
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4426   .debug_str:00000000000003ae .LASF120
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4594   .debug_str:0000000000000809 .LASF121
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4294   .debug_str:00000000000000fe .LASF179
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4358   .debug_str:0000000000000244 .LASF122
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4574   .debug_str:000000000000079f .LASF123
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4548   .debug_str:0000000000000690 .LASF124
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4474   .debug_str:00000000000004d4 .LASF125
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4576   .debug_str:00000000000007b2 .LASF126
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4432   .debug_str:00000000000003c6 .LASF127
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4456   .debug_str:000000000000045a .LASF128
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4374   .debug_str:0000000000000292 .LASF129
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4258   .debug_str:000000000000001b .LASF130
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4268   .debug_str:0000000000000055 .LASF131
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4330   .debug_str:00000000000001b7 .LASF132
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4584   .debug_str:00000000000007d3 .LASF133
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4498   .debug_str:0000000000000541 .LASF134
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4480   .debug_str:00000000000004f0 .LASF135
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4450   .debug_str:0000000000000435 .LASF136
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4304   .debug_str:0000000000000139 .LASF137
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4562   .debug_str:000000000000074e .LASF138
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4438   .debug_str:00000000000003ec .LASF139
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4572   .debug_str:0000000000000790 .LASF140
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4440   .debug_str:00000000000003fa .LASF141
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4264   .debug_str:000000000000003b .LASF142
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4364   .debug_str:0000000000000260 .LASF143
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4324   .debug_str:0000000000000196 .LASF144
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4570   .debug_str:0000000000000780 .LASF145
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4356   .debug_str:0000000000000238 .LASF146
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4536   .debug_str:000000000000065a .LASF147
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4472   .debug_str:00000000000004c4 .LASF148
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4366   .debug_str:0000000000000270 .LASF149
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4418   .debug_str:000000000000037c .LASF150
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4602   .debug_str:0000000000000832 .LASF151
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4530   .debug_str:000000000000062c .LASF157
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:394    .text.i2c_master_write_register:0000000000000000 .LFB9
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:563    .text.i2c_master_write_register:00000000000000ea .LFE9
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:3775   .debug_loc:0000000000000000 .LLST12
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4596   .debug_str:0000000000000811 .LASF152
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:3798   .debug_loc:0000000000000038 .LLST13
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4288   .debug_str:00000000000000e4 .LASF153
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:3812   .debug_loc:0000000000000059 .LLST14
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:3826   .debug_loc:000000000000007a .LLST15
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4396   .debug_str:0000000000000322 .LASF154
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:3840   .debug_loc:000000000000009b .LLST16
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4290   .debug_str:00000000000000e9 .LASF155
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:3854   .debug_loc:00000000000000bc .LLST17
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4404   .debug_str:000000000000034b .LASF156
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:3894   .debug_loc:000000000000010c .LLST18
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:3905   .debug_loc:000000000000012a .LLST19
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:546    .text.i2c_master_write_register:00000000000000d6 .LVL61
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:554    .text.i2c_master_write_register:00000000000000e4 .LVL62
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:432    .text.i2c_master_write_register:0000000000000026 .LVL47
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:438    .text.i2c_master_write_register:0000000000000032 .LVL48
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:446    .text.i2c_master_write_register:0000000000000040 .LVL49
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:454    .text.i2c_master_write_register:0000000000000052 .LVL50
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:462    .text.i2c_master_write_register:0000000000000060 .LVL51
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:469    .text.i2c_master_write_register:0000000000000070 .LVL52
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 25
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4426   .debug_str:00000000000003ae .LASF120
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4594   .debug_str:0000000000000809 .LASF121
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4294   .debug_str:00000000000000fe .LASF179
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4358   .debug_str:0000000000000244 .LASF122
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4574   .debug_str:000000000000079f .LASF123
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4548   .debug_str:0000000000000690 .LASF124
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4474   .debug_str:00000000000004d4 .LASF125
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4576   .debug_str:00000000000007b2 .LASF126
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4432   .debug_str:00000000000003c6 .LASF127
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4456   .debug_str:000000000000045a .LASF128
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4374   .debug_str:0000000000000292 .LASF129
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4258   .debug_str:000000000000001b .LASF130
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4268   .debug_str:0000000000000055 .LASF131
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4330   .debug_str:00000000000001b7 .LASF132
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4584   .debug_str:00000000000007d3 .LASF133
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4498   .debug_str:0000000000000541 .LASF134
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4480   .debug_str:00000000000004f0 .LASF135
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4450   .debug_str:0000000000000435 .LASF136
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4304   .debug_str:0000000000000139 .LASF137
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4562   .debug_str:000000000000074e .LASF138
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4438   .debug_str:00000000000003ec .LASF139
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4572   .debug_str:0000000000000790 .LASF140
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4440   .debug_str:00000000000003fa .LASF141
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4264   .debug_str:000000000000003b .LASF142
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4364   .debug_str:0000000000000260 .LASF143
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4324   .debug_str:0000000000000196 .LASF144
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4570   .debug_str:0000000000000780 .LASF145
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4356   .debug_str:0000000000000238 .LASF146
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4536   .debug_str:000000000000065a .LASF147
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4472   .debug_str:00000000000004c4 .LASF148
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4366   .debug_str:0000000000000270 .LASF149
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4418   .debug_str:000000000000037c .LASF150
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4602   .debug_str:0000000000000832 .LASF151
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4530   .debug_str:000000000000062c .LASF157
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:394    .text.i2c_master_write_register:0000000000000000 .LFB9
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:563    .text.i2c_master_write_register:00000000000000ea .LFE9
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:3775   .debug_loc:0000000000000000 .LLST12
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4596   .debug_str:0000000000000811 .LASF152
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:3798   .debug_loc:0000000000000038 .LLST13
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4288   .debug_str:00000000000000e4 .LASF153
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:3812   .debug_loc:0000000000000059 .LLST14
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:3826   .debug_loc:000000000000007a .LLST15
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4396   .debug_str:0000000000000322 .LASF154
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:3840   .debug_loc:000000000000009b .LLST16
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4290   .debug_str:00000000000000e9 .LASF155
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:3854   .debug_loc:00000000000000bc .LLST17
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4404   .debug_str:000000000000034b .LASF156
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:3894   .debug_loc:000000000000010c .LLST18
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:3905   .debug_loc:000000000000012a .LLST19
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:546    .text.i2c_master_write_register:00000000000000d6 .LVL61
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:554    .text.i2c_master_write_register:00000000000000e4 .LVL62
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:432    .text.i2c_master_write_register:0000000000000026 .LVL47
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:438    .text.i2c_master_write_register:0000000000000032 .LVL48
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:446    .text.i2c_master_write_register:0000000000000040 .LVL49
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:454    .text.i2c_master_write_register:0000000000000052 .LVL50
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:462    .text.i2c_master_write_register:0000000000000060 .LVL51
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:469    .text.i2c_master_write_register:0000000000000070 .LVL52
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s 			page 25
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:477    .text.i2c_master_write_register:000000000000007e .LVL53
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:484    .text.i2c_master_write_register:000000000000008c .LVL54
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:492    .text.i2c_master_write_register:000000000000009a .LVL55
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:506    .text.i2c_master_write_register:00000000000000ac .LVL57
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4394   .debug_str:0000000000000309 .LASF158
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:168    .text.i2c_master_read_register:0000000000000000 .LFB8
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:387    .text.i2c_master_read_register:0000000000000140 .LFE8
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:3916   .debug_loc:0000000000000148 .LLST4
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:3939   .debug_loc:0000000000000180 .LLST5
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:3953   .debug_loc:00000000000001a1 .LLST6
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:3967   .debug_loc:00000000000001c2 .LLST7
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:3981   .debug_loc:00000000000001e3 .LLST8
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:3995   .debug_loc:0000000000000204 .LLST9
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4044   .debug_loc:0000000000000264 .LLST10
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4055   .debug_loc:0000000000000282 .LLST11
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:362    .text.i2c_master_read_register:000000000000011a .LVL39
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:369    .text.i2c_master_read_register:0000000000000128 .LVL40
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:377    .text.i2c_master_read_register:0000000000000134 .LVL42
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:205    .text.i2c_master_read_register:0000000000000022 .LVL20
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:213    .text.i2c_master_read_register:0000000000000030 .LVL21
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:224    .text.i2c_master_read_register:0000000000000042 .LVL22
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:232    .text.i2c_master_read_register:0000000000000050 .LVL23
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:239    .text.i2c_master_read_register:0000000000000060 .LVL24
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:247    .text.i2c_master_read_register:000000000000006e .LVL25
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:254    .text.i2c_master_read_register:000000000000007c .LVL26
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:262    .text.i2c_master_read_register:000000000000008a .LVL27
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:268    .text.i2c_master_read_register:0000000000000096 .LVL28
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:276    .text.i2c_master_read_register:00000000000000a4 .LVL29
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:284    .text.i2c_master_read_register:00000000000000b4 .LVL30
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:292    .text.i2c_master_read_register:00000000000000c2 .LVL31
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:299    .text.i2c_master_read_register:00000000000000d2 .LVL32
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:304    .text.i2c_master_read_register:00000000000000de .LVL33
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:320    .text.i2c_master_read_register:00000000000000f2 .LVL35
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4512   .debug_str:00000000000005e6 .LASF159
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:20     .text.mpu_delay:0000000000000000 .LFB7
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:161    .text.mpu_delay:00000000000000ce .LFE7
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4071   .debug_loc:00000000000002ac .LLST0
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4354   .debug_str:0000000000000231 .LASF160
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4089   .debug_loc:00000000000002d8 .LLST1
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4556   .debug_str:00000000000006b1 .LASF161
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4107   .debug_loc:0000000000000304 .LLST2
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4278   .debug_str:0000000000000098 .LASF180
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4119   .debug_loc:000000000000031c .LLST3
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:57     .text.mpu_delay:0000000000000022 .LVL1
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:66     .text.mpu_delay:000000000000002e .LVL3
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:85     .text.mpu_delay:0000000000000052 .LVL6
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4458   .debug_str:0000000000000460 .LASF162
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:570    .text.i2c_master_init:0000000000000000 .LFB6
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:608    .text.i2c_master_init:0000000000000028 .LFE6
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4131   .debug_loc:0000000000000334 .LLST20
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4149   .debug_loc:0000000000000360 .LLST21
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:592    .text.i2c_master_init:0000000000000018 .LVL65
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:606    .text.i2c_master_init:0000000000000028 .LVL67
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4386   .debug_str:00000000000002d9 .LASF163
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:615    .text.mpu6500_install:0000000000000000 .LFB5
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:660    .text.mpu6500_install:0000000000000040 .LFE5
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4171   .debug_loc:0000000000000397 .LLST22
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 26
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:477    .text.i2c_master_write_register:000000000000007e .LVL53
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:484    .text.i2c_master_write_register:000000000000008c .LVL54
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:492    .text.i2c_master_write_register:000000000000009a .LVL55
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:506    .text.i2c_master_write_register:00000000000000ac .LVL57
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4394   .debug_str:0000000000000309 .LASF158
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:168    .text.i2c_master_read_register:0000000000000000 .LFB8
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:387    .text.i2c_master_read_register:0000000000000140 .LFE8
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:3916   .debug_loc:0000000000000148 .LLST4
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:3939   .debug_loc:0000000000000180 .LLST5
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:3953   .debug_loc:00000000000001a1 .LLST6
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:3967   .debug_loc:00000000000001c2 .LLST7
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:3981   .debug_loc:00000000000001e3 .LLST8
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:3995   .debug_loc:0000000000000204 .LLST9
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4044   .debug_loc:0000000000000264 .LLST10
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4055   .debug_loc:0000000000000282 .LLST11
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:362    .text.i2c_master_read_register:000000000000011a .LVL39
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:369    .text.i2c_master_read_register:0000000000000128 .LVL40
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:377    .text.i2c_master_read_register:0000000000000134 .LVL42
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:205    .text.i2c_master_read_register:0000000000000022 .LVL20
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:213    .text.i2c_master_read_register:0000000000000030 .LVL21
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:224    .text.i2c_master_read_register:0000000000000042 .LVL22
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:232    .text.i2c_master_read_register:0000000000000050 .LVL23
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:239    .text.i2c_master_read_register:0000000000000060 .LVL24
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:247    .text.i2c_master_read_register:000000000000006e .LVL25
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:254    .text.i2c_master_read_register:000000000000007c .LVL26
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:262    .text.i2c_master_read_register:000000000000008a .LVL27
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:268    .text.i2c_master_read_register:0000000000000096 .LVL28
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:276    .text.i2c_master_read_register:00000000000000a4 .LVL29
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:284    .text.i2c_master_read_register:00000000000000b4 .LVL30
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:292    .text.i2c_master_read_register:00000000000000c2 .LVL31
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:299    .text.i2c_master_read_register:00000000000000d2 .LVL32
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:304    .text.i2c_master_read_register:00000000000000de .LVL33
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:320    .text.i2c_master_read_register:00000000000000f2 .LVL35
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4512   .debug_str:00000000000005e6 .LASF159
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:20     .text.mpu_delay:0000000000000000 .LFB7
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:161    .text.mpu_delay:00000000000000ce .LFE7
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4071   .debug_loc:00000000000002ac .LLST0
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4354   .debug_str:0000000000000231 .LASF160
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4089   .debug_loc:00000000000002d8 .LLST1
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4556   .debug_str:00000000000006b1 .LASF161
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4107   .debug_loc:0000000000000304 .LLST2
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4278   .debug_str:0000000000000098 .LASF180
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4119   .debug_loc:000000000000031c .LLST3
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:57     .text.mpu_delay:0000000000000022 .LVL1
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:66     .text.mpu_delay:000000000000002e .LVL3
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:85     .text.mpu_delay:0000000000000052 .LVL6
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4458   .debug_str:0000000000000460 .LASF162
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:570    .text.i2c_master_init:0000000000000000 .LFB6
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:608    .text.i2c_master_init:0000000000000028 .LFE6
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4131   .debug_loc:0000000000000334 .LLST20
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4149   .debug_loc:0000000000000360 .LLST21
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:592    .text.i2c_master_init:0000000000000018 .LVL65
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:606    .text.i2c_master_init:0000000000000028 .LVL67
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4386   .debug_str:00000000000002d9 .LASF163
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:615    .text.mpu6500_install:0000000000000000 .LFB5
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:660    .text.mpu6500_install:0000000000000040 .LFE5
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4171   .debug_loc:0000000000000397 .LLST22
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s 			page 26
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4189   .debug_loc:00000000000003c3 .LLST23
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:635    .text.mpu6500_install:0000000000000016 .LVL69
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:658    .text.mpu6500_install:0000000000000040 .LVL70
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4272   .debug_str:0000000000000070 .LASF164
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4452   .debug_str:0000000000000442 .LASF165
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4468   .debug_str:00000000000004a6 .LASF166
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4434   .debug_str:00000000000003cf .LASF167
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4460   .debug_str:0000000000000470 .LASF168
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4610   .debug_str:0000000000000853 .LASF169
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4384   .debug_str:00000000000002ca .LASF170
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4500   .debug_str:0000000000000551 .LASF171
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4292   .debug_str:00000000000000ee .LASF172
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4424   .debug_str:000000000000039d .LASF173
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4312   .debug_str:0000000000000160 .LASF174
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:4416   .debug_str:000000000000036f .LASF175
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:401    .text.i2c_master_write_register:0000000000000002 .LCFI5
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:533    .text.i2c_master_write_register:00000000000000c2 .LCFI6
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:538    .text.i2c_master_write_register:00000000000000c4 .LCFI7
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:397    .text.i2c_master_write_register:0000000000000000 .LVL44
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:425    .text.i2c_master_write_register:0000000000000018 .LVL46
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:498    .text.i2c_master_write_register:000000000000009e .LVL56
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:525    .text.i2c_master_write_register:00000000000000ba .LVL59
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:536    .text.i2c_master_write_register:00000000000000c4 .LVL60
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:559    .text.i2c_master_write_register:00000000000000e8 .LVL63
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:407    .text.i2c_master_write_register:0000000000000006 .LVL45
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:522    .text.i2c_master_write_register:00000000000000b8 .LVL58
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:175    .text.i2c_master_read_register:0000000000000002 .LCFI2
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:347    .text.i2c_master_read_register:0000000000000108 .LCFI3
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:352    .text.i2c_master_read_register:000000000000010a .LCFI4
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:171    .text.i2c_master_read_register:0000000000000000 .LVL17
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:188    .text.i2c_master_read_register:000000000000000c .LVL19
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:312    .text.i2c_master_read_register:00000000000000e4 .LVL34
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:339    .text.i2c_master_read_register:0000000000000100 .LVL37
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:350    .text.i2c_master_read_register:000000000000010a .LVL38
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:373    .text.i2c_master_read_register:000000000000012a .LVL41
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:383    .text.i2c_master_read_register:000000000000013e .LVL43
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:181    .text.i2c_master_read_register:0000000000000006 .LVL18
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:336    .text.i2c_master_read_register:00000000000000fe .LVL36
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:29     .text.mpu_delay:0000000000000002 .LCFI0
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:157    .text.mpu_delay:00000000000000cc .LCFI1
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:24     .text.mpu_delay:0000000000000000 .LVL0
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:149    .text.mpu_delay:00000000000000c4 .LVL16
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:69     .text.mpu_delay:0000000000000032 .LVL4
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:136    .text.mpu_delay:00000000000000b8 .LVL15
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:60     .text.mpu_delay:0000000000000026 .LVL2
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:77     .text.mpu_delay:0000000000000042 .LVL5
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:578    .text.i2c_master_init:0000000000000004 .LCFI8
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:602    .text.i2c_master_init:0000000000000020 .LCFI9
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:573    .text.i2c_master_init:0000000000000000 .LVL64
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:598    .text.i2c_master_init:000000000000001c .LVL66
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:622    .text.mpu6500_install:0000000000000002 .LCFI10
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:654    .text.mpu6500_install:0000000000000038 .LCFI11
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:618    .text.mpu6500_install:0000000000000000 .LVL68
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:681    .debug_info:0000000000000000 .Ldebug_info0
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:306    .text.i2c_master_read_register:00000000000000de .LBB2
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:316    .text.i2c_master_read_register:00000000000000e8 .LBE2
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:354    .text.i2c_master_read_register:000000000000010a .LBB3
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s 			page 27
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4189   .debug_loc:00000000000003c3 .LLST23
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:635    .text.mpu6500_install:0000000000000016 .LVL69
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:658    .text.mpu6500_install:0000000000000040 .LVL70
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4272   .debug_str:0000000000000070 .LASF164
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4452   .debug_str:0000000000000442 .LASF165
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4468   .debug_str:00000000000004a6 .LASF166
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4434   .debug_str:00000000000003cf .LASF167
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4460   .debug_str:0000000000000470 .LASF168
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4610   .debug_str:0000000000000853 .LASF169
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4384   .debug_str:00000000000002ca .LASF170
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4500   .debug_str:0000000000000551 .LASF171
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4292   .debug_str:00000000000000ee .LASF172
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4424   .debug_str:000000000000039d .LASF173
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4312   .debug_str:0000000000000160 .LASF174
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:4416   .debug_str:000000000000036f .LASF175
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:401    .text.i2c_master_write_register:0000000000000002 .LCFI5
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:533    .text.i2c_master_write_register:00000000000000c2 .LCFI6
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:538    .text.i2c_master_write_register:00000000000000c4 .LCFI7
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:397    .text.i2c_master_write_register:0000000000000000 .LVL44
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:425    .text.i2c_master_write_register:0000000000000018 .LVL46
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:498    .text.i2c_master_write_register:000000000000009e .LVL56
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:525    .text.i2c_master_write_register:00000000000000ba .LVL59
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:536    .text.i2c_master_write_register:00000000000000c4 .LVL60
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:559    .text.i2c_master_write_register:00000000000000e8 .LVL63
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:407    .text.i2c_master_write_register:0000000000000006 .LVL45
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:522    .text.i2c_master_write_register:00000000000000b8 .LVL58
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:175    .text.i2c_master_read_register:0000000000000002 .LCFI2
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:347    .text.i2c_master_read_register:0000000000000108 .LCFI3
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:352    .text.i2c_master_read_register:000000000000010a .LCFI4
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:171    .text.i2c_master_read_register:0000000000000000 .LVL17
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:188    .text.i2c_master_read_register:000000000000000c .LVL19
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:312    .text.i2c_master_read_register:00000000000000e4 .LVL34
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:339    .text.i2c_master_read_register:0000000000000100 .LVL37
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:350    .text.i2c_master_read_register:000000000000010a .LVL38
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:373    .text.i2c_master_read_register:000000000000012a .LVL41
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:383    .text.i2c_master_read_register:000000000000013e .LVL43
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:181    .text.i2c_master_read_register:0000000000000006 .LVL18
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:336    .text.i2c_master_read_register:00000000000000fe .LVL36
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:29     .text.mpu_delay:0000000000000002 .LCFI0
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:157    .text.mpu_delay:00000000000000cc .LCFI1
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:24     .text.mpu_delay:0000000000000000 .LVL0
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:149    .text.mpu_delay:00000000000000c4 .LVL16
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:69     .text.mpu_delay:0000000000000032 .LVL4
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:136    .text.mpu_delay:00000000000000b8 .LVL15
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:60     .text.mpu_delay:0000000000000026 .LVL2
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:77     .text.mpu_delay:0000000000000042 .LVL5
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:578    .text.i2c_master_init:0000000000000004 .LCFI8
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:602    .text.i2c_master_init:0000000000000020 .LCFI9
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:573    .text.i2c_master_init:0000000000000000 .LVL64
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:598    .text.i2c_master_init:000000000000001c .LVL66
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:622    .text.mpu6500_install:0000000000000002 .LCFI10
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:654    .text.mpu6500_install:0000000000000038 .LCFI11
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:618    .text.mpu6500_install:0000000000000000 .LVL68
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:681    .debug_info:0000000000000000 .Ldebug_info0
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:306    .text.i2c_master_read_register:00000000000000de .LBB2
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:316    .text.i2c_master_read_register:00000000000000e8 .LBE2
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:354    .text.i2c_master_read_register:000000000000010a .LBB3
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s 			page 27
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:385    .text.i2c_master_read_register:0000000000000140 .LBE3
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:495    .text.i2c_master_write_register:000000000000009c .LBB4
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:502    .text.i2c_master_write_register:00000000000000a2 .LBE4
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:540    .text.i2c_master_write_register:00000000000000c4 .LBB5
-C:\Users\Uzair\AppData\Local\Temp\cc0XQULa.s:561    .text.i2c_master_write_register:00000000000000ea .LBE5
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:385    .text.i2c_master_read_register:0000000000000140 .LBE3
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:495    .text.i2c_master_write_register:000000000000009c .LBB4
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:502    .text.i2c_master_write_register:00000000000000a2 .LBE4
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:540    .text.i2c_master_write_register:00000000000000c4 .LBB5
+C:\Users\Uzair\AppData\Local\Temp\ccJYAqcE.s:561    .text.i2c_master_write_register:00000000000000ea .LBE5
 
 UNDEFINED SYMBOLS
 __floatundidf

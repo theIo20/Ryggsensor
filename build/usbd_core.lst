@@ -1,4 +1,4 @@
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 1
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s 			page 1
 
 
    1              		.file	"usbd_core.c"
@@ -58,7 +58,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 1
   41:usbd_core.c   ****     [USB_EP_ATTR_BULK] = USB_EPTYPE_BULK,
   42:usbd_core.c   ****     [USB_EP_ATTR_INT]  = USB_EPTYPE_INTR,
   43:usbd_core.c   ****     [USB_EP_ATTR_ISO]  = USB_EPTYPE_ISOC
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 2
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s 			page 2
 
 
   44:usbd_core.c   **** };
@@ -118,7 +118,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 1
   24              		.cfi_def_cfa_offset 16
   25 0002 06C6     		sw	ra,12(sp)
   26              		.cfi_offset 1, -4
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 3
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s 			page 3
 
 
   89:usbd_core.c   ****     uint8_t max_len = ep_desc->wMaxPacketSize;
@@ -178,7 +178,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 1
  103:usbd_core.c   ****     transc->max_len = max_len;
   65              		.loc 1 103 21
   66 0042 1377F70F 		andi	a4,a4,255
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 4
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s 			page 4
 
 
   67              	.LVL5:
@@ -238,7 +238,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 1
  108              		.loc 1 97 9 is_stmt 1
   97:usbd_core.c   **** 
  109              		.loc 1 97 16 is_stmt 0
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 5
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s 			page 5
 
 
  110 007e F146     		li	a3,28
@@ -298,7 +298,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 1
  144              		.loc 1 123 1
  145 0006 06C6     		sw	ra,12(sp)
  146              		.cfi_offset 1, -4
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 6
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s 			page 6
 
 
  147              		.loc 1 126 8
@@ -358,7 +358,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 1
  189              		.align	1
  190              		.globl	usbd_ep_recev
  192              	usbd_ep_recev:
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 7
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s 			page 7
 
 
  193              	.LFB6:
@@ -418,7 +418,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 1
  218              		.loc 1 158 24
  219 001e 23AE0726 		sw	zero,636(a5)
  220              		.loc 1 160 8
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 8
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s 			page 8
 
 
  221 0022 83464500 		lbu	a3,4(a0)
@@ -478,7 +478,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 1
  176:usbd_core.c   ****                     bit7: endpoint direction which can be IN(1) or OUT(0)
  177:usbd_core.c   ****     \param[in]  pbuf: transmit buffer address pointer
  178:usbd_core.c   ****     \param[in]  len: buffer length
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 9
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s 			page 9
 
 
  179:usbd_core.c   ****     \param[out] none
@@ -538,7 +538,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 1
  290              		.loc 1 188 5
  189:usbd_core.c   **** 
  291              		.loc 1 189 5
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 10
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s 			page 10
 
 
  292              		.loc 1 191 5
@@ -598,7 +598,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 1
  215:usbd_core.c   ****     if (EP_DIR(ep_addr)) {
  324              		.loc 1 215 5
  212:usbd_core.c   ****     usb_transc *transc = NULL;
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 11
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s 			page 11
 
 
  325              		.loc 1 212 1 is_stmt 0
@@ -658,7 +658,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 1
  366              	.L17:
  367              	.LCFI12:
  368              		.cfi_restore_state
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 12
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s 			page 12
 
 
  218:usbd_core.c   ****     }
@@ -718,7 +718,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 1
  404 000e 93F5F507 		andi	a1,a1,127
  405              	.LVL33:
  406 0012 F147     		li	a5,28
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 13
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s 			page 13
 
 
  407 0014 B385F502 		mul	a1,a1,a5
@@ -778,7 +778,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 1
  255:usbd_core.c   **** /*!
  256:usbd_core.c   ****     \brief      flush the endpoint FIFOs
  257:usbd_core.c   ****     \param[in]  udev: pointer to usb core instance
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 14
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s 			page 14
 
 
  258:usbd_core.c   ****     \param[in]  ep_addr: endpoint address
@@ -838,7 +838,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 1
  483              	.LVL42:
  484              	.L27:
  485              	.LCFI18:
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 15
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s 			page 15
 
 
  486              		.cfi_restore_state
@@ -898,7 +898,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 1
  518              		.loc 1 297 5
  519              		.loc 1 297 40 is_stmt 0
  520 0000 F147     		li	a5,28
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 16
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s 			page 16
 
 
  521 0002 B385F502 		mul	a1,a1,a5
@@ -958,7 +958,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 1
  557 0010 4101     		addi	sp,sp,16
  558              	.LCFI20:
  559              		.cfi_def_cfa_offset 0
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 17
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s 			page 17
 
 
  311:usbd_core.c   ****     usb_mdelay(3);
@@ -1018,7 +1018,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 1
  595              		.loc 1 327 5
  596 0012 17030000 		tail	usb_mdelay
  596      67000300 
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 18
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s 			page 18
 
 
  597              	.LVL54:
@@ -1078,7 +1078,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 1
  641              		.loc 1 66 5
  642 002c 2285     		mv	a0,s0
  643 002e 97000000 		call	usbd_disconnect
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 19
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s 			page 19
 
 
  643      E7800000 
@@ -1137,732 +1137,732 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 1
  692              		.file 8 "drv_usb_dev.h"
  693              		.file 9 "usbd_core.h"
  694              		.file 10 "drv_usb_hw.h"
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 20
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s 			page 20
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 usbd_core.c
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:13     .text.usbd_ep_setup:0000000000000000 usbd_ep_setup
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:17     .text.usbd_ep_setup:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:19     .text.usbd_ep_setup:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:20     .text.usbd_ep_setup:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:21     .text.usbd_ep_setup:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:22     .text.usbd_ep_setup:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:24     .text.usbd_ep_setup:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:26     .text.usbd_ep_setup:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:28     .text.usbd_ep_setup:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:31     .text.usbd_ep_setup:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:34     .text.usbd_ep_setup:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:35     .text.usbd_ep_setup:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:39     .text.usbd_ep_setup:0000000000000014 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:40     .text.usbd_ep_setup:0000000000000014 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:44     .text.usbd_ep_setup:000000000000001e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:45     .text.usbd_ep_setup:000000000000001e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:50     .text.usbd_ep_setup:000000000000002c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:53     .text.usbd_ep_setup:0000000000000032 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:56     .text.usbd_ep_setup:0000000000000034 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:57     .text.usbd_ep_setup:0000000000000034 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:61     .text.usbd_ep_setup:000000000000003c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:62     .text.usbd_ep_setup:000000000000003c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:66     .text.usbd_ep_setup:0000000000000042 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:69     .text.usbd_ep_setup:0000000000000046 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:73     .text.usbd_ep_setup:000000000000004e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:74     .text.usbd_ep_setup:000000000000004e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:76     .text.usbd_ep_setup:0000000000000052 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:77     .text.usbd_ep_setup:0000000000000052 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:79     .text.usbd_ep_setup:0000000000000056 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:82     .text.usbd_ep_setup:0000000000000058 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:84     .text.usbd_ep_setup:000000000000005a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:89     .text.usbd_ep_setup:0000000000000068 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:92     .text.usbd_ep_setup:000000000000006e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:95     .text.usbd_ep_setup:0000000000000076 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:96     .text.usbd_ep_setup:0000000000000076 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:97     .text.usbd_ep_setup:0000000000000078 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:98     .text.usbd_ep_setup:0000000000000078 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:102    .text.usbd_ep_setup:000000000000007c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:107    .text.usbd_ep_setup:000000000000007e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:109    .text.usbd_ep_setup:000000000000007e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:110    .text.usbd_ep_setup:000000000000007e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:114    .text.usbd_ep_setup:0000000000000088 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:117    .text.usbd_ep_setup:000000000000008e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:120    .text.usbd_ep_setup:0000000000000090 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:121    .text.usbd_ep_setup:0000000000000090 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:124    .text.usbd_ep_setup:000000000000009a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:131    .text.usbd_ep_clear:0000000000000000 usbd_ep_clear
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:134    .text.usbd_ep_clear:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:136    .text.usbd_ep_clear:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:137    .text.usbd_ep_clear:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:138    .text.usbd_ep_clear:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:139    .text.usbd_ep_clear:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:141    .text.usbd_ep_clear:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:143    .text.usbd_ep_clear:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:145    .text.usbd_ep_clear:0000000000000006 .L0 
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 21
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:13     .text.usbd_ep_setup:0000000000000000 usbd_ep_setup
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:17     .text.usbd_ep_setup:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:19     .text.usbd_ep_setup:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:20     .text.usbd_ep_setup:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:21     .text.usbd_ep_setup:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:22     .text.usbd_ep_setup:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:24     .text.usbd_ep_setup:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:26     .text.usbd_ep_setup:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:28     .text.usbd_ep_setup:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:31     .text.usbd_ep_setup:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:34     .text.usbd_ep_setup:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:35     .text.usbd_ep_setup:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:39     .text.usbd_ep_setup:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:40     .text.usbd_ep_setup:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:44     .text.usbd_ep_setup:000000000000001e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:45     .text.usbd_ep_setup:000000000000001e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:50     .text.usbd_ep_setup:000000000000002c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:53     .text.usbd_ep_setup:0000000000000032 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:56     .text.usbd_ep_setup:0000000000000034 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:57     .text.usbd_ep_setup:0000000000000034 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:61     .text.usbd_ep_setup:000000000000003c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:62     .text.usbd_ep_setup:000000000000003c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:66     .text.usbd_ep_setup:0000000000000042 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:69     .text.usbd_ep_setup:0000000000000046 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:73     .text.usbd_ep_setup:000000000000004e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:74     .text.usbd_ep_setup:000000000000004e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:76     .text.usbd_ep_setup:0000000000000052 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:77     .text.usbd_ep_setup:0000000000000052 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:79     .text.usbd_ep_setup:0000000000000056 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:82     .text.usbd_ep_setup:0000000000000058 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:84     .text.usbd_ep_setup:000000000000005a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:89     .text.usbd_ep_setup:0000000000000068 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:92     .text.usbd_ep_setup:000000000000006e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:95     .text.usbd_ep_setup:0000000000000076 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:96     .text.usbd_ep_setup:0000000000000076 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:97     .text.usbd_ep_setup:0000000000000078 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:98     .text.usbd_ep_setup:0000000000000078 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:102    .text.usbd_ep_setup:000000000000007c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:107    .text.usbd_ep_setup:000000000000007e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:109    .text.usbd_ep_setup:000000000000007e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:110    .text.usbd_ep_setup:000000000000007e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:114    .text.usbd_ep_setup:0000000000000088 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:117    .text.usbd_ep_setup:000000000000008e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:120    .text.usbd_ep_setup:0000000000000090 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:121    .text.usbd_ep_setup:0000000000000090 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:124    .text.usbd_ep_setup:000000000000009a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:131    .text.usbd_ep_clear:0000000000000000 usbd_ep_clear
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:134    .text.usbd_ep_clear:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:136    .text.usbd_ep_clear:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:137    .text.usbd_ep_clear:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:138    .text.usbd_ep_clear:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:139    .text.usbd_ep_clear:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:141    .text.usbd_ep_clear:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:143    .text.usbd_ep_clear:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:145    .text.usbd_ep_clear:0000000000000006 .L0 
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s 			page 21
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:146    .text.usbd_ep_clear:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:148    .text.usbd_ep_clear:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:151    .text.usbd_ep_clear:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:152    .text.usbd_ep_clear:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:159    .text.usbd_ep_clear:000000000000001c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:162    .text.usbd_ep_clear:000000000000001e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:165    .text.usbd_ep_clear:0000000000000026 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:166    .text.usbd_ep_clear:0000000000000026 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:167    .text.usbd_ep_clear:0000000000000028 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:168    .text.usbd_ep_clear:0000000000000028 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:172    .text.usbd_ep_clear:000000000000002c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:177    .text.usbd_ep_clear:000000000000002e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:179    .text.usbd_ep_clear:000000000000002e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:180    .text.usbd_ep_clear:000000000000002e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:185    .text.usbd_ep_clear:000000000000003a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:192    .text.usbd_ep_recev:0000000000000000 usbd_ep_recev
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:195    .text.usbd_ep_recev:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:197    .text.usbd_ep_recev:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:198    .text.usbd_ep_recev:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:200    .text.usbd_ep_recev:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:204    .text.usbd_ep_recev:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:206    .text.usbd_ep_recev:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:208    .text.usbd_ep_recev:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:210    .text.usbd_ep_recev:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:212    .text.usbd_ep_recev:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:214    .text.usbd_ep_recev:0000000000000014 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:217    .text.usbd_ep_recev:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:219    .text.usbd_ep_recev:000000000000001e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:221    .text.usbd_ep_recev:0000000000000022 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:224    .text.usbd_ep_recev:0000000000000026 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:227    .text.usbd_ep_recev:0000000000000028 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:228    .text.usbd_ep_recev:0000000000000028 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:229    .text.usbd_ep_recev:0000000000000028 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:230    .text.usbd_ep_recev:0000000000000028 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:231    .text.usbd_ep_recev:0000000000000028 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:233    .text.usbd_ep_recev:000000000000002c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:234    .text.usbd_ep_recev:000000000000002c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:237    .text.usbd_ep_recev:0000000000000030 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:240    .text.usbd_ep_recev:0000000000000038 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:241    .text.usbd_ep_recev:0000000000000038 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:242    .text.usbd_ep_recev:000000000000003a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:246    .text.usbd_ep_recev:000000000000003e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:248    .text.usbd_ep_recev:0000000000000040 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:255    .text.usbd_ep_send:0000000000000000 usbd_ep_send
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:258    .text.usbd_ep_send:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:260    .text.usbd_ep_send:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:261    .text.usbd_ep_send:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:263    .text.usbd_ep_send:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:267    .text.usbd_ep_send:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:269    .text.usbd_ep_send:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:271    .text.usbd_ep_send:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:273    .text.usbd_ep_send:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:275    .text.usbd_ep_send:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:277    .text.usbd_ep_send:0000000000000014 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:280    .text.usbd_ep_send:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:282    .text.usbd_ep_send:000000000000001e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:284    .text.usbd_ep_send:0000000000000022 .L0 
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 22
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:146    .text.usbd_ep_clear:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:148    .text.usbd_ep_clear:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:151    .text.usbd_ep_clear:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:152    .text.usbd_ep_clear:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:159    .text.usbd_ep_clear:000000000000001c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:162    .text.usbd_ep_clear:000000000000001e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:165    .text.usbd_ep_clear:0000000000000026 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:166    .text.usbd_ep_clear:0000000000000026 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:167    .text.usbd_ep_clear:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:168    .text.usbd_ep_clear:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:172    .text.usbd_ep_clear:000000000000002c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:177    .text.usbd_ep_clear:000000000000002e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:179    .text.usbd_ep_clear:000000000000002e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:180    .text.usbd_ep_clear:000000000000002e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:185    .text.usbd_ep_clear:000000000000003a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:192    .text.usbd_ep_recev:0000000000000000 usbd_ep_recev
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:195    .text.usbd_ep_recev:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:197    .text.usbd_ep_recev:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:198    .text.usbd_ep_recev:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:200    .text.usbd_ep_recev:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:204    .text.usbd_ep_recev:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:206    .text.usbd_ep_recev:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:208    .text.usbd_ep_recev:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:210    .text.usbd_ep_recev:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:212    .text.usbd_ep_recev:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:214    .text.usbd_ep_recev:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:217    .text.usbd_ep_recev:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:219    .text.usbd_ep_recev:000000000000001e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:221    .text.usbd_ep_recev:0000000000000022 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:224    .text.usbd_ep_recev:0000000000000026 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:227    .text.usbd_ep_recev:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:228    .text.usbd_ep_recev:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:229    .text.usbd_ep_recev:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:230    .text.usbd_ep_recev:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:231    .text.usbd_ep_recev:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:233    .text.usbd_ep_recev:000000000000002c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:234    .text.usbd_ep_recev:000000000000002c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:237    .text.usbd_ep_recev:0000000000000030 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:240    .text.usbd_ep_recev:0000000000000038 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:241    .text.usbd_ep_recev:0000000000000038 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:242    .text.usbd_ep_recev:000000000000003a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:246    .text.usbd_ep_recev:000000000000003e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:248    .text.usbd_ep_recev:0000000000000040 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:255    .text.usbd_ep_send:0000000000000000 usbd_ep_send
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:258    .text.usbd_ep_send:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:260    .text.usbd_ep_send:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:261    .text.usbd_ep_send:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:263    .text.usbd_ep_send:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:267    .text.usbd_ep_send:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:269    .text.usbd_ep_send:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:271    .text.usbd_ep_send:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:273    .text.usbd_ep_send:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:275    .text.usbd_ep_send:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:277    .text.usbd_ep_send:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:280    .text.usbd_ep_send:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:282    .text.usbd_ep_send:000000000000001e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:284    .text.usbd_ep_send:0000000000000022 .L0 
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s 			page 22
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:287    .text.usbd_ep_send:0000000000000026 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:290    .text.usbd_ep_send:0000000000000028 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:291    .text.usbd_ep_send:0000000000000028 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:292    .text.usbd_ep_send:0000000000000028 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:293    .text.usbd_ep_send:0000000000000028 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:294    .text.usbd_ep_send:0000000000000028 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:296    .text.usbd_ep_send:000000000000002c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:297    .text.usbd_ep_send:000000000000002c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:300    .text.usbd_ep_send:0000000000000030 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:303    .text.usbd_ep_send:0000000000000038 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:304    .text.usbd_ep_send:0000000000000038 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:305    .text.usbd_ep_send:000000000000003a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:309    .text.usbd_ep_send:000000000000003e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:311    .text.usbd_ep_send:0000000000000040 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:318    .text.usbd_ep_stall:0000000000000000 usbd_ep_stall
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:321    .text.usbd_ep_stall:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:323    .text.usbd_ep_stall:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:324    .text.usbd_ep_stall:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:325    .text.usbd_ep_stall:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:326    .text.usbd_ep_stall:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:328    .text.usbd_ep_stall:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:330    .text.usbd_ep_stall:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:332    .text.usbd_ep_stall:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:333    .text.usbd_ep_stall:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:335    .text.usbd_ep_stall:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:338    .text.usbd_ep_stall:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:339    .text.usbd_ep_stall:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:346    .text.usbd_ep_stall:000000000000001c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:349    .text.usbd_ep_stall:000000000000001e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:350    .text.usbd_ep_stall:000000000000001e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:353    .text.usbd_ep_stall:0000000000000024 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:356    .text.usbd_ep_stall:000000000000002c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:357    .text.usbd_ep_stall:000000000000002c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:358    .text.usbd_ep_stall:000000000000002e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:359    .text.usbd_ep_stall:000000000000002e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:363    .text.usbd_ep_stall:0000000000000032 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:368    .text.usbd_ep_stall:0000000000000034 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:370    .text.usbd_ep_stall:0000000000000034 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:371    .text.usbd_ep_stall:0000000000000034 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:376    .text.usbd_ep_stall:0000000000000040 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:383    .text.usbd_ep_stall_clear:0000000000000000 usbd_ep_stall_clear
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:386    .text.usbd_ep_stall_clear:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:388    .text.usbd_ep_stall_clear:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:389    .text.usbd_ep_stall_clear:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:390    .text.usbd_ep_stall_clear:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:391    .text.usbd_ep_stall_clear:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:393    .text.usbd_ep_stall_clear:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:395    .text.usbd_ep_stall_clear:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:397    .text.usbd_ep_stall_clear:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:398    .text.usbd_ep_stall_clear:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:400    .text.usbd_ep_stall_clear:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:403    .text.usbd_ep_stall_clear:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:404    .text.usbd_ep_stall_clear:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:411    .text.usbd_ep_stall_clear:000000000000001c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:414    .text.usbd_ep_stall_clear:000000000000001e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:415    .text.usbd_ep_stall_clear:000000000000001e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:417    .text.usbd_ep_stall_clear:0000000000000022 .L0 
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 23
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:287    .text.usbd_ep_send:0000000000000026 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:290    .text.usbd_ep_send:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:291    .text.usbd_ep_send:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:292    .text.usbd_ep_send:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:293    .text.usbd_ep_send:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:294    .text.usbd_ep_send:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:296    .text.usbd_ep_send:000000000000002c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:297    .text.usbd_ep_send:000000000000002c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:300    .text.usbd_ep_send:0000000000000030 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:303    .text.usbd_ep_send:0000000000000038 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:304    .text.usbd_ep_send:0000000000000038 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:305    .text.usbd_ep_send:000000000000003a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:309    .text.usbd_ep_send:000000000000003e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:311    .text.usbd_ep_send:0000000000000040 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:318    .text.usbd_ep_stall:0000000000000000 usbd_ep_stall
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:321    .text.usbd_ep_stall:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:323    .text.usbd_ep_stall:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:324    .text.usbd_ep_stall:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:325    .text.usbd_ep_stall:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:326    .text.usbd_ep_stall:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:328    .text.usbd_ep_stall:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:330    .text.usbd_ep_stall:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:332    .text.usbd_ep_stall:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:333    .text.usbd_ep_stall:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:335    .text.usbd_ep_stall:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:338    .text.usbd_ep_stall:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:339    .text.usbd_ep_stall:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:346    .text.usbd_ep_stall:000000000000001c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:349    .text.usbd_ep_stall:000000000000001e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:350    .text.usbd_ep_stall:000000000000001e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:353    .text.usbd_ep_stall:0000000000000024 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:356    .text.usbd_ep_stall:000000000000002c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:357    .text.usbd_ep_stall:000000000000002c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:358    .text.usbd_ep_stall:000000000000002e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:359    .text.usbd_ep_stall:000000000000002e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:363    .text.usbd_ep_stall:0000000000000032 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:368    .text.usbd_ep_stall:0000000000000034 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:370    .text.usbd_ep_stall:0000000000000034 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:371    .text.usbd_ep_stall:0000000000000034 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:376    .text.usbd_ep_stall:0000000000000040 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:383    .text.usbd_ep_stall_clear:0000000000000000 usbd_ep_stall_clear
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:386    .text.usbd_ep_stall_clear:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:388    .text.usbd_ep_stall_clear:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:389    .text.usbd_ep_stall_clear:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:390    .text.usbd_ep_stall_clear:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:391    .text.usbd_ep_stall_clear:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:393    .text.usbd_ep_stall_clear:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:395    .text.usbd_ep_stall_clear:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:397    .text.usbd_ep_stall_clear:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:398    .text.usbd_ep_stall_clear:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:400    .text.usbd_ep_stall_clear:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:403    .text.usbd_ep_stall_clear:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:404    .text.usbd_ep_stall_clear:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:411    .text.usbd_ep_stall_clear:000000000000001c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:414    .text.usbd_ep_stall_clear:000000000000001e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:415    .text.usbd_ep_stall_clear:000000000000001e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:417    .text.usbd_ep_stall_clear:0000000000000022 .L0 
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s 			page 23
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:420    .text.usbd_ep_stall_clear:000000000000002a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:421    .text.usbd_ep_stall_clear:000000000000002a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:422    .text.usbd_ep_stall_clear:000000000000002c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:423    .text.usbd_ep_stall_clear:000000000000002c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:427    .text.usbd_ep_stall_clear:0000000000000030 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:432    .text.usbd_ep_stall_clear:0000000000000032 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:434    .text.usbd_ep_stall_clear:0000000000000032 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:435    .text.usbd_ep_stall_clear:0000000000000032 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:440    .text.usbd_ep_stall_clear:000000000000003e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:447    .text.usbd_fifo_flush:0000000000000000 usbd_fifo_flush
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:450    .text.usbd_fifo_flush:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:452    .text.usbd_fifo_flush:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:453    .text.usbd_fifo_flush:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:454    .text.usbd_fifo_flush:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:456    .text.usbd_fifo_flush:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:458    .text.usbd_fifo_flush:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:460    .text.usbd_fifo_flush:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:461    .text.usbd_fifo_flush:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:463    .text.usbd_fifo_flush:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:468    .text.usbd_fifo_flush:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:474    .text.usbd_fifo_flush:000000000000001c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:475    .text.usbd_fifo_flush:000000000000001c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:476    .text.usbd_fifo_flush:000000000000001e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:477    .text.usbd_fifo_flush:000000000000001e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:481    .text.usbd_fifo_flush:0000000000000022 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:486    .text.usbd_fifo_flush:0000000000000024 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:488    .text.usbd_fifo_flush:0000000000000024 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:491    .text.usbd_fifo_flush:000000000000002e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:498    .text.usbd_addr_set:0000000000000000 usbd_addr_set
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:501    .text.usbd_addr_set:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:503    .text.usbd_addr_set:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:504    .text.usbd_addr_set:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:506    .text.usbd_addr_set:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:513    .text.usbd_rxcount_get:0000000000000000 usbd_rxcount_get
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:516    .text.usbd_rxcount_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:518    .text.usbd_rxcount_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:519    .text.usbd_rxcount_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:520    .text.usbd_rxcount_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:525    .text.usbd_rxcount_get:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:528    .text.usbd_rxcount_get:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:535    .text.usbd_connect:0000000000000000 usbd_connect
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:538    .text.usbd_connect:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:540    .text.usbd_connect:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:541    .text.usbd_connect:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:542    .text.usbd_connect:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:544    .text.usbd_connect:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:546    .text.usbd_connect:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:548    .text.usbd_connect:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:551    .text.usbd_connect:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:552    .text.usbd_connect:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:553    .text.usbd_connect:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:555    .text.usbd_connect:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:557    .text.usbd_connect:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:559    .text.usbd_connect:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:561    .text.usbd_connect:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:563    .text.usbd_connect:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:570    .text.usbd_disconnect:0000000000000000 usbd_disconnect
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 24
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:420    .text.usbd_ep_stall_clear:000000000000002a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:421    .text.usbd_ep_stall_clear:000000000000002a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:422    .text.usbd_ep_stall_clear:000000000000002c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:423    .text.usbd_ep_stall_clear:000000000000002c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:427    .text.usbd_ep_stall_clear:0000000000000030 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:432    .text.usbd_ep_stall_clear:0000000000000032 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:434    .text.usbd_ep_stall_clear:0000000000000032 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:435    .text.usbd_ep_stall_clear:0000000000000032 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:440    .text.usbd_ep_stall_clear:000000000000003e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:447    .text.usbd_fifo_flush:0000000000000000 usbd_fifo_flush
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:450    .text.usbd_fifo_flush:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:452    .text.usbd_fifo_flush:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:453    .text.usbd_fifo_flush:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:454    .text.usbd_fifo_flush:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:456    .text.usbd_fifo_flush:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:458    .text.usbd_fifo_flush:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:460    .text.usbd_fifo_flush:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:461    .text.usbd_fifo_flush:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:463    .text.usbd_fifo_flush:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:468    .text.usbd_fifo_flush:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:474    .text.usbd_fifo_flush:000000000000001c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:475    .text.usbd_fifo_flush:000000000000001c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:476    .text.usbd_fifo_flush:000000000000001e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:477    .text.usbd_fifo_flush:000000000000001e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:481    .text.usbd_fifo_flush:0000000000000022 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:486    .text.usbd_fifo_flush:0000000000000024 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:488    .text.usbd_fifo_flush:0000000000000024 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:491    .text.usbd_fifo_flush:000000000000002e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:498    .text.usbd_addr_set:0000000000000000 usbd_addr_set
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:501    .text.usbd_addr_set:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:503    .text.usbd_addr_set:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:504    .text.usbd_addr_set:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:506    .text.usbd_addr_set:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:513    .text.usbd_rxcount_get:0000000000000000 usbd_rxcount_get
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:516    .text.usbd_rxcount_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:518    .text.usbd_rxcount_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:519    .text.usbd_rxcount_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:520    .text.usbd_rxcount_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:525    .text.usbd_rxcount_get:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:528    .text.usbd_rxcount_get:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:535    .text.usbd_connect:0000000000000000 usbd_connect
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:538    .text.usbd_connect:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:540    .text.usbd_connect:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:541    .text.usbd_connect:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:542    .text.usbd_connect:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:544    .text.usbd_connect:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:546    .text.usbd_connect:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:548    .text.usbd_connect:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:551    .text.usbd_connect:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:552    .text.usbd_connect:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:553    .text.usbd_connect:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:555    .text.usbd_connect:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:557    .text.usbd_connect:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:559    .text.usbd_connect:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:561    .text.usbd_connect:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:563    .text.usbd_connect:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:570    .text.usbd_disconnect:0000000000000000 usbd_disconnect
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s 			page 24
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:573    .text.usbd_disconnect:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:575    .text.usbd_disconnect:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:576    .text.usbd_disconnect:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:577    .text.usbd_disconnect:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:579    .text.usbd_disconnect:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:581    .text.usbd_disconnect:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:583    .text.usbd_disconnect:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:586    .text.usbd_disconnect:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:587    .text.usbd_disconnect:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:588    .text.usbd_disconnect:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:590    .text.usbd_disconnect:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:592    .text.usbd_disconnect:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:594    .text.usbd_disconnect:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:596    .text.usbd_disconnect:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:598    .text.usbd_disconnect:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:605    .text.usbd_init:0000000000000000 usbd_init
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:608    .text.usbd_init:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:610    .text.usbd_init:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:611    .text.usbd_init:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:612    .text.usbd_init:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:614    .text.usbd_init:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:618    .text.usbd_init:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:619    .text.usbd_init:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:620    .text.usbd_init:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:622    .text.usbd_init:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:624    .text.usbd_init:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:626    .text.usbd_init:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:631    .text.usbd_init:0000000000000014 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:633    .text.usbd_init:0000000000000016 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:636    .text.usbd_init:000000000000001e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:642    .text.usbd_init:000000000000002c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:646    .text.usbd_init:0000000000000036 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:650    .text.usbd_init:0000000000000040 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:654    .text.usbd_init:000000000000004a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:655    .text.usbd_init:000000000000004a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:658    .text.usbd_init:0000000000000050 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:659    .text.usbd_init:0000000000000052 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:661    .text.usbd_init:0000000000000054 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:664    .text.usbd_init:0000000000000056 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:668    .text.usbd_init:0000000000000058 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:670    .text.usbd_init:000000000000005a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:679    .rodata.ep_type:0000000000000000 ep_type
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:676    .rodata.ep_type:0000000000000000 .LANCHOR0
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:127    .text.usbd_ep_setup:000000000000009a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:188    .text.usbd_ep_clear:000000000000003a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:251    .text.usbd_ep_recev:0000000000000040 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:314    .text.usbd_ep_send:0000000000000040 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:379    .text.usbd_ep_stall:0000000000000040 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:443    .text.usbd_ep_stall_clear:000000000000003e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:494    .text.usbd_fifo_flush:000000000000002e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:509    .text.usbd_addr_set:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:531    .text.usbd_rxcount_get:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:566    .text.usbd_connect:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:601    .text.usbd_disconnect:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:674    .text.usbd_init:000000000000005a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:573    .text.usbd_disconnect:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:575    .text.usbd_disconnect:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:576    .text.usbd_disconnect:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:577    .text.usbd_disconnect:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:579    .text.usbd_disconnect:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:581    .text.usbd_disconnect:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:583    .text.usbd_disconnect:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:586    .text.usbd_disconnect:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:587    .text.usbd_disconnect:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:588    .text.usbd_disconnect:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:590    .text.usbd_disconnect:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:592    .text.usbd_disconnect:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:594    .text.usbd_disconnect:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:596    .text.usbd_disconnect:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:598    .text.usbd_disconnect:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:605    .text.usbd_init:0000000000000000 usbd_init
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:608    .text.usbd_init:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:610    .text.usbd_init:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:611    .text.usbd_init:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:612    .text.usbd_init:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:614    .text.usbd_init:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:618    .text.usbd_init:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:619    .text.usbd_init:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:620    .text.usbd_init:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:622    .text.usbd_init:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:624    .text.usbd_init:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:626    .text.usbd_init:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:631    .text.usbd_init:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:633    .text.usbd_init:0000000000000016 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:636    .text.usbd_init:000000000000001e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:642    .text.usbd_init:000000000000002c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:646    .text.usbd_init:0000000000000036 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:650    .text.usbd_init:0000000000000040 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:654    .text.usbd_init:000000000000004a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:655    .text.usbd_init:000000000000004a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:658    .text.usbd_init:0000000000000050 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:659    .text.usbd_init:0000000000000052 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:661    .text.usbd_init:0000000000000054 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:664    .text.usbd_init:0000000000000056 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:668    .text.usbd_init:0000000000000058 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:670    .text.usbd_init:000000000000005a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:679    .rodata.ep_type:0000000000000000 ep_type
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:676    .rodata.ep_type:0000000000000000 .LANCHOR0
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:127    .text.usbd_ep_setup:000000000000009a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:188    .text.usbd_ep_clear:000000000000003a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:251    .text.usbd_ep_recev:0000000000000040 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:314    .text.usbd_ep_send:0000000000000040 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:379    .text.usbd_ep_stall:0000000000000040 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:443    .text.usbd_ep_stall_clear:000000000000003e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:494    .text.usbd_fifo_flush:000000000000002e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:509    .text.usbd_addr_set:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:531    .text.usbd_rxcount_get:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:566    .text.usbd_connect:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:601    .text.usbd_disconnect:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:674    .text.usbd_init:000000000000005a .L0 
                      .debug_frame:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:105    .text.usbd_ep_setup:000000000000007e .L2
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 25
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:105    .text.usbd_ep_setup:000000000000007e .L2
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s 			page 25
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:59     .text.usbd_ep_setup:000000000000003c .L3
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:175    .text.usbd_ep_clear:000000000000002e .L6
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:157    .text.usbd_ep_clear:000000000000001c .L9
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:235    .text.usbd_ep_recev:0000000000000030 .L11
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:298    .text.usbd_ep_send:0000000000000030 .L14
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:366    .text.usbd_ep_stall:0000000000000034 .L17
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:344    .text.usbd_ep_stall:000000000000001c .L20
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:430    .text.usbd_ep_stall_clear:0000000000000032 .L22
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:409    .text.usbd_ep_stall_clear:000000000000001c .L25
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:484    .text.usbd_fifo_flush:0000000000000024 .L27
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:472    .text.usbd_fifo_flush:000000000000001c .L28
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:3345   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5200   .debug_str:0000000000000863 .LASF225
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5056   .debug_str:0000000000000539 .LASF226
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5138   .debug_str:00000000000006ef .LASF227
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4804   .debug_ranges:0000000000000000 .Ldebug_ranges0
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4832   .debug_line:0000000000000000 .Ldebug_line0
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4988   .debug_str:0000000000000395 .LASF0
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4892   .debug_str:000000000000015a .LASF1
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4846   .debug_str:0000000000000048 .LASF4
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5110   .debug_str:000000000000064a .LASF2
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4836   .debug_str:0000000000000016 .LASF3
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5182   .debug_str:0000000000000807 .LASF5
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5018   .debug_str:0000000000000446 .LASF6
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4916   .debug_str:00000000000001f2 .LASF7
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4966   .debug_str:000000000000030a .LASF8
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5000   .debug_str:00000000000003d9 .LASF9
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4890   .debug_str:000000000000014c .LASF10
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4944   .debug_str:000000000000028d .LASF11
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5238   .debug_str:00000000000009b8 .LASF12
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4940   .debug_str:000000000000027a .LASF13
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5222   .debug_str:000000000000095c .LASF14
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4992   .debug_str:00000000000003b2 .LASF90
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5172   .debug_str:00000000000007d9 .LASF15
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5020   .debug_str:0000000000000459 .LASF16
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4886   .debug_str:000000000000012e .LASF17
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5044   .debug_str:00000000000004f5 .LASF18
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5260   .debug_str:0000000000000a18 .LASF19
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5264   .debug_str:0000000000000a2f .LASF20
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5008   .debug_str:0000000000000413 .LASF21
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5152   .debug_str:000000000000077a .LASF22
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5032   .debug_str:00000000000004ac .LASF23
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4878   .debug_str:0000000000000102 .LASF24
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5274   .debug_str:0000000000000a5b .LASF25
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5194   .debug_str:0000000000000847 .LASF26
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5192   .debug_str:000000000000083f .LASF27
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5146   .debug_str:000000000000075b .LASF28
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4870   .debug_str:00000000000000c6 .LASF29
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5088   .debug_str:00000000000005dc .LASF30
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5078   .debug_str:00000000000005af .LASF31
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5250   .debug_str:00000000000009e7 .LASF32
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5130   .debug_str:00000000000006c1 .LASF33
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5272   .debug_str:0000000000000a53 .LASF34
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5092   .debug_str:00000000000005f0 .LASF35
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5106   .debug_str:000000000000063d .LASF36
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5244   .debug_str:00000000000009d2 .LASF37
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5164   .debug_str:00000000000007b0 .LASF38
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 26
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:59     .text.usbd_ep_setup:000000000000003c .L3
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:175    .text.usbd_ep_clear:000000000000002e .L6
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:157    .text.usbd_ep_clear:000000000000001c .L9
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:235    .text.usbd_ep_recev:0000000000000030 .L11
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:298    .text.usbd_ep_send:0000000000000030 .L14
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:366    .text.usbd_ep_stall:0000000000000034 .L17
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:344    .text.usbd_ep_stall:000000000000001c .L20
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:430    .text.usbd_ep_stall_clear:0000000000000032 .L22
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:409    .text.usbd_ep_stall_clear:000000000000001c .L25
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:484    .text.usbd_fifo_flush:0000000000000024 .L27
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:472    .text.usbd_fifo_flush:000000000000001c .L28
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:3345   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5200   .debug_str:0000000000000863 .LASF225
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5056   .debug_str:0000000000000539 .LASF226
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5138   .debug_str:00000000000006ef .LASF227
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4804   .debug_ranges:0000000000000000 .Ldebug_ranges0
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4832   .debug_line:0000000000000000 .Ldebug_line0
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4988   .debug_str:0000000000000395 .LASF0
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4892   .debug_str:000000000000015a .LASF1
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4846   .debug_str:0000000000000048 .LASF4
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5110   .debug_str:000000000000064a .LASF2
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4836   .debug_str:0000000000000016 .LASF3
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5182   .debug_str:0000000000000807 .LASF5
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5018   .debug_str:0000000000000446 .LASF6
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4916   .debug_str:00000000000001f2 .LASF7
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4966   .debug_str:000000000000030a .LASF8
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5000   .debug_str:00000000000003d9 .LASF9
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4890   .debug_str:000000000000014c .LASF10
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4944   .debug_str:000000000000028d .LASF11
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5238   .debug_str:00000000000009b8 .LASF12
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4940   .debug_str:000000000000027a .LASF13
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5222   .debug_str:000000000000095c .LASF14
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4992   .debug_str:00000000000003b2 .LASF90
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5172   .debug_str:00000000000007d9 .LASF15
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5020   .debug_str:0000000000000459 .LASF16
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4886   .debug_str:000000000000012e .LASF17
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5044   .debug_str:00000000000004f5 .LASF18
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5260   .debug_str:0000000000000a18 .LASF19
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5264   .debug_str:0000000000000a2f .LASF20
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5008   .debug_str:0000000000000413 .LASF21
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5152   .debug_str:000000000000077a .LASF22
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5032   .debug_str:00000000000004ac .LASF23
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4878   .debug_str:0000000000000102 .LASF24
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5274   .debug_str:0000000000000a5b .LASF25
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5194   .debug_str:0000000000000847 .LASF26
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5192   .debug_str:000000000000083f .LASF27
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5146   .debug_str:000000000000075b .LASF28
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4870   .debug_str:00000000000000c6 .LASF29
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5088   .debug_str:00000000000005dc .LASF30
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5078   .debug_str:00000000000005af .LASF31
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5250   .debug_str:00000000000009e7 .LASF32
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5130   .debug_str:00000000000006c1 .LASF33
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5272   .debug_str:0000000000000a53 .LASF34
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5092   .debug_str:00000000000005f0 .LASF35
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5106   .debug_str:000000000000063d .LASF36
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5244   .debug_str:00000000000009d2 .LASF37
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5164   .debug_str:00000000000007b0 .LASF38
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s 			page 26
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5116   .debug_str:0000000000000672 .LASF39
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5132   .debug_str:00000000000006cc .LASF40
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5176   .debug_str:00000000000007f1 .LASF41
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5062   .debug_str:0000000000000563 .LASF42
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5178   .debug_str:00000000000007f9 .LASF43
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5188   .debug_str:0000000000000829 .LASF44
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5070   .debug_str:0000000000000588 .LASF45
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5236   .debug_str:00000000000009b0 .LASF46
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5048   .debug_str:000000000000050d .LASF47
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4914   .debug_str:00000000000001eb .LASF48
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4948   .debug_str:00000000000002aa .LASF49
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4854   .debug_str:0000000000000075 .LASF50
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5202   .debug_str:00000000000008eb .LASF51
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4932   .debug_str:0000000000000256 .LASF52
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5204   .debug_str:00000000000008f2 .LASF53
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5084   .debug_str:00000000000005cb .LASF54
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4920   .debug_str:000000000000020d .LASF55
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5002   .debug_str:00000000000003eb .LASF56
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5072   .debug_str:0000000000000591 .LASF57
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5118   .debug_str:000000000000067e .LASF58
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5050   .debug_str:0000000000000516 .LASF59
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5214   .debug_str:0000000000000933 .LASF60
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5036   .debug_str:00000000000004bc .LASF61
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5160   .debug_str:00000000000007a1 .LASF62
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5240   .debug_str:00000000000009c0 .LASF63
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5034   .debug_str:00000000000004b4 .LASF64
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4838   .debug_str:0000000000000020 .LASF65
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5122   .debug_str:000000000000068f .LASF66
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5030   .debug_str:00000000000004a2 .LASF67
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4924   .debug_str:0000000000000222 .LASF68
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5140   .debug_str:0000000000000743 .LASF69
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4954   .debug_str:00000000000002c4 .LASF70
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4950   .debug_str:00000000000002b5 .LASF71
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5066   .debug_str:0000000000000579 .LASF72
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4904   .debug_str:00000000000001b0 .LASF73
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4860   .debug_str:000000000000009a .LASF74
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5246   .debug_str:00000000000009d7 .LASF75
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4842   .debug_str:0000000000000031 .LASF76
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4844   .debug_str:000000000000003d .LASF77
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5226   .debug_str:0000000000000976 .LASF78
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5220   .debug_str:0000000000000954 .LASF79
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4908   .debug_str:00000000000001ca .LASF80
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4956   .debug_str:00000000000002cf .LASF81
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5170   .debug_str:00000000000007cd .LASF82
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4922   .debug_str:0000000000000218 .LASF83
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4872   .debug_str:00000000000000da .LASF96
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4946   .debug_str:00000000000002a4 .LASF84
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5206   .debug_str:00000000000008f7 .LASF85
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4848   .debug_str:0000000000000052 .LASF86
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5108   .debug_str:0000000000000644 .LASF87
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5124   .debug_str:0000000000000697 .LASF88
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4958   .debug_str:00000000000002d7 .LASF89
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4974   .debug_str:0000000000000344 .LASF91
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5026   .debug_str:0000000000000486 .LASF115
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5136   .debug_str:00000000000006df .LASF92
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5054   .debug_str:0000000000000529 .LASF93
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5014   .debug_str:000000000000042d .LASF94
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 27
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5116   .debug_str:0000000000000672 .LASF39
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5132   .debug_str:00000000000006cc .LASF40
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5176   .debug_str:00000000000007f1 .LASF41
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5062   .debug_str:0000000000000563 .LASF42
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5178   .debug_str:00000000000007f9 .LASF43
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5188   .debug_str:0000000000000829 .LASF44
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5070   .debug_str:0000000000000588 .LASF45
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5236   .debug_str:00000000000009b0 .LASF46
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5048   .debug_str:000000000000050d .LASF47
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4914   .debug_str:00000000000001eb .LASF48
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4948   .debug_str:00000000000002aa .LASF49
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4854   .debug_str:0000000000000075 .LASF50
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5202   .debug_str:00000000000008eb .LASF51
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4932   .debug_str:0000000000000256 .LASF52
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5204   .debug_str:00000000000008f2 .LASF53
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5084   .debug_str:00000000000005cb .LASF54
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4920   .debug_str:000000000000020d .LASF55
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5002   .debug_str:00000000000003eb .LASF56
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5072   .debug_str:0000000000000591 .LASF57
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5118   .debug_str:000000000000067e .LASF58
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5050   .debug_str:0000000000000516 .LASF59
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5214   .debug_str:0000000000000933 .LASF60
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5036   .debug_str:00000000000004bc .LASF61
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5160   .debug_str:00000000000007a1 .LASF62
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5240   .debug_str:00000000000009c0 .LASF63
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5034   .debug_str:00000000000004b4 .LASF64
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4838   .debug_str:0000000000000020 .LASF65
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5122   .debug_str:000000000000068f .LASF66
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5030   .debug_str:00000000000004a2 .LASF67
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4924   .debug_str:0000000000000222 .LASF68
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5140   .debug_str:0000000000000743 .LASF69
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4954   .debug_str:00000000000002c4 .LASF70
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4950   .debug_str:00000000000002b5 .LASF71
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5066   .debug_str:0000000000000579 .LASF72
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4904   .debug_str:00000000000001b0 .LASF73
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4860   .debug_str:000000000000009a .LASF74
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5246   .debug_str:00000000000009d7 .LASF75
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4842   .debug_str:0000000000000031 .LASF76
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4844   .debug_str:000000000000003d .LASF77
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5226   .debug_str:0000000000000976 .LASF78
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5220   .debug_str:0000000000000954 .LASF79
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4908   .debug_str:00000000000001ca .LASF80
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4956   .debug_str:00000000000002cf .LASF81
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5170   .debug_str:00000000000007cd .LASF82
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4922   .debug_str:0000000000000218 .LASF83
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4872   .debug_str:00000000000000da .LASF96
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4946   .debug_str:00000000000002a4 .LASF84
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5206   .debug_str:00000000000008f7 .LASF85
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4848   .debug_str:0000000000000052 .LASF86
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5108   .debug_str:0000000000000644 .LASF87
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5124   .debug_str:0000000000000697 .LASF88
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4958   .debug_str:00000000000002d7 .LASF89
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4974   .debug_str:0000000000000344 .LASF91
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5026   .debug_str:0000000000000486 .LASF115
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5136   .debug_str:00000000000006df .LASF92
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5054   .debug_str:0000000000000529 .LASF93
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5014   .debug_str:000000000000042d .LASF94
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s 			page 27
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5212   .debug_str:0000000000000923 .LASF95
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5256   .debug_str:00000000000009ff .LASF97
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4972   .debug_str:0000000000000336 .LASF98
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5134   .debug_str:00000000000006d6 .LASF99
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4938   .debug_str:0000000000000273 .LASF100
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4984   .debug_str:000000000000037a .LASF101
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5248   .debug_str:00000000000009df .LASF102
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4864   .debug_str:00000000000000ae .LASF103
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5168   .debug_str:00000000000007bc .LASF104
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5252   .debug_str:00000000000009ed .LASF105
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5042   .debug_str:00000000000004e5 .LASF106
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5114   .debug_str:0000000000000662 .LASF107
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4888   .debug_str:000000000000013f .LASF108
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5282   .debug_str:0000000000000a89 .LASF109
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5102   .debug_str:0000000000000624 .LASF110
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5024   .debug_str:0000000000000479 .LASF111
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5190   .debug_str:0000000000000830 .LASF112
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5058   .debug_str:0000000000000545 .LASF113
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5064   .debug_str:000000000000056d .LASF114
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5082   .debug_str:00000000000005bf .LASF116
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4964   .debug_str:00000000000002fa .LASF117
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4990   .debug_str:00000000000003a2 .LASF118
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5004   .debug_str:00000000000003f5 .LASF119
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5258   .debug_str:0000000000000a08 .LASF120
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5128   .debug_str:00000000000006b1 .LASF121
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4976   .debug_str:000000000000034e .LASF122
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4960   .debug_str:00000000000002e5 .LASF123
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4880   .debug_str:0000000000000108 .LASF124
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4862   .debug_str:00000000000000a3 .LASF125
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4978   .debug_str:000000000000035b .LASF126
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5268   .debug_str:0000000000000a43 .LASF127
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5038   .debug_str:00000000000004c7 .LASF128
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4980   .debug_str:0000000000000364 .LASF129
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4866   .debug_str:00000000000000b6 .LASF130
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5150   .debug_str:0000000000000770 .LASF131
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5184   .debug_str:0000000000000812 .LASF132
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5112   .debug_str:0000000000000658 .LASF133
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5090   .debug_str:00000000000005e7 .LASF134
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5174   .debug_str:00000000000007e5 .LASF135
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5120   .debug_str:0000000000000686 .LASF136
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5186   .debug_str:0000000000000821 .LASF137
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5288   .debug_str:0000000000000aaf .LASF138
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4952   .debug_str:00000000000002bc .LASF139
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5086   .debug_str:00000000000005d1 .LASF140
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5242   .debug_str:00000000000009c8 .LASF141
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4970   .debug_str:0000000000000324 .LASF142
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5210   .debug_str:0000000000000912 .LASF143
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5198   .debug_str:000000000000085c .LASF144
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5096   .debug_str:00000000000005ff .LASF145
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5046   .debug_str:0000000000000503 .LASF146
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5144   .debug_str:0000000000000753 .LASF147
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5278   .debug_str:0000000000000a70 .LASF148
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4912   .debug_str:00000000000001e3 .LASF149
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5216   .debug_str:000000000000093e .LASF150
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5270   .debug_str:0000000000000a4a .LASF151
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4998   .debug_str:00000000000003cf .LASF152
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5232   .debug_str:000000000000099f .LASF153
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 28
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5212   .debug_str:0000000000000923 .LASF95
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5256   .debug_str:00000000000009ff .LASF97
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4972   .debug_str:0000000000000336 .LASF98
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5134   .debug_str:00000000000006d6 .LASF99
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4938   .debug_str:0000000000000273 .LASF100
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4984   .debug_str:000000000000037a .LASF101
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5248   .debug_str:00000000000009df .LASF102
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4864   .debug_str:00000000000000ae .LASF103
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5168   .debug_str:00000000000007bc .LASF104
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5252   .debug_str:00000000000009ed .LASF105
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5042   .debug_str:00000000000004e5 .LASF106
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5114   .debug_str:0000000000000662 .LASF107
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4888   .debug_str:000000000000013f .LASF108
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5282   .debug_str:0000000000000a89 .LASF109
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5102   .debug_str:0000000000000624 .LASF110
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5024   .debug_str:0000000000000479 .LASF111
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5190   .debug_str:0000000000000830 .LASF112
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5058   .debug_str:0000000000000545 .LASF113
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5064   .debug_str:000000000000056d .LASF114
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5082   .debug_str:00000000000005bf .LASF116
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4964   .debug_str:00000000000002fa .LASF117
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4990   .debug_str:00000000000003a2 .LASF118
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5004   .debug_str:00000000000003f5 .LASF119
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5258   .debug_str:0000000000000a08 .LASF120
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5128   .debug_str:00000000000006b1 .LASF121
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4976   .debug_str:000000000000034e .LASF122
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4960   .debug_str:00000000000002e5 .LASF123
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4880   .debug_str:0000000000000108 .LASF124
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4862   .debug_str:00000000000000a3 .LASF125
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4978   .debug_str:000000000000035b .LASF126
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5268   .debug_str:0000000000000a43 .LASF127
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5038   .debug_str:00000000000004c7 .LASF128
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4980   .debug_str:0000000000000364 .LASF129
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4866   .debug_str:00000000000000b6 .LASF130
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5150   .debug_str:0000000000000770 .LASF131
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5184   .debug_str:0000000000000812 .LASF132
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5112   .debug_str:0000000000000658 .LASF133
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5090   .debug_str:00000000000005e7 .LASF134
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5174   .debug_str:00000000000007e5 .LASF135
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5120   .debug_str:0000000000000686 .LASF136
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5186   .debug_str:0000000000000821 .LASF137
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5288   .debug_str:0000000000000aaf .LASF138
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4952   .debug_str:00000000000002bc .LASF139
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5086   .debug_str:00000000000005d1 .LASF140
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5242   .debug_str:00000000000009c8 .LASF141
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4970   .debug_str:0000000000000324 .LASF142
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5210   .debug_str:0000000000000912 .LASF143
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5198   .debug_str:000000000000085c .LASF144
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5096   .debug_str:00000000000005ff .LASF145
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5046   .debug_str:0000000000000503 .LASF146
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5144   .debug_str:0000000000000753 .LASF147
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5278   .debug_str:0000000000000a70 .LASF148
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4912   .debug_str:00000000000001e3 .LASF149
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5216   .debug_str:000000000000093e .LASF150
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5270   .debug_str:0000000000000a4a .LASF151
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4998   .debug_str:00000000000003cf .LASF152
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5232   .debug_str:000000000000099f .LASF153
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s 			page 28
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5012   .debug_str:0000000000000424 .LASF154
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5052   .debug_str:0000000000000520 .LASF155
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4936   .debug_str:0000000000000268 .LASF156
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4874   .debug_str:00000000000000e4 .LASF157
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5234   .debug_str:00000000000009a7 .LASF158
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4930   .debug_str:000000000000024b .LASF159
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5104   .debug_str:0000000000000635 .LASF160
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5028   .debug_str:0000000000000491 .LASF161
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5166   .debug_str:00000000000007b7 .LASF162
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4850   .debug_str:0000000000000057 .LASF163
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4996   .debug_str:00000000000003c7 .LASF164
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5010   .debug_str:000000000000041a .LASF165
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5094   .debug_str:00000000000005fa .LASF166
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5156   .debug_str:0000000000000789 .LASF167
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5074   .debug_str:000000000000059b .LASF168
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5016   .debug_str:000000000000043e .LASF169
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4962   .debug_str:00000000000002f1 .LASF170
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4876   .debug_str:00000000000000ef .LASF171
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4986   .debug_str:0000000000000381 .LASF172
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4898   .debug_str:000000000000017d .LASF173
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5148   .debug_str:0000000000000762 .LASF174
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5180   .debug_str:0000000000000800 .LASF175
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4894   .debug_str:0000000000000166 .LASF176
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5266   .debug_str:0000000000000a38 .LASF177
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4926   .debug_str:000000000000022d .LASF178
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5254   .debug_str:00000000000009f5 .LASF179
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4882   .debug_str:0000000000000112 .LASF180
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5080   .debug_str:00000000000005ba .LASF181
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5154   .debug_str:0000000000000781 .LASF182
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4858   .debug_str:000000000000008f .LASF183
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5284   .debug_str:0000000000000a90 .LASF184
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5040   .debug_str:00000000000004d5 .LASF185
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5228   .debug_str:000000000000097f .LASF186
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5280   .debug_str:0000000000000a7c .LASF187
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4968   .debug_str:0000000000000315 .LASF188
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5126   .debug_str:00000000000006a1 .LASF189
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4906   .debug_str:00000000000001bb .LASF190
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4928   .debug_str:000000000000023b .LASF191
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:571    .text.usbd_disconnect:0000000000000000 .LFB14
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:599    .text.usbd_disconnect:000000000000001a .LFE14
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4009   .debug_loc:0000000000000000 .LLST39
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4994   .debug_str:00000000000003c2 .LASF193
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4027   .debug_loc:000000000000002c .LLST40
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:584    .text.usbd_disconnect:000000000000000c .LVL53
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:597    .text.usbd_disconnect:000000000000001a .LVL54
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4934   .debug_str:000000000000025b .LASF192
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:536    .text.usbd_connect:0000000000000000 .LFB13
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:564    .text.usbd_connect:000000000000001a .LFE13
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4041   .debug_loc:000000000000004d .LLST37
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4059   .debug_loc:0000000000000079 .LLST38
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:549    .text.usbd_connect:000000000000000c .LVL50
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:562    .text.usbd_connect:000000000000001a .LVL51
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4856   .debug_str:000000000000007e .LASF197
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:514    .text.usbd_rxcount_get:0000000000000000 .LFB12
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:529    .text.usbd_rxcount_get:000000000000000e .LFE12
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4073   .debug_loc:000000000000009a .LLST35
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5162   .debug_str:00000000000007a9 .LASF194
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 29
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5012   .debug_str:0000000000000424 .LASF154
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5052   .debug_str:0000000000000520 .LASF155
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4936   .debug_str:0000000000000268 .LASF156
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4874   .debug_str:00000000000000e4 .LASF157
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5234   .debug_str:00000000000009a7 .LASF158
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4930   .debug_str:000000000000024b .LASF159
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5104   .debug_str:0000000000000635 .LASF160
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5028   .debug_str:0000000000000491 .LASF161
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5166   .debug_str:00000000000007b7 .LASF162
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4850   .debug_str:0000000000000057 .LASF163
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4996   .debug_str:00000000000003c7 .LASF164
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5010   .debug_str:000000000000041a .LASF165
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5094   .debug_str:00000000000005fa .LASF166
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5156   .debug_str:0000000000000789 .LASF167
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5074   .debug_str:000000000000059b .LASF168
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5016   .debug_str:000000000000043e .LASF169
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4962   .debug_str:00000000000002f1 .LASF170
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4876   .debug_str:00000000000000ef .LASF171
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4986   .debug_str:0000000000000381 .LASF172
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4898   .debug_str:000000000000017d .LASF173
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5148   .debug_str:0000000000000762 .LASF174
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5180   .debug_str:0000000000000800 .LASF175
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4894   .debug_str:0000000000000166 .LASF176
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5266   .debug_str:0000000000000a38 .LASF177
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4926   .debug_str:000000000000022d .LASF178
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5254   .debug_str:00000000000009f5 .LASF179
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4882   .debug_str:0000000000000112 .LASF180
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5080   .debug_str:00000000000005ba .LASF181
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5154   .debug_str:0000000000000781 .LASF182
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4858   .debug_str:000000000000008f .LASF183
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5284   .debug_str:0000000000000a90 .LASF184
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5040   .debug_str:00000000000004d5 .LASF185
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5228   .debug_str:000000000000097f .LASF186
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5280   .debug_str:0000000000000a7c .LASF187
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4968   .debug_str:0000000000000315 .LASF188
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5126   .debug_str:00000000000006a1 .LASF189
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4906   .debug_str:00000000000001bb .LASF190
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4928   .debug_str:000000000000023b .LASF191
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:571    .text.usbd_disconnect:0000000000000000 .LFB14
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:599    .text.usbd_disconnect:000000000000001a .LFE14
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4009   .debug_loc:0000000000000000 .LLST39
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4994   .debug_str:00000000000003c2 .LASF193
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4027   .debug_loc:000000000000002c .LLST40
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:584    .text.usbd_disconnect:000000000000000c .LVL53
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:597    .text.usbd_disconnect:000000000000001a .LVL54
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4934   .debug_str:000000000000025b .LASF192
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:536    .text.usbd_connect:0000000000000000 .LFB13
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:564    .text.usbd_connect:000000000000001a .LFE13
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4041   .debug_loc:000000000000004d .LLST37
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4059   .debug_loc:0000000000000079 .LLST38
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:549    .text.usbd_connect:000000000000000c .LVL50
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:562    .text.usbd_connect:000000000000001a .LVL51
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4856   .debug_str:000000000000007e .LASF197
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:514    .text.usbd_rxcount_get:0000000000000000 .LFB12
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:529    .text.usbd_rxcount_get:000000000000000e .LFE12
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4073   .debug_loc:000000000000009a .LLST35
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5162   .debug_str:00000000000007a9 .LASF194
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s 			page 29
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4087   .debug_loc:00000000000000bb .LLST36
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5006   .debug_str:0000000000000405 .LASF195
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:499    .text.usbd_addr_set:0000000000000000 .LFB11
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:507    .text.usbd_addr_set:0000000000000008 .LFE11
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4101   .debug_loc:00000000000000dc .LLST33
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4868   .debug_str:00000000000000c1 .LASF196
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4115   .debug_loc:00000000000000fd .LLST34
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:505    .text.usbd_addr_set:0000000000000008 .LVL45
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5262   .debug_str:0000000000000a1f .LASF198
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:448    .text.usbd_fifo_flush:0000000000000000 .LFB10
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:492    .text.usbd_fifo_flush:000000000000002e .LFE10
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4129   .debug_loc:000000000000011e .LLST30
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4152   .debug_loc:0000000000000156 .LLST31
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4172   .debug_loc:0000000000000184 .LLST32
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:471    .text.usbd_fifo_flush:000000000000001c .LVL41
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:489    .text.usbd_fifo_flush:000000000000002c .LVL43
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5060   .debug_str:000000000000054f .LASF199
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:384    .text.usbd_ep_stall_clear:0000000000000000 .LFB9
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:441    .text.usbd_ep_stall_clear:000000000000003e .LFE9
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4197   .debug_loc:00000000000001be .LLST26
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4220   .debug_loc:00000000000001f6 .LLST27
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4238   .debug_loc:0000000000000222 .LLST28
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5068   .debug_str:0000000000000581 .LASF201
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4263   .debug_loc:000000000000025c .LLST29
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:418    .text.usbd_ep_stall_clear:000000000000002a .LVL35
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4982   .debug_str:000000000000036c .LASF200
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:319    .text.usbd_ep_stall:0000000000000000 .LFB8
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:377    .text.usbd_ep_stall:0000000000000040 .LFE8
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4280   .debug_loc:0000000000000287 .LLST22
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4303   .debug_loc:00000000000002bf .LLST23
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4321   .debug_loc:00000000000002eb .LLST24
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4346   .debug_loc:0000000000000325 .LLST25
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:354    .text.usbd_ep_stall:000000000000002c .LVL29
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5196   .debug_str:000000000000084f .LASF202
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:256    .text.usbd_ep_send:0000000000000000 .LFB7
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:312    .text.usbd_ep_send:0000000000000040 .LFE7
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4363   .debug_loc:0000000000000350 .LLST16
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4381   .debug_loc:000000000000037c .LLST17
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4395   .debug_loc:000000000000039d .LLST18
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4840   .debug_str:000000000000002c .LASF203
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4409   .debug_loc:00000000000003be .LLST19
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4423   .debug_loc:00000000000003df .LLST20
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4437   .debug_loc:0000000000000400 .LLST21
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:301    .text.usbd_ep_send:0000000000000038 .LVL25
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4852   .debug_str:0000000000000067 .LASF204
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:193    .text.usbd_ep_recev:0000000000000000 .LFB6
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:249    .text.usbd_ep_recev:0000000000000040 .LFE6
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4444   .debug_loc:0000000000000413 .LLST10
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4462   .debug_loc:000000000000043f .LLST11
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4476   .debug_loc:0000000000000460 .LLST12
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4490   .debug_loc:0000000000000481 .LLST13
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4504   .debug_loc:00000000000004a2 .LLST14
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4518   .debug_loc:00000000000004c3 .LLST15
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:238    .text.usbd_ep_recev:0000000000000038 .LVL20
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5276   .debug_str:0000000000000a62 .LASF205
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:132    .text.usbd_ep_clear:0000000000000000 .LFB5
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:186    .text.usbd_ep_clear:000000000000003a .LFE5
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 30
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4087   .debug_loc:00000000000000bb .LLST36
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5006   .debug_str:0000000000000405 .LASF195
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:499    .text.usbd_addr_set:0000000000000000 .LFB11
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:507    .text.usbd_addr_set:0000000000000008 .LFE11
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4101   .debug_loc:00000000000000dc .LLST33
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4868   .debug_str:00000000000000c1 .LASF196
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4115   .debug_loc:00000000000000fd .LLST34
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:505    .text.usbd_addr_set:0000000000000008 .LVL45
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5262   .debug_str:0000000000000a1f .LASF198
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:448    .text.usbd_fifo_flush:0000000000000000 .LFB10
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:492    .text.usbd_fifo_flush:000000000000002e .LFE10
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4129   .debug_loc:000000000000011e .LLST30
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4152   .debug_loc:0000000000000156 .LLST31
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4172   .debug_loc:0000000000000184 .LLST32
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:471    .text.usbd_fifo_flush:000000000000001c .LVL41
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:489    .text.usbd_fifo_flush:000000000000002c .LVL43
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5060   .debug_str:000000000000054f .LASF199
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:384    .text.usbd_ep_stall_clear:0000000000000000 .LFB9
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:441    .text.usbd_ep_stall_clear:000000000000003e .LFE9
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4197   .debug_loc:00000000000001be .LLST26
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4220   .debug_loc:00000000000001f6 .LLST27
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4238   .debug_loc:0000000000000222 .LLST28
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5068   .debug_str:0000000000000581 .LASF201
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4263   .debug_loc:000000000000025c .LLST29
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:418    .text.usbd_ep_stall_clear:000000000000002a .LVL35
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4982   .debug_str:000000000000036c .LASF200
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:319    .text.usbd_ep_stall:0000000000000000 .LFB8
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:377    .text.usbd_ep_stall:0000000000000040 .LFE8
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4280   .debug_loc:0000000000000287 .LLST22
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4303   .debug_loc:00000000000002bf .LLST23
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4321   .debug_loc:00000000000002eb .LLST24
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4346   .debug_loc:0000000000000325 .LLST25
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:354    .text.usbd_ep_stall:000000000000002c .LVL29
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5196   .debug_str:000000000000084f .LASF202
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:256    .text.usbd_ep_send:0000000000000000 .LFB7
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:312    .text.usbd_ep_send:0000000000000040 .LFE7
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4363   .debug_loc:0000000000000350 .LLST16
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4381   .debug_loc:000000000000037c .LLST17
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4395   .debug_loc:000000000000039d .LLST18
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4840   .debug_str:000000000000002c .LASF203
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4409   .debug_loc:00000000000003be .LLST19
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4423   .debug_loc:00000000000003df .LLST20
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4437   .debug_loc:0000000000000400 .LLST21
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:301    .text.usbd_ep_send:0000000000000038 .LVL25
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4852   .debug_str:0000000000000067 .LASF204
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:193    .text.usbd_ep_recev:0000000000000000 .LFB6
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:249    .text.usbd_ep_recev:0000000000000040 .LFE6
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4444   .debug_loc:0000000000000413 .LLST10
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4462   .debug_loc:000000000000043f .LLST11
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4476   .debug_loc:0000000000000460 .LLST12
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4490   .debug_loc:0000000000000481 .LLST13
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4504   .debug_loc:00000000000004a2 .LLST14
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4518   .debug_loc:00000000000004c3 .LLST15
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:238    .text.usbd_ep_recev:0000000000000038 .LVL20
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5276   .debug_str:0000000000000a62 .LASF205
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:132    .text.usbd_ep_clear:0000000000000000 .LFB5
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:186    .text.usbd_ep_clear:000000000000003a .LFE5
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s 			page 30
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4525   .debug_loc:00000000000004d6 .LLST6
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4548   .debug_loc:000000000000050e .LLST7
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4566   .debug_loc:000000000000053a .LLST8
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4591   .debug_loc:0000000000000574 .LLST9
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:163    .text.usbd_ep_clear:0000000000000026 .LVL13
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4896   .debug_str:000000000000016f .LASF206
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:14     .text.usbd_ep_setup:0000000000000000 .LFB4
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:125    .text.usbd_ep_setup:000000000000009a .LFE4
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4598   .debug_loc:0000000000000587 .LLST0
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4621   .debug_loc:00000000000005bf .LLST1
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5098   .debug_str:000000000000060c .LASF207
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4639   .debug_loc:00000000000005eb .LLST2
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4657   .debug_loc:0000000000000617 .LLST3
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4668   .debug_loc:0000000000000635 .LLST4
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4679   .debug_loc:0000000000000653 .LLST5
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:93     .text.usbd_ep_setup:0000000000000076 .LVL7
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4942   .debug_str:0000000000000283 .LASF208
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:606    .text.usbd_init:0000000000000000 .LFB3
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:671    .text.usbd_init:000000000000005a .LFE3
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4690   .debug_loc:0000000000000671 .LLST41
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4708   .debug_loc:000000000000069d .LLST42
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5142   .debug_str:000000000000074e .LASF209
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4732   .debug_loc:00000000000006d6 .LLST43
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4750   .debug_loc:0000000000000702 .LLST44
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:634    .text.usbd_init:000000000000001e .LVL58
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:640    .text.usbd_init:000000000000002c .LVL59
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:644    .text.usbd_init:0000000000000036 .LVL60
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:648    .text.usbd_init:0000000000000040 .LVL61
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:652    .text.usbd_init:000000000000004a .LVL62
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4900   .debug_str:000000000000018c .LASF210
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5076   .debug_str:00000000000005a4 .LASF211
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5100   .debug_str:0000000000000614 .LASF212
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4910   .debug_str:00000000000001d3 .LASF213
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4902   .debug_str:000000000000019f .LASF214
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5158   .debug_str:0000000000000790 .LASF215
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5208   .debug_str:00000000000008fe .LASF216
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5224   .debug_str:0000000000000965 .LASF217
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5286   .debug_str:0000000000000a9d .LASF218
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5230   .debug_str:000000000000098c .LASF219
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4834   .debug_str:0000000000000000 .LASF220
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4918   .debug_str:00000000000001fb .LASF221
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5022   .debug_str:000000000000046a .LASF222
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:5218   .debug_str:0000000000000946 .LASF223
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:4884   .debug_str:000000000000011d .LASF224
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:578    .text.usbd_disconnect:0000000000000002 .LCFI21
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:593    .text.usbd_disconnect:0000000000000012 .LCFI22
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:574    .text.usbd_disconnect:0000000000000000 .LVL52
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:543    .text.usbd_connect:0000000000000002 .LCFI19
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:558    .text.usbd_connect:0000000000000012 .LCFI20
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:539    .text.usbd_connect:0000000000000000 .LVL49
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:517    .text.usbd_rxcount_get:0000000000000000 .LVL46
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:526    .text.usbd_rxcount_get:000000000000000c .LVL48
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:522    .text.usbd_rxcount_get:0000000000000006 .LVL47
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:502    .text.usbd_addr_set:0000000000000000 .LVL44
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:455    .text.usbd_fifo_flush:0000000000000002 .LCFI16
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:480    .text.usbd_fifo_flush:0000000000000022 .LCFI17
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:485    .text.usbd_fifo_flush:0000000000000024 .LCFI18
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 31
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4525   .debug_loc:00000000000004d6 .LLST6
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4548   .debug_loc:000000000000050e .LLST7
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4566   .debug_loc:000000000000053a .LLST8
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4591   .debug_loc:0000000000000574 .LLST9
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:163    .text.usbd_ep_clear:0000000000000026 .LVL13
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4896   .debug_str:000000000000016f .LASF206
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:14     .text.usbd_ep_setup:0000000000000000 .LFB4
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:125    .text.usbd_ep_setup:000000000000009a .LFE4
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4598   .debug_loc:0000000000000587 .LLST0
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4621   .debug_loc:00000000000005bf .LLST1
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5098   .debug_str:000000000000060c .LASF207
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4639   .debug_loc:00000000000005eb .LLST2
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4657   .debug_loc:0000000000000617 .LLST3
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4668   .debug_loc:0000000000000635 .LLST4
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4679   .debug_loc:0000000000000653 .LLST5
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:93     .text.usbd_ep_setup:0000000000000076 .LVL7
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4942   .debug_str:0000000000000283 .LASF208
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:606    .text.usbd_init:0000000000000000 .LFB3
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:671    .text.usbd_init:000000000000005a .LFE3
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4690   .debug_loc:0000000000000671 .LLST41
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4708   .debug_loc:000000000000069d .LLST42
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5142   .debug_str:000000000000074e .LASF209
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4732   .debug_loc:00000000000006d6 .LLST43
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4750   .debug_loc:0000000000000702 .LLST44
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:634    .text.usbd_init:000000000000001e .LVL58
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:640    .text.usbd_init:000000000000002c .LVL59
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:644    .text.usbd_init:0000000000000036 .LVL60
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:648    .text.usbd_init:0000000000000040 .LVL61
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:652    .text.usbd_init:000000000000004a .LVL62
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4900   .debug_str:000000000000018c .LASF210
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5076   .debug_str:00000000000005a4 .LASF211
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5100   .debug_str:0000000000000614 .LASF212
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4910   .debug_str:00000000000001d3 .LASF213
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4902   .debug_str:000000000000019f .LASF214
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5158   .debug_str:0000000000000790 .LASF215
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5208   .debug_str:00000000000008fe .LASF216
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5224   .debug_str:0000000000000965 .LASF217
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5286   .debug_str:0000000000000a9d .LASF218
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5230   .debug_str:000000000000098c .LASF219
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4834   .debug_str:0000000000000000 .LASF220
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4918   .debug_str:00000000000001fb .LASF221
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5022   .debug_str:000000000000046a .LASF222
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:5218   .debug_str:0000000000000946 .LASF223
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:4884   .debug_str:000000000000011d .LASF224
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:578    .text.usbd_disconnect:0000000000000002 .LCFI21
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:593    .text.usbd_disconnect:0000000000000012 .LCFI22
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:574    .text.usbd_disconnect:0000000000000000 .LVL52
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:543    .text.usbd_connect:0000000000000002 .LCFI19
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:558    .text.usbd_connect:0000000000000012 .LCFI20
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:539    .text.usbd_connect:0000000000000000 .LVL49
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:517    .text.usbd_rxcount_get:0000000000000000 .LVL46
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:526    .text.usbd_rxcount_get:000000000000000c .LVL48
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:522    .text.usbd_rxcount_get:0000000000000006 .LVL47
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:502    .text.usbd_addr_set:0000000000000000 .LVL44
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:455    .text.usbd_fifo_flush:0000000000000002 .LCFI16
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:480    .text.usbd_fifo_flush:0000000000000022 .LCFI17
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:485    .text.usbd_fifo_flush:0000000000000024 .LCFI18
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s 			page 31
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:451    .text.usbd_fifo_flush:0000000000000000 .LVL38
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:465    .text.usbd_fifo_flush:000000000000000c .LVL39
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:469    .text.usbd_fifo_flush:0000000000000014 .LVL40
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:483    .text.usbd_fifo_flush:0000000000000024 .LVL42
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:392    .text.usbd_ep_stall_clear:0000000000000002 .LCFI13
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:426    .text.usbd_ep_stall_clear:0000000000000030 .LCFI14
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:431    .text.usbd_ep_stall_clear:0000000000000032 .LCFI15
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:387    .text.usbd_ep_stall_clear:0000000000000000 .LVL32
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:429    .text.usbd_ep_stall_clear:0000000000000032 .LVL36
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:405    .text.usbd_ep_stall_clear:0000000000000012 .LVL33
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:437    .text.usbd_ep_stall_clear:0000000000000038 .LVL37
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:412    .text.usbd_ep_stall_clear:000000000000001e .LVL34
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:327    .text.usbd_ep_stall:0000000000000002 .LCFI10
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:362    .text.usbd_ep_stall:0000000000000032 .LCFI11
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:367    .text.usbd_ep_stall:0000000000000034 .LCFI12
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:322    .text.usbd_ep_stall:0000000000000000 .LVL26
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:365    .text.usbd_ep_stall:0000000000000034 .LVL30
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:340    .text.usbd_ep_stall:0000000000000012 .LVL27
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:373    .text.usbd_ep_stall:000000000000003a .LVL31
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:347    .text.usbd_ep_stall:000000000000001e .LVL28
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:268    .text.usbd_ep_send:000000000000000c .LCFI8
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:308    .text.usbd_ep_send:000000000000003e .LCFI9
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:259    .text.usbd_ep_send:0000000000000000 .LVL21
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:264    .text.usbd_ep_send:0000000000000006 .LVL22
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:285    .text.usbd_ep_send:0000000000000026 .LVL23
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:288    .text.usbd_ep_send:0000000000000028 .LVL24
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:205    .text.usbd_ep_recev:000000000000000c .LCFI6
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:245    .text.usbd_ep_recev:000000000000003e .LCFI7
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:196    .text.usbd_ep_recev:0000000000000000 .LVL16
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:201    .text.usbd_ep_recev:0000000000000006 .LVL17
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:222    .text.usbd_ep_recev:0000000000000026 .LVL18
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:225    .text.usbd_ep_recev:0000000000000028 .LVL19
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:140    .text.usbd_ep_clear:0000000000000002 .LCFI3
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:171    .text.usbd_ep_clear:000000000000002c .LCFI4
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:176    .text.usbd_ep_clear:000000000000002e .LCFI5
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:135    .text.usbd_ep_clear:0000000000000000 .LVL10
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:174    .text.usbd_ep_clear:000000000000002e .LVL14
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:153    .text.usbd_ep_clear:0000000000000012 .LVL11
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:182    .text.usbd_ep_clear:0000000000000034 .LVL15
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:160    .text.usbd_ep_clear:000000000000001e .LVL12
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:23     .text.usbd_ep_setup:0000000000000002 .LCFI0
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:101    .text.usbd_ep_setup:000000000000007c .LCFI1
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:106    .text.usbd_ep_setup:000000000000007e .LCFI2
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:18     .text.usbd_ep_setup:0000000000000000 .LVL0
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:104    .text.usbd_ep_setup:000000000000007e .LVL8
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:80     .text.usbd_ep_setup:0000000000000058 .LVL6
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:54     .text.usbd_ep_setup:0000000000000034 .LVL3
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:118    .text.usbd_ep_setup:0000000000000090 .LVL9
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:32     .text.usbd_ep_setup:0000000000000010 .LVL1
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:64     .text.usbd_ep_setup:0000000000000042 .LVL4
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:37     .text.usbd_ep_setup:0000000000000014 .LVL2
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:67     .text.usbd_ep_setup:0000000000000046 .LVL5
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:613    .text.usbd_init:0000000000000002 .LCFI23
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:667    .text.usbd_init:0000000000000058 .LCFI24
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:609    .text.usbd_init:0000000000000000 .LVL55
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:662    .text.usbd_init:0000000000000054 .LVL63
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:665    .text.usbd_init:0000000000000056 .LVL64
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s 			page 32
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:451    .text.usbd_fifo_flush:0000000000000000 .LVL38
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:465    .text.usbd_fifo_flush:000000000000000c .LVL39
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:469    .text.usbd_fifo_flush:0000000000000014 .LVL40
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:483    .text.usbd_fifo_flush:0000000000000024 .LVL42
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:392    .text.usbd_ep_stall_clear:0000000000000002 .LCFI13
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:426    .text.usbd_ep_stall_clear:0000000000000030 .LCFI14
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:431    .text.usbd_ep_stall_clear:0000000000000032 .LCFI15
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:387    .text.usbd_ep_stall_clear:0000000000000000 .LVL32
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:429    .text.usbd_ep_stall_clear:0000000000000032 .LVL36
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:405    .text.usbd_ep_stall_clear:0000000000000012 .LVL33
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:437    .text.usbd_ep_stall_clear:0000000000000038 .LVL37
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:412    .text.usbd_ep_stall_clear:000000000000001e .LVL34
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:327    .text.usbd_ep_stall:0000000000000002 .LCFI10
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:362    .text.usbd_ep_stall:0000000000000032 .LCFI11
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:367    .text.usbd_ep_stall:0000000000000034 .LCFI12
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:322    .text.usbd_ep_stall:0000000000000000 .LVL26
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:365    .text.usbd_ep_stall:0000000000000034 .LVL30
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:340    .text.usbd_ep_stall:0000000000000012 .LVL27
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:373    .text.usbd_ep_stall:000000000000003a .LVL31
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:347    .text.usbd_ep_stall:000000000000001e .LVL28
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:268    .text.usbd_ep_send:000000000000000c .LCFI8
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:308    .text.usbd_ep_send:000000000000003e .LCFI9
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:259    .text.usbd_ep_send:0000000000000000 .LVL21
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:264    .text.usbd_ep_send:0000000000000006 .LVL22
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:285    .text.usbd_ep_send:0000000000000026 .LVL23
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:288    .text.usbd_ep_send:0000000000000028 .LVL24
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:205    .text.usbd_ep_recev:000000000000000c .LCFI6
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:245    .text.usbd_ep_recev:000000000000003e .LCFI7
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:196    .text.usbd_ep_recev:0000000000000000 .LVL16
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:201    .text.usbd_ep_recev:0000000000000006 .LVL17
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:222    .text.usbd_ep_recev:0000000000000026 .LVL18
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:225    .text.usbd_ep_recev:0000000000000028 .LVL19
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:140    .text.usbd_ep_clear:0000000000000002 .LCFI3
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:171    .text.usbd_ep_clear:000000000000002c .LCFI4
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:176    .text.usbd_ep_clear:000000000000002e .LCFI5
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:135    .text.usbd_ep_clear:0000000000000000 .LVL10
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:174    .text.usbd_ep_clear:000000000000002e .LVL14
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:153    .text.usbd_ep_clear:0000000000000012 .LVL11
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:182    .text.usbd_ep_clear:0000000000000034 .LVL15
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:160    .text.usbd_ep_clear:000000000000001e .LVL12
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:23     .text.usbd_ep_setup:0000000000000002 .LCFI0
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:101    .text.usbd_ep_setup:000000000000007c .LCFI1
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:106    .text.usbd_ep_setup:000000000000007e .LCFI2
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:18     .text.usbd_ep_setup:0000000000000000 .LVL0
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:104    .text.usbd_ep_setup:000000000000007e .LVL8
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:80     .text.usbd_ep_setup:0000000000000058 .LVL6
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:54     .text.usbd_ep_setup:0000000000000034 .LVL3
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:118    .text.usbd_ep_setup:0000000000000090 .LVL9
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:32     .text.usbd_ep_setup:0000000000000010 .LVL1
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:64     .text.usbd_ep_setup:0000000000000042 .LVL4
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:37     .text.usbd_ep_setup:0000000000000014 .LVL2
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:67     .text.usbd_ep_setup:0000000000000046 .LVL5
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:613    .text.usbd_init:0000000000000002 .LCFI23
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:667    .text.usbd_init:0000000000000058 .LCFI24
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:609    .text.usbd_init:0000000000000000 .LVL55
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:662    .text.usbd_init:0000000000000054 .LVL63
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:665    .text.usbd_init:0000000000000056 .LVL64
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s 			page 32
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:629    .text.usbd_init:0000000000000014 .LVL57
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:627    .text.usbd_init:0000000000000012 .LVL56
-C:\Users\Uzair\AppData\Local\Temp\cc3ZMzkG.s:696    .debug_info:0000000000000000 .Ldebug_info0
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:629    .text.usbd_init:0000000000000014 .LVL57
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:627    .text.usbd_init:0000000000000012 .LVL56
+C:\Users\Uzair\AppData\Local\Temp\ccBIsL18.s:696    .debug_info:0000000000000000 .Ldebug_info0
 
 UNDEFINED SYMBOLS
 usb_transc_active

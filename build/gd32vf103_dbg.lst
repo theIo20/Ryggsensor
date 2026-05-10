@@ -1,4 +1,4 @@
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s 			page 1
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s 			page 1
 
 
    1              		.file	"gd32vf103_dbg.c"
@@ -58,7 +58,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s 			page 1
   41:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dbg.c ****     \param[out] none
   42:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dbg.c ****     \retval     DBG_ID code
   43:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dbg.c **** */
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s 			page 2
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s 			page 2
 
 
   44:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dbg.c **** uint32_t dbg_id_get(void)
@@ -118,7 +118,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s 			page 1
   64:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dbg.c **** /*!
   65:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dbg.c ****     \brief      disable low power behavior when the mcu is in debug mode
   66:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dbg.c ****     \param[in]  dbg_low_power:
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s 			page 3
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s 			page 3
 
 
   67:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_dbg.c ****                 one or more parameters can be selected which are shown as below:
@@ -178,7 +178,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s 			page 1
   83              		.loc 1 93 13 is_stmt 0
   84 0000 372704E0 		li	a4,-536600576
   85 0004 5C43     		lw	a5,4(a4)
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s 			page 4
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s 			page 4
 
 
   86 0006 5D8D     		or	a0,a5,a0
@@ -235,126 +235,126 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s 			page 1
  122              		.file 3 "c:\\kth\\he1043\\toolchain-gd32v-v202-win\\toolchain-gd32v-v202-win\\compiler\\riscv64-un
  123              		.file 4 "./../../firmware/GD32VF103_standard_peripheral/Include/gd32vf103_dbg.h"
  124              		.file 5 "./../../firmware/GD32VF103_standard_peripheral/system_gd32vf103.h"
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s 			page 5
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s 			page 5
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 gd32vf103_dbg.c
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:13     .text.dbg_id_get:0000000000000000 dbg_id_get
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:17     .text.dbg_id_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:18     .text.dbg_id_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:19     .text.dbg_id_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:20     .text.dbg_id_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:23     .text.dbg_id_get:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:24     .text.dbg_id_get:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:31     .text.dbg_low_power_enable:0000000000000000 dbg_low_power_enable
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:34     .text.dbg_low_power_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:36     .text.dbg_low_power_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:37     .text.dbg_low_power_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:38     .text.dbg_low_power_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:44     .text.dbg_low_power_enable:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:45     .text.dbg_low_power_enable:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:52     .text.dbg_low_power_disable:0000000000000000 dbg_low_power_disable
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:55     .text.dbg_low_power_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:57     .text.dbg_low_power_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:58     .text.dbg_low_power_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:59     .text.dbg_low_power_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:62     .text.dbg_low_power_disable:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:65     .text.dbg_low_power_disable:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:69     .text.dbg_low_power_disable:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:70     .text.dbg_low_power_disable:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:77     .text.dbg_periph_enable:0000000000000000 dbg_periph_enable
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:80     .text.dbg_periph_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:82     .text.dbg_periph_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:83     .text.dbg_periph_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:84     .text.dbg_periph_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:90     .text.dbg_periph_enable:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:91     .text.dbg_periph_enable:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:98     .text.dbg_periph_disable:0000000000000000 dbg_periph_disable
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:101    .text.dbg_periph_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:103    .text.dbg_periph_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:104    .text.dbg_periph_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:105    .text.dbg_periph_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:108    .text.dbg_periph_disable:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:111    .text.dbg_periph_disable:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:115    .text.dbg_periph_disable:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:116    .text.dbg_periph_disable:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:27     .text.dbg_id_get:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:48     .text.dbg_low_power_enable:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:73     .text.dbg_low_power_disable:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:94     .text.dbg_periph_enable:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:119    .text.dbg_periph_disable:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:13     .text.dbg_id_get:0000000000000000 dbg_id_get
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:17     .text.dbg_id_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:18     .text.dbg_id_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:19     .text.dbg_id_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:20     .text.dbg_id_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:23     .text.dbg_id_get:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:24     .text.dbg_id_get:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:31     .text.dbg_low_power_enable:0000000000000000 dbg_low_power_enable
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:34     .text.dbg_low_power_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:36     .text.dbg_low_power_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:37     .text.dbg_low_power_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:38     .text.dbg_low_power_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:44     .text.dbg_low_power_enable:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:45     .text.dbg_low_power_enable:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:52     .text.dbg_low_power_disable:0000000000000000 dbg_low_power_disable
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:55     .text.dbg_low_power_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:57     .text.dbg_low_power_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:58     .text.dbg_low_power_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:59     .text.dbg_low_power_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:62     .text.dbg_low_power_disable:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:65     .text.dbg_low_power_disable:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:69     .text.dbg_low_power_disable:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:70     .text.dbg_low_power_disable:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:77     .text.dbg_periph_enable:0000000000000000 dbg_periph_enable
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:80     .text.dbg_periph_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:82     .text.dbg_periph_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:83     .text.dbg_periph_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:84     .text.dbg_periph_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:90     .text.dbg_periph_enable:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:91     .text.dbg_periph_enable:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:98     .text.dbg_periph_disable:0000000000000000 dbg_periph_disable
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:101    .text.dbg_periph_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:103    .text.dbg_periph_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:104    .text.dbg_periph_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:105    .text.dbg_periph_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:108    .text.dbg_periph_disable:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:111    .text.dbg_periph_disable:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:115    .text.dbg_periph_disable:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:116    .text.dbg_periph_disable:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:27     .text.dbg_id_get:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:48     .text.dbg_low_power_enable:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:73     .text.dbg_low_power_disable:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:94     .text.dbg_periph_enable:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:119    .text.dbg_periph_disable:0000000000000010 .L0 
                      .debug_frame:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:362    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:714    .debug_str:00000000000001ec .LASF32
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:726    .debug_str:00000000000002b8 .LASF33
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:680    .debug_str:000000000000009d .LASF34
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:642    .debug_ranges:0000000000000000 .Ldebug_ranges0
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:656    .debug_line:0000000000000000 .Ldebug_line0
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:696    .debug_str:0000000000000164 .LASF0
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:722    .debug_str:000000000000029c .LASF1
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:678    .debug_str:000000000000008f .LASF2
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:712    .debug_str:00000000000001e2 .LASF3
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s 			page 6
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:362    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:714    .debug_str:00000000000001ec .LASF32
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:726    .debug_str:00000000000002b8 .LASF33
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:680    .debug_str:000000000000009d .LASF34
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:642    .debug_ranges:0000000000000000 .Ldebug_ranges0
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:656    .debug_line:0000000000000000 .Ldebug_line0
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:696    .debug_str:0000000000000164 .LASF0
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:722    .debug_str:000000000000029c .LASF1
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:678    .debug_str:000000000000008f .LASF2
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:712    .debug_str:00000000000001e2 .LASF3
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s 			page 6
 
 
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:684    .debug_str:0000000000000103 .LASF4
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:666    .debug_str:0000000000000034 .LASF5
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:690    .debug_str:0000000000000136 .LASF9
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:682    .debug_str:00000000000000f1 .LASF6
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:708    .debug_str:00000000000001c4 .LASF7
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:700    .debug_str:000000000000017f .LASF8
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:716    .debug_str:0000000000000274 .LASF10
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:710    .debug_str:00000000000001d2 .LASF35
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:720    .debug_str:0000000000000290 .LASF11
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:676    .debug_str:0000000000000080 .LASF12
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:668    .debug_str:000000000000003d .LASF13
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:724    .debug_str:00000000000002a8 .LASF14
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:688    .debug_str:0000000000000126 .LASF15
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:706    .debug_str:00000000000001b4 .LASF16
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:660    .debug_str:000000000000000b .LASF17
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:664    .debug_str:0000000000000026 .LASF18
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:670    .debug_str:000000000000004c .LASF19
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:698    .debug_str:0000000000000171 .LASF20
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:686    .debug_str:0000000000000116 .LASF21
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:702    .debug_str:0000000000000196 .LASF22
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:728    .debug_str:00000000000002fe .LASF23
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:704    .debug_str:00000000000001a6 .LASF24
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:672    .debug_str:000000000000005a .LASF25
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:718    .debug_str:000000000000027d .LASF26
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:99     .text.dbg_periph_disable:0000000000000000 .LFB6
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:117    .text.dbg_periph_disable:0000000000000010 .LFE6
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:658    .debug_str:0000000000000000 .LASF28
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:551    .debug_loc:0000000000000000 .LLST3
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:730    .debug_str:000000000000030e .LASF27
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:78     .text.dbg_periph_enable:0000000000000000 .LFB5
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:92     .text.dbg_periph_enable:000000000000000c .LFE5
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:572    .debug_loc:000000000000002f .LLST2
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:674    .debug_str:000000000000006a .LASF29
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:53     .text.dbg_low_power_disable:0000000000000000 .LFB4
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:71     .text.dbg_low_power_disable:0000000000000010 .LFE4
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:694    .debug_str:0000000000000156 .LASF30
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:586    .debug_loc:0000000000000050 .LLST1
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:692    .debug_str:0000000000000141 .LASF31
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:32     .text.dbg_low_power_enable:0000000000000000 .LFB3
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:46     .text.dbg_low_power_enable:000000000000000c .LFE3
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:607    .debug_loc:000000000000007f .LLST0
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:662    .debug_str:000000000000001b .LASF36
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:14     .text.dbg_id_get:0000000000000000 .LFB2
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:25     .text.dbg_id_get:0000000000000008 .LFE2
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:102    .text.dbg_periph_disable:0000000000000000 .LVL7
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:109    .text.dbg_periph_disable:000000000000000a .LVL8
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:112    .text.dbg_periph_disable:000000000000000c .LVL9
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:81     .text.dbg_periph_enable:0000000000000000 .LVL5
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:87     .text.dbg_periph_enable:0000000000000008 .LVL6
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:56     .text.dbg_low_power_disable:0000000000000000 .LVL2
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:63     .text.dbg_low_power_disable:000000000000000a .LVL3
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:66     .text.dbg_low_power_disable:000000000000000c .LVL4
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:35     .text.dbg_low_power_enable:0000000000000000 .LVL0
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:41     .text.dbg_low_power_enable:0000000000000008 .LVL1
-C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s:126    .debug_info:0000000000000000 .Ldebug_info0
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:684    .debug_str:0000000000000103 .LASF4
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:666    .debug_str:0000000000000034 .LASF5
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:690    .debug_str:0000000000000136 .LASF9
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:682    .debug_str:00000000000000f1 .LASF6
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:708    .debug_str:00000000000001c4 .LASF7
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:700    .debug_str:000000000000017f .LASF8
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:716    .debug_str:0000000000000274 .LASF10
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:710    .debug_str:00000000000001d2 .LASF35
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:720    .debug_str:0000000000000290 .LASF11
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:676    .debug_str:0000000000000080 .LASF12
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:668    .debug_str:000000000000003d .LASF13
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:724    .debug_str:00000000000002a8 .LASF14
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:688    .debug_str:0000000000000126 .LASF15
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:706    .debug_str:00000000000001b4 .LASF16
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:660    .debug_str:000000000000000b .LASF17
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:664    .debug_str:0000000000000026 .LASF18
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:670    .debug_str:000000000000004c .LASF19
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:698    .debug_str:0000000000000171 .LASF20
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:686    .debug_str:0000000000000116 .LASF21
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:702    .debug_str:0000000000000196 .LASF22
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:728    .debug_str:00000000000002fe .LASF23
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:704    .debug_str:00000000000001a6 .LASF24
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:672    .debug_str:000000000000005a .LASF25
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:718    .debug_str:000000000000027d .LASF26
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:99     .text.dbg_periph_disable:0000000000000000 .LFB6
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:117    .text.dbg_periph_disable:0000000000000010 .LFE6
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:658    .debug_str:0000000000000000 .LASF28
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:551    .debug_loc:0000000000000000 .LLST3
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:730    .debug_str:000000000000030e .LASF27
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:78     .text.dbg_periph_enable:0000000000000000 .LFB5
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:92     .text.dbg_periph_enable:000000000000000c .LFE5
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:572    .debug_loc:000000000000002f .LLST2
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:674    .debug_str:000000000000006a .LASF29
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:53     .text.dbg_low_power_disable:0000000000000000 .LFB4
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:71     .text.dbg_low_power_disable:0000000000000010 .LFE4
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:694    .debug_str:0000000000000156 .LASF30
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:586    .debug_loc:0000000000000050 .LLST1
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:692    .debug_str:0000000000000141 .LASF31
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:32     .text.dbg_low_power_enable:0000000000000000 .LFB3
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:46     .text.dbg_low_power_enable:000000000000000c .LFE3
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:607    .debug_loc:000000000000007f .LLST0
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:662    .debug_str:000000000000001b .LASF36
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:14     .text.dbg_id_get:0000000000000000 .LFB2
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:25     .text.dbg_id_get:0000000000000008 .LFE2
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:102    .text.dbg_periph_disable:0000000000000000 .LVL7
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:109    .text.dbg_periph_disable:000000000000000a .LVL8
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:112    .text.dbg_periph_disable:000000000000000c .LVL9
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:81     .text.dbg_periph_enable:0000000000000000 .LVL5
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:87     .text.dbg_periph_enable:0000000000000008 .LVL6
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:56     .text.dbg_low_power_disable:0000000000000000 .LVL2
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:63     .text.dbg_low_power_disable:000000000000000a .LVL3
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:66     .text.dbg_low_power_disable:000000000000000c .LVL4
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:35     .text.dbg_low_power_enable:0000000000000000 .LVL0
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:41     .text.dbg_low_power_enable:0000000000000008 .LVL1
+C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s:126    .debug_info:0000000000000000 .Ldebug_info0
 
 NO UNDEFINED SYMBOLS
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccTATbAw.s 			page 7
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cceP8WW6.s 			page 7
 
 
