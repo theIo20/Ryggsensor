@@ -1,4 +1,4 @@
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 1
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s 			page 1
 
 
    1              		.file	"usb_serial_if.c"
@@ -58,7 +58,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 1
   24              	.LCFI0:
   25              		.cfi_def_cfa_offset 16
   26 0002 06C6     		sw	ra,12(sp)
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 2
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s 			page 2
 
 
   27              		.cfi_offset 1, -4
@@ -118,7 +118,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 1
   73              		.cfi_offset 18, -16
   74              		.cfi_offset 19, -20
   75              		.cfi_offset 20, -24
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 3
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s 			page 3
 
 
   76              		.cfi_offset 21, -28
@@ -178,7 +178,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 1
   53:usb_serial_if.c ****         for(int i = 0; i < usb_buffer.index; i++) data[i] = usb_buffer.buffer[i];
  115              		.loc 1 53 9 is_stmt 1
  116              	.LBB3:
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 4
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s 			page 4
 
 
  117              		.loc 1 53 13
@@ -238,7 +238,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 1
   41:usb_serial_if.c ****                 for(int i = 0; i < receive_length; i++) usb_buffer.buffer[usb_buffer.index + i] = r
  165              		.loc 1 41 13 is_stmt 1
   41:usb_serial_if.c ****                 for(int i = 0; i < receive_length; i++) usb_buffer.buffer[usb_buffer.index + i] = r
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 5
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s 			page 5
 
 
  166              		.loc 1 41 31 is_stmt 0
@@ -298,7 +298,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 1
  206 00be 23000A00 		sb	zero,%lo(packet_receive)(s4)
   48:usb_serial_if.c ****             usbd_ep_recev (&USB_OTG_dev, CDC_ACM_DATA_OUT_EP, receive_buffer, 64);
  207              		.loc 1 48 13 is_stmt 1
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 6
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s 			page 6
 
 
   48:usb_serial_if.c ****             usbd_ep_recev (&USB_OTG_dev, CDC_ACM_DATA_OUT_EP, receive_buffer, 64);
@@ -358,7 +358,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 1
  248              	.LCFI5:
  249              		.cfi_def_cfa_offset 16
  250 0002 06C6     		sw	ra,12(sp)
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 7
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s 			page 7
 
 
  251              		.cfi_offset 1, -4
@@ -418,7 +418,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 1
  289              		.loc 1 70 1
  290 004e 4101     		addi	sp,sp,16
  291              	.LCFI6:
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 8
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s 			page 8
 
 
  292              		.cfi_def_cfa_offset 0
@@ -478,7 +478,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 1
  339 000c 52C4     		sw	s4,8(sp)
  340 000e 56C2     		sw	s5,4(sp)
  341              		.cfi_offset 18, -16
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 9
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s 			page 9
 
 
  342              		.cfi_offset 19, -20
@@ -538,7 +538,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 1
  389 0058 37060000 		lui	a2,%hi(.LANCHOR3)
  390              		.loc 1 82 17 is_stmt 0
  391 005c 23800A00 		sb	zero,%lo(packet_sent)(s5)
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 10
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s 			page 10
 
 
   83:usb_serial_if.c ****     for(int i = 0; i < len; i++) tx_buffer[i] = ((uint8_t*)ptr)[i];
@@ -598,7 +598,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 1
  440              	.L27:
  441              	.LCFI9:
  442              		.cfi_restore_state
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 11
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s 			page 11
 
 
  443              	.LBB8:
@@ -658,7 +658,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 1
   98:usb_serial_if.c **** 
   99:usb_serial_if.c ****     /* reset HXTALEN, CKMEN, PLLEN bits */
  100:usb_serial_if.c ****     RCU_CTL &= ~(RCU_CTL_HXTALEN | RCU_CTL_CKMEN | RCU_CTL_PLLEN);
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 12
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s 			page 12
 
 
  483              		.loc 1 100 5 is_stmt 1
@@ -718,7 +718,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 1
  118:usb_serial_if.c ****     uint32_t stab_flag = 0U;
  520              		.loc 1 118 5
  119:usb_serial_if.c **** 
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 13
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s 			page 13
 
 
  120:usb_serial_if.c ****     /* enable HXTAL */
@@ -778,7 +778,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 1
  560              	.LBB11:
  561              	.LBB12:
  133:usb_serial_if.c ****     }
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 14
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s 			page 14
 
 
  134:usb_serial_if.c **** 
@@ -838,7 +838,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 1
  582              		.loc 1 160 18 is_stmt 0
  583 0096 D843     		lw	a4,4(a5)
  584 0098 758F     		and	a4,a4,a3
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 15
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s 			page 15
 
 
  585 009a D8C3     		sw	a4,4(a5)
@@ -898,7 +898,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 1
  621              		.loc 1 175 5 is_stmt 1
  622              		.loc 1 175 14 is_stmt 0
  623 00ce D843     		lw	a4,4(a5)
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 16
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s 			page 16
 
 
  624 00d0 719B     		andi	a4,a4,-4
@@ -958,7 +958,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 1
  664              		.section	.data.USB_OTG_dev,"aw"
  665              		.align	2
  666              		.set	.LANCHOR1,. + 0
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 17
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s 			page 17
 
 
  669              	USB_OTG_dev:
@@ -1013,815 +1013,815 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 1
  705              		.file 18 "usbd_core.h"
  706              		.file 19 "./../../firmware/GD32VF103_standard_peripheral/Include/gd32vf103_eclic.h"
  707              		.file 20 "drv_usb_hw.h"
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 18
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s 			page 18
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 usb_serial_if.c
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:682    .data.usb_buffer:0000000000000000 usb_buffer
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:662    .bss.tx_buffer:0000000000000000 tx_buffer
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:669    .data.USB_OTG_dev:0000000000000000 USB_OTG_dev
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:16     .text.usb_serial_connected:0000000000000000 usb_serial_connected
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:20     .text.usb_serial_connected:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:21     .text.usb_serial_connected:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:22     .text.usb_serial_connected:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:23     .text.usb_serial_connected:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:25     .text.usb_serial_connected:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:27     .text.usb_serial_connected:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:29     .text.usb_serial_connected:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:32     .text.usb_serial_connected:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:33     .text.usb_serial_connected:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:37     .text.usb_serial_connected:0000000000000014 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:39     .text.usb_serial_connected:0000000000000016 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:46     .text.read_usb_serial:0000000000000000 read_usb_serial
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:49     .text.read_usb_serial:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:51     .text.read_usb_serial:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:52     .text.read_usb_serial:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:53     .text.read_usb_serial:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:54     .text.read_usb_serial:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:55     .text.read_usb_serial:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:57     .text.read_usb_serial:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:59     .text.read_usb_serial:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:61     .text.read_usb_serial:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:64     .text.read_usb_serial:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:71     .text.read_usb_serial:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:72     .text.read_usb_serial:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:73     .text.read_usb_serial:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:74     .text.read_usb_serial:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:75     .text.read_usb_serial:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:76     .text.read_usb_serial:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:77     .text.read_usb_serial:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:79     .text.read_usb_serial:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:81     .text.read_usb_serial:000000000000001e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:82     .text.read_usb_serial:000000000000001e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:86     .text.read_usb_serial:000000000000002a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:93     .text.read_usb_serial:000000000000003c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:95     .text.read_usb_serial:0000000000000040 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:97     .text.read_usb_serial:0000000000000042 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:100    .text.read_usb_serial:0000000000000046 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:105    .text.read_usb_serial:000000000000004a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:108    .text.read_usb_serial:0000000000000052 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:109    .text.read_usb_serial:0000000000000052 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:111    .text.read_usb_serial:0000000000000056 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:113    .text.read_usb_serial:000000000000005a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:117    .text.read_usb_serial:0000000000000060 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:120    .text.read_usb_serial:0000000000000060 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:121    .text.read_usb_serial:0000000000000060 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:124    .text.read_usb_serial:0000000000000064 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:128    .text.read_usb_serial:0000000000000066 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:134    .text.read_usb_serial:000000000000006e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:135    .text.read_usb_serial:000000000000006e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:137    .text.read_usb_serial:0000000000000072 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:138    .text.read_usb_serial:0000000000000074 .L0 
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 19
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:682    .data.usb_buffer:0000000000000000 usb_buffer
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:662    .bss.tx_buffer:0000000000000000 tx_buffer
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:669    .data.USB_OTG_dev:0000000000000000 USB_OTG_dev
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:16     .text.usb_serial_connected:0000000000000000 usb_serial_connected
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:20     .text.usb_serial_connected:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:21     .text.usb_serial_connected:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:22     .text.usb_serial_connected:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:23     .text.usb_serial_connected:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:25     .text.usb_serial_connected:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:27     .text.usb_serial_connected:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:29     .text.usb_serial_connected:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:32     .text.usb_serial_connected:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:33     .text.usb_serial_connected:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:37     .text.usb_serial_connected:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:39     .text.usb_serial_connected:0000000000000016 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:46     .text.read_usb_serial:0000000000000000 read_usb_serial
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:49     .text.read_usb_serial:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:51     .text.read_usb_serial:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:52     .text.read_usb_serial:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:53     .text.read_usb_serial:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:54     .text.read_usb_serial:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:55     .text.read_usb_serial:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:57     .text.read_usb_serial:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:59     .text.read_usb_serial:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:61     .text.read_usb_serial:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:64     .text.read_usb_serial:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:71     .text.read_usb_serial:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:72     .text.read_usb_serial:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:73     .text.read_usb_serial:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:74     .text.read_usb_serial:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:75     .text.read_usb_serial:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:76     .text.read_usb_serial:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:77     .text.read_usb_serial:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:79     .text.read_usb_serial:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:81     .text.read_usb_serial:000000000000001e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:82     .text.read_usb_serial:000000000000001e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:86     .text.read_usb_serial:000000000000002a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:93     .text.read_usb_serial:000000000000003c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:95     .text.read_usb_serial:0000000000000040 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:97     .text.read_usb_serial:0000000000000042 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:100    .text.read_usb_serial:0000000000000046 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:105    .text.read_usb_serial:000000000000004a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:108    .text.read_usb_serial:0000000000000052 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:109    .text.read_usb_serial:0000000000000052 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:111    .text.read_usb_serial:0000000000000056 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:113    .text.read_usb_serial:000000000000005a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:117    .text.read_usb_serial:0000000000000060 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:120    .text.read_usb_serial:0000000000000060 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:121    .text.read_usb_serial:0000000000000060 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:124    .text.read_usb_serial:0000000000000064 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:128    .text.read_usb_serial:0000000000000066 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:134    .text.read_usb_serial:000000000000006e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:135    .text.read_usb_serial:000000000000006e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:137    .text.read_usb_serial:0000000000000072 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:138    .text.read_usb_serial:0000000000000074 .L0 
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s 			page 19
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:139    .text.read_usb_serial:0000000000000074 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:141    .text.read_usb_serial:0000000000000076 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:143    .text.read_usb_serial:0000000000000078 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:145    .text.read_usb_serial:000000000000007a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:147    .text.read_usb_serial:000000000000007c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:149    .text.read_usb_serial:000000000000007e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:151    .text.read_usb_serial:0000000000000080 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:153    .text.read_usb_serial:0000000000000082 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:155    .text.read_usb_serial:0000000000000082 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:157    .text.read_usb_serial:0000000000000084 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:159    .text.read_usb_serial:0000000000000086 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:164    .text.read_usb_serial:0000000000000088 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:166    .text.read_usb_serial:0000000000000088 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:167    .text.read_usb_serial:0000000000000088 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:169    .text.read_usb_serial:000000000000008c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:172    .text.read_usb_serial:000000000000008e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:175    .text.read_usb_serial:0000000000000092 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:179    .text.read_usb_serial:0000000000000094 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:180    .text.read_usb_serial:0000000000000094 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:182    .text.read_usb_serial:0000000000000098 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:187    .text.read_usb_serial:00000000000000a6 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:190    .text.read_usb_serial:00000000000000a8 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:193    .text.read_usb_serial:00000000000000ac .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:194    .text.read_usb_serial:00000000000000ac .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:199    .text.read_usb_serial:00000000000000b2 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:200    .text.read_usb_serial:00000000000000b2 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:201    .text.read_usb_serial:00000000000000b2 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:206    .text.read_usb_serial:00000000000000be .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:208    .text.read_usb_serial:00000000000000c2 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:209    .text.read_usb_serial:00000000000000c2 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:211    .text.read_usb_serial:00000000000000c6 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:214    .text.read_usb_serial:00000000000000ce .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:222    .text.read_usb_serial:00000000000000da .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:223    .text.read_usb_serial:00000000000000da .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:226    .text.read_usb_serial:00000000000000e2 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:228    .text.read_usb_serial:00000000000000e6 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:231    .text.read_usb_serial:00000000000000e8 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:234    .text.read_usb_serial:00000000000000ee .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:241    .text.configure_usb_serial:0000000000000000 configure_usb_serial
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:244    .text.configure_usb_serial:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:245    .text.configure_usb_serial:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:246    .text.configure_usb_serial:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:247    .text.configure_usb_serial:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:249    .text.configure_usb_serial:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:251    .text.configure_usb_serial:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:464    .text.set_usb_clock_96m_hxtal:0000000000000000 set_usb_clock_96m_hxtal
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:253    .text.configure_usb_serial:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:139    .text.read_usb_serial:0000000000000074 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:141    .text.read_usb_serial:0000000000000076 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:143    .text.read_usb_serial:0000000000000078 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:145    .text.read_usb_serial:000000000000007a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:147    .text.read_usb_serial:000000000000007c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:149    .text.read_usb_serial:000000000000007e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:151    .text.read_usb_serial:0000000000000080 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:153    .text.read_usb_serial:0000000000000082 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:155    .text.read_usb_serial:0000000000000082 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:157    .text.read_usb_serial:0000000000000084 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:159    .text.read_usb_serial:0000000000000086 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:164    .text.read_usb_serial:0000000000000088 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:166    .text.read_usb_serial:0000000000000088 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:167    .text.read_usb_serial:0000000000000088 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:169    .text.read_usb_serial:000000000000008c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:172    .text.read_usb_serial:000000000000008e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:175    .text.read_usb_serial:0000000000000092 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:179    .text.read_usb_serial:0000000000000094 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:180    .text.read_usb_serial:0000000000000094 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:182    .text.read_usb_serial:0000000000000098 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:187    .text.read_usb_serial:00000000000000a6 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:190    .text.read_usb_serial:00000000000000a8 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:193    .text.read_usb_serial:00000000000000ac .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:194    .text.read_usb_serial:00000000000000ac .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:199    .text.read_usb_serial:00000000000000b2 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:200    .text.read_usb_serial:00000000000000b2 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:201    .text.read_usb_serial:00000000000000b2 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:206    .text.read_usb_serial:00000000000000be .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:208    .text.read_usb_serial:00000000000000c2 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:209    .text.read_usb_serial:00000000000000c2 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:211    .text.read_usb_serial:00000000000000c6 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:214    .text.read_usb_serial:00000000000000ce .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:222    .text.read_usb_serial:00000000000000da .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:223    .text.read_usb_serial:00000000000000da .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:226    .text.read_usb_serial:00000000000000e2 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:228    .text.read_usb_serial:00000000000000e6 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:231    .text.read_usb_serial:00000000000000e8 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:234    .text.read_usb_serial:00000000000000ee .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:241    .text.configure_usb_serial:0000000000000000 configure_usb_serial
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:244    .text.configure_usb_serial:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:245    .text.configure_usb_serial:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:246    .text.configure_usb_serial:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:247    .text.configure_usb_serial:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:249    .text.configure_usb_serial:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:251    .text.configure_usb_serial:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:464    .text.set_usb_clock_96m_hxtal:0000000000000000 set_usb_clock_96m_hxtal
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:253    .text.configure_usb_serial:0000000000000004 .L0 
      usb_serial_if.c:63     .text.configure_usb_serial:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:262    .text.configure_usb_serial:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:265    .text.configure_usb_serial:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:269    .text.configure_usb_serial:0000000000000022 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:272    .text.configure_usb_serial:000000000000002a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:275    .text.configure_usb_serial:0000000000000032 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:278    .text.configure_usb_serial:000000000000003a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:279    .text.configure_usb_serial:000000000000003a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:280    .text.configure_usb_serial:000000000000003c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:282    .text.configure_usb_serial:000000000000003c .L0 
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 20
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:262    .text.configure_usb_serial:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:265    .text.configure_usb_serial:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:269    .text.configure_usb_serial:0000000000000022 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:272    .text.configure_usb_serial:000000000000002a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:275    .text.configure_usb_serial:0000000000000032 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:278    .text.configure_usb_serial:000000000000003a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:279    .text.configure_usb_serial:000000000000003a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:280    .text.configure_usb_serial:000000000000003c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:282    .text.configure_usb_serial:000000000000003c .L0 
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s 			page 20
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:285    .text.configure_usb_serial:0000000000000044 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:286    .text.configure_usb_serial:0000000000000044 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:290    .text.configure_usb_serial:000000000000004e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:292    .text.configure_usb_serial:0000000000000050 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:294    .text.configure_usb_serial:0000000000000050 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:296    .text.configure_usb_serial:0000000000000058 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:303    .text.usb_serial_available:0000000000000000 usb_serial_available
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:306    .text.usb_serial_available:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:307    .text.usb_serial_available:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:308    .text.usb_serial_available:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:309    .text.usb_serial_available:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:313    .text.usb_serial_available:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:315    .text.usb_serial_available:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:317    .text.usb_serial_available:0000000000000014 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:324    .text._write:0000000000000000 _write
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:327    .text._write:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:329    .text._write:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:330    .text._write:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:331    .text._write:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:333    .text._write:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:341    .text._write:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:342    .text._write:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:343    .text._write:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:344    .text._write:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:345    .text._write:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:346    .text._write:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:347    .text._write:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:349    .text._write:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:352    .text._write:0000000000000014 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:355    .text._write:000000000000001c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:356    .text._write:000000000000001c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:362    .text._write:0000000000000028 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:363    .text._write:0000000000000028 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:364    .text._write:0000000000000028 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:368    .text._write:0000000000000030 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:370    .text._write:0000000000000034 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:377    .text._write:000000000000003e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:378    .text._write:000000000000003e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:381    .text._write:0000000000000044 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:384    .text._write:000000000000004c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:389    .text._write:0000000000000058 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:391    .text._write:000000000000005c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:394    .text._write:0000000000000060 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:396    .text._write:0000000000000060 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:397    .text._write:0000000000000060 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:399    .text._write:0000000000000062 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:403    .text._write:0000000000000066 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:406    .text._write:000000000000006a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:415    .text._write:0000000000000088 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:416    .text._write:0000000000000088 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:418    .text._write:000000000000008c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:419    .text._write:000000000000008c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:421    .text._write:000000000000008e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:424    .text._write:0000000000000090 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:426    .text._write:0000000000000092 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:429    .text._write:0000000000000094 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:432    .text._write:0000000000000096 .L0 
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 21
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:285    .text.configure_usb_serial:0000000000000044 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:286    .text.configure_usb_serial:0000000000000044 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:290    .text.configure_usb_serial:000000000000004e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:292    .text.configure_usb_serial:0000000000000050 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:294    .text.configure_usb_serial:0000000000000050 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:296    .text.configure_usb_serial:0000000000000058 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:303    .text.usb_serial_available:0000000000000000 usb_serial_available
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:306    .text.usb_serial_available:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:307    .text.usb_serial_available:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:308    .text.usb_serial_available:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:309    .text.usb_serial_available:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:313    .text.usb_serial_available:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:315    .text.usb_serial_available:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:317    .text.usb_serial_available:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:324    .text._write:0000000000000000 _write
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:327    .text._write:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:329    .text._write:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:330    .text._write:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:331    .text._write:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:333    .text._write:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:341    .text._write:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:342    .text._write:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:343    .text._write:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:344    .text._write:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:345    .text._write:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:346    .text._write:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:347    .text._write:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:349    .text._write:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:352    .text._write:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:355    .text._write:000000000000001c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:356    .text._write:000000000000001c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:362    .text._write:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:363    .text._write:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:364    .text._write:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:368    .text._write:0000000000000030 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:370    .text._write:0000000000000034 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:377    .text._write:000000000000003e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:378    .text._write:000000000000003e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:381    .text._write:0000000000000044 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:384    .text._write:000000000000004c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:389    .text._write:0000000000000058 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:391    .text._write:000000000000005c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:394    .text._write:0000000000000060 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:396    .text._write:0000000000000060 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:397    .text._write:0000000000000060 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:399    .text._write:0000000000000062 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:403    .text._write:0000000000000066 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:406    .text._write:000000000000006a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:415    .text._write:0000000000000088 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:416    .text._write:0000000000000088 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:418    .text._write:000000000000008c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:419    .text._write:000000000000008c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:421    .text._write:000000000000008e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:424    .text._write:0000000000000090 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:426    .text._write:0000000000000092 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:429    .text._write:0000000000000094 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:432    .text._write:0000000000000096 .L0 
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s 			page 21
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:434    .text._write:0000000000000098 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:437    .text._write:000000000000009a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:442    .text._write:000000000000009c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:445    .text._write:000000000000009c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:446    .text._write:000000000000009c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:449    .text._write:00000000000000a4 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:451    .text._write:00000000000000a8 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:454    .text._write:00000000000000aa .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:457    .text._write:00000000000000b0 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:467    .text.set_usb_clock_96m_hxtal:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:468    .text.set_usb_clock_96m_hxtal:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:469    .text.set_usb_clock_96m_hxtal:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:470    .text.set_usb_clock_96m_hxtal:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:473    .text.set_usb_clock_96m_hxtal:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:476    .text.set_usb_clock_96m_hxtal:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:479    .text.set_usb_clock_96m_hxtal:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:480    .text.set_usb_clock_96m_hxtal:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:484    .text.set_usb_clock_96m_hxtal:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:485    .text.set_usb_clock_96m_hxtal:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:491    .text.set_usb_clock_96m_hxtal:0000000000000024 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:492    .text.set_usb_clock_96m_hxtal:0000000000000024 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:498    .text.set_usb_clock_96m_hxtal:0000000000000030 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:499    .text.set_usb_clock_96m_hxtal:0000000000000030 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:505    .text.set_usb_clock_96m_hxtal:000000000000003c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:506    .text.set_usb_clock_96m_hxtal:000000000000003c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:508    .text.set_usb_clock_96m_hxtal:0000000000000040 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:509    .text.set_usb_clock_96m_hxtal:0000000000000040 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:515    .text.set_usb_clock_96m_hxtal:000000000000004c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:516    .text.set_usb_clock_96m_hxtal:000000000000004c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:520    .text.set_usb_clock_96m_hxtal:0000000000000052 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:521    .text.set_usb_clock_96m_hxtal:0000000000000052 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:522    .text.set_usb_clock_96m_hxtal:0000000000000052 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:523    .text.set_usb_clock_96m_hxtal:0000000000000052 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:529    .text.set_usb_clock_96m_hxtal:000000000000005e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:533    .text.set_usb_clock_96m_hxtal:0000000000000062 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:534    .text.set_usb_clock_96m_hxtal:0000000000000062 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:535    .text.set_usb_clock_96m_hxtal:0000000000000062 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:536    .text.set_usb_clock_96m_hxtal:0000000000000062 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:539    .text.set_usb_clock_96m_hxtal:0000000000000064 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:544    .text.set_usb_clock_96m_hxtal:000000000000006e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:548    .text.set_usb_clock_96m_hxtal:0000000000000070 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:549    .text.set_usb_clock_96m_hxtal:0000000000000070 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:552    .text.set_usb_clock_96m_hxtal:0000000000000076 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:557    .text.set_usb_clock_96m_hxtal:000000000000007e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:558    .text.set_usb_clock_96m_hxtal:000000000000007e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:563    .text.set_usb_clock_96m_hxtal:0000000000000080 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:564    .text.set_usb_clock_96m_hxtal:0000000000000080 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:566    .text.set_usb_clock_96m_hxtal:0000000000000082 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:569    .text.set_usb_clock_96m_hxtal:0000000000000088 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:571    .text.set_usb_clock_96m_hxtal:000000000000008a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:572    .text.set_usb_clock_96m_hxtal:000000000000008a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:575    .text.set_usb_clock_96m_hxtal:000000000000008e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:576    .text.set_usb_clock_96m_hxtal:000000000000008e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:580    .text.set_usb_clock_96m_hxtal:0000000000000096 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:581    .text.set_usb_clock_96m_hxtal:0000000000000096 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:582    .text.set_usb_clock_96m_hxtal:0000000000000096 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:583    .text.set_usb_clock_96m_hxtal:0000000000000096 .L0 
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 22
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:434    .text._write:0000000000000098 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:437    .text._write:000000000000009a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:442    .text._write:000000000000009c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:445    .text._write:000000000000009c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:446    .text._write:000000000000009c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:449    .text._write:00000000000000a4 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:451    .text._write:00000000000000a8 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:454    .text._write:00000000000000aa .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:457    .text._write:00000000000000b0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:467    .text.set_usb_clock_96m_hxtal:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:468    .text.set_usb_clock_96m_hxtal:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:469    .text.set_usb_clock_96m_hxtal:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:470    .text.set_usb_clock_96m_hxtal:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:473    .text.set_usb_clock_96m_hxtal:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:476    .text.set_usb_clock_96m_hxtal:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:479    .text.set_usb_clock_96m_hxtal:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:480    .text.set_usb_clock_96m_hxtal:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:484    .text.set_usb_clock_96m_hxtal:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:485    .text.set_usb_clock_96m_hxtal:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:491    .text.set_usb_clock_96m_hxtal:0000000000000024 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:492    .text.set_usb_clock_96m_hxtal:0000000000000024 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:498    .text.set_usb_clock_96m_hxtal:0000000000000030 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:499    .text.set_usb_clock_96m_hxtal:0000000000000030 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:505    .text.set_usb_clock_96m_hxtal:000000000000003c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:506    .text.set_usb_clock_96m_hxtal:000000000000003c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:508    .text.set_usb_clock_96m_hxtal:0000000000000040 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:509    .text.set_usb_clock_96m_hxtal:0000000000000040 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:515    .text.set_usb_clock_96m_hxtal:000000000000004c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:516    .text.set_usb_clock_96m_hxtal:000000000000004c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:520    .text.set_usb_clock_96m_hxtal:0000000000000052 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:521    .text.set_usb_clock_96m_hxtal:0000000000000052 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:522    .text.set_usb_clock_96m_hxtal:0000000000000052 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:523    .text.set_usb_clock_96m_hxtal:0000000000000052 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:529    .text.set_usb_clock_96m_hxtal:000000000000005e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:533    .text.set_usb_clock_96m_hxtal:0000000000000062 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:534    .text.set_usb_clock_96m_hxtal:0000000000000062 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:535    .text.set_usb_clock_96m_hxtal:0000000000000062 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:536    .text.set_usb_clock_96m_hxtal:0000000000000062 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:539    .text.set_usb_clock_96m_hxtal:0000000000000064 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:544    .text.set_usb_clock_96m_hxtal:000000000000006e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:548    .text.set_usb_clock_96m_hxtal:0000000000000070 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:549    .text.set_usb_clock_96m_hxtal:0000000000000070 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:552    .text.set_usb_clock_96m_hxtal:0000000000000076 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:557    .text.set_usb_clock_96m_hxtal:000000000000007e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:558    .text.set_usb_clock_96m_hxtal:000000000000007e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:563    .text.set_usb_clock_96m_hxtal:0000000000000080 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:564    .text.set_usb_clock_96m_hxtal:0000000000000080 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:566    .text.set_usb_clock_96m_hxtal:0000000000000082 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:569    .text.set_usb_clock_96m_hxtal:0000000000000088 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:571    .text.set_usb_clock_96m_hxtal:000000000000008a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:572    .text.set_usb_clock_96m_hxtal:000000000000008a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:575    .text.set_usb_clock_96m_hxtal:000000000000008e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:576    .text.set_usb_clock_96m_hxtal:000000000000008e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:580    .text.set_usb_clock_96m_hxtal:0000000000000096 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:581    .text.set_usb_clock_96m_hxtal:0000000000000096 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:582    .text.set_usb_clock_96m_hxtal:0000000000000096 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:583    .text.set_usb_clock_96m_hxtal:0000000000000096 .L0 
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s 			page 22
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:587    .text.set_usb_clock_96m_hxtal:000000000000009c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:588    .text.set_usb_clock_96m_hxtal:000000000000009c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:593    .text.set_usb_clock_96m_hxtal:00000000000000a6 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:594    .text.set_usb_clock_96m_hxtal:00000000000000a6 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:599    .text.set_usb_clock_96m_hxtal:00000000000000ae .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:600    .text.set_usb_clock_96m_hxtal:00000000000000ae .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:602    .text.set_usb_clock_96m_hxtal:00000000000000b0 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:604    .text.set_usb_clock_96m_hxtal:00000000000000b4 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:607    .text.set_usb_clock_96m_hxtal:00000000000000ba .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:608    .text.set_usb_clock_96m_hxtal:00000000000000ba .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:612    .text.set_usb_clock_96m_hxtal:00000000000000c0 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:613    .text.set_usb_clock_96m_hxtal:00000000000000c0 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:616    .text.set_usb_clock_96m_hxtal:00000000000000c4 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:617    .text.set_usb_clock_96m_hxtal:00000000000000c4 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:619    .text.set_usb_clock_96m_hxtal:00000000000000c6 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:622    .text.set_usb_clock_96m_hxtal:00000000000000ce .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:623    .text.set_usb_clock_96m_hxtal:00000000000000ce .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:627    .text.set_usb_clock_96m_hxtal:00000000000000d4 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:628    .text.set_usb_clock_96m_hxtal:00000000000000d4 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:632    .text.set_usb_clock_96m_hxtal:00000000000000dc .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:633    .text.set_usb_clock_96m_hxtal:00000000000000dc .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:636    .text.set_usb_clock_96m_hxtal:00000000000000e0 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:637    .text.set_usb_clock_96m_hxtal:00000000000000e0 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:639    .text.set_usb_clock_96m_hxtal:00000000000000e2 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:641    .text.set_usb_clock_96m_hxtal:00000000000000e4 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:643    .text.set_usb_clock_96m_hxtal:00000000000000e6 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:647    .text.set_usb_clock_96m_hxtal:00000000000000ee .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:652    .bss.receive_buffer.5944:0000000000000000 .LANCHOR2
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:655    .bss.receive_buffer.5944:0000000000000000 receive_buffer.5944
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:659    .bss.tx_buffer:0000000000000000 .LANCHOR3
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:666    .data.USB_OTG_dev:0000000000000000 .LANCHOR1
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:679    .data.usb_buffer:0000000000000000 .LANCHOR0
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:42     .text.usb_serial_connected:0000000000000016 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:237    .text.read_usb_serial:00000000000000ee .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:299    .text.configure_usb_serial:0000000000000058 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:320    .text.usb_serial_available:0000000000000014 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:460    .text._write:00000000000000b0 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:650    .text.set_usb_clock_96m_hxtal:00000000000000ee .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:587    .text.set_usb_clock_96m_hxtal:000000000000009c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:588    .text.set_usb_clock_96m_hxtal:000000000000009c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:593    .text.set_usb_clock_96m_hxtal:00000000000000a6 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:594    .text.set_usb_clock_96m_hxtal:00000000000000a6 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:599    .text.set_usb_clock_96m_hxtal:00000000000000ae .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:600    .text.set_usb_clock_96m_hxtal:00000000000000ae .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:602    .text.set_usb_clock_96m_hxtal:00000000000000b0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:604    .text.set_usb_clock_96m_hxtal:00000000000000b4 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:607    .text.set_usb_clock_96m_hxtal:00000000000000ba .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:608    .text.set_usb_clock_96m_hxtal:00000000000000ba .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:612    .text.set_usb_clock_96m_hxtal:00000000000000c0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:613    .text.set_usb_clock_96m_hxtal:00000000000000c0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:616    .text.set_usb_clock_96m_hxtal:00000000000000c4 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:617    .text.set_usb_clock_96m_hxtal:00000000000000c4 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:619    .text.set_usb_clock_96m_hxtal:00000000000000c6 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:622    .text.set_usb_clock_96m_hxtal:00000000000000ce .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:623    .text.set_usb_clock_96m_hxtal:00000000000000ce .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:627    .text.set_usb_clock_96m_hxtal:00000000000000d4 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:628    .text.set_usb_clock_96m_hxtal:00000000000000d4 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:632    .text.set_usb_clock_96m_hxtal:00000000000000dc .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:633    .text.set_usb_clock_96m_hxtal:00000000000000dc .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:636    .text.set_usb_clock_96m_hxtal:00000000000000e0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:637    .text.set_usb_clock_96m_hxtal:00000000000000e0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:639    .text.set_usb_clock_96m_hxtal:00000000000000e2 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:641    .text.set_usb_clock_96m_hxtal:00000000000000e4 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:643    .text.set_usb_clock_96m_hxtal:00000000000000e6 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:647    .text.set_usb_clock_96m_hxtal:00000000000000ee .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:652    .bss.receive_buffer.5944:0000000000000000 .LANCHOR2
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:655    .bss.receive_buffer.5944:0000000000000000 receive_buffer.5944
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:659    .bss.tx_buffer:0000000000000000 .LANCHOR3
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:666    .data.USB_OTG_dev:0000000000000000 .LANCHOR1
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:679    .data.usb_buffer:0000000000000000 .LANCHOR0
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:42     .text.usb_serial_connected:0000000000000016 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:237    .text.read_usb_serial:00000000000000ee .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:299    .text.configure_usb_serial:0000000000000058 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:320    .text.usb_serial_available:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:460    .text._write:00000000000000b0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:650    .text.set_usb_clock_96m_hxtal:00000000000000ee .L0 
                      .debug_frame:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:131    .text.read_usb_serial:000000000000006e .L10
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:162    .text.read_usb_serial:0000000000000088 .L7
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:219    .text.read_usb_serial:00000000000000da .L9
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:198    .text.read_usb_serial:00000000000000b2 .L5
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:177    .text.read_usb_serial:0000000000000094 .L6
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:102    .text.read_usb_serial:000000000000004a .L4
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:126    .text.read_usb_serial:0000000000000066 .L8
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:360    .text._write:0000000000000028 .L22
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:387    .text._write:0000000000000058 .L23
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:375    .text._write:000000000000003e .L28
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:440    .text._write:000000000000009c .L27
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:401    .text._write:0000000000000066 .L26
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:546    .text.set_usb_clock_96m_hxtal:0000000000000070 .L31
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:531    .text.set_usb_clock_96m_hxtal:0000000000000062 .L32
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:559    .text.set_usb_clock_96m_hxtal:0000000000000080 .L33
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:555    .text.set_usb_clock_96m_hxtal:000000000000007e .L34
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:614    .text.set_usb_clock_96m_hxtal:00000000000000c4 .L35
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:634    .text.set_usb_clock_96m_hxtal:00000000000000e0 .L36
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 23
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:131    .text.read_usb_serial:000000000000006e .L10
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:162    .text.read_usb_serial:0000000000000088 .L7
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:219    .text.read_usb_serial:00000000000000da .L9
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:198    .text.read_usb_serial:00000000000000b2 .L5
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:177    .text.read_usb_serial:0000000000000094 .L6
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:102    .text.read_usb_serial:000000000000004a .L4
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:126    .text.read_usb_serial:0000000000000066 .L8
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:360    .text._write:0000000000000028 .L22
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:387    .text._write:0000000000000058 .L23
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:375    .text._write:000000000000003e .L28
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:440    .text._write:000000000000009c .L27
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:401    .text._write:0000000000000066 .L26
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:546    .text.set_usb_clock_96m_hxtal:0000000000000070 .L31
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:531    .text.set_usb_clock_96m_hxtal:0000000000000062 .L32
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:559    .text.set_usb_clock_96m_hxtal:0000000000000080 .L33
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:555    .text.set_usb_clock_96m_hxtal:000000000000007e .L34
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:614    .text.set_usb_clock_96m_hxtal:00000000000000c4 .L35
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:634    .text.set_usb_clock_96m_hxtal:00000000000000e0 .L36
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s 			page 23
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:5070   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6423   .debug_str:0000000000000200 .LASF374
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7099   .debug_str:00000000000011ca .LASF375
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6785   .debug_str:0000000000000ae7 .LASF376
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6301   .debug_ranges:0000000000000000 .Ldebug_ranges0
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6337   .debug_line:0000000000000000 .Ldebug_line0
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6759   .debug_str:0000000000000a34 .LASF0
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6509   .debug_str:0000000000000470 .LASF1
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6445   .debug_str:00000000000002f4 .LASF4
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6521   .debug_str:00000000000004d0 .LASF2
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6973   .debug_str:0000000000000f06 .LASF3
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6579   .debug_str:000000000000062d .LASF5
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7057   .debug_str:00000000000010da .LASF6
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6469   .debug_str:000000000000037a .LASF7
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6707   .debug_str:0000000000000906 .LASF8
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6651   .debug_str:00000000000007b5 .LASF9
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7009   .debug_str:0000000000000fbc .LASF10
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6711   .debug_str:000000000000091c .LASF11
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6865   .debug_str:0000000000000cf2 .LASF12
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6511   .debug_str:000000000000047c .LASF13
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6873   .debug_str:0000000000000d26 .LASF14
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7033   .debug_str:0000000000001062 .LASF15
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7073   .debug_str:0000000000001149 .LASF16
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6665   .debug_str:0000000000000816 .LASF92
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6353   .debug_str:0000000000000064 .LASF17
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6827   .debug_str:0000000000000c2a .LASF18
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6621   .debug_str:000000000000070e .LASF19
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6589   .debug_str:0000000000000675 .LASF20
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6529   .debug_str:00000000000004ff .LASF21
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6713   .debug_str:000000000000092a .LASF22
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6599   .debug_str:00000000000006ac .LASF23
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6955   .debug_str:0000000000000ea6 .LASF24
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6613   .debug_str:00000000000006ed .LASF25
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7071   .debug_str:0000000000001143 .LASF26
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6975   .debug_str:0000000000000f10 .LASF27
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7083   .debug_str:000000000000117a .LASF28
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7081   .debug_str:0000000000001172 .LASF29
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6945   .debug_str:0000000000000e7a .LASF30
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7077   .debug_str:0000000000001159 .LASF31
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7045   .debug_str:00000000000010a4 .LASF32
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6603   .debug_str:00000000000006bc .LASF33
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6541   .debug_str:0000000000000530 .LASF34
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6627   .debug_str:0000000000000737 .LASF35
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7075   .debug_str:0000000000001151 .LASF36
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6433   .debug_str:00000000000002af .LASF37
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7065   .debug_str:0000000000001112 .LASF38
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6893   .debug_str:0000000000000d82 .LASF39
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6505   .debug_str:000000000000045c .LASF40
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6839   .debug_str:0000000000000c72 .LASF41
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7037   .debug_str:000000000000107d .LASF42
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6937   .debug_str:0000000000000e54 .LASF43
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7063   .debug_str:0000000000001108 .LASF44
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7091   .debug_str:00000000000011ad .LASF45
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6645   .debug_str:000000000000079d .LASF46
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6597   .debug_str:00000000000006a3 .LASF47
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7053   .debug_str:00000000000010c8 .LASF48
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6949   .debug_str:0000000000000e8b .LASF49
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 24
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:5070   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6423   .debug_str:0000000000000200 .LASF374
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7099   .debug_str:00000000000011ca .LASF375
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6785   .debug_str:0000000000000ae7 .LASF376
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6301   .debug_ranges:0000000000000000 .Ldebug_ranges0
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6337   .debug_line:0000000000000000 .Ldebug_line0
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6759   .debug_str:0000000000000a34 .LASF0
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6509   .debug_str:0000000000000470 .LASF1
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6445   .debug_str:00000000000002f4 .LASF4
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6521   .debug_str:00000000000004d0 .LASF2
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6973   .debug_str:0000000000000f06 .LASF3
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6579   .debug_str:000000000000062d .LASF5
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7057   .debug_str:00000000000010da .LASF6
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6469   .debug_str:000000000000037a .LASF7
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6707   .debug_str:0000000000000906 .LASF8
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6651   .debug_str:00000000000007b5 .LASF9
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7009   .debug_str:0000000000000fbc .LASF10
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6711   .debug_str:000000000000091c .LASF11
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6865   .debug_str:0000000000000cf2 .LASF12
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6511   .debug_str:000000000000047c .LASF13
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6873   .debug_str:0000000000000d26 .LASF14
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7033   .debug_str:0000000000001062 .LASF15
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7073   .debug_str:0000000000001149 .LASF16
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6665   .debug_str:0000000000000816 .LASF92
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6353   .debug_str:0000000000000064 .LASF17
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6827   .debug_str:0000000000000c2a .LASF18
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6621   .debug_str:000000000000070e .LASF19
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6589   .debug_str:0000000000000675 .LASF20
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6529   .debug_str:00000000000004ff .LASF21
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6713   .debug_str:000000000000092a .LASF22
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6599   .debug_str:00000000000006ac .LASF23
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6955   .debug_str:0000000000000ea6 .LASF24
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6613   .debug_str:00000000000006ed .LASF25
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7071   .debug_str:0000000000001143 .LASF26
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6975   .debug_str:0000000000000f10 .LASF27
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7083   .debug_str:000000000000117a .LASF28
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7081   .debug_str:0000000000001172 .LASF29
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6945   .debug_str:0000000000000e7a .LASF30
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7077   .debug_str:0000000000001159 .LASF31
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7045   .debug_str:00000000000010a4 .LASF32
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6603   .debug_str:00000000000006bc .LASF33
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6541   .debug_str:0000000000000530 .LASF34
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6627   .debug_str:0000000000000737 .LASF35
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7075   .debug_str:0000000000001151 .LASF36
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6433   .debug_str:00000000000002af .LASF37
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7065   .debug_str:0000000000001112 .LASF38
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6893   .debug_str:0000000000000d82 .LASF39
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6505   .debug_str:000000000000045c .LASF40
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6839   .debug_str:0000000000000c72 .LASF41
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7037   .debug_str:000000000000107d .LASF42
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6937   .debug_str:0000000000000e54 .LASF43
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7063   .debug_str:0000000000001108 .LASF44
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7091   .debug_str:00000000000011ad .LASF45
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6645   .debug_str:000000000000079d .LASF46
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6597   .debug_str:00000000000006a3 .LASF47
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7053   .debug_str:00000000000010c8 .LASF48
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6949   .debug_str:0000000000000e8b .LASF49
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s 			page 24
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6891   .debug_str:0000000000000d7b .LASF50
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6491   .debug_str:00000000000003ff .LASF51
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6777   .debug_str:0000000000000ab7 .LASF52
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6531   .debug_str:0000000000000506 .LASF53
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6535   .debug_str:0000000000000514 .LASF54
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6877   .debug_str:0000000000000d3b .LASF55
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6405   .debug_str:000000000000018c .LASF56
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6557   .debug_str:000000000000059b .LASF57
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6691   .debug_str:00000000000008a6 .LASF58
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6577   .debug_str:0000000000000623 .LASF59
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7095   .debug_str:00000000000011b9 .LASF60
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6387   .debug_str:0000000000000139 .LASF61
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6591   .debug_str:0000000000000686 .LASF62
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6593   .debug_str:0000000000000691 .LASF63
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6989   .debug_str:0000000000000f55 .LASF64
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6539   .debug_str:0000000000000528 .LASF65
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6463   .debug_str:000000000000035a .LASF66
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6363   .debug_str:0000000000000097 .LASF67
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6889   .debug_str:0000000000000d73 .LASF68
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6465   .debug_str:0000000000000362 .LASF69
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6843   .debug_str:0000000000000c84 .LASF70
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6631   .debug_str:000000000000074a .LASF71
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7103   .debug_str:00000000000011e7 .LASF72
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6985   .debug_str:0000000000000f44 .LASF73
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6993   .debug_str:0000000000000f6c .LASF74
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6551   .debug_str:0000000000000572 .LASF75
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6383   .debug_str:0000000000000116 .LASF76
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6493   .debug_str:000000000000040a .LASF77
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6525   .debug_str:00000000000004ec .LASF78
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6815   .debug_str:0000000000000be5 .LASF79
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6685   .debug_str:000000000000088a .LASF80
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6501   .debug_str:0000000000000441 .LASF81
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6601   .debug_str:00000000000006b3 .LASF82
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6735   .debug_str:00000000000009b2 .LASF83
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6977   .debug_str:0000000000000f17 .LASF84
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6481   .debug_str:00000000000003af .LASF85
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6607   .debug_str:00000000000006ce .LASF94
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6473   .debug_str:000000000000038f .LASF86
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6957   .debug_str:0000000000000ead .LASF87
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6951   .debug_str:0000000000000e94 .LASF88
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6673   .debug_str:000000000000084e .LASF89
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6437   .debug_str:00000000000002c1 .LASF90
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6847   .debug_str:0000000000000c95 .LASF91
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6947   .debug_str:0000000000000e81 .LASF93
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6617   .debug_str:00000000000006fa .LASF95
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6523   .debug_str:00000000000004de .LASF96
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6799   .debug_str:0000000000000b7a .LASF97
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6533   .debug_str:000000000000050d .LASF98
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6869   .debug_str:0000000000000d17 .LASF99
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6399   .debug_str:000000000000016b .LASF100
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6695   .debug_str:00000000000008b8 .LASF101
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6447   .debug_str:00000000000002fe .LASF102
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6863   .debug_str:0000000000000cea .LASF103
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6641   .debug_str:000000000000077e .LASF104
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6585   .debug_str:0000000000000650 .LASF105
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6895   .debug_str:0000000000000d87 .LASF106
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6553   .debug_str:000000000000057d .LASF107
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 25
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6891   .debug_str:0000000000000d7b .LASF50
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6491   .debug_str:00000000000003ff .LASF51
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6777   .debug_str:0000000000000ab7 .LASF52
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6531   .debug_str:0000000000000506 .LASF53
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6535   .debug_str:0000000000000514 .LASF54
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6877   .debug_str:0000000000000d3b .LASF55
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6405   .debug_str:000000000000018c .LASF56
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6557   .debug_str:000000000000059b .LASF57
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6691   .debug_str:00000000000008a6 .LASF58
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6577   .debug_str:0000000000000623 .LASF59
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7095   .debug_str:00000000000011b9 .LASF60
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6387   .debug_str:0000000000000139 .LASF61
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6591   .debug_str:0000000000000686 .LASF62
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6593   .debug_str:0000000000000691 .LASF63
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6989   .debug_str:0000000000000f55 .LASF64
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6539   .debug_str:0000000000000528 .LASF65
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6463   .debug_str:000000000000035a .LASF66
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6363   .debug_str:0000000000000097 .LASF67
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6889   .debug_str:0000000000000d73 .LASF68
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6465   .debug_str:0000000000000362 .LASF69
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6843   .debug_str:0000000000000c84 .LASF70
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6631   .debug_str:000000000000074a .LASF71
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7103   .debug_str:00000000000011e7 .LASF72
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6985   .debug_str:0000000000000f44 .LASF73
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6993   .debug_str:0000000000000f6c .LASF74
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6551   .debug_str:0000000000000572 .LASF75
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6383   .debug_str:0000000000000116 .LASF76
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6493   .debug_str:000000000000040a .LASF77
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6525   .debug_str:00000000000004ec .LASF78
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6815   .debug_str:0000000000000be5 .LASF79
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6685   .debug_str:000000000000088a .LASF80
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6501   .debug_str:0000000000000441 .LASF81
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6601   .debug_str:00000000000006b3 .LASF82
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6735   .debug_str:00000000000009b2 .LASF83
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6977   .debug_str:0000000000000f17 .LASF84
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6481   .debug_str:00000000000003af .LASF85
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6607   .debug_str:00000000000006ce .LASF94
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6473   .debug_str:000000000000038f .LASF86
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6957   .debug_str:0000000000000ead .LASF87
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6951   .debug_str:0000000000000e94 .LASF88
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6673   .debug_str:000000000000084e .LASF89
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6437   .debug_str:00000000000002c1 .LASF90
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6847   .debug_str:0000000000000c95 .LASF91
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6947   .debug_str:0000000000000e81 .LASF93
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6617   .debug_str:00000000000006fa .LASF95
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6523   .debug_str:00000000000004de .LASF96
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6799   .debug_str:0000000000000b7a .LASF97
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6533   .debug_str:000000000000050d .LASF98
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6869   .debug_str:0000000000000d17 .LASF99
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6399   .debug_str:000000000000016b .LASF100
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6695   .debug_str:00000000000008b8 .LASF101
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6447   .debug_str:00000000000002fe .LASF102
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6863   .debug_str:0000000000000cea .LASF103
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6641   .debug_str:000000000000077e .LASF104
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6585   .debug_str:0000000000000650 .LASF105
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6895   .debug_str:0000000000000d87 .LASF106
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6553   .debug_str:000000000000057d .LASF107
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s 			page 25
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6431   .debug_str:00000000000002a8 .LASF108
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6953   .debug_str:0000000000000e99 .LASF109
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6377   .debug_str:00000000000000f1 .LASF110
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6461   .debug_str:000000000000034a .LASF111
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6655   .debug_str:00000000000007dd .LASF112
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6905   .debug_str:0000000000000dc5 .LASF113
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6897   .debug_str:0000000000000d95 .LASF114
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6519   .debug_str:00000000000004c6 .LASF115
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6743   .debug_str:00000000000009d6 .LASF116
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6339   .debug_str:0000000000000000 .LASF117
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6657   .debug_str:00000000000007ed .LASF118
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6653   .debug_str:00000000000007c7 .LASF119
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6725   .debug_str:0000000000000971 .LASF120
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6567   .debug_str:00000000000005ee .LASF121
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6831   .debug_str:0000000000000c40 .LASF122
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6763   .debug_str:0000000000000a4c .LASF123
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6771   .debug_str:0000000000000a84 .LASF124
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6795   .debug_str:0000000000000b60 .LASF125
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6701   .debug_str:00000000000008d3 .LASF126
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7041   .debug_str:000000000000108f .LASF127
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6681   .debug_str:000000000000086e .LASF128
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6517   .debug_str:00000000000004b8 .LASF129
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6965   .debug_str:0000000000000ecf .LASF130
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6343   .debug_str:0000000000000015 .LASF131
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6669   .debug_str:000000000000082e .LASF132
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6767   .debug_str:0000000000000a64 .LASF133
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6941   .debug_str:0000000000000e62 .LASF134
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6503   .debug_str:0000000000000449 .LASF135
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6923   .debug_str:0000000000000e1d .LASF136
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6347   .debug_str:0000000000000035 .LASF137
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7047   .debug_str:00000000000010af .LASF138
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6355   .debug_str:000000000000006b .LASF139
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6731   .debug_str:0000000000000994 .LASF140
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6479   .debug_str:00000000000003a5 .LASF141
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6647   .debug_str:00000000000007a4 .LASF142
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7055   .debug_str:00000000000010d0 .LASF143
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6687   .debug_str:0000000000000893 .LASF144
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6971   .debug_str:0000000000000efd .LASF145
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6489   .debug_str:00000000000003f8 .LASF146
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6345   .debug_str:0000000000000027 .LASF147
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6779   .debug_str:0000000000000ac0 .LASF148
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6979   .debug_str:0000000000000f23 .LASF149
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6995   .debug_str:0000000000000f74 .LASF150
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6817   .debug_str:0000000000000bf0 .LASF151
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6855   .debug_str:0000000000000cbc .LASF152
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6917   .debug_str:0000000000000dfa .LASF153
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6393   .debug_str:0000000000000150 .LASF154
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6961   .debug_str:0000000000000ebc .LASF155
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6459   .debug_str:0000000000000342 .LASF156
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6837   .debug_str:0000000000000c69 .LASF157
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6361   .debug_str:000000000000008f .LASF158
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6717   .debug_str:000000000000093a .LASF159
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6963   .debug_str:0000000000000ec5 .LASF160
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7035   .debug_str:000000000000106b .LASF161
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6443   .debug_str:00000000000002e3 .LASF162
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6527   .debug_str:00000000000004f8 .LASF163
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6729   .debug_str:0000000000000987 .LASF164
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 26
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6431   .debug_str:00000000000002a8 .LASF108
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6953   .debug_str:0000000000000e99 .LASF109
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6377   .debug_str:00000000000000f1 .LASF110
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6461   .debug_str:000000000000034a .LASF111
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6655   .debug_str:00000000000007dd .LASF112
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6905   .debug_str:0000000000000dc5 .LASF113
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6897   .debug_str:0000000000000d95 .LASF114
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6519   .debug_str:00000000000004c6 .LASF115
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6743   .debug_str:00000000000009d6 .LASF116
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6339   .debug_str:0000000000000000 .LASF117
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6657   .debug_str:00000000000007ed .LASF118
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6653   .debug_str:00000000000007c7 .LASF119
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6725   .debug_str:0000000000000971 .LASF120
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6567   .debug_str:00000000000005ee .LASF121
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6831   .debug_str:0000000000000c40 .LASF122
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6763   .debug_str:0000000000000a4c .LASF123
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6771   .debug_str:0000000000000a84 .LASF124
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6795   .debug_str:0000000000000b60 .LASF125
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6701   .debug_str:00000000000008d3 .LASF126
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7041   .debug_str:000000000000108f .LASF127
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6681   .debug_str:000000000000086e .LASF128
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6517   .debug_str:00000000000004b8 .LASF129
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6965   .debug_str:0000000000000ecf .LASF130
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6343   .debug_str:0000000000000015 .LASF131
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6669   .debug_str:000000000000082e .LASF132
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6767   .debug_str:0000000000000a64 .LASF133
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6941   .debug_str:0000000000000e62 .LASF134
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6503   .debug_str:0000000000000449 .LASF135
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6923   .debug_str:0000000000000e1d .LASF136
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6347   .debug_str:0000000000000035 .LASF137
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7047   .debug_str:00000000000010af .LASF138
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6355   .debug_str:000000000000006b .LASF139
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6731   .debug_str:0000000000000994 .LASF140
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6479   .debug_str:00000000000003a5 .LASF141
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6647   .debug_str:00000000000007a4 .LASF142
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7055   .debug_str:00000000000010d0 .LASF143
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6687   .debug_str:0000000000000893 .LASF144
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6971   .debug_str:0000000000000efd .LASF145
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6489   .debug_str:00000000000003f8 .LASF146
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6345   .debug_str:0000000000000027 .LASF147
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6779   .debug_str:0000000000000ac0 .LASF148
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6979   .debug_str:0000000000000f23 .LASF149
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6995   .debug_str:0000000000000f74 .LASF150
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6817   .debug_str:0000000000000bf0 .LASF151
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6855   .debug_str:0000000000000cbc .LASF152
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6917   .debug_str:0000000000000dfa .LASF153
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6393   .debug_str:0000000000000150 .LASF154
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6961   .debug_str:0000000000000ebc .LASF155
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6459   .debug_str:0000000000000342 .LASF156
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6837   .debug_str:0000000000000c69 .LASF157
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6361   .debug_str:000000000000008f .LASF158
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6717   .debug_str:000000000000093a .LASF159
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6963   .debug_str:0000000000000ec5 .LASF160
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7035   .debug_str:000000000000106b .LASF161
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6443   .debug_str:00000000000002e3 .LASF162
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6527   .debug_str:00000000000004f8 .LASF163
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6729   .debug_str:0000000000000987 .LASF164
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s 			page 26
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6805   .debug_str:0000000000000b92 .LASF165
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6705   .debug_str:00000000000008fe .LASF166
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6341   .debug_str:0000000000000009 .LASF167
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6959   .debug_str:0000000000000eb4 .LASF168
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6367   .debug_str:00000000000000a8 .LASF169
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6859   .debug_str:0000000000000cd4 .LASF170
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6561   .debug_str:00000000000005c2 .LASF171
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6667   .debug_str:0000000000000826 .LASF172
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6421   .debug_str:00000000000001f7 .LASF173
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6765   .debug_str:0000000000000a5b .LASF174
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7043   .debug_str:0000000000001099 .LASF175
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6549   .debug_str:0000000000000567 .LASF176
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6413   .debug_str:00000000000001d9 .LASF177
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6619   .debug_str:0000000000000703 .LASF178
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6833   .debug_str:0000000000000c4d .LASF179
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7061   .debug_str:00000000000010f7 .LASF180
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6931   .debug_str:0000000000000e42 .LASF181
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6927   .debug_str:0000000000000e2d .LASF182
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6871   .debug_str:0000000000000d1e .LASF183
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6499   .debug_str:0000000000000437 .LASF184
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6943   .debug_str:0000000000000e75 .LASF185
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6595   .debug_str:000000000000069c .LASF186
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6449   .debug_str:000000000000030f .LASF187
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6439   .debug_str:00000000000002cb .LASF188
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6547   .debug_str:000000000000055e .LASF189
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6565   .debug_str:00000000000005db .LASF190
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6781   .debug_str:0000000000000ac8 .LASF191
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6919   .debug_str:0000000000000e03 .LASF192
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6625   .debug_str:0000000000000729 .LASF193
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6415   .debug_str:00000000000001e2 .LASF194
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6755   .debug_str:0000000000000a1a .LASF195
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6761   .debug_str:0000000000000a41 .LASF196
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6867   .debug_str:0000000000000d09 .LASF197
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6901   .debug_str:0000000000000dac .LASF198
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6913   .debug_str:0000000000000de8 .LASF199
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6925   .debug_str:0000000000000e28 .LASF200
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6749   .debug_str:00000000000009f0 .LASF201
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6783   .debug_str:0000000000000adc .LASF202
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6983   .debug_str:0000000000000f37 .LASF203
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6441   .debug_str:00000000000002d3 .LASF204
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6611   .debug_str:00000000000006e0 .LASF377
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6825   .debug_str:0000000000000c1d .LASF205
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6991   .debug_str:0000000000000f5d .LASF206
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6769   .debug_str:0000000000000a74 .LASF207
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6563   .debug_str:00000000000005cc .LASF208
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6933   .debug_str:0000000000000e47 .LASF209
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7049   .debug_str:00000000000010bc .LASF210
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6851   .debug_str:0000000000000cad .LASF211
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6351   .debug_str:000000000000005b .LASF212
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6455   .debug_str:000000000000032c .LASF213
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6853   .debug_str:0000000000000cb5 .LASF214
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6809   .debug_str:0000000000000ba7 .LASF215
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6359   .debug_str:0000000000000087 .LASF216
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6921   .debug_str:0000000000000e12 .LASF217
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7031   .debug_str:000000000000105a .LASF218
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6671   .debug_str:000000000000083c .LASF219
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6911   .debug_str:0000000000000ddf .LASF220
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 27
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6805   .debug_str:0000000000000b92 .LASF165
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6705   .debug_str:00000000000008fe .LASF166
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6341   .debug_str:0000000000000009 .LASF167
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6959   .debug_str:0000000000000eb4 .LASF168
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6367   .debug_str:00000000000000a8 .LASF169
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6859   .debug_str:0000000000000cd4 .LASF170
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6561   .debug_str:00000000000005c2 .LASF171
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6667   .debug_str:0000000000000826 .LASF172
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6421   .debug_str:00000000000001f7 .LASF173
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6765   .debug_str:0000000000000a5b .LASF174
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7043   .debug_str:0000000000001099 .LASF175
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6549   .debug_str:0000000000000567 .LASF176
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6413   .debug_str:00000000000001d9 .LASF177
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6619   .debug_str:0000000000000703 .LASF178
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6833   .debug_str:0000000000000c4d .LASF179
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7061   .debug_str:00000000000010f7 .LASF180
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6931   .debug_str:0000000000000e42 .LASF181
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6927   .debug_str:0000000000000e2d .LASF182
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6871   .debug_str:0000000000000d1e .LASF183
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6499   .debug_str:0000000000000437 .LASF184
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6943   .debug_str:0000000000000e75 .LASF185
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6595   .debug_str:000000000000069c .LASF186
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6449   .debug_str:000000000000030f .LASF187
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6439   .debug_str:00000000000002cb .LASF188
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6547   .debug_str:000000000000055e .LASF189
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6565   .debug_str:00000000000005db .LASF190
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6781   .debug_str:0000000000000ac8 .LASF191
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6919   .debug_str:0000000000000e03 .LASF192
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6625   .debug_str:0000000000000729 .LASF193
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6415   .debug_str:00000000000001e2 .LASF194
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6755   .debug_str:0000000000000a1a .LASF195
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6761   .debug_str:0000000000000a41 .LASF196
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6867   .debug_str:0000000000000d09 .LASF197
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6901   .debug_str:0000000000000dac .LASF198
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6913   .debug_str:0000000000000de8 .LASF199
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6925   .debug_str:0000000000000e28 .LASF200
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6749   .debug_str:00000000000009f0 .LASF201
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6783   .debug_str:0000000000000adc .LASF202
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6983   .debug_str:0000000000000f37 .LASF203
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6441   .debug_str:00000000000002d3 .LASF204
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6611   .debug_str:00000000000006e0 .LASF377
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6825   .debug_str:0000000000000c1d .LASF205
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6991   .debug_str:0000000000000f5d .LASF206
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6769   .debug_str:0000000000000a74 .LASF207
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6563   .debug_str:00000000000005cc .LASF208
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6933   .debug_str:0000000000000e47 .LASF209
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7049   .debug_str:00000000000010bc .LASF210
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6851   .debug_str:0000000000000cad .LASF211
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6351   .debug_str:000000000000005b .LASF212
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6455   .debug_str:000000000000032c .LASF213
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6853   .debug_str:0000000000000cb5 .LASF214
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6809   .debug_str:0000000000000ba7 .LASF215
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6359   .debug_str:0000000000000087 .LASF216
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6921   .debug_str:0000000000000e12 .LASF217
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7031   .debug_str:000000000000105a .LASF218
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6671   .debug_str:000000000000083c .LASF219
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6911   .debug_str:0000000000000ddf .LASF220
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s 			page 27
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6689   .debug_str:000000000000089e .LASF221
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6935   .debug_str:0000000000000e4e .LASF222
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6693   .debug_str:00000000000008b0 .LASF223
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6747   .debug_str:00000000000009ea .LASF224
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6615   .debug_str:00000000000006f5 .LASF225
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6391   .debug_str:000000000000014b .LASF226
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6397   .debug_str:0000000000000162 .LASF227
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7097   .debug_str:00000000000011c1 .LASF228
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7059   .debug_str:00000000000010ed .LASF229
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6635   .debug_str:000000000000075d .LASF230
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6495   .debug_str:0000000000000412 .LASF231
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6987   .debug_str:0000000000000f4b .LASF232
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6823   .debug_str:0000000000000c13 .LASF233
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6829   .debug_str:0000000000000c36 .LASF234
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7085   .debug_str:0000000000001182 .LASF235
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6453   .debug_str:000000000000031e .LASF236
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6417   .debug_str:00000000000001e9 .LASF237
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6875   .debug_str:0000000000000d2f .LASF238
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6981   .debug_str:0000000000000f2e .LASF239
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7013   .debug_str:0000000000000fcd .LASF240
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6803   .debug_str:0000000000000b8a .LASF241
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7007   .debug_str:0000000000000fb7 .LASF242
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6569   .debug_str:00000000000005ff .LASF243
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7011   .debug_str:0000000000000fc6 .LASF244
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6909   .debug_str:0000000000000dd9 .LASF245
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6477   .debug_str:000000000000039f .LASF246
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6659   .debug_str:00000000000007fb .LASF247
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6801   .debug_str:0000000000000b83 .LASF248
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6451   .debug_str:0000000000000318 .LASF249
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7003   .debug_str:0000000000000fa9 .LASF250
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6609   .debug_str:00000000000006d8 .LASF251
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6369   .debug_str:00000000000000b0 .LASF252
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6373   .debug_str:00000000000000de .LASF253
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6845   .debug_str:0000000000000c8f .LASF254
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6571   .debug_str:0000000000000604 .LASF255
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6787   .debug_str:0000000000000b3b .LASF256
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6395   .debug_str:000000000000015c .LASF257
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6887   .debug_str:0000000000000d6a .LASF258
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6629   .debug_str:0000000000000742 .LASF259
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6939   .debug_str:0000000000000e5c .LASF260
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6419   .debug_str:00000000000001f1 .LASF261
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6793   .debug_str:0000000000000b57 .LASF262
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6663   .debug_str:000000000000080e .LASF263
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6427   .debug_str:000000000000028e .LASF264
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6677   .debug_str:000000000000085e .LASF265
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6583   .debug_str:0000000000000649 .LASF266
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6881   .debug_str:0000000000000d48 .LASF267
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6789   .debug_str:0000000000000b41 .LASF268
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7005   .debug_str:0000000000000fb2 .LASF269
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6709   .debug_str:0000000000000911 .LASF270
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7087   .debug_str:000000000000118d .LASF271
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7029   .debug_str:0000000000001052 .LASF272
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6661   .debug_str:0000000000000803 .LASF273
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6697   .debug_str:00000000000008c0 .LASF274
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7039   .debug_str:0000000000001087 .LASF275
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6475   .debug_str:0000000000000395 .LASF276
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6649   .debug_str:00000000000007b0 .LASF277
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 28
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6689   .debug_str:000000000000089e .LASF221
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6935   .debug_str:0000000000000e4e .LASF222
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6693   .debug_str:00000000000008b0 .LASF223
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6747   .debug_str:00000000000009ea .LASF224
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6615   .debug_str:00000000000006f5 .LASF225
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6391   .debug_str:000000000000014b .LASF226
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6397   .debug_str:0000000000000162 .LASF227
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7097   .debug_str:00000000000011c1 .LASF228
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7059   .debug_str:00000000000010ed .LASF229
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6635   .debug_str:000000000000075d .LASF230
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6495   .debug_str:0000000000000412 .LASF231
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6987   .debug_str:0000000000000f4b .LASF232
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6823   .debug_str:0000000000000c13 .LASF233
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6829   .debug_str:0000000000000c36 .LASF234
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7085   .debug_str:0000000000001182 .LASF235
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6453   .debug_str:000000000000031e .LASF236
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6417   .debug_str:00000000000001e9 .LASF237
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6875   .debug_str:0000000000000d2f .LASF238
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6981   .debug_str:0000000000000f2e .LASF239
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7013   .debug_str:0000000000000fcd .LASF240
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6803   .debug_str:0000000000000b8a .LASF241
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7007   .debug_str:0000000000000fb7 .LASF242
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6569   .debug_str:00000000000005ff .LASF243
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7011   .debug_str:0000000000000fc6 .LASF244
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6909   .debug_str:0000000000000dd9 .LASF245
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6477   .debug_str:000000000000039f .LASF246
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6659   .debug_str:00000000000007fb .LASF247
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6801   .debug_str:0000000000000b83 .LASF248
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6451   .debug_str:0000000000000318 .LASF249
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7003   .debug_str:0000000000000fa9 .LASF250
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6609   .debug_str:00000000000006d8 .LASF251
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6369   .debug_str:00000000000000b0 .LASF252
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6373   .debug_str:00000000000000de .LASF253
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6845   .debug_str:0000000000000c8f .LASF254
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6571   .debug_str:0000000000000604 .LASF255
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6787   .debug_str:0000000000000b3b .LASF256
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6395   .debug_str:000000000000015c .LASF257
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6887   .debug_str:0000000000000d6a .LASF258
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6629   .debug_str:0000000000000742 .LASF259
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6939   .debug_str:0000000000000e5c .LASF260
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6419   .debug_str:00000000000001f1 .LASF261
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6793   .debug_str:0000000000000b57 .LASF262
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6663   .debug_str:000000000000080e .LASF263
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6427   .debug_str:000000000000028e .LASF264
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6677   .debug_str:000000000000085e .LASF265
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6583   .debug_str:0000000000000649 .LASF266
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6881   .debug_str:0000000000000d48 .LASF267
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6789   .debug_str:0000000000000b41 .LASF268
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7005   .debug_str:0000000000000fb2 .LASF269
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6709   .debug_str:0000000000000911 .LASF270
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7087   .debug_str:000000000000118d .LASF271
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7029   .debug_str:0000000000001052 .LASF272
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6661   .debug_str:0000000000000803 .LASF273
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6697   .debug_str:00000000000008c0 .LASF274
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7039   .debug_str:0000000000001087 .LASF275
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6475   .debug_str:0000000000000395 .LASF276
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6649   .debug_str:00000000000007b0 .LASF277
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s 			page 28
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6739   .debug_str:00000000000009c6 .LASF278
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6381   .debug_str:000000000000010e .LASF279
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6633   .debug_str:0000000000000755 .LASF280
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6885   .debug_str:0000000000000d65 .LASF281
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6699   .debug_str:00000000000008ca .LASF282
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6623   .debug_str:000000000000071f .LASF283
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6721   .debug_str:0000000000000951 .LASF284
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6365   .debug_str:00000000000000a3 .LASF285
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6821   .debug_str:0000000000000c0e .LASF286
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6915   .debug_str:0000000000000df3 .LASF287
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6745   .debug_str:00000000000009e4 .LASF288
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6715   .debug_str:0000000000000933 .LASF289
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6741   .debug_str:00000000000009d0 .LASF290
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6879   .debug_str:0000000000000d40 .LASF291
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6841   .debug_str:0000000000000c7e .LASF292
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6425   .debug_str:0000000000000288 .LASF293
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7051   .debug_str:00000000000010c3 .LASF294
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6507   .debug_str:0000000000000463 .LASF295
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6899   .debug_str:0000000000000d9f .LASF296
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6379   .debug_str:0000000000000101 .LASF297
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6487   .debug_str:00000000000003e9 .LASF298
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6733   .debug_str:00000000000009a3 .LASF299
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6797   .debug_str:0000000000000b6f .LASF300
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6929   .debug_str:0000000000000e3d .LASF301
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6969   .debug_str:0000000000000ef0 .LASF302
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6857   .debug_str:0000000000000cc6 .LASF303
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6791   .debug_str:0000000000000b49 .LASF304
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6401   .debug_str:0000000000000173 .LASF305
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6683   .debug_str:000000000000087e .LASF306
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7101   .debug_str:00000000000011da .LASF307
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6467   .debug_str:000000000000036c .LASF308
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6903   .debug_str:0000000000000db6 .LASF309
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7067   .debug_str:0000000000001119 .LASF310
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6773   .debug_str:0000000000000a98 .LASF311
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6757   .debug_str:0000000000000a23 .LASF312
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6573   .debug_str:000000000000060b .LASF313
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7017   .debug_str:0000000000000fe2 .LASF314
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6727   .debug_str:000000000000097e .LASF315
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6389   .debug_str:0000000000000143 .LASF316
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6357   .debug_str:000000000000007c .LASF378
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6471   .debug_str:0000000000000383 .LASF317
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6813   .debug_str:0000000000000bd2 .LASF318
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6543   .debug_str:0000000000000536 .LASF319
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7089   .debug_str:00000000000011a6 .LASF320
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7019   .debug_str:0000000000000fe9 .LASF321
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6515   .debug_str:00000000000004a9 .LASF322
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6537   .debug_str:0000000000000519 .LASF323
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6407   .debug_str:0000000000000192 .LASF324
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6811   .debug_str:0000000000000baf .LASF325
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7025   .debug_str:000000000000102b .LASF326
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6581   .debug_str:0000000000000638 .LASF327
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6513   .debug_str:0000000000000484 .LASF328
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6485   .debug_str:00000000000003d2 .LASF329
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6999   .debug_str:0000000000000f87 .LASF330
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6497   .debug_str:000000000000041b .LASF331
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6639   .debug_str:000000000000076d .LASF332
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6429   .debug_str:0000000000000295 .LASF333
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 29
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6739   .debug_str:00000000000009c6 .LASF278
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6381   .debug_str:000000000000010e .LASF279
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6633   .debug_str:0000000000000755 .LASF280
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6885   .debug_str:0000000000000d65 .LASF281
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6699   .debug_str:00000000000008ca .LASF282
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6623   .debug_str:000000000000071f .LASF283
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6721   .debug_str:0000000000000951 .LASF284
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6365   .debug_str:00000000000000a3 .LASF285
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6821   .debug_str:0000000000000c0e .LASF286
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6915   .debug_str:0000000000000df3 .LASF287
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6745   .debug_str:00000000000009e4 .LASF288
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6715   .debug_str:0000000000000933 .LASF289
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6741   .debug_str:00000000000009d0 .LASF290
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6879   .debug_str:0000000000000d40 .LASF291
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6841   .debug_str:0000000000000c7e .LASF292
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6425   .debug_str:0000000000000288 .LASF293
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7051   .debug_str:00000000000010c3 .LASF294
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6507   .debug_str:0000000000000463 .LASF295
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6899   .debug_str:0000000000000d9f .LASF296
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6379   .debug_str:0000000000000101 .LASF297
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6487   .debug_str:00000000000003e9 .LASF298
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6733   .debug_str:00000000000009a3 .LASF299
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6797   .debug_str:0000000000000b6f .LASF300
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6929   .debug_str:0000000000000e3d .LASF301
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6969   .debug_str:0000000000000ef0 .LASF302
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6857   .debug_str:0000000000000cc6 .LASF303
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6791   .debug_str:0000000000000b49 .LASF304
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6401   .debug_str:0000000000000173 .LASF305
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6683   .debug_str:000000000000087e .LASF306
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7101   .debug_str:00000000000011da .LASF307
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6467   .debug_str:000000000000036c .LASF308
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6903   .debug_str:0000000000000db6 .LASF309
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7067   .debug_str:0000000000001119 .LASF310
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6773   .debug_str:0000000000000a98 .LASF311
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6757   .debug_str:0000000000000a23 .LASF312
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6573   .debug_str:000000000000060b .LASF313
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7017   .debug_str:0000000000000fe2 .LASF314
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6727   .debug_str:000000000000097e .LASF315
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6389   .debug_str:0000000000000143 .LASF316
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6357   .debug_str:000000000000007c .LASF378
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6471   .debug_str:0000000000000383 .LASF317
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6813   .debug_str:0000000000000bd2 .LASF318
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6543   .debug_str:0000000000000536 .LASF319
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7089   .debug_str:00000000000011a6 .LASF320
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7019   .debug_str:0000000000000fe9 .LASF321
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6515   .debug_str:00000000000004a9 .LASF322
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6537   .debug_str:0000000000000519 .LASF323
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6407   .debug_str:0000000000000192 .LASF324
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6811   .debug_str:0000000000000baf .LASF325
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7025   .debug_str:000000000000102b .LASF326
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6581   .debug_str:0000000000000638 .LASF327
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6513   .debug_str:0000000000000484 .LASF328
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6485   .debug_str:00000000000003d2 .LASF329
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6999   .debug_str:0000000000000f87 .LASF330
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6497   .debug_str:000000000000041b .LASF331
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6639   .debug_str:000000000000076d .LASF332
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6429   .debug_str:0000000000000295 .LASF333
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s 			page 29
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6385   .debug_str:000000000000011f .LASF334
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6559   .debug_str:00000000000005a6 .LASF335
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6751   .debug_str:00000000000009f8 .LASF336
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6349   .debug_str:0000000000000042 .LASF337
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6371   .debug_str:00000000000000b6 .LASF338
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7015   .debug_str:0000000000000fd5 .LASF339
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7023   .debug_str:0000000000001019 .LASF340
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6483   .debug_str:00000000000003b9 .LASF341
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6375   .debug_str:00000000000000e5 .LASF342
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6435   .debug_str:00000000000002b9 .LASF343
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6675   .debug_str:0000000000000854 .LASF344
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6737   .debug_str:00000000000009ba .LASF345
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6409   .debug_str:00000000000001c0 .LASF346
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6643   .debug_str:000000000000078e .LASF347
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6719   .debug_str:0000000000000945 .LASF348
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6605   .debug_str:00000000000006c7 .LASF349
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6679   .debug_str:0000000000000865 .LASF350
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6637   .debug_str:0000000000000767 .LASF351
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6835   .debug_str:0000000000000c55 .LASF352
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6907   .debug_str:0000000000000dce .LASF353
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7021   .debug_str:000000000000100f .LASF354
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6723   .debug_str:0000000000000959 .LASF379
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6753   .debug_str:0000000000000a12 .LASF355
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6411   .debug_str:00000000000001cf .LASF356
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:325    .text._write:0000000000000000 .LFB10
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:458    .text._write:00000000000000b0 .LFE10
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:5999   .debug_loc:0000000000000000 .LLST7
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6022   .debug_loc:0000000000000038 .LLST8
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6036   .debug_loc:0000000000000059 .LLST9
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6058   .debug_loc:0000000000000090 .LLST10
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7079   .debug_str:000000000000116d .LASF357
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6073   .debug_loc:00000000000000b9 .LLST11
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6997   .debug_str:0000000000000f7e .LASF358
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6085   .debug_loc:00000000000000d1 .LLST12
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6096   .debug_loc:00000000000000ef .LLST13
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:353    .text._write:000000000000001c .LVL23
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:382    .text._write:000000000000004c .LVL27
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:413    .text._write:0000000000000088 .LVL30
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6883   .debug_str:0000000000000d50 .LASF380
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:304    .text.usb_serial_available:0000000000000000 .LFB9
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:318    .text.usb_serial_available:0000000000000014 .LFE9
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6587   .debug_str:0000000000000660 .LASF381
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:242    .text.configure_usb_serial:0000000000000000 .LFB8
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:297    .text.configure_usb_serial:0000000000000058 .LFE8
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6116   .debug_loc:0000000000000124 .LLST6
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:254    .text.configure_usb_serial:000000000000000c .LVL15
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:263    .text.configure_usb_serial:0000000000000018 .LVL16
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:267    .text.configure_usb_serial:0000000000000022 .LVL17
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:270    .text.configure_usb_serial:000000000000002a .LVL18
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:273    .text.configure_usb_serial:0000000000000032 .LVL19
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:276    .text.configure_usb_serial:000000000000003a .LVL20
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:295    .text.configure_usb_serial:0000000000000058 .LVL21
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6967   .debug_str:0000000000000ee0 .LASF359
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:47     .text.read_usb_serial:0000000000000000 .LFB7
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:235    .text.read_usb_serial:00000000000000ee .LFE7
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6134   .debug_loc:0000000000000150 .LLST1
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7093   .debug_str:00000000000011b4 .LASF360
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 30
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6385   .debug_str:000000000000011f .LASF334
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6559   .debug_str:00000000000005a6 .LASF335
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6751   .debug_str:00000000000009f8 .LASF336
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6349   .debug_str:0000000000000042 .LASF337
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6371   .debug_str:00000000000000b6 .LASF338
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7015   .debug_str:0000000000000fd5 .LASF339
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7023   .debug_str:0000000000001019 .LASF340
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6483   .debug_str:00000000000003b9 .LASF341
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6375   .debug_str:00000000000000e5 .LASF342
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6435   .debug_str:00000000000002b9 .LASF343
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6675   .debug_str:0000000000000854 .LASF344
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6737   .debug_str:00000000000009ba .LASF345
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6409   .debug_str:00000000000001c0 .LASF346
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6643   .debug_str:000000000000078e .LASF347
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6719   .debug_str:0000000000000945 .LASF348
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6605   .debug_str:00000000000006c7 .LASF349
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6679   .debug_str:0000000000000865 .LASF350
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6637   .debug_str:0000000000000767 .LASF351
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6835   .debug_str:0000000000000c55 .LASF352
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6907   .debug_str:0000000000000dce .LASF353
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7021   .debug_str:000000000000100f .LASF354
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6723   .debug_str:0000000000000959 .LASF379
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6753   .debug_str:0000000000000a12 .LASF355
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6411   .debug_str:00000000000001cf .LASF356
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:325    .text._write:0000000000000000 .LFB10
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:458    .text._write:00000000000000b0 .LFE10
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:5999   .debug_loc:0000000000000000 .LLST7
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6022   .debug_loc:0000000000000038 .LLST8
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6036   .debug_loc:0000000000000059 .LLST9
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6058   .debug_loc:0000000000000090 .LLST10
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7079   .debug_str:000000000000116d .LASF357
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6073   .debug_loc:00000000000000b9 .LLST11
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6997   .debug_str:0000000000000f7e .LASF358
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6085   .debug_loc:00000000000000d1 .LLST12
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6096   .debug_loc:00000000000000ef .LLST13
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:353    .text._write:000000000000001c .LVL23
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:382    .text._write:000000000000004c .LVL27
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:413    .text._write:0000000000000088 .LVL30
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6883   .debug_str:0000000000000d50 .LASF380
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:304    .text.usb_serial_available:0000000000000000 .LFB9
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:318    .text.usb_serial_available:0000000000000014 .LFE9
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6587   .debug_str:0000000000000660 .LASF381
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:242    .text.configure_usb_serial:0000000000000000 .LFB8
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:297    .text.configure_usb_serial:0000000000000058 .LFE8
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6116   .debug_loc:0000000000000124 .LLST6
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:254    .text.configure_usb_serial:000000000000000c .LVL15
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:263    .text.configure_usb_serial:0000000000000018 .LVL16
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:267    .text.configure_usb_serial:0000000000000022 .LVL17
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:270    .text.configure_usb_serial:000000000000002a .LVL18
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:273    .text.configure_usb_serial:0000000000000032 .LVL19
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:276    .text.configure_usb_serial:000000000000003a .LVL20
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:295    .text.configure_usb_serial:0000000000000058 .LVL21
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6967   .debug_str:0000000000000ee0 .LASF359
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:47     .text.read_usb_serial:0000000000000000 .LFB7
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:235    .text.read_usb_serial:00000000000000ee .LFE7
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6134   .debug_loc:0000000000000150 .LLST1
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7093   .debug_str:00000000000011b4 .LASF360
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s 			page 30
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6157   .debug_loc:0000000000000188 .LLST2
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6179   .debug_loc:00000000000001bf .LLST3
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6403   .debug_str:000000000000017d .LASF361
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6187   .debug_loc:00000000000001d3 .LLST4
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6199   .debug_loc:00000000000001f2 .LLST5
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:212    .text.read_usb_serial:00000000000000ce .LVL11
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:216    .text.read_usb_serial:00000000000000d8 .LVL12
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6545   .debug_str:0000000000000549 .LASF382
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:17     .text.usb_serial_connected:0000000000000000 .LFB6
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:40     .text.usb_serial_connected:0000000000000016 .LFE6
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6215   .debug_loc:000000000000021c .LLST0
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:30     .text.usb_serial_connected:000000000000000c .LVL0
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:465    .text.set_usb_clock_96m_hxtal:0000000000000000 .LFB11
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:648    .text.set_usb_clock_96m_hxtal:00000000000000ee .LFE11
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6233   .debug_loc:0000000000000248 .LLST14
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6260   .debug_loc:000000000000027e .LLST15
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:560    .text.set_usb_clock_96m_hxtal:0000000000000080 .LBB11
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:646    .text.set_usb_clock_96m_hxtal:00000000000000ee .LBE11
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:561    .text.set_usb_clock_96m_hxtal:0000000000000080 .LBB12
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:645    .text.set_usb_clock_96m_hxtal:00000000000000ee .LBE12
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:644    .text.set_usb_clock_96m_hxtal:00000000000000ee .LVL42
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6775   .debug_str:0000000000000aa7 .LASF362
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6861   .debug_str:0000000000000cdd .LASF363
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6703   .debug_str:00000000000008e0 .LASF364
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7069   .debug_str:000000000000112a .LASF365
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6575   .debug_str:0000000000000614 .LASF366
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6819   .debug_str:0000000000000bff .LASF367
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6457   .debug_str:0000000000000332 .LASF368
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6849   .debug_str:0000000000000ca3 .LASF369
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7001   .debug_str:0000000000000f9b .LASF370
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6807   .debug_str:0000000000000b9c .LASF371
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:6555   .debug_str:0000000000000584 .LASF372
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:7027   .debug_str:000000000000103c .LASF373
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:332    .text._write:0000000000000002 .LCFI7
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:436    .text._write:000000000000009a .LCFI8
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:441    .text._write:000000000000009c .LCFI9
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:328    .text._write:0000000000000000 .LVL22
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:430    .text._write:0000000000000094 .LVL33
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:439    .text._write:000000000000009c .LVL34
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:427    .text._write:0000000000000092 .LVL32
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:371    .text._write:0000000000000038 .LVL25
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:359    .text._write:0000000000000028 .LVL24
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:395    .text._write:0000000000000060 .LVL28
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:400    .text._write:0000000000000066 .LVL29
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:422    .text._write:000000000000008e .LVL31
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:248    .text.configure_usb_serial:0000000000000002 .LCFI5
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:291    .text.configure_usb_serial:0000000000000050 .LCFI6
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:56     .text.read_usb_serial:0000000000000002 .LCFI2
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:158    .text.read_usb_serial:0000000000000086 .LCFI3
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:163    .text.read_usb_serial:0000000000000088 .LCFI4
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:50     .text.read_usb_serial:0000000000000000 .LVL1
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:101    .text.read_usb_serial:000000000000004a .LVL2
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:130    .text.read_usb_serial:000000000000006e .LVL5
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:161    .text.read_usb_serial:0000000000000088 .LVL6
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:173    .text.read_usb_serial:0000000000000092 .LVL7
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:176    .text.read_usb_serial:0000000000000094 .LVL8
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:195    .text.read_usb_serial:00000000000000ae .LVL10
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s 			page 31
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6157   .debug_loc:0000000000000188 .LLST2
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6179   .debug_loc:00000000000001bf .LLST3
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6403   .debug_str:000000000000017d .LASF361
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6187   .debug_loc:00000000000001d3 .LLST4
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6199   .debug_loc:00000000000001f2 .LLST5
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:212    .text.read_usb_serial:00000000000000ce .LVL11
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:216    .text.read_usb_serial:00000000000000d8 .LVL12
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6545   .debug_str:0000000000000549 .LASF382
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:17     .text.usb_serial_connected:0000000000000000 .LFB6
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:40     .text.usb_serial_connected:0000000000000016 .LFE6
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6215   .debug_loc:000000000000021c .LLST0
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:30     .text.usb_serial_connected:000000000000000c .LVL0
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:465    .text.set_usb_clock_96m_hxtal:0000000000000000 .LFB11
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:648    .text.set_usb_clock_96m_hxtal:00000000000000ee .LFE11
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6233   .debug_loc:0000000000000248 .LLST14
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6260   .debug_loc:000000000000027e .LLST15
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:560    .text.set_usb_clock_96m_hxtal:0000000000000080 .LBB11
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:646    .text.set_usb_clock_96m_hxtal:00000000000000ee .LBE11
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:561    .text.set_usb_clock_96m_hxtal:0000000000000080 .LBB12
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:645    .text.set_usb_clock_96m_hxtal:00000000000000ee .LBE12
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:644    .text.set_usb_clock_96m_hxtal:00000000000000ee .LVL42
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6775   .debug_str:0000000000000aa7 .LASF362
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6861   .debug_str:0000000000000cdd .LASF363
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6703   .debug_str:00000000000008e0 .LASF364
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7069   .debug_str:000000000000112a .LASF365
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6575   .debug_str:0000000000000614 .LASF366
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6819   .debug_str:0000000000000bff .LASF367
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6457   .debug_str:0000000000000332 .LASF368
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6849   .debug_str:0000000000000ca3 .LASF369
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7001   .debug_str:0000000000000f9b .LASF370
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6807   .debug_str:0000000000000b9c .LASF371
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:6555   .debug_str:0000000000000584 .LASF372
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:7027   .debug_str:000000000000103c .LASF373
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:332    .text._write:0000000000000002 .LCFI7
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:436    .text._write:000000000000009a .LCFI8
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:441    .text._write:000000000000009c .LCFI9
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:328    .text._write:0000000000000000 .LVL22
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:430    .text._write:0000000000000094 .LVL33
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:439    .text._write:000000000000009c .LVL34
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:427    .text._write:0000000000000092 .LVL32
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:371    .text._write:0000000000000038 .LVL25
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:359    .text._write:0000000000000028 .LVL24
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:395    .text._write:0000000000000060 .LVL28
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:400    .text._write:0000000000000066 .LVL29
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:422    .text._write:000000000000008e .LVL31
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:248    .text.configure_usb_serial:0000000000000002 .LCFI5
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:291    .text.configure_usb_serial:0000000000000050 .LCFI6
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:56     .text.read_usb_serial:0000000000000002 .LCFI2
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:158    .text.read_usb_serial:0000000000000086 .LCFI3
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:163    .text.read_usb_serial:0000000000000088 .LCFI4
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:50     .text.read_usb_serial:0000000000000000 .LVL1
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:101    .text.read_usb_serial:000000000000004a .LVL2
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:130    .text.read_usb_serial:000000000000006e .LVL5
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:161    .text.read_usb_serial:0000000000000088 .LVL6
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:173    .text.read_usb_serial:0000000000000092 .LVL7
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:176    .text.read_usb_serial:0000000000000094 .LVL8
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:195    .text.read_usb_serial:00000000000000ae .LVL10
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s 			page 31
 
 
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:118    .text.read_usb_serial:0000000000000060 .LVL3
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:125    .text.read_usb_serial:0000000000000066 .LVL4
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:218    .text.read_usb_serial:00000000000000da .LVL13
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:24     .text.usb_serial_connected:0000000000000002 .LCFI0
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:36     .text.usb_serial_connected:0000000000000014 .LCFI1
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:519    .text.set_usb_clock_96m_hxtal:0000000000000052 .LVL36
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:530    .text.set_usb_clock_96m_hxtal:0000000000000062 .LVL37
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:542    .text.set_usb_clock_96m_hxtal:000000000000006e .LVL39
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:545    .text.set_usb_clock_96m_hxtal:0000000000000070 .LVL40
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:537    .text.set_usb_clock_96m_hxtal:0000000000000064 .LVL38
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:553    .text.set_usb_clock_96m_hxtal:000000000000007a .LVL41
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:709    .debug_info:0000000000000000 .Ldebug_info0
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:98     .text.read_usb_serial:0000000000000046 .LBB2
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:103    .text.read_usb_serial:000000000000004a .LBE2
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:170    .text.read_usb_serial:000000000000008e .LBB5
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:191    .text.read_usb_serial:00000000000000ac .LBE5
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:116    .text.read_usb_serial:0000000000000060 .LBB3
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:119    .text.read_usb_serial:0000000000000060 .LBE3
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:122    .text.read_usb_serial:0000000000000064 .LBB4
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:132    .text.read_usb_serial:000000000000006e .LBE4
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:220    .text.read_usb_serial:00000000000000da .LBB6
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:233    .text.read_usb_serial:00000000000000ee .LBE6
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:393    .text._write:0000000000000060 .LBB7
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:404    .text._write:000000000000006a .LBE7
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:443    .text._write:000000000000009c .LBB8
-C:\Users\Uzair\AppData\Local\Temp\cc3Ynb1x.s:456    .text._write:00000000000000b0 .LBE8
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:118    .text.read_usb_serial:0000000000000060 .LVL3
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:125    .text.read_usb_serial:0000000000000066 .LVL4
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:218    .text.read_usb_serial:00000000000000da .LVL13
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:24     .text.usb_serial_connected:0000000000000002 .LCFI0
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:36     .text.usb_serial_connected:0000000000000014 .LCFI1
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:519    .text.set_usb_clock_96m_hxtal:0000000000000052 .LVL36
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:530    .text.set_usb_clock_96m_hxtal:0000000000000062 .LVL37
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:542    .text.set_usb_clock_96m_hxtal:000000000000006e .LVL39
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:545    .text.set_usb_clock_96m_hxtal:0000000000000070 .LVL40
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:537    .text.set_usb_clock_96m_hxtal:0000000000000064 .LVL38
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:553    .text.set_usb_clock_96m_hxtal:000000000000007a .LVL41
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:709    .debug_info:0000000000000000 .Ldebug_info0
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:98     .text.read_usb_serial:0000000000000046 .LBB2
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:103    .text.read_usb_serial:000000000000004a .LBE2
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:170    .text.read_usb_serial:000000000000008e .LBB5
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:191    .text.read_usb_serial:00000000000000ac .LBE5
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:116    .text.read_usb_serial:0000000000000060 .LBB3
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:119    .text.read_usb_serial:0000000000000060 .LBE3
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:122    .text.read_usb_serial:0000000000000064 .LBB4
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:132    .text.read_usb_serial:000000000000006e .LBE4
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:220    .text.read_usb_serial:00000000000000da .LBB6
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:233    .text.read_usb_serial:00000000000000ee .LBE6
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:393    .text._write:0000000000000060 .LBB7
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:404    .text._write:000000000000006a .LBE7
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:443    .text._write:000000000000009c .LBB8
+C:\Users\Uzair\AppData\Local\Temp\ccyvOEXm.s:456    .text._write:00000000000000b0 .LBE8
 
 UNDEFINED SYMBOLS
 cdc_acm_get_line_state

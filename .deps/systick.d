@@ -1,4 +1,4 @@
-build/app.o: app.c \
+build/systick.o: systick.c \
  ../../firmware/GD32VF103_standard_peripheral/gd32vf103.h \
  ../../firmware/GD32VF103_standard_peripheral/system_gd32vf103.h \
  ../../firmware/GD32VF103_standard_peripheral/gd32vf103_libopt.h \
@@ -26,10 +26,7 @@ build/app.o: app.c \
  ../../firmware/RISCV/drivers/n200_func.h \
  ../../firmware/RISCV/drivers/n200_timer.h \
  ../../firmware/RISCV/drivers/n200_eclic.h \
- ../../firmware/RISCV/drivers/riscv_const.h lcd.h \
- lib/delay/include/delay.h lib/mpu6500/include/gd32v_mpu6500_if.h \
- lib/mpu6500/include/mpu6500_driver.h \
- lib/mpu6500/include/mpu6500_registers.h
+ ../../firmware/RISCV/drivers/riscv_const.h systick.h
 
 ../../firmware/GD32VF103_standard_peripheral/gd32vf103.h:
 
@@ -87,12 +84,4 @@ build/app.o: app.c \
 
 ../../firmware/RISCV/drivers/riscv_const.h:
 
-lcd.h:
-
-lib/delay/include/delay.h:
-
-lib/mpu6500/include/gd32v_mpu6500_if.h:
-
-lib/mpu6500/include/mpu6500_driver.h:
-
-lib/mpu6500/include/mpu6500_registers.h:
+systick.h:

@@ -1,4 +1,4 @@
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s 			page 1
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s 			page 1
 
 
    1              		.file	"delay.c"
@@ -58,7 +58,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s 			page 1
   36:delay.c       **** #include "delay.h"
   37:delay.c       **** 
   38:delay.c       **** /*!
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s 			page 2
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s 			page 2
 
 
   39:delay.c       ****     \brief      delay a time in milliseconds
@@ -118,7 +118,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s 			page 1
   50:delay.c       **** 	do {
   61              		.loc 1 50 2 is_stmt 1 discriminator 1
   51:delay.c       **** 	start_mtime = get_timer_value();
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s 			page 3
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s 			page 3
 
 
   62              		.loc 1 51 2 discriminator 1
@@ -178,7 +178,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s 			page 1
  103              	.LVL10:
  104 0076 4A86     		mv	a2,s2
  105 0078 CE86     		mv	a3,s3
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s 			page 4
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s 			page 4
 
 
  106 007a 97000000 		call	__divdf3
@@ -238,7 +238,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s 			page 1
  155 00ca 4561     		addi	sp,sp,48
  156              	.LCFI1:
  157              		.cfi_def_cfa_offset 0
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s 			page 5
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s 			page 5
 
 
  158 00cc 8280     		jr	ra
@@ -298,7 +298,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s 			page 1
  204 0022 AA89     		mv	s3,a0
  205 0024 2E89     		mv	s2,a1
  206              	.LVL19:
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s 			page 6
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s 			page 6
 
 
  207              	.L8:
@@ -358,7 +358,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s 			page 1
  247 006c AE8A     		mv	s5,a1
  248              		.loc 1 71 38 discriminator 1
  249 006e 97000000 		call	__floatunsidf
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s 			page 7
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s 			page 7
 
 
  249      E7800000 
@@ -418,7 +418,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s 			page 1
  298 00c6 224C     		lw	s8,8(sp)
  299              		.cfi_restore 24
  300 00c8 924C     		lw	s9,4(sp)
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s 			page 8
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s 			page 8
 
 
  301              		.cfi_restore 25
@@ -478,7 +478,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s 			page 1
  345 0028 13070700 		addi	a4,a4,%lo(.LANCHOR0)
   79:delay.c       ****     delay_until = (time * (SystemCoreClock/4000)) + current_time;
  346              		.loc 1 79 25
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s 			page 9
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s 			page 9
 
 
  347 002c B3878702 		mul	a5,a5,s0
@@ -538,7 +538,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s 			page 1
  393              		.loc 1 85 43 is_stmt 0
  394 0010 B7070000 		lui	a5,%hi(SystemCoreClock)
  395 0014 83A70700 		lw	a5,%lo(SystemCoreClock)(a5)
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s 			page 10
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s 			page 10
 
 
  396 0018 B7163D00 		li	a3,4001792
@@ -598,7 +598,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s 			page 1
  442              		.cfi_offset 1, -4
  443              		.loc 1 90 12
  444 0004 97000000 		call	get_timer_value
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s 			page 11
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s 			page 11
 
 
  444      E7800000 
@@ -658,7 +658,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s 			page 1
  495              		.align	3
  496              	.LC1:
  497 0000 00000000 		.word	0
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s 			page 12
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s 			page 12
 
 
  498 0004 80844E41 		.word	1095664768
@@ -674,321 +674,321 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s 			page 1
  509              		.file 3 "c:\\kth\\he1043\\toolchain-gd32v-v202-win\\toolchain-gd32v-v202-win\\compiler\\riscv64-un
  510              		.file 4 "./../../firmware/GD32VF103_standard_peripheral/system_gd32vf103.h"
  511              		.file 5 "./../../firmware/RISCV/drivers/n200_func.h"
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s 			page 13
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s 			page 13
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 delay.c
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:18     .text.delay_1ms:0000000000000000 delay_1ms
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:22     .text.delay_1ms:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:24     .text.delay_1ms:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:25     .text.delay_1ms:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:26     .text.delay_1ms:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:27     .text.delay_1ms:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:29     .text.delay_1ms:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:41     .text.delay_1ms:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:42     .text.delay_1ms:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:43     .text.delay_1ms:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:44     .text.delay_1ms:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:45     .text.delay_1ms:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:46     .text.delay_1ms:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:47     .text.delay_1ms:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:48     .text.delay_1ms:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:49     .text.delay_1ms:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:50     .text.delay_1ms:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:51     .text.delay_1ms:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:53     .text.delay_1ms:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:55     .text.delay_1ms:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:62     .text.delay_1ms:0000000000000026 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:63     .text.delay_1ms:0000000000000026 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:64     .text.delay_1ms:0000000000000026 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:70     .text.delay_1ms:0000000000000032 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:74     .text.delay_1ms:000000000000003a .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:81     .text.delay_1ms:000000000000004a .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:82     .text.delay_1ms:000000000000004a .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:83     .text.delay_1ms:000000000000004a .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:87     .text.delay_1ms:0000000000000054 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:93     .text.delay_1ms:000000000000005c .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:98     .text.delay_1ms:0000000000000068 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:100    .text.delay_1ms:000000000000006c .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:102    .text.delay_1ms:000000000000006e .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:110    .text.delay_1ms:0000000000000084 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:112    .text.delay_1ms:0000000000000086 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:114    .text.delay_1ms:0000000000000088 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:123    .text.delay_1ms:00000000000000a0 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:131    .text.delay_1ms:00000000000000b4 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:132    .text.delay_1ms:00000000000000b6 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:134    .text.delay_1ms:00000000000000b8 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:137    .text.delay_1ms:00000000000000ba .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:139    .text.delay_1ms:00000000000000bc .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:141    .text.delay_1ms:00000000000000be .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:143    .text.delay_1ms:00000000000000c0 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:145    .text.delay_1ms:00000000000000c2 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:147    .text.delay_1ms:00000000000000c4 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:150    .text.delay_1ms:00000000000000c6 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:152    .text.delay_1ms:00000000000000c8 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:154    .text.delay_1ms:00000000000000ca .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:157    .text.delay_1ms:00000000000000cc .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:159    .text.delay_1ms:00000000000000ce .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:166    .text.delay_1us:0000000000000000 delay_1us
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:169    .text.delay_1us:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:171    .text.delay_1us:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:172    .text.delay_1us:0000000000000000 .L0 
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s 			page 14
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:18     .text.delay_1ms:0000000000000000 delay_1ms
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:22     .text.delay_1ms:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:24     .text.delay_1ms:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:25     .text.delay_1ms:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:26     .text.delay_1ms:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:27     .text.delay_1ms:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:29     .text.delay_1ms:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:41     .text.delay_1ms:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:42     .text.delay_1ms:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:43     .text.delay_1ms:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:44     .text.delay_1ms:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:45     .text.delay_1ms:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:46     .text.delay_1ms:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:47     .text.delay_1ms:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:48     .text.delay_1ms:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:49     .text.delay_1ms:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:50     .text.delay_1ms:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:51     .text.delay_1ms:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:53     .text.delay_1ms:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:55     .text.delay_1ms:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:62     .text.delay_1ms:0000000000000026 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:63     .text.delay_1ms:0000000000000026 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:64     .text.delay_1ms:0000000000000026 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:70     .text.delay_1ms:0000000000000032 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:74     .text.delay_1ms:000000000000003a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:81     .text.delay_1ms:000000000000004a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:82     .text.delay_1ms:000000000000004a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:83     .text.delay_1ms:000000000000004a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:87     .text.delay_1ms:0000000000000054 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:93     .text.delay_1ms:000000000000005c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:98     .text.delay_1ms:0000000000000068 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:100    .text.delay_1ms:000000000000006c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:102    .text.delay_1ms:000000000000006e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:110    .text.delay_1ms:0000000000000084 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:112    .text.delay_1ms:0000000000000086 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:114    .text.delay_1ms:0000000000000088 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:123    .text.delay_1ms:00000000000000a0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:131    .text.delay_1ms:00000000000000b4 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:132    .text.delay_1ms:00000000000000b6 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:134    .text.delay_1ms:00000000000000b8 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:137    .text.delay_1ms:00000000000000ba .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:139    .text.delay_1ms:00000000000000bc .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:141    .text.delay_1ms:00000000000000be .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:143    .text.delay_1ms:00000000000000c0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:145    .text.delay_1ms:00000000000000c2 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:147    .text.delay_1ms:00000000000000c4 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:150    .text.delay_1ms:00000000000000c6 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:152    .text.delay_1ms:00000000000000c8 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:154    .text.delay_1ms:00000000000000ca .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:157    .text.delay_1ms:00000000000000cc .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:159    .text.delay_1ms:00000000000000ce .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:166    .text.delay_1us:0000000000000000 delay_1us
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:169    .text.delay_1us:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:171    .text.delay_1us:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:172    .text.delay_1us:0000000000000000 .L0 
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s 			page 14
 
 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:173    .text.delay_1us:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:174    .text.delay_1us:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:176    .text.delay_1us:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:188    .text.delay_1us:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:189    .text.delay_1us:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:190    .text.delay_1us:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:191    .text.delay_1us:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:192    .text.delay_1us:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:193    .text.delay_1us:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:194    .text.delay_1us:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:195    .text.delay_1us:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:196    .text.delay_1us:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:197    .text.delay_1us:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:198    .text.delay_1us:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:200    .text.delay_1us:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:202    .text.delay_1us:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:209    .text.delay_1us:0000000000000026 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:210    .text.delay_1us:0000000000000026 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:211    .text.delay_1us:0000000000000026 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:217    .text.delay_1us:0000000000000032 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:221    .text.delay_1us:000000000000003a .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:228    .text.delay_1us:000000000000004a .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:229    .text.delay_1us:000000000000004a .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:230    .text.delay_1us:000000000000004a .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:234    .text.delay_1us:0000000000000054 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:240    .text.delay_1us:000000000000005c .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:245    .text.delay_1us:0000000000000068 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:247    .text.delay_1us:000000000000006c .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:249    .text.delay_1us:000000000000006e .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:257    .text.delay_1us:0000000000000084 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:259    .text.delay_1us:0000000000000086 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:261    .text.delay_1us:0000000000000088 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:270    .text.delay_1us:00000000000000a0 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:278    .text.delay_1us:00000000000000b4 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:279    .text.delay_1us:00000000000000b6 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:281    .text.delay_1us:00000000000000b8 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:284    .text.delay_1us:00000000000000ba .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:286    .text.delay_1us:00000000000000bc .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:288    .text.delay_1us:00000000000000be .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:290    .text.delay_1us:00000000000000c0 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:292    .text.delay_1us:00000000000000c2 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:294    .text.delay_1us:00000000000000c4 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:297    .text.delay_1us:00000000000000c6 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:299    .text.delay_1us:00000000000000c8 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:301    .text.delay_1us:00000000000000ca .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:304    .text.delay_1us:00000000000000cc .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:306    .text.delay_1us:00000000000000ce .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:313    .text.delay_until_1us:0000000000000000 delay_until_1us
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:316    .text.delay_until_1us:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:318    .text.delay_until_1us:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:319    .text.delay_until_1us:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:320    .text.delay_until_1us:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:321    .text.delay_until_1us:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:323    .text.delay_until_1us:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:326    .text.delay_until_1us:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:327    .text.delay_until_1us:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:329    .text.delay_until_1us:0000000000000006 .L0 
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s 			page 15
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:173    .text.delay_1us:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:174    .text.delay_1us:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:176    .text.delay_1us:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:188    .text.delay_1us:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:189    .text.delay_1us:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:190    .text.delay_1us:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:191    .text.delay_1us:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:192    .text.delay_1us:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:193    .text.delay_1us:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:194    .text.delay_1us:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:195    .text.delay_1us:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:196    .text.delay_1us:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:197    .text.delay_1us:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:198    .text.delay_1us:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:200    .text.delay_1us:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:202    .text.delay_1us:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:209    .text.delay_1us:0000000000000026 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:210    .text.delay_1us:0000000000000026 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:211    .text.delay_1us:0000000000000026 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:217    .text.delay_1us:0000000000000032 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:221    .text.delay_1us:000000000000003a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:228    .text.delay_1us:000000000000004a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:229    .text.delay_1us:000000000000004a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:230    .text.delay_1us:000000000000004a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:234    .text.delay_1us:0000000000000054 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:240    .text.delay_1us:000000000000005c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:245    .text.delay_1us:0000000000000068 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:247    .text.delay_1us:000000000000006c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:249    .text.delay_1us:000000000000006e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:257    .text.delay_1us:0000000000000084 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:259    .text.delay_1us:0000000000000086 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:261    .text.delay_1us:0000000000000088 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:270    .text.delay_1us:00000000000000a0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:278    .text.delay_1us:00000000000000b4 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:279    .text.delay_1us:00000000000000b6 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:281    .text.delay_1us:00000000000000b8 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:284    .text.delay_1us:00000000000000ba .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:286    .text.delay_1us:00000000000000bc .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:288    .text.delay_1us:00000000000000be .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:290    .text.delay_1us:00000000000000c0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:292    .text.delay_1us:00000000000000c2 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:294    .text.delay_1us:00000000000000c4 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:297    .text.delay_1us:00000000000000c6 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:299    .text.delay_1us:00000000000000c8 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:301    .text.delay_1us:00000000000000ca .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:304    .text.delay_1us:00000000000000cc .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:306    .text.delay_1us:00000000000000ce .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:313    .text.delay_until_1us:0000000000000000 delay_until_1us
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:316    .text.delay_until_1us:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:318    .text.delay_until_1us:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:319    .text.delay_until_1us:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:320    .text.delay_until_1us:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:321    .text.delay_until_1us:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:323    .text.delay_until_1us:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:326    .text.delay_until_1us:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:327    .text.delay_until_1us:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:329    .text.delay_until_1us:0000000000000006 .L0 
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s 			page 15
 
 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:331    .text.delay_until_1us:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:334    .text.delay_until_1us:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:335    .text.delay_until_1us:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:341    .text.delay_until_1us:0000000000000022 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:342    .text.delay_until_1us:0000000000000024 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:344    .text.delay_until_1us:0000000000000024 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:347    .text.delay_until_1us:000000000000002c .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:349    .text.delay_until_1us:0000000000000030 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:350    .text.delay_until_1us:0000000000000032 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:353    .text.delay_until_1us:0000000000000032 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:358    .text.delay_until_1us:000000000000003a .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:361    .text.delay_until_1us:000000000000003e .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:363    .text.delay_until_1us:0000000000000040 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:365    .text.delay_until_1us:0000000000000042 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:372    .text.delay_until_1ms:0000000000000000 delay_until_1ms
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:375    .text.delay_until_1ms:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:377    .text.delay_until_1ms:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:378    .text.delay_until_1ms:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:379    .text.delay_until_1ms:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:380    .text.delay_until_1ms:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:382    .text.delay_until_1ms:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:385    .text.delay_until_1ms:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:386    .text.delay_until_1ms:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:388    .text.delay_until_1ms:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:390    .text.delay_until_1ms:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:393    .text.delay_until_1ms:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:394    .text.delay_until_1ms:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:400    .text.delay_until_1ms:0000000000000024 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:401    .text.delay_until_1ms:0000000000000026 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:403    .text.delay_until_1ms:0000000000000026 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:406    .text.delay_until_1ms:000000000000002e .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:408    .text.delay_until_1ms:0000000000000032 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:409    .text.delay_until_1ms:0000000000000034 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:412    .text.delay_until_1ms:0000000000000034 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:417    .text.delay_until_1ms:000000000000003c .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:420    .text.delay_until_1ms:0000000000000040 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:422    .text.delay_until_1ms:0000000000000042 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:424    .text.delay_until_1ms:0000000000000044 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:431    .text.delay_finished:0000000000000000 delay_finished
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:434    .text.delay_finished:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:435    .text.delay_finished:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:436    .text.delay_finished:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:437    .text.delay_finished:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:438    .text.delay_finished:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:440    .text.delay_finished:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:442    .text.delay_finished:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:444    .text.delay_finished:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:447    .text.delay_finished:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:448    .text.delay_finished:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:451    .text.delay_finished:0000000000000014 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:459    .text.delay_finished:0000000000000028 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:460    .text.delay_finished:0000000000000028 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:465    .text.delay_finished:0000000000000030 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:466    .text.delay_finished:0000000000000030 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:470    .text.delay_finished:0000000000000032 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:471    .text.delay_finished:0000000000000034 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:472    .text.delay_finished:0000000000000034 .L0 
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s 			page 16
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:331    .text.delay_until_1us:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:334    .text.delay_until_1us:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:335    .text.delay_until_1us:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:341    .text.delay_until_1us:0000000000000022 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:342    .text.delay_until_1us:0000000000000024 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:344    .text.delay_until_1us:0000000000000024 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:347    .text.delay_until_1us:000000000000002c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:349    .text.delay_until_1us:0000000000000030 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:350    .text.delay_until_1us:0000000000000032 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:353    .text.delay_until_1us:0000000000000032 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:358    .text.delay_until_1us:000000000000003a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:361    .text.delay_until_1us:000000000000003e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:363    .text.delay_until_1us:0000000000000040 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:365    .text.delay_until_1us:0000000000000042 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:372    .text.delay_until_1ms:0000000000000000 delay_until_1ms
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:375    .text.delay_until_1ms:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:377    .text.delay_until_1ms:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:378    .text.delay_until_1ms:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:379    .text.delay_until_1ms:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:380    .text.delay_until_1ms:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:382    .text.delay_until_1ms:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:385    .text.delay_until_1ms:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:386    .text.delay_until_1ms:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:388    .text.delay_until_1ms:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:390    .text.delay_until_1ms:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:393    .text.delay_until_1ms:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:394    .text.delay_until_1ms:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:400    .text.delay_until_1ms:0000000000000024 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:401    .text.delay_until_1ms:0000000000000026 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:403    .text.delay_until_1ms:0000000000000026 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:406    .text.delay_until_1ms:000000000000002e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:408    .text.delay_until_1ms:0000000000000032 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:409    .text.delay_until_1ms:0000000000000034 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:412    .text.delay_until_1ms:0000000000000034 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:417    .text.delay_until_1ms:000000000000003c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:420    .text.delay_until_1ms:0000000000000040 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:422    .text.delay_until_1ms:0000000000000042 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:424    .text.delay_until_1ms:0000000000000044 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:431    .text.delay_finished:0000000000000000 delay_finished
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:434    .text.delay_finished:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:435    .text.delay_finished:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:436    .text.delay_finished:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:437    .text.delay_finished:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:438    .text.delay_finished:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:440    .text.delay_finished:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:442    .text.delay_finished:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:444    .text.delay_finished:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:447    .text.delay_finished:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:448    .text.delay_finished:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:451    .text.delay_finished:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:459    .text.delay_finished:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:460    .text.delay_finished:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:465    .text.delay_finished:0000000000000030 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:466    .text.delay_finished:0000000000000030 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:470    .text.delay_finished:0000000000000032 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:471    .text.delay_finished:0000000000000034 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:472    .text.delay_finished:0000000000000034 .L0 
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s 			page 16
 
 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:475    .text.delay_finished:0000000000000036 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:480    .text.delay_finished:0000000000000038 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:482    .text.delay_finished:0000000000000038 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:485    .text.delay_finished:000000000000003c .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:504    .sbss.delay_until:0000000000000000 delay_until
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:501    .sbss.delay_until:0000000000000000 .LANCHOR0
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:162    .text.delay_1ms:00000000000000ce .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:309    .text.delay_1us:00000000000000ce .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:368    .text.delay_until_1us:0000000000000042 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:427    .text.delay_until_1ms:0000000000000044 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:489    .text.delay_finished:000000000000003c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:475    .text.delay_finished:0000000000000036 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:480    .text.delay_finished:0000000000000038 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:482    .text.delay_finished:0000000000000038 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:485    .text.delay_finished:000000000000003c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:504    .sbss.delay_until:0000000000000000 delay_until
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:501    .sbss.delay_until:0000000000000000 .LANCHOR0
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:162    .text.delay_1ms:00000000000000ce .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:309    .text.delay_1us:00000000000000ce .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:368    .text.delay_until_1us:0000000000000042 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:427    .text.delay_until_1ms:0000000000000044 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:489    .text.delay_finished:000000000000003c .L0 
                      .debug_frame:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:491    .rodata.delay_1ms.cst8:0000000000000000 .LC0
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:72     .text.delay_1ms:000000000000003a .L3
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:60     .text.delay_1ms:0000000000000026 .L2
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:79     .text.delay_1ms:000000000000004a .L4
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:496    .rodata.delay_1us.cst8:0000000000000000 .LC1
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:219    .text.delay_1us:000000000000003a .L9
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:207    .text.delay_1us:0000000000000026 .L8
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:226    .text.delay_1us:000000000000004a .L10
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:478    .text.delay_finished:0000000000000038 .L20
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:457    .text.delay_finished:0000000000000028 .L21
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:468    .text.delay_finished:0000000000000032 .L17
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:816    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1434   .debug_str:0000000000000166 .LASF28
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1432   .debug_str:000000000000015e .LASF29
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1402   .debug_str:0000000000000050 .LASF30
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1372   .debug_ranges:0000000000000000 .Ldebug_ranges0
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1386   .debug_line:0000000000000000 .Ldebug_line0
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1412   .debug_str:00000000000000de .LASF0
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1446   .debug_str:0000000000000222 .LASF1
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1390   .debug_str:000000000000000c .LASF6
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1400   .debug_str:0000000000000042 .LASF2
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1428   .debug_str:0000000000000149 .LASF3
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1406   .debug_str:00000000000000b6 .LASF4
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1438   .debug_str:00000000000001f7 .LASF5
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1410   .debug_str:00000000000000d3 .LASF7
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1404   .debug_str:00000000000000a4 .LASF8
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1424   .debug_str:000000000000012b .LASF9
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1430   .debug_str:0000000000000153 .LASF10
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1416   .debug_str:00000000000000fb .LASF11
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1418   .debug_str:0000000000000112 .LASF12
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1436   .debug_str:00000000000001ee .LASF13
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1398   .debug_str:0000000000000039 .LASF14
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1426   .debug_str:0000000000000139 .LASF16
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1422   .debug_str:000000000000011f .LASF15
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1388   .debug_str:0000000000000000 .LASF17
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1450   .debug_str:000000000000023e .LASF18
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:432    .text.delay_finished:0000000000000000 .LFB6
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:486    .text.delay_finished:000000000000003c .LFE6
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1091   .debug_loc:0000000000000000 .LLST14
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1420   .debug_str:000000000000011a .LASF20
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1114   .debug_loc:0000000000000038 .LLST15
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:445    .text.delay_finished:000000000000000c .LVL42
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1414   .debug_str:00000000000000eb .LASF19
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:373    .text.delay_until_1ms:0000000000000000 .LFB5
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:425    .text.delay_until_1ms:0000000000000044 .LFE5
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s 			page 17
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:491    .rodata.delay_1ms.cst8:0000000000000000 .LC0
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:72     .text.delay_1ms:000000000000003a .L3
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:60     .text.delay_1ms:0000000000000026 .L2
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:79     .text.delay_1ms:000000000000004a .L4
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:496    .rodata.delay_1us.cst8:0000000000000000 .LC1
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:219    .text.delay_1us:000000000000003a .L9
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:207    .text.delay_1us:0000000000000026 .L8
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:226    .text.delay_1us:000000000000004a .L10
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:478    .text.delay_finished:0000000000000038 .L20
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:457    .text.delay_finished:0000000000000028 .L21
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:468    .text.delay_finished:0000000000000032 .L17
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:816    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1434   .debug_str:0000000000000166 .LASF28
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1432   .debug_str:000000000000015e .LASF29
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1402   .debug_str:0000000000000050 .LASF30
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1372   .debug_ranges:0000000000000000 .Ldebug_ranges0
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1386   .debug_line:0000000000000000 .Ldebug_line0
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1412   .debug_str:00000000000000de .LASF0
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1446   .debug_str:0000000000000222 .LASF1
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1390   .debug_str:000000000000000c .LASF6
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1400   .debug_str:0000000000000042 .LASF2
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1428   .debug_str:0000000000000149 .LASF3
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1406   .debug_str:00000000000000b6 .LASF4
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1438   .debug_str:00000000000001f7 .LASF5
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1410   .debug_str:00000000000000d3 .LASF7
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1404   .debug_str:00000000000000a4 .LASF8
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1424   .debug_str:000000000000012b .LASF9
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1430   .debug_str:0000000000000153 .LASF10
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1416   .debug_str:00000000000000fb .LASF11
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1418   .debug_str:0000000000000112 .LASF12
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1436   .debug_str:00000000000001ee .LASF13
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1398   .debug_str:0000000000000039 .LASF14
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1426   .debug_str:0000000000000139 .LASF16
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1422   .debug_str:000000000000011f .LASF15
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1388   .debug_str:0000000000000000 .LASF17
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1450   .debug_str:000000000000023e .LASF18
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:432    .text.delay_finished:0000000000000000 .LFB6
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:486    .text.delay_finished:000000000000003c .LFE6
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1091   .debug_loc:0000000000000000 .LLST14
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1420   .debug_str:000000000000011a .LASF20
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1114   .debug_loc:0000000000000038 .LLST15
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:445    .text.delay_finished:000000000000000c .LVL42
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1414   .debug_str:00000000000000eb .LASF19
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:373    .text.delay_until_1ms:0000000000000000 .LFB5
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:425    .text.delay_until_1ms:0000000000000044 .LFE5
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s 			page 17
 
 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1135   .debug_loc:0000000000000060 .LLST11
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1153   .debug_loc:000000000000008c .LLST12
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1392   .debug_str:0000000000000016 .LASF21
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1171   .debug_loc:00000000000000b8 .LLST13
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:391    .text.delay_until_1ms:0000000000000010 .LVL39
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1448   .debug_str:000000000000022e .LASF22
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:314    .text.delay_until_1us:0000000000000000 .LFB4
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:366    .text.delay_until_1us:0000000000000042 .LFE4
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1183   .debug_loc:00000000000000d0 .LLST8
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1201   .debug_loc:00000000000000fc .LLST9
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1219   .debug_loc:0000000000000128 .LLST10
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:332    .text.delay_until_1us:0000000000000010 .LVL35
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1444   .debug_str:0000000000000218 .LASF23
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:167    .text.delay_1us:0000000000000000 .LFB3
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:307    .text.delay_1us:00000000000000ce .LFE3
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1231   .debug_loc:0000000000000140 .LLST4
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1396   .debug_str:0000000000000033 .LASF24
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1249   .debug_loc:000000000000016c .LLST5
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1442   .debug_str:000000000000020c .LASF25
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1267   .debug_loc:0000000000000198 .LLST6
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1440   .debug_str:0000000000000200 .LASF27
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1279   .debug_loc:00000000000001b0 .LLST7
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:203    .text.delay_1us:0000000000000022 .LVL18
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:212    .text.delay_1us:000000000000002e .LVL20
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:231    .text.delay_1us:0000000000000052 .LVL23
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1408   .debug_str:00000000000000c9 .LASF26
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:19     .text.delay_1ms:0000000000000000 .LFB2
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:160    .text.delay_1ms:00000000000000ce .LFE2
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1291   .debug_loc:00000000000001c8 .LLST0
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1309   .debug_loc:00000000000001f4 .LLST1
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1327   .debug_loc:0000000000000220 .LLST2
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1339   .debug_loc:0000000000000238 .LLST3
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:56     .text.delay_1ms:0000000000000022 .LVL1
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:65     .text.delay_1ms:000000000000002e .LVL3
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:84     .text.delay_1ms:0000000000000052 .LVL6
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:1394   .debug_str:0000000000000023 .LASF31
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:439    .text.delay_finished:0000000000000002 .LCFI8
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:474    .text.delay_finished:0000000000000036 .LCFI9
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:479    .text.delay_finished:0000000000000038 .LCFI10
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:467    .text.delay_finished:0000000000000032 .LVL43
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:477    .text.delay_finished:0000000000000038 .LVL44
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:483    .text.delay_finished:000000000000003a .LVL45
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:381    .text.delay_until_1ms:0000000000000002 .LCFI6
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:421    .text.delay_until_1ms:0000000000000042 .LCFI7
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:376    .text.delay_until_1ms:0000000000000000 .LVL38
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:410    .text.delay_until_1ms:0000000000000034 .LVL40
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:413    .text.delay_until_1ms:0000000000000036 .LVL41
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:322    .text.delay_until_1us:0000000000000002 .LCFI4
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:362    .text.delay_until_1us:0000000000000040 .LCFI5
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:317    .text.delay_until_1us:0000000000000000 .LVL34
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:351    .text.delay_until_1us:0000000000000032 .LVL36
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:354    .text.delay_until_1us:0000000000000034 .LVL37
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:175    .text.delay_1us:0000000000000002 .LCFI2
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:303    .text.delay_1us:00000000000000cc .LCFI3
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:170    .text.delay_1us:0000000000000000 .LVL17
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:295    .text.delay_1us:00000000000000c4 .LVL33
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:215    .text.delay_1us:0000000000000032 .LVL21
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s 			page 18
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1135   .debug_loc:0000000000000060 .LLST11
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1153   .debug_loc:000000000000008c .LLST12
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1392   .debug_str:0000000000000016 .LASF21
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1171   .debug_loc:00000000000000b8 .LLST13
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:391    .text.delay_until_1ms:0000000000000010 .LVL39
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1448   .debug_str:000000000000022e .LASF22
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:314    .text.delay_until_1us:0000000000000000 .LFB4
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:366    .text.delay_until_1us:0000000000000042 .LFE4
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1183   .debug_loc:00000000000000d0 .LLST8
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1201   .debug_loc:00000000000000fc .LLST9
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1219   .debug_loc:0000000000000128 .LLST10
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:332    .text.delay_until_1us:0000000000000010 .LVL35
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1444   .debug_str:0000000000000218 .LASF23
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:167    .text.delay_1us:0000000000000000 .LFB3
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:307    .text.delay_1us:00000000000000ce .LFE3
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1231   .debug_loc:0000000000000140 .LLST4
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1396   .debug_str:0000000000000033 .LASF24
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1249   .debug_loc:000000000000016c .LLST5
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1442   .debug_str:000000000000020c .LASF25
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1267   .debug_loc:0000000000000198 .LLST6
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1440   .debug_str:0000000000000200 .LASF27
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1279   .debug_loc:00000000000001b0 .LLST7
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:203    .text.delay_1us:0000000000000022 .LVL18
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:212    .text.delay_1us:000000000000002e .LVL20
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:231    .text.delay_1us:0000000000000052 .LVL23
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1408   .debug_str:00000000000000c9 .LASF26
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:19     .text.delay_1ms:0000000000000000 .LFB2
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:160    .text.delay_1ms:00000000000000ce .LFE2
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1291   .debug_loc:00000000000001c8 .LLST0
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1309   .debug_loc:00000000000001f4 .LLST1
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1327   .debug_loc:0000000000000220 .LLST2
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1339   .debug_loc:0000000000000238 .LLST3
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:56     .text.delay_1ms:0000000000000022 .LVL1
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:65     .text.delay_1ms:000000000000002e .LVL3
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:84     .text.delay_1ms:0000000000000052 .LVL6
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:1394   .debug_str:0000000000000023 .LASF31
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:439    .text.delay_finished:0000000000000002 .LCFI8
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:474    .text.delay_finished:0000000000000036 .LCFI9
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:479    .text.delay_finished:0000000000000038 .LCFI10
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:467    .text.delay_finished:0000000000000032 .LVL43
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:477    .text.delay_finished:0000000000000038 .LVL44
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:483    .text.delay_finished:000000000000003a .LVL45
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:381    .text.delay_until_1ms:0000000000000002 .LCFI6
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:421    .text.delay_until_1ms:0000000000000042 .LCFI7
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:376    .text.delay_until_1ms:0000000000000000 .LVL38
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:410    .text.delay_until_1ms:0000000000000034 .LVL40
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:413    .text.delay_until_1ms:0000000000000036 .LVL41
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:322    .text.delay_until_1us:0000000000000002 .LCFI4
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:362    .text.delay_until_1us:0000000000000040 .LCFI5
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:317    .text.delay_until_1us:0000000000000000 .LVL34
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:351    .text.delay_until_1us:0000000000000032 .LVL36
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:354    .text.delay_until_1us:0000000000000034 .LVL37
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:175    .text.delay_1us:0000000000000002 .LCFI2
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:303    .text.delay_1us:00000000000000cc .LCFI3
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:170    .text.delay_1us:0000000000000000 .LVL17
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:295    .text.delay_1us:00000000000000c4 .LVL33
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:215    .text.delay_1us:0000000000000032 .LVL21
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s 			page 18
 
 
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:282    .text.delay_1us:00000000000000b8 .LVL32
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:206    .text.delay_1us:0000000000000026 .LVL19
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:223    .text.delay_1us:0000000000000042 .LVL22
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:28     .text.delay_1ms:0000000000000002 .LCFI0
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:156    .text.delay_1ms:00000000000000cc .LCFI1
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:23     .text.delay_1ms:0000000000000000 .LVL0
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:148    .text.delay_1ms:00000000000000c4 .LVL16
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:68     .text.delay_1ms:0000000000000032 .LVL4
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:135    .text.delay_1ms:00000000000000b8 .LVL15
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:59     .text.delay_1ms:0000000000000026 .LVL2
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:76     .text.delay_1ms:0000000000000042 .LVL5
-C:\Users\Uzair\AppData\Local\Temp\ccxTxBLd.s:513    .debug_info:0000000000000000 .Ldebug_info0
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:282    .text.delay_1us:00000000000000b8 .LVL32
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:206    .text.delay_1us:0000000000000026 .LVL19
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:223    .text.delay_1us:0000000000000042 .LVL22
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:28     .text.delay_1ms:0000000000000002 .LCFI0
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:156    .text.delay_1ms:00000000000000cc .LCFI1
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:23     .text.delay_1ms:0000000000000000 .LVL0
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:148    .text.delay_1ms:00000000000000c4 .LVL16
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:68     .text.delay_1ms:0000000000000032 .LVL4
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:135    .text.delay_1ms:00000000000000b8 .LVL15
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:59     .text.delay_1ms:0000000000000026 .LVL2
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:76     .text.delay_1ms:0000000000000042 .LVL5
+C:\Users\Uzair\AppData\Local\Temp\ccDhHKCQ.s:513    .debug_info:0000000000000000 .Ldebug_info0
 
 UNDEFINED SYMBOLS
 __floatundidf

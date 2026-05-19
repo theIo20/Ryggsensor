@@ -1,0 +1,360 @@
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s 			page 1
+
+
+   1              		.file	"gd32v_tf_card_if.c"
+   2              		.option nopic
+   3              		.attribute arch, "rv32i2p0_m2p0_a2p0_c2p0"
+   4              		.attribute unaligned_access, 0
+   5              		.attribute stack_align, 16
+   6              		.text
+   7              	.Ltext0:
+   8              		.cfi_sections	.debug_frame
+   9              		.section	.text.set_fattime,"ax",@progbits
+  10              		.align	1
+  11              		.globl	set_fattime
+  13              	set_fattime:
+  14              	.LFB5:
+  15              		.file 1 "gd32v_tf_card_if.c"
+   1:gd32v_tf_card_if.c **** #include "gd32vf103.h"
+   2:gd32v_tf_card_if.c **** #include "gd32v_tf_card_if.h"
+   3:gd32v_tf_card_if.c **** #include "tf_card.h"
+   4:gd32v_tf_card_if.c **** 
+   5:gd32v_tf_card_if.c **** fat_time_t time = {.year = 2020, .month = 3, .day = 6, .hour = 0, .minute = 0};
+   6:gd32v_tf_card_if.c **** 
+   7:gd32v_tf_card_if.c **** void set_fattime(uint16_t year, uint8_t month, uint8_t day, uint8_t hour, uint8_t minute, uint8_t s
+  16              		.loc 1 7 106
+  17              		.cfi_startproc
+  18              	.LVL0:
+   8:gd32v_tf_card_if.c ****     time.year = year;
+  19              		.loc 1 8 5
+  20              		.loc 1 8 15 is_stmt 0
+  21 0000 37080000 		lui	a6,%hi(.LANCHOR0)
+  22 0004 13080800 		addi	a6,a6,%lo(.LANCHOR0)
+  23 0008 2310A800 		sh	a0,0(a6)
+   9:gd32v_tf_card_if.c ****     time.month = month;
+  24              		.loc 1 9 5 is_stmt 1
+  25              		.loc 1 9 16 is_stmt 0
+  26 000c 2301B800 		sb	a1,2(a6)
+  10:gd32v_tf_card_if.c ****     time.day = day;
+  27              		.loc 1 10 5 is_stmt 1
+  28              		.loc 1 10 14 is_stmt 0
+  29 0010 A301C800 		sb	a2,3(a6)
+  11:gd32v_tf_card_if.c ****     time.hour = hour;
+  30              		.loc 1 11 5 is_stmt 1
+  31              		.loc 1 11 15 is_stmt 0
+  32 0014 2302D800 		sb	a3,4(a6)
+  12:gd32v_tf_card_if.c ****     time.minute = minute;
+  33              		.loc 1 12 5 is_stmt 1
+  34              		.loc 1 12 17 is_stmt 0
+  35 0018 A302E800 		sb	a4,5(a6)
+  13:gd32v_tf_card_if.c ****     time.second = second;
+  36              		.loc 1 13 5 is_stmt 1
+  37              		.loc 1 13 17 is_stmt 0
+  38 001c 2303F800 		sb	a5,6(a6)
+  14:gd32v_tf_card_if.c **** }
+  39              		.loc 1 14 1
+  40 0020 8280     		ret
+  41              		.cfi_endproc
+  42              	.LFE5:
+  44              		.section	.text.get_fattime,"ax",@progbits
+  45              		.align	1
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s 			page 2
+
+
+  46              		.globl	get_fattime
+  48              	get_fattime:
+  49              	.LFB6:
+  15:gd32v_tf_card_if.c **** 
+  16:gd32v_tf_card_if.c **** DWORD get_fattime (void){
+  50              		.loc 1 16 25 is_stmt 1
+  51              		.cfi_startproc
+  17:gd32v_tf_card_if.c **** 	return
+  52              		.loc 1 17 2
+  18:gd32v_tf_card_if.c **** 		(((uint8_t)(time.year - 1980))  << 25) |
+  19:gd32v_tf_card_if.c **** 		(time.month	                    << 21) |
+  53              		.loc 1 19 8 is_stmt 0
+  54 0000 37070000 		lui	a4,%hi(.LANCHOR0)
+  55 0004 13070700 		addi	a4,a4,%lo(.LANCHOR0)
+  56 0008 83472700 		lbu	a5,2(a4)
+  20:gd32v_tf_card_if.c **** 		(time.day	                    << 16) |
+  57              		.loc 1 20 8
+  58 000c 03453700 		lbu	a0,3(a4)
+  19:gd32v_tf_card_if.c **** 		(time.day	                    << 16) |
+  59              		.loc 1 19 35
+  60 0010 D607     		slli	a5,a5,21
+  61              		.loc 1 20 33
+  62 0012 4205     		slli	a0,a0,16
+  21:gd32v_tf_card_if.c **** 		(time.hour	                    << 11) |
+  22:gd32v_tf_card_if.c **** 		(time.minute	                <<  5) |
+  63              		.loc 1 22 39
+  64 0014 C98F     		or	a5,a5,a0
+  23:gd32v_tf_card_if.c **** 		(time.second	                <<  0);
+  65              		.loc 1 23 32
+  66 0016 03456700 		lbu	a0,6(a4)
+  22:gd32v_tf_card_if.c **** 		(time.second	                <<  0);
+  67              		.loc 1 22 39
+  68 001a C98F     		or	a5,a5,a0
+  21:gd32v_tf_card_if.c **** 		(time.hour	                    << 11) |
+  69              		.loc 1 21 8
+  70 001c 03454700 		lbu	a0,4(a4)
+  21:gd32v_tf_card_if.c **** 		(time.hour	                    << 11) |
+  71              		.loc 1 21 34
+  72 0020 2E05     		slli	a0,a0,11
+  22:gd32v_tf_card_if.c **** 		(time.second	                <<  0);
+  73              		.loc 1 22 39
+  74 0022 C98F     		or	a5,a5,a0
+  22:gd32v_tf_card_if.c **** 		(time.second	                <<  0);
+  75              		.loc 1 22 8
+  76 0024 03455700 		lbu	a0,5(a4)
+  22:gd32v_tf_card_if.c **** 		(time.second	                <<  0);
+  77              		.loc 1 22 32
+  78 0028 1605     		slli	a0,a0,5
+  22:gd32v_tf_card_if.c **** 		(time.second	                <<  0);
+  79              		.loc 1 22 39
+  80 002a C98F     		or	a5,a5,a0
+  18:gd32v_tf_card_if.c **** 		(time.month	                    << 21) |
+  81              		.loc 1 18 5
+  82 002c 03450700 		lbu	a0,0(a4)
+  83 0030 13054504 		addi	a0,a0,68
+  18:gd32v_tf_card_if.c **** 		(time.month	                    << 21) |
+  84              		.loc 1 18 35
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s 			page 3
+
+
+  85 0034 6605     		slli	a0,a0,25
+  24:gd32v_tf_card_if.c **** }  ...
+  86              		.loc 1 24 1
+  87 0036 5D8D     		or	a0,a5,a0
+  88 0038 8280     		ret
+  89              		.cfi_endproc
+  90              	.LFE6:
+  92              		.globl	time
+  93              		.section	.sdata.time,"aw"
+  94              		.align	2
+  95              		.set	.LANCHOR0,. + 0
+  98              	time:
+  99 0000 E407     		.half	2020
+ 100 0002 03       		.byte	3
+ 101 0003 06       		.byte	6
+ 102 0004 00       		.byte	0
+ 103 0005 00       		.byte	0
+ 104 0006 0000     		.zero	2
+ 105              		.text
+ 106              	.Letext0:
+ 107              		.file 2 "c:\\kth\\he1043\\toolchain-gd32v-v202-win\\toolchain-gd32v-v202-win\\compiler\\riscv64-un
+ 108              		.file 3 "c:\\kth\\he1043\\toolchain-gd32v-v202-win\\toolchain-gd32v-v202-win\\compiler\\riscv64-un
+ 109              		.file 4 "c:\\kth\\he1043\\toolchain-gd32v-v202-win\\toolchain-gd32v-v202-win\\compiler\\lib\\gcc\\
+ 110              		.file 5 "c:\\kth\\he1043\\toolchain-gd32v-v202-win\\toolchain-gd32v-v202-win\\compiler\\riscv64-un
+ 111              		.file 6 "c:\\kth\\he1043\\toolchain-gd32v-v202-win\\toolchain-gd32v-v202-win\\compiler\\riscv64-un
+ 112              		.file 7 "c:\\kth\\he1043\\toolchain-gd32v-v202-win\\toolchain-gd32v-v202-win\\compiler\\riscv64-un
+ 113              		.file 8 "./../../firmware/GD32VF103_standard_peripheral/system_gd32vf103.h"
+ 114              		.file 9 "ff.h"
+ 115              		.file 10 "gd32v_tf_card_if.h"
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 gd32v_tf_card_if.c
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:13     .text.set_fattime:0000000000000000 set_fattime
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:17     .text.set_fattime:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:19     .text.set_fattime:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:20     .text.set_fattime:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:21     .text.set_fattime:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:25     .text.set_fattime:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:26     .text.set_fattime:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:28     .text.set_fattime:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:29     .text.set_fattime:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:31     .text.set_fattime:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:32     .text.set_fattime:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:34     .text.set_fattime:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:35     .text.set_fattime:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:37     .text.set_fattime:000000000000001c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:38     .text.set_fattime:000000000000001c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:40     .text.set_fattime:0000000000000020 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:41     .text.set_fattime:0000000000000022 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:48     .text.get_fattime:0000000000000000 get_fattime
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:51     .text.get_fattime:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:52     .text.get_fattime:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:53     .text.get_fattime:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:54     .text.get_fattime:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:58     .text.get_fattime:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:60     .text.get_fattime:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:62     .text.get_fattime:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:64     .text.get_fattime:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:66     .text.get_fattime:0000000000000016 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:68     .text.get_fattime:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:70     .text.get_fattime:000000000000001c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:72     .text.get_fattime:0000000000000020 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:74     .text.get_fattime:0000000000000022 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:76     .text.get_fattime:0000000000000024 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:78     .text.get_fattime:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:80     .text.get_fattime:000000000000002a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:82     .text.get_fattime:000000000000002c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:85     .text.get_fattime:0000000000000034 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:87     .text.get_fattime:0000000000000036 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:89     .text.get_fattime:000000000000003a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:98     .sdata.time:0000000000000000 time
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:95     .sdata.time:0000000000000000 .LANCHOR0
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:44     .text.set_fattime:0000000000000022 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:93     .text.get_fattime:000000000000003a .L0 
+                     .debug_frame:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:1708   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2480   .debug_str:00000000000004a0 .LASF135
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2248   .debug_str:0000000000000016 .LASF136
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2432   .debug_str:000000000000037e .LASF137
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2234   .debug_ranges:0000000000000000 .Ldebug_ranges0
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2242   .debug_line:0000000000000000 .Ldebug_line0
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2470   .debug_str:000000000000046d .LASF0
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2284   .debug_str:00000000000000e4 .LASF1
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2258   .debug_str:000000000000004c .LASF4
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2406   .debug_str:0000000000000304 .LASF2
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2246   .debug_str:000000000000000c .LASF3
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2472   .debug_str:000000000000047a .LASF5
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s 			page 5
+
+
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2484   .debug_str:0000000000000531 .LASF6
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2304   .debug_str:0000000000000139 .LASF7
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2328   .debug_str:00000000000001ad .LASF8
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2354   .debug_str:0000000000000217 .LASF9
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2314   .debug_str:0000000000000162 .LASF10
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2266   .debug_str:000000000000007f .LASF11
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2474   .debug_str:0000000000000485 .LASF12
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2316   .debug_str:0000000000000170 .LASF13
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2494   .debug_str:0000000000000571 .LASF14
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2348   .debug_str:00000000000001f7 .LASF124
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2460   .debug_str:0000000000000446 .LASF15
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2400   .debug_str:00000000000002e1 .LASF16
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2280   .debug_str:00000000000000d6 .LASF17
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2458   .debug_str:000000000000043e .LASF18
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2502   .debug_str:0000000000000592 .LASF19
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2372   .debug_str:000000000000026d .LASF20
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2346   .debug_str:00000000000001f0 .LASF21
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2448   .debug_str:0000000000000417 .LASF22
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2450   .debug_str:000000000000041f .LASF23
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2424   .debug_str:0000000000000355 .LASF24
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2488   .debug_str:0000000000000549 .LASF25
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2404   .debug_str:00000000000002f2 .LASF26
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2414   .debug_str:000000000000032c .LASF27
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2336   .debug_str:00000000000001d2 .LASF32
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2476   .debug_str:000000000000048d .LASF28
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2442   .debug_str:0000000000000402 .LASF29
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2330   .debug_str:00000000000001b8 .LASF30
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2498   .debug_str:0000000000000587 .LASF31
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2342   .debug_str:00000000000001e5 .LASF33
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2278   .debug_str:00000000000000cd .LASF34
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2516   .debug_str:00000000000005d7 .LASF35
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2290   .debug_str:00000000000000fc .LASF36
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2524   .debug_str:00000000000005f8 .LASF37
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2390   .debug_str:00000000000002b1 .LASF38
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2384   .debug_str:0000000000000297 .LASF39
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2456   .debug_str:0000000000000434 .LASF40
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2416   .debug_str:0000000000000335 .LASF41
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2512   .debug_str:00000000000005bd .LASF42
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2294   .debug_str:000000000000010b .LASF43
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2250   .debug_str:0000000000000029 .LASF44
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2244   .debug_str:0000000000000000 .LASF45
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2482   .debug_str:0000000000000528 .LASF46
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2308   .debug_str:0000000000000149 .LASF47
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2392   .debug_str:00000000000002ba .LASF48
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2434   .debug_str:00000000000003d2 .LASF49
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2326   .debug_str:00000000000001a8 .LASF50
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2418   .debug_str:000000000000033f .LASF51
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2288   .debug_str:00000000000000f6 .LASF52
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2468   .debug_str:0000000000000467 .LASF53
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2426   .debug_str:0000000000000360 .LASF54
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2306   .debug_str:0000000000000142 .LASF55
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2356   .debug_str:0000000000000229 .LASF56
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2268   .debug_str:0000000000000096 .LASF57
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2252   .debug_str:0000000000000031 .LASF58
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2340   .debug_str:00000000000001df .LASF59
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2382   .debug_str:0000000000000290 .LASF60
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2452   .debug_str:0000000000000427 .LASF61
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s 			page 6
+
+
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2282   .debug_str:00000000000000dd .LASF62
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2286   .debug_str:00000000000000f0 .LASF63
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2508   .debug_str:00000000000005af .LASF64
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2466   .debug_str:000000000000045e .LASF65
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2320   .debug_str:0000000000000181 .LASF66
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2360   .debug_str:0000000000000234 .LASF67
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2376   .debug_str:0000000000000278 .LASF68
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2428   .debug_str:0000000000000368 .LASF69
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2420   .debug_str:0000000000000346 .LASF70
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2444   .debug_str:000000000000040a .LASF71
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2462   .debug_str:0000000000000452 .LASF72
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2310   .debug_str:0000000000000151 .LASF73
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2350   .debug_str:0000000000000207 .LASF74
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2334   .debug_str:00000000000001ca .LASF75
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2358   .debug_str:000000000000022f .LASF76
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2256   .debug_str:0000000000000041 .LASF77
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2440   .debug_str:00000000000003e9 .LASF78
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2436   .debug_str:00000000000003d7 .LASF79
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2396   .debug_str:00000000000002c7 .LASF80
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2438   .debug_str:00000000000003df .LASF81
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2370   .debug_str:0000000000000265 .LASF82
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2312   .debug_str:0000000000000158 .LASF83
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2522   .debug_str:00000000000005f3 .LASF84
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2402   .debug_str:00000000000002e8 .LASF85
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2352   .debug_str:000000000000020f .LASF86
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2318   .debug_str:0000000000000179 .LASF87
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2374   .debug_str:0000000000000273 .LASF88
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2260   .debug_str:0000000000000056 .LASF89
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2506   .debug_str:00000000000005a5 .LASF90
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2302   .debug_str:0000000000000131 .LASF91
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2292   .debug_str:0000000000000106 .LASF92
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2464   .debug_str:0000000000000459 .LASF93
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2422   .debug_str:000000000000034e .LASF94
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2500   .debug_str:000000000000058c .LASF95
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2362   .debug_str:000000000000023a .LASF96
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2408   .debug_str:0000000000000312 .LASF97
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2254   .debug_str:0000000000000039 .LASF98
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2446   .debug_str:0000000000000411 .LASF99
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2378   .debug_str:000000000000027e .LASF100
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2486   .debug_str:0000000000000544 .LASF101
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2496   .debug_str:000000000000057a .LASF102
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2478   .debug_str:0000000000000493 .LASF103
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2368   .debug_str:0000000000000258 .LASF104
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2514   .debug_str:00000000000005c8 .LASF105
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2398   .debug_str:00000000000002d2 .LASF106
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2364   .debug_str:0000000000000241 .LASF107
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2518   .debug_str:00000000000005e0 .LASF108
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2430   .debug_str:0000000000000371 .LASF109
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2520   .debug_str:00000000000005e5 .LASF110
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2276   .debug_str:00000000000000bf .LASF111
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2504   .debug_str:000000000000059b .LASF112
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2366   .debug_str:000000000000024c .LASF113
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2490   .debug_str:0000000000000551 .LASF114
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2324   .debug_str:000000000000019a .LASF115
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2272   .debug_str:00000000000000aa .LASF116
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2322   .debug_str:0000000000000189 .LASF117
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2262   .debug_str:000000000000005f .LASF118
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s 			page 7
+
+
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2264   .debug_str:000000000000006e .LASF119
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2412   .debug_str:0000000000000323 .LASF120
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2388   .debug_str:00000000000002aa .LASF121
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2386   .debug_str:00000000000002a1 .LASF122
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2510   .debug_str:00000000000005b5 .LASF123
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2270   .debug_str:000000000000009f .LASF138
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2332   .debug_str:00000000000001be .LASF125
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2492   .debug_str:000000000000055e .LASF126
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2274   .debug_str:00000000000000b9 .LASF127
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2300   .debug_str:000000000000012c .LASF128
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2344   .debug_str:00000000000001ea .LASF129
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2338   .debug_str:00000000000001da .LASF130
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2454   .debug_str:000000000000042d .LASF131
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2296   .debug_str:0000000000000119 .LASF132
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2410   .debug_str:0000000000000318 .LASF133
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2394   .debug_str:00000000000002c2 .LASF134
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2298   .debug_str:0000000000000120 .LASF139
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:49     .text.get_fattime:0000000000000000 .LFB6
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:90     .text.get_fattime:000000000000003a .LFE6
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:2380   .debug_str:0000000000000284 .LASF140
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:14     .text.set_fattime:0000000000000000 .LFB5
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:42     .text.set_fattime:0000000000000022 .LFE5
+C:\Users\Uzair\AppData\Local\Temp\ccP7nhk3.s:117    .debug_info:0000000000000000 .Ldebug_info0
+
+NO UNDEFINED SYMBOLS

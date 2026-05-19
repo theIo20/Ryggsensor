@@ -1,0 +1,41 @@
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBkJ3Tg.s 			page 1
+
+
+   1              		.file	"systick.c"
+   2              		.option nopic
+   3              		.attribute arch, "rv32i2p0_m2p0_a2p0_c2p0"
+   4              		.attribute unaligned_access, 0
+   5              		.attribute stack_align, 16
+   6              		.text
+   7              	.Ltext0:
+   8              		.cfi_sections	.debug_frame
+   9              	.Letext0:
+  10              		.file 1 "c:\\kth\\he1043\\toolchain-gd32v-v202-win\\toolchain-gd32v-v202-win\\compiler\\riscv64-un
+  11              		.file 2 "c:\\kth\\he1043\\toolchain-gd32v-v202-win\\toolchain-gd32v-v202-win\\compiler\\riscv64-un
+  12              		.file 3 "./../../firmware/GD32VF103_standard_peripheral/system_gd32vf103.h"
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccBkJ3Tg.s 			page 2
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 systick.c
+C:\Users\Uzair\AppData\Local\Temp\ccBkJ3Tg.s:91     .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+C:\Users\Uzair\AppData\Local\Temp\ccBkJ3Tg.s:197    .debug_str:00000000000000d3 .LASF12
+C:\Users\Uzair\AppData\Local\Temp\ccBkJ3Tg.s:207    .debug_str:0000000000000190 .LASF13
+C:\Users\Uzair\AppData\Local\Temp\ccBkJ3Tg.s:183    .debug_str:0000000000000026 .LASF14
+C:\Users\Uzair\AppData\Local\Temp\ccBkJ3Tg.s:175    .debug_line:0000000000000000 .Ldebug_line0
+C:\Users\Uzair\AppData\Local\Temp\ccBkJ3Tg.s:179    .debug_str:000000000000000e .LASF0
+C:\Users\Uzair\AppData\Local\Temp\ccBkJ3Tg.s:201    .debug_str:000000000000016e .LASF1
+C:\Users\Uzair\AppData\Local\Temp\ccBkJ3Tg.s:189    .debug_str:00000000000000a3 .LASF2
+C:\Users\Uzair\AppData\Local\Temp\ccBkJ3Tg.s:205    .debug_str:0000000000000186 .LASF3
+C:\Users\Uzair\AppData\Local\Temp\ccBkJ3Tg.s:199    .debug_str:000000000000015b .LASF4
+C:\Users\Uzair\AppData\Local\Temp\ccBkJ3Tg.s:195    .debug_str:00000000000000ca .LASF5
+C:\Users\Uzair\AppData\Local\Temp\ccBkJ3Tg.s:181    .debug_str:000000000000001b .LASF9
+C:\Users\Uzair\AppData\Local\Temp\ccBkJ3Tg.s:185    .debug_str:000000000000007a .LASF6
+C:\Users\Uzair\AppData\Local\Temp\ccBkJ3Tg.s:177    .debug_str:0000000000000000 .LASF7
+C:\Users\Uzair\AppData\Local\Temp\ccBkJ3Tg.s:187    .debug_str:000000000000008c .LASF8
+C:\Users\Uzair\AppData\Local\Temp\ccBkJ3Tg.s:191    .debug_str:00000000000000b1 .LASF10
+C:\Users\Uzair\AppData\Local\Temp\ccBkJ3Tg.s:193    .debug_str:00000000000000ba .LASF15
+C:\Users\Uzair\AppData\Local\Temp\ccBkJ3Tg.s:203    .debug_str:000000000000017a .LASF11
+C:\Users\Uzair\AppData\Local\Temp\ccBkJ3Tg.s:14     .debug_info:0000000000000000 .Ldebug_info0
+
+NO UNDEFINED SYMBOLS

@@ -26,11 +26,13 @@ build/main.o: main.c \
  ../../firmware/RISCV/drivers/n200_func.h \
  ../../firmware/RISCV/drivers/n200_timer.h \
  ../../firmware/RISCV/drivers/n200_eclic.h \
- ../../firmware/RISCV/drivers/riscv_const.h lcd.h delay.h \
- gd32v_mpu6500_if.h mpu6500_driver.h mpu6500_registers.h usb_serial_if.h \
- cdc_acm_core.h usbd_enum.h usbd_core.h drv_usb_core.h drv_usb_regs.h \
- usb_conf.h usb_ch9_std.h drv_usb_dev.h usbd_conf.h usbd_transc.h \
- usb_delay.h
+ ../../firmware/RISCV/drivers/riscv_const.h delay.h gd32v_mpu6500_if.h \
+ mpu6500_driver.h mpu6500_registers.h gd32v_tf_card_if.h tf_card.h \
+ gd32v_pjt_include.h \
+ ../../firmware/GD32VF103_standard_peripheral/gd32vf103_libopt.h diskio.h \
+ ff.h ffconf.h systick.h usb_serial_if.h cdc_acm_core.h usbd_enum.h \
+ usbd_core.h drv_usb_core.h drv_usb_regs.h usb_conf.h usb_ch9_std.h \
+ drv_usb_dev.h usbd_conf.h usbd_transc.h usb_delay.h
 
 ../../firmware/GD32VF103_standard_peripheral/gd32vf103.h:
 
@@ -88,8 +90,6 @@ build/main.o: main.c \
 
 ../../firmware/RISCV/drivers/riscv_const.h:
 
-lcd.h:
-
 delay.h:
 
 gd32v_mpu6500_if.h:
@@ -97,6 +97,22 @@ gd32v_mpu6500_if.h:
 mpu6500_driver.h:
 
 mpu6500_registers.h:
+
+gd32v_tf_card_if.h:
+
+tf_card.h:
+
+gd32v_pjt_include.h:
+
+../../firmware/GD32VF103_standard_peripheral/gd32vf103_libopt.h:
+
+diskio.h:
+
+ff.h:
+
+ffconf.h:
+
+systick.h:
 
 usb_serial_if.h:
 

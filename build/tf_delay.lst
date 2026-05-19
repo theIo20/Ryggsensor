@@ -1,0 +1,287 @@
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s 			page 1
+
+
+   1              		.file	"tf_delay.c"
+   2              		.option nopic
+   3              		.attribute arch, "rv32i2p0_m2p0_a2p0_c2p0"
+   4              		.attribute unaligned_access, 0
+   5              		.attribute stack_align, 16
+   6              		.text
+   7              	.Ltext0:
+   8              		.cfi_sections	.debug_frame
+   9              		.section	.text.tf_start_timer,"ax",@progbits
+  10              		.align	1
+  11              		.globl	tf_start_timer
+  13              	tf_start_timer:
+  14              	.LFB2:
+  15              		.file 1 "tf_delay.c"
+   1:tf_delay.c    **** #include "systick.h"
+   2:tf_delay.c    **** #include "gd32vf103.h"
+   3:tf_delay.c    **** 
+   4:tf_delay.c    **** 
+   5:tf_delay.c    **** volatile uint64_t tf_current_time = 0;
+   6:tf_delay.c    **** volatile uint64_t tf_delay_until = 0;
+   7:tf_delay.c    **** 
+   8:tf_delay.c    **** void tf_start_timer(int32_t millis){
+  16              		.loc 1 8 36
+  17              		.cfi_startproc
+  18              	.LVL0:
+   9:tf_delay.c    ****     tf_current_time = get_timer_value();
+  19              		.loc 1 9 5
+   8:tf_delay.c    ****     tf_current_time = get_timer_value();
+  20              		.loc 1 8 36 is_stmt 0
+  21 0000 4111     		addi	sp,sp,-16
+  22              	.LCFI0:
+  23              		.cfi_def_cfa_offset 16
+  24 0002 22C4     		sw	s0,8(sp)
+  25 0004 06C6     		sw	ra,12(sp)
+  26              		.cfi_offset 8, -8
+  27              		.cfi_offset 1, -4
+   8:tf_delay.c    ****     tf_current_time = get_timer_value();
+  28              		.loc 1 8 36
+  29 0006 2A84     		mv	s0,a0
+  30              		.loc 1 9 23
+  31 0008 97000000 		call	get_timer_value
+  31      E7800000 
+  32              	.LVL1:
+  33              		.loc 1 9 21
+  34 0010 B7070000 		lui	a5,%hi(.LANCHOR0)
+  35 0014 93870700 		addi	a5,a5,%lo(.LANCHOR0)
+  36 0018 88C3     		sw	a0,0(a5)
+  37 001a CCC3     		sw	a1,4(a5)
+  10:tf_delay.c    ****     tf_delay_until = tf_current_time + ((SystemCoreClock/4000)*millis);
+  38              		.loc 1 10 5 is_stmt 1
+  39              		.loc 1 10 38 is_stmt 0
+  40 001c 03A80700 		lw	a6,0(a5)
+  41 0020 83A84700 		lw	a7,4(a5)
+  42              		.loc 1 10 57
+  43 0024 B7070000 		lui	a5,%hi(SystemCoreClock)
+  44 0028 03A50700 		lw	a0,%lo(SystemCoreClock)(a5)
+  45 002c 8567     		li	a5,4096
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s 			page 2
+
+
+  46 002e 938707FA 		addi	a5,a5,-96
+  47 0032 3355F502 		divu	a0,a0,a5
+  48              		.loc 1 10 20
+  49 0036 B7060000 		lui	a3,%hi(.LANCHOR1)
+  11:tf_delay.c    **** }
+  50              		.loc 1 11 1
+  51 003a B240     		lw	ra,12(sp)
+  52              		.cfi_restore 1
+  10:tf_delay.c    ****     tf_delay_until = tf_current_time + ((SystemCoreClock/4000)*millis);
+  53              		.loc 1 10 63
+  54 003c 33058502 		mul	a0,a0,s0
+  55              		.loc 1 11 1
+  56 0040 2244     		lw	s0,8(sp)
+  57              		.cfi_restore 8
+  58              	.LVL2:
+  10:tf_delay.c    ****     tf_delay_until = tf_current_time + ((SystemCoreClock/4000)*millis);
+  59              		.loc 1 10 38
+  60 0042 33060501 		add	a2,a0,a6
+  61 0046 3335A600 		sltu	a0,a2,a0
+  10:tf_delay.c    ****     tf_delay_until = tf_current_time + ((SystemCoreClock/4000)*millis);
+  62              		.loc 1 10 20
+  63 004a 23A0C600 		sw	a2,%lo(.LANCHOR1)(a3)
+  10:tf_delay.c    ****     tf_delay_until = tf_current_time + ((SystemCoreClock/4000)*millis);
+  64              		.loc 1 10 38
+  65 004e B3071501 		add	a5,a0,a7
+  10:tf_delay.c    ****     tf_delay_until = tf_current_time + ((SystemCoreClock/4000)*millis);
+  66              		.loc 1 10 20
+  67 0052 23A2F600 		sw	a5,%lo(.LANCHOR1+4)(a3)
+  68              		.loc 1 11 1
+  69 0056 4101     		addi	sp,sp,16
+  70              	.LCFI1:
+  71              		.cfi_def_cfa_offset 0
+  72 0058 8280     		jr	ra
+  73              		.cfi_endproc
+  74              	.LFE2:
+  76              		.section	.text.tf_timer_done,"ax",@progbits
+  77              		.align	1
+  78              		.globl	tf_timer_done
+  80              	tf_timer_done:
+  81              	.LFB3:
+  12:tf_delay.c    **** uint32_t tf_timer_done(void){
+  82              		.loc 1 12 29 is_stmt 1
+  83              		.cfi_startproc
+  13:tf_delay.c    ****     
+  14:tf_delay.c    ****     tf_current_time = get_timer_value();
+  84              		.loc 1 14 5
+  12:tf_delay.c    **** uint32_t tf_timer_done(void){
+  85              		.loc 1 12 29 is_stmt 0
+  86 0000 4111     		addi	sp,sp,-16
+  87              	.LCFI2:
+  88              		.cfi_def_cfa_offset 16
+  89 0002 06C6     		sw	ra,12(sp)
+  90              		.cfi_offset 1, -4
+  91              		.loc 1 14 23
+  92 0004 97000000 		call	get_timer_value
+  92      E7800000 
+  93              	.LVL3:
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s 			page 3
+
+
+  94              		.loc 1 14 21
+  95 000c B7070000 		lui	a5,%hi(.LANCHOR0)
+  96 0010 93870700 		addi	a5,a5,%lo(.LANCHOR0)
+  97 0014 88C3     		sw	a0,0(a5)
+  98 0016 CCC3     		sw	a1,4(a5)
+  15:tf_delay.c    ****     //if(tf_delay_start > tf_delay_until) return tf_delay_start > current_time && current_time > tf
+  16:tf_delay.c    ****     if(tf_current_time > tf_delay_until) return 0;   //No overflow
+  99              		.loc 1 16 5 is_stmt 1
+ 100              		.loc 1 16 24 is_stmt 0
+ 101 0018 B7060000 		lui	a3,%hi(.LANCHOR1)
+ 102 001c 9843     		lw	a4,0(a5)
+ 103 001e DC43     		lw	a5,4(a5)
+ 104 0020 03A60600 		lw	a2,%lo(.LANCHOR1)(a3)
+ 105 0024 83A64600 		lw	a3,%lo(.LANCHOR1+4)(a3)
+ 106              		.loc 1 16 7
+ 107 0028 63E7F600 		bgtu	a5,a3,.L5
+ 108 002c 0545     		li	a0,1
+ 109 002e 6395D700 		bne	a5,a3,.L4
+ 110 0032 6373E600 		bgeu	a2,a4,.L4
+ 111              	.L5:
+ 112 0036 0145     		li	a0,0
+ 113              	.L4:
+  17:tf_delay.c    ****     return 1;
+  18:tf_delay.c    **** }...
+ 114              		.loc 1 18 1
+ 115 0038 B240     		lw	ra,12(sp)
+ 116              		.cfi_restore 1
+ 117 003a 4101     		addi	sp,sp,16
+ 118              	.LCFI3:
+ 119              		.cfi_def_cfa_offset 0
+ 120 003c 8280     		jr	ra
+ 121              		.cfi_endproc
+ 122              	.LFE3:
+ 124              		.globl	tf_delay_until
+ 125              		.globl	tf_current_time
+ 126              		.section	.sbss.tf_current_time,"aw",@nobits
+ 127              		.align	3
+ 128              		.set	.LANCHOR0,. + 0
+ 131              	tf_current_time:
+ 132 0000 00000000 		.zero	8
+ 132      00000000 
+ 133              		.section	.sbss.tf_delay_until,"aw",@nobits
+ 134              		.align	3
+ 135              		.set	.LANCHOR1,. + 0
+ 138              	tf_delay_until:
+ 139 0000 00000000 		.zero	8
+ 139      00000000 
+ 140              		.text
+ 141              	.Letext0:
+ 142              		.file 2 "c:\\kth\\he1043\\toolchain-gd32v-v202-win\\toolchain-gd32v-v202-win\\compiler\\riscv64-un
+ 143              		.file 3 "c:\\kth\\he1043\\toolchain-gd32v-v202-win\\toolchain-gd32v-v202-win\\compiler\\riscv64-un
+ 144              		.file 4 "./../../firmware/GD32VF103_standard_peripheral/system_gd32vf103.h"
+ 145              		.file 5 "./../../firmware/RISCV/drivers/n200_func.h"
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 tf_delay.c
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:13     .text.tf_start_timer:0000000000000000 tf_start_timer
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:17     .text.tf_start_timer:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:19     .text.tf_start_timer:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:20     .text.tf_start_timer:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:21     .text.tf_start_timer:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:23     .text.tf_start_timer:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:26     .text.tf_start_timer:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:27     .text.tf_start_timer:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:29     .text.tf_start_timer:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:31     .text.tf_start_timer:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:34     .text.tf_start_timer:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:39     .text.tf_start_timer:000000000000001c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:40     .text.tf_start_timer:000000000000001c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:43     .text.tf_start_timer:0000000000000024 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:49     .text.tf_start_timer:0000000000000036 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:51     .text.tf_start_timer:000000000000003a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:52     .text.tf_start_timer:000000000000003c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:54     .text.tf_start_timer:000000000000003c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:56     .text.tf_start_timer:0000000000000040 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:57     .text.tf_start_timer:0000000000000042 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:60     .text.tf_start_timer:0000000000000042 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:63     .text.tf_start_timer:000000000000004a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:65     .text.tf_start_timer:000000000000004e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:67     .text.tf_start_timer:0000000000000052 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:69     .text.tf_start_timer:0000000000000056 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:71     .text.tf_start_timer:0000000000000058 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:73     .text.tf_start_timer:000000000000005a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:80     .text.tf_timer_done:0000000000000000 tf_timer_done
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:83     .text.tf_timer_done:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:84     .text.tf_timer_done:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:85     .text.tf_timer_done:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:86     .text.tf_timer_done:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:88     .text.tf_timer_done:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:90     .text.tf_timer_done:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:92     .text.tf_timer_done:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:95     .text.tf_timer_done:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:100    .text.tf_timer_done:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:101    .text.tf_timer_done:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:107    .text.tf_timer_done:0000000000000028 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:115    .text.tf_timer_done:0000000000000038 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:116    .text.tf_timer_done:000000000000003a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:119    .text.tf_timer_done:000000000000003c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:121    .text.tf_timer_done:000000000000003e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:138    .sbss.tf_delay_until:0000000000000000 tf_delay_until
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:131    .sbss.tf_current_time:0000000000000000 tf_current_time
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:128    .sbss.tf_current_time:0000000000000000 .LANCHOR0
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:135    .sbss.tf_delay_until:0000000000000000 .LANCHOR1
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:76     .text.tf_start_timer:000000000000005a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:126    .text.tf_timer_done:000000000000003e .L0 
+                     .debug_frame:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:111    .text.tf_timer_done:0000000000000036 .L5
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:113    .text.tf_timer_done:0000000000000038 .L4
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:333    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:656    .debug_str:0000000000000131 .LASF21
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:670    .debug_str:0000000000000208 .LASF22
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s 			page 5
+
+
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:626    .debug_str:0000000000000026 .LASF23
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:610    .debug_ranges:0000000000000000 .Ldebug_ranges0
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:618    .debug_line:0000000000000000 .Ldebug_line0
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:660    .debug_str:00000000000001cc .LASF0
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:632    .debug_str:00000000000000a3 .LASF4
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:642    .debug_str:00000000000000dc .LASF1
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:668    .debug_str:00000000000001fe .LASF2
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:658    .debug_str:00000000000001b9 .LASF3
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:662    .debug_str:00000000000001d8 .LASF5
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:654    .debug_str:0000000000000128 .LASF6
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:624    .debug_str:000000000000001b .LASF7
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:628    .debug_str:000000000000007a .LASF8
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:620    .debug_str:0000000000000000 .LASF9
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:674    .debug_str:000000000000021b .LASF10
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:630    .debug_str:000000000000008c .LASF11
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:622    .debug_str:000000000000000e .LASF12
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:640    .debug_str:00000000000000d4 .LASF13
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:672    .debug_str:0000000000000213 .LASF14
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:648    .debug_str:0000000000000108 .LASF15
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:634    .debug_str:00000000000000ad .LASF16
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:650    .debug_str:0000000000000111 .LASF18
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:666    .debug_str:00000000000001f2 .LASF17
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:636    .debug_str:00000000000000b6 .LASF19
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:644    .debug_str:00000000000000ea .LASF20
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:638    .debug_str:00000000000000c6 .LASF24
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:81     .text.tf_timer_done:0000000000000000 .LFB3
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:122    .text.tf_timer_done:000000000000003e .LFE3
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:541    .debug_loc:0000000000000000 .LLST2
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:93     .text.tf_timer_done:000000000000000c .LVL3
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:646    .debug_str:00000000000000f9 .LASF25
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:14     .text.tf_start_timer:0000000000000000 .LFB2
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:74     .text.tf_start_timer:000000000000005a .LFE2
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:559    .debug_loc:000000000000002c .LLST0
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:652    .debug_str:0000000000000121 .LASF26
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:577    .debug_loc:0000000000000058 .LLST1
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:32     .text.tf_start_timer:0000000000000010 .LVL1
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:664    .debug_str:00000000000001e2 .LASF27
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:87     .text.tf_timer_done:0000000000000002 .LCFI2
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:118    .text.tf_timer_done:000000000000003c .LCFI3
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:22     .text.tf_start_timer:0000000000000002 .LCFI0
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:70     .text.tf_start_timer:0000000000000058 .LCFI1
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:18     .text.tf_start_timer:0000000000000000 .LVL0
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:58     .text.tf_start_timer:0000000000000042 .LVL2
+C:\Users\Uzair\AppData\Local\Temp\cchF4kIj.s:147    .debug_info:0000000000000000 .Ldebug_info0
+
+UNDEFINED SYMBOLS
+get_timer_value
+SystemCoreClock

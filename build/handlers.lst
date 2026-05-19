@@ -1,4 +1,4 @@
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s 			page 1
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s 			page 1
 
 
    1              		.file	"handlers.c"
@@ -58,7 +58,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s 			page 1
   42              		.align	1
   43              		.weak	handle_trap
   45              	handle_trap:
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s 			page 2
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s 			page 2
 
 
   46              	.LFB6:
@@ -118,7 +118,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s 			page 1
   81 0030 97000000 		call	_exit
   81      E7800000 
   82              	.LVL5:
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s 			page 3
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s 			page 3
 
 
   83              		.cfi_endproc
@@ -142,212 +142,212 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s 			page 1
  100              		.file 6 "c:\\kth\\he1043\\toolchain-gd32v-v202-win\\toolchain-gd32v-v202-win\\compiler\\riscv64-un
  101              		.file 7 "c:\\kth\\he1043\\toolchain-gd32v-v202-win\\toolchain-gd32v-v202-win\\compiler\\riscv64-un
  102              		.file 8 "c:\\kth\\he1043\\toolchain-gd32v-v202-win\\toolchain-gd32v-v202-win\\compiler\\riscv64-un
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s 			page 4
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s 			page 4
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 handlers.c
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:13     .text.handle_nmi:0000000000000000 handle_nmi
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:17     .text.handle_nmi:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:18     .text.handle_nmi:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:19     .text.handle_nmi:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:21     .text.handle_nmi:0000000000000004 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:23     .text.handle_nmi:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:25     .text.handle_nmi:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:29     .text.handle_nmi:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:30     .text.handle_nmi:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:32     .text.handle_nmi:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:35     .text.handle_nmi:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:38     .text.handle_nmi:0000000000000022 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:45     .text.handle_trap:0000000000000000 handle_trap
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:48     .text.handle_trap:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:50     .text.handle_trap:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:51     .text.handle_trap:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:52     .text.handle_trap:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:54     .text.handle_trap:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:56     .text.handle_trap:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:58     .text.handle_trap:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:60     .text.handle_trap:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:61     .text.handle_trap:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:63     .text.handle_trap:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:65     .text.handle_trap:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:67     .text.handle_trap:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:69     .text.handle_trap:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:73     .text.handle_trap:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:80     .text.handle_trap:000000000000002e .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:83     .text.handle_trap:0000000000000038 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:41     .text.handle_nmi:0000000000000022 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:86     .text.handle_trap:0000000000000038 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:13     .text.handle_nmi:0000000000000000 handle_nmi
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:17     .text.handle_nmi:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:18     .text.handle_nmi:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:19     .text.handle_nmi:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:21     .text.handle_nmi:0000000000000004 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:23     .text.handle_nmi:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:25     .text.handle_nmi:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:29     .text.handle_nmi:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:30     .text.handle_nmi:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:32     .text.handle_nmi:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:35     .text.handle_nmi:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:38     .text.handle_nmi:0000000000000022 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:45     .text.handle_trap:0000000000000000 handle_trap
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:48     .text.handle_trap:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:50     .text.handle_trap:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:51     .text.handle_trap:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:52     .text.handle_trap:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:54     .text.handle_trap:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:56     .text.handle_trap:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:58     .text.handle_trap:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:60     .text.handle_trap:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:61     .text.handle_trap:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:63     .text.handle_trap:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:65     .text.handle_trap:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:67     .text.handle_trap:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:69     .text.handle_trap:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:73     .text.handle_trap:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:80     .text.handle_trap:000000000000002e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:83     .text.handle_trap:0000000000000038 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:41     .text.handle_nmi:0000000000000022 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:86     .text.handle_trap:0000000000000038 .L0 
                      .debug_frame:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:88     .rodata.handle_nmi.str1.4:0000000000000000 .LC0
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:92     .rodata.handle_trap.str1.4:0000000000000000 .LC1
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:71     .text.handle_trap:000000000000001a .L4
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:1676   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2535   .debug_str:000000000000049f .LASF131
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2347   .debug_str:00000000000000df .LASF132
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2493   .debug_str:000000000000039f .LASF133
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2297   .debug_ranges:0000000000000000 .Ldebug_ranges0
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2305   .debug_line:0000000000000000 .Ldebug_line0
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2343   .debug_str:00000000000000cd .LASF0
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2467   .debug_str:0000000000000324 .LASF1
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2473   .debug_str:0000000000000340 .LASF2
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2415   .debug_str:0000000000000230 .LASF3
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2359   .debug_str:000000000000013a .LASF4
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2405   .debug_str:0000000000000205 .LASF5
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2341   .debug_str:00000000000000bf .LASF6
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2327   .debug_str:0000000000000068 .LASF7
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2487   .debug_str:000000000000037b .LASF9
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2397   .debug_str:00000000000001e1 .LASF8
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2311   .debug_str:0000000000000012 .LASF10
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2447   .debug_str:00000000000002c5 .LASF11
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2429   .debug_str:000000000000027b .LASF12
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2459   .debug_str:00000000000002fb .LASF13
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s 			page 5
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:88     .rodata.handle_nmi.str1.4:0000000000000000 .LC0
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:92     .rodata.handle_trap.str1.4:0000000000000000 .LC1
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:71     .text.handle_trap:000000000000001a .L4
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:1676   .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2535   .debug_str:000000000000049f .LASF131
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2347   .debug_str:00000000000000df .LASF132
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2493   .debug_str:000000000000039f .LASF133
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2297   .debug_ranges:0000000000000000 .Ldebug_ranges0
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2305   .debug_line:0000000000000000 .Ldebug_line0
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2343   .debug_str:00000000000000cd .LASF0
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2467   .debug_str:0000000000000324 .LASF1
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2473   .debug_str:0000000000000340 .LASF2
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2415   .debug_str:0000000000000230 .LASF3
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2359   .debug_str:000000000000013a .LASF4
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2405   .debug_str:0000000000000205 .LASF5
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2341   .debug_str:00000000000000bf .LASF6
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2327   .debug_str:0000000000000068 .LASF7
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2487   .debug_str:000000000000037b .LASF9
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2397   .debug_str:00000000000001e1 .LASF8
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2311   .debug_str:0000000000000012 .LASF10
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2447   .debug_str:00000000000002c5 .LASF11
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2429   .debug_str:000000000000027b .LASF12
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2459   .debug_str:00000000000002fb .LASF13
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s 			page 5
 
 
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2519   .debug_str:0000000000000462 .LASF14
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2555   .debug_str:000000000000057f .LASF15
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2425   .debug_str:000000000000026d .LASF16
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2399   .debug_str:00000000000001ee .LASF17
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2511   .debug_str:0000000000000440 .LASF18
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2513   .debug_str:0000000000000448 .LASF19
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2483   .debug_str:0000000000000368 .LASF20
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2541   .debug_str:0000000000000535 .LASF21
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2463   .debug_str:000000000000030c .LASF22
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2383   .debug_str:00000000000001a4 .LASF23
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2387   .debug_str:00000000000001b5 .LASF28
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2531   .debug_str:000000000000048c .LASF24
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2503   .debug_str:0000000000000423 .LASF25
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2381   .debug_str:000000000000019e .LASF26
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2549   .debug_str:000000000000056a .LASF27
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2395   .debug_str:00000000000001dc .LASF29
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2337   .debug_str:00000000000000b0 .LASF30
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2525   .debug_str:0000000000000476 .LASF31
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2349   .debug_str:000000000000010d .LASF32
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2579   .debug_str:00000000000005ea .LASF33
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2453   .debug_str:00000000000002df .LASF34
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2441   .debug_str:00000000000002ab .LASF35
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2551   .debug_str:000000000000056f .LASF36
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2475   .debug_str:000000000000034a .LASF37
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2565   .debug_str:00000000000005aa .LASF38
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2353   .debug_str:000000000000011c .LASF39
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2377   .debug_str:0000000000000191 .LASF40
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2307   .debug_str:0000000000000000 .LASF41
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2537   .debug_str:0000000000000527 .LASF42
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2363   .debug_str:000000000000014a .LASF43
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2455   .debug_str:00000000000002e8 .LASF44
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2495   .debug_str:00000000000003f3 .LASF45
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2379   .debug_str:0000000000000199 .LASF46
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2477   .debug_str:0000000000000354 .LASF47
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2465   .debug_str:000000000000031e .LASF48
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2309   .debug_str:000000000000000c .LASF49
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2485   .debug_str:0000000000000373 .LASF50
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2361   .debug_str:0000000000000143 .LASF51
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2407   .debug_str:0000000000000217 .LASF52
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2329   .debug_str:000000000000007f .LASF53
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2355   .debug_str:000000000000012a .LASF54
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2391   .debug_str:00000000000001cc .LASF55
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2439   .debug_str:00000000000002a4 .LASF56
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2515   .debug_str:0000000000000450 .LASF57
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2569   .debug_str:00000000000005c4 .LASF58
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2345   .debug_str:00000000000000d9 .LASF59
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2561   .debug_str:000000000000059c .LASF60
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2367   .debug_str:0000000000000159 .LASF61
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2371   .debug_str:000000000000016a .LASF62
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2321   .debug_str:0000000000000042 .LASF63
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2433   .debug_str:000000000000028d .LASF64
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2317   .debug_str:000000000000002d .LASF65
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2435   .debug_str:0000000000000293 .LASF66
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2505   .debug_str:000000000000042b .LASF67
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2521   .debug_str:000000000000046a .LASF68
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2365   .debug_str:0000000000000152 .LASF69
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2401   .debug_str:00000000000001f5 .LASF70
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s 			page 6
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2519   .debug_str:0000000000000462 .LASF14
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2555   .debug_str:000000000000057f .LASF15
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2425   .debug_str:000000000000026d .LASF16
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2399   .debug_str:00000000000001ee .LASF17
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2511   .debug_str:0000000000000440 .LASF18
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2513   .debug_str:0000000000000448 .LASF19
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2483   .debug_str:0000000000000368 .LASF20
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2541   .debug_str:0000000000000535 .LASF21
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2463   .debug_str:000000000000030c .LASF22
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2383   .debug_str:00000000000001a4 .LASF23
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2387   .debug_str:00000000000001b5 .LASF28
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2531   .debug_str:000000000000048c .LASF24
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2503   .debug_str:0000000000000423 .LASF25
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2381   .debug_str:000000000000019e .LASF26
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2549   .debug_str:000000000000056a .LASF27
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2395   .debug_str:00000000000001dc .LASF29
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2337   .debug_str:00000000000000b0 .LASF30
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2525   .debug_str:0000000000000476 .LASF31
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2349   .debug_str:000000000000010d .LASF32
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2579   .debug_str:00000000000005ea .LASF33
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2453   .debug_str:00000000000002df .LASF34
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2441   .debug_str:00000000000002ab .LASF35
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2551   .debug_str:000000000000056f .LASF36
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2475   .debug_str:000000000000034a .LASF37
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2565   .debug_str:00000000000005aa .LASF38
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2353   .debug_str:000000000000011c .LASF39
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2377   .debug_str:0000000000000191 .LASF40
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2307   .debug_str:0000000000000000 .LASF41
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2537   .debug_str:0000000000000527 .LASF42
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2363   .debug_str:000000000000014a .LASF43
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2455   .debug_str:00000000000002e8 .LASF44
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2495   .debug_str:00000000000003f3 .LASF45
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2379   .debug_str:0000000000000199 .LASF46
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2477   .debug_str:0000000000000354 .LASF47
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2465   .debug_str:000000000000031e .LASF48
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2309   .debug_str:000000000000000c .LASF49
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2485   .debug_str:0000000000000373 .LASF50
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2361   .debug_str:0000000000000143 .LASF51
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2407   .debug_str:0000000000000217 .LASF52
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2329   .debug_str:000000000000007f .LASF53
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2355   .debug_str:000000000000012a .LASF54
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2391   .debug_str:00000000000001cc .LASF55
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2439   .debug_str:00000000000002a4 .LASF56
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2515   .debug_str:0000000000000450 .LASF57
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2569   .debug_str:00000000000005c4 .LASF58
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2345   .debug_str:00000000000000d9 .LASF59
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2561   .debug_str:000000000000059c .LASF60
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2367   .debug_str:0000000000000159 .LASF61
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2371   .debug_str:000000000000016a .LASF62
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2321   .debug_str:0000000000000042 .LASF63
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2433   .debug_str:000000000000028d .LASF64
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2317   .debug_str:000000000000002d .LASF65
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2435   .debug_str:0000000000000293 .LASF66
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2505   .debug_str:000000000000042b .LASF67
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2521   .debug_str:000000000000046a .LASF68
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2365   .debug_str:0000000000000152 .LASF69
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2401   .debug_str:00000000000001f5 .LASF70
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s 			page 6
 
 
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2385   .debug_str:00000000000001ad .LASF71
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2409   .debug_str:000000000000021d .LASF72
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2313   .debug_str:000000000000001c .LASF73
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2501   .debug_str:000000000000040a .LASF74
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2497   .debug_str:00000000000003f8 .LASF75
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2457   .debug_str:00000000000002f0 .LASF76
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2499   .debug_str:0000000000000400 .LASF77
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2423   .debug_str:0000000000000265 .LASF78
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2393   .debug_str:00000000000001d2 .LASF79
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2577   .debug_str:00000000000005e5 .LASF80
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2461   .debug_str:0000000000000302 .LASF81
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2403   .debug_str:00000000000001fd .LASF82
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2369   .debug_str:0000000000000162 .LASF83
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2469   .debug_str:0000000000000332 .LASF84
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2417   .debug_str:0000000000000243 .LASF85
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2559   .debug_str:0000000000000592 .LASF86
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2357   .debug_str:0000000000000132 .LASF87
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2351   .debug_str:0000000000000117 .LASF88
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2523   .debug_str:0000000000000471 .LASF89
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2481   .debug_str:0000000000000361 .LASF90
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2553   .debug_str:0000000000000579 .LASF91
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2411   .debug_str:0000000000000222 .LASF92
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2479   .debug_str:000000000000035b .LASF93
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2507   .debug_str:0000000000000432 .LASF94
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2509   .debug_str:000000000000043a .LASF95
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2529   .debug_str:0000000000000486 .LASF96
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2539   .debug_str:0000000000000530 .LASF97
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2547   .debug_str:000000000000055d .LASF98
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2533   .debug_str:0000000000000492 .LASF99
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2421   .debug_str:0000000000000258 .LASF100
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2567   .debug_str:00000000000005b5 .LASF101
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2389   .debug_str:00000000000001bd .LASF102
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2489   .debug_str:0000000000000387 .LASF103
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2571   .debug_str:00000000000005cb .LASF104
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2491   .debug_str:0000000000000392 .LASF105
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2575   .debug_str:00000000000005d7 .LASF106
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2335   .debug_str:00000000000000a2 .LASF107
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2557   .debug_str:0000000000000588 .LASF108
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2419   .debug_str:000000000000024c .LASF109
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2543   .debug_str:000000000000053d .LASF110
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2375   .debug_str:0000000000000183 .LASF111
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2333   .debug_str:0000000000000093 .LASF112
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2373   .debug_str:0000000000000172 .LASF113
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2323   .debug_str:0000000000000048 .LASF114
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2325   .debug_str:0000000000000057 .LASF115
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2471   .debug_str:0000000000000337 .LASF116
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2451   .debug_str:00000000000002d8 .LASF117
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2443   .debug_str:00000000000002b5 .LASF118
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2563   .debug_str:00000000000005a2 .LASF119
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2331   .debug_str:0000000000000088 .LASF134
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2517   .debug_str:0000000000000456 .LASF120
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2545   .debug_str:000000000000054a .LASF121
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2427   .debug_str:0000000000000273 .LASF122
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2445   .debug_str:00000000000002be .LASF123
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2449   .debug_str:00000000000002d1 .LASF124
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2527   .debug_str:000000000000047f .LASF125
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2573   .debug_str:00000000000005d0 .LASF126
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s 			page 7
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2385   .debug_str:00000000000001ad .LASF71
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2409   .debug_str:000000000000021d .LASF72
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2313   .debug_str:000000000000001c .LASF73
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2501   .debug_str:000000000000040a .LASF74
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2497   .debug_str:00000000000003f8 .LASF75
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2457   .debug_str:00000000000002f0 .LASF76
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2499   .debug_str:0000000000000400 .LASF77
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2423   .debug_str:0000000000000265 .LASF78
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2393   .debug_str:00000000000001d2 .LASF79
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2577   .debug_str:00000000000005e5 .LASF80
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2461   .debug_str:0000000000000302 .LASF81
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2403   .debug_str:00000000000001fd .LASF82
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2369   .debug_str:0000000000000162 .LASF83
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2469   .debug_str:0000000000000332 .LASF84
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2417   .debug_str:0000000000000243 .LASF85
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2559   .debug_str:0000000000000592 .LASF86
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2357   .debug_str:0000000000000132 .LASF87
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2351   .debug_str:0000000000000117 .LASF88
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2523   .debug_str:0000000000000471 .LASF89
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2481   .debug_str:0000000000000361 .LASF90
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2553   .debug_str:0000000000000579 .LASF91
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2411   .debug_str:0000000000000222 .LASF92
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2479   .debug_str:000000000000035b .LASF93
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2507   .debug_str:0000000000000432 .LASF94
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2509   .debug_str:000000000000043a .LASF95
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2529   .debug_str:0000000000000486 .LASF96
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2539   .debug_str:0000000000000530 .LASF97
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2547   .debug_str:000000000000055d .LASF98
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2533   .debug_str:0000000000000492 .LASF99
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2421   .debug_str:0000000000000258 .LASF100
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2567   .debug_str:00000000000005b5 .LASF101
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2389   .debug_str:00000000000001bd .LASF102
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2489   .debug_str:0000000000000387 .LASF103
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2571   .debug_str:00000000000005cb .LASF104
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2491   .debug_str:0000000000000392 .LASF105
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2575   .debug_str:00000000000005d7 .LASF106
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2335   .debug_str:00000000000000a2 .LASF107
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2557   .debug_str:0000000000000588 .LASF108
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2419   .debug_str:000000000000024c .LASF109
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2543   .debug_str:000000000000053d .LASF110
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2375   .debug_str:0000000000000183 .LASF111
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2333   .debug_str:0000000000000093 .LASF112
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2373   .debug_str:0000000000000172 .LASF113
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2323   .debug_str:0000000000000048 .LASF114
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2325   .debug_str:0000000000000057 .LASF115
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2471   .debug_str:0000000000000337 .LASF116
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2451   .debug_str:00000000000002d8 .LASF117
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2443   .debug_str:00000000000002b5 .LASF118
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2563   .debug_str:00000000000005a2 .LASF119
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2331   .debug_str:0000000000000088 .LASF134
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2517   .debug_str:0000000000000456 .LASF120
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2545   .debug_str:000000000000054a .LASF121
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2427   .debug_str:0000000000000273 .LASF122
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2445   .debug_str:00000000000002be .LASF123
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2449   .debug_str:00000000000002d1 .LASF124
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2527   .debug_str:000000000000047f .LASF125
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2573   .debug_str:00000000000005d0 .LASF126
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s 			page 7
 
 
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2437   .debug_str:000000000000029b .LASF127
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2319   .debug_str:0000000000000036 .LASF135
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:46     .text.handle_trap:0000000000000000 .LFB6
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:84     .text.handle_trap:0000000000000038 .LFE6
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2231   .debug_loc:0000000000000000 .LLST1
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2413   .debug_str:0000000000000229 .LASF128
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2244   .debug_loc:0000000000000020 .LLST2
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2255   .debug_loc:000000000000003e .LLST3
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:70     .text.handle_trap:000000000000001a .LVL3
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:78     .text.handle_trap:000000000000002e .LVL4
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:82     .text.handle_trap:0000000000000038 .LVL5
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2431   .debug_str:0000000000000282 .LASF136
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:14     .text.handle_nmi:0000000000000000 .LFB5
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:39     .text.handle_nmi:0000000000000022 .LFE5
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2269   .debug_loc:000000000000005f .LLST0
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:33     .text.handle_nmi:0000000000000018 .LVL0
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:37     .text.handle_nmi:0000000000000022 .LVL1
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2315   .debug_str:0000000000000027 .LASF129
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:2339   .debug_str:00000000000000b9 .LASF130
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:53     .text.handle_trap:0000000000000002 .LCFI1
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:49     .text.handle_trap:0000000000000000 .LVL2
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:22     .text.handle_nmi:0000000000000006 .LCFI0
-C:\Users\Uzair\AppData\Local\Temp\ccDHUvDS.s:104    .debug_info:0000000000000000 .Ldebug_info0
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2437   .debug_str:000000000000029b .LASF127
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2319   .debug_str:0000000000000036 .LASF135
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:46     .text.handle_trap:0000000000000000 .LFB6
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:84     .text.handle_trap:0000000000000038 .LFE6
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2231   .debug_loc:0000000000000000 .LLST1
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2413   .debug_str:0000000000000229 .LASF128
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2244   .debug_loc:0000000000000020 .LLST2
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2255   .debug_loc:000000000000003e .LLST3
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:70     .text.handle_trap:000000000000001a .LVL3
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:78     .text.handle_trap:000000000000002e .LVL4
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:82     .text.handle_trap:0000000000000038 .LVL5
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2431   .debug_str:0000000000000282 .LASF136
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:14     .text.handle_nmi:0000000000000000 .LFB5
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:39     .text.handle_nmi:0000000000000022 .LFE5
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2269   .debug_loc:000000000000005f .LLST0
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:33     .text.handle_nmi:0000000000000018 .LVL0
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:37     .text.handle_nmi:0000000000000022 .LVL1
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2315   .debug_str:0000000000000027 .LASF129
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:2339   .debug_str:00000000000000b9 .LASF130
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:53     .text.handle_trap:0000000000000002 .LCFI1
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:49     .text.handle_trap:0000000000000000 .LVL2
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:22     .text.handle_nmi:0000000000000006 .LCFI0
+C:\Users\Uzair\AppData\Local\Temp\ccT84Ft4.s:104    .debug_info:0000000000000000 .Ldebug_info0
 
 UNDEFINED SYMBOLS
 write
