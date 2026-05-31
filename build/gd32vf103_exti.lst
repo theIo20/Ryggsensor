@@ -1,4 +1,4 @@
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s 			page 1
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s 			page 1
 
 
    1              		.file	"gd32vf103_exti.c"
@@ -58,7 +58,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s 			page 1
   41:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_exti.c ****  \brief      deinitialize the EXTI
   42:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_exti.c ****  \param[in]  none
   43:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_exti.c ****  \param[out] none
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s 			page 2
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s 			page 2
 
 
   44:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_exti.c ****  \retval     none
@@ -118,7 +118,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s 			page 1
   71:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_exti.c ****     \param[out] none
   72:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_exti.c ****     \retval     none
   73:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_exti.c ****  */
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s 			page 3
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s 			page 3
 
 
   74:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_exti.c **** void exti_init(exti_line_enum linex, exti_mode_enum mode, exti_trig_type_enum trig_type)
@@ -178,7 +178,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s 			page 1
   77              		.loc 1 95 5
   78 0038 8547     		li	a5,1
   79 003a 6300F604 		beq	a2,a5,.L6
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s 			page 4
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s 			page 4
 
 
   80 003e 0DC2     		beq	a2,zero,.L7
@@ -238,7 +238,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s 			page 1
  122 0082 758F     		and	a4,a4,a3
  123              	.L10:
  102:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_exti.c ****         EXTI_FTEN |= (uint32_t) linex;
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s 			page 5
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s 			page 5
 
 
  103:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_exti.c ****         break;
@@ -298,7 +298,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s 			page 1
  156              		.loc 1 124 16 is_stmt 0
  157 0000 37070140 		li	a4,1073807360
  158 0004 83270740 		lw	a5,1024(a4)
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s 			page 6
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s 			page 6
 
 
  159 0008 5D8D     		or	a0,a5,a0
@@ -358,7 +358,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s 			page 1
  148:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_exti.c **** void exti_interrupt_disable(exti_line_enum linex)
  149:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_exti.c **** {
  194              		.loc 1 149 1 is_stmt 1
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s 			page 7
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s 			page 7
 
 
  195              		.cfi_startproc
@@ -418,7 +418,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s 			page 1
  236              	.LFE7:
  238              		.section	.text.exti_flag_get,"ax",@progbits
  239              		.align	1
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s 			page 8
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s 			page 8
 
 
  240              		.globl	exti_flag_get
@@ -478,7 +478,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s 			page 1
  193:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_exti.c ****     EXTI_PD = (uint32_t) linex;
  269              		.loc 1 193 5
  270              		.loc 1 193 13 is_stmt 0
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s 			page 9
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s 			page 9
 
 
  271 0000 B7070140 		li	a5,1073807360
@@ -538,7 +538,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s 			page 1
  307              		.loc 1 211 30 discriminator 1
  308 0016 3335A000 		snez	a0,a0
  309              	.LVL23:
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s 			page 10
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s 			page 10
 
 
  310              	.L17:
@@ -598,7 +598,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s 			page 1
  338              		.loc 1 241 5
  339              		.loc 1 241 16 is_stmt 0
  340 0000 37070140 		li	a4,1073807360
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s 			page 11
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s 			page 11
 
 
  341 0004 83270741 		lw	a5,1040(a4)
@@ -653,306 +653,306 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s 			page 1
  379              		.file 4 "./../../firmware/GD32VF103_standard_peripheral/gd32vf103.h"
  380              		.file 5 "./../../firmware/GD32VF103_standard_peripheral/Include/gd32vf103_exti.h"
  381              		.file 6 "./../../firmware/GD32VF103_standard_peripheral/system_gd32vf103.h"
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s 			page 12
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s 			page 12
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 gd32vf103_exti.c
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:13     .text.exti_deinit:0000000000000000 exti_deinit
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:17     .text.exti_deinit:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:18     .text.exti_deinit:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:19     .text.exti_deinit:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:20     .text.exti_deinit:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:23     .text.exti_deinit:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:24     .text.exti_deinit:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:26     .text.exti_deinit:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:27     .text.exti_deinit:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:29     .text.exti_deinit:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:30     .text.exti_deinit:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:32     .text.exti_deinit:0000000000000014 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:33     .text.exti_deinit:0000000000000014 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:35     .text.exti_deinit:0000000000000018 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:36     .text.exti_deinit:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:43     .text.exti_init:0000000000000000 exti_init
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:46     .text.exti_init:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:48     .text.exti_init:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:49     .text.exti_init:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:50     .text.exti_init:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:53     .text.exti_init:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:55     .text.exti_init:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:58     .text.exti_init:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:59     .text.exti_init:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:63     .text.exti_init:000000000000001c .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:64     .text.exti_init:000000000000001c .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:68     .text.exti_init:0000000000000026 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:69     .text.exti_init:0000000000000026 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:73     .text.exti_init:0000000000000030 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:78     .text.exti_init:0000000000000038 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:86     .text.exti_init:0000000000000048 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:87     .text.exti_init:0000000000000048 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:91     .text.exti_init:0000000000000052 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:94     .text.exti_init:0000000000000054 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:95     .text.exti_init:0000000000000054 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:99     .text.exti_init:000000000000005e .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:102    .text.exti_init:0000000000000060 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:103    .text.exti_init:0000000000000060 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:109    .text.exti_init:000000000000006e .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:110    .text.exti_init:000000000000006e .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:115    .text.exti_init:0000000000000078 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:119    .text.exti_init:000000000000007a .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:120    .text.exti_init:000000000000007a .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:125    .text.exti_init:0000000000000084 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:127    .text.exti_init:0000000000000088 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:128    .text.exti_init:0000000000000088 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:133    .text.exti_init:0000000000000092 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:134    .text.exti_init:0000000000000092 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:138    .text.exti_init:0000000000000094 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:139    .text.exti_init:0000000000000094 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:143    .text.exti_init:00000000000000a0 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:150    .text.exti_interrupt_enable:0000000000000000 exti_interrupt_enable
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:153    .text.exti_interrupt_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:155    .text.exti_interrupt_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:156    .text.exti_interrupt_enable:0000000000000000 .L0 
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s 			page 13
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:13     .text.exti_deinit:0000000000000000 exti_deinit
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:17     .text.exti_deinit:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:18     .text.exti_deinit:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:19     .text.exti_deinit:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:20     .text.exti_deinit:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:23     .text.exti_deinit:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:24     .text.exti_deinit:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:26     .text.exti_deinit:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:27     .text.exti_deinit:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:29     .text.exti_deinit:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:30     .text.exti_deinit:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:32     .text.exti_deinit:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:33     .text.exti_deinit:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:35     .text.exti_deinit:0000000000000018 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:36     .text.exti_deinit:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:43     .text.exti_init:0000000000000000 exti_init
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:46     .text.exti_init:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:48     .text.exti_init:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:49     .text.exti_init:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:50     .text.exti_init:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:53     .text.exti_init:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:55     .text.exti_init:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:58     .text.exti_init:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:59     .text.exti_init:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:63     .text.exti_init:000000000000001c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:64     .text.exti_init:000000000000001c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:68     .text.exti_init:0000000000000026 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:69     .text.exti_init:0000000000000026 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:73     .text.exti_init:0000000000000030 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:78     .text.exti_init:0000000000000038 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:86     .text.exti_init:0000000000000048 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:87     .text.exti_init:0000000000000048 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:91     .text.exti_init:0000000000000052 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:94     .text.exti_init:0000000000000054 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:95     .text.exti_init:0000000000000054 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:99     .text.exti_init:000000000000005e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:102    .text.exti_init:0000000000000060 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:103    .text.exti_init:0000000000000060 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:109    .text.exti_init:000000000000006e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:110    .text.exti_init:000000000000006e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:115    .text.exti_init:0000000000000078 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:119    .text.exti_init:000000000000007a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:120    .text.exti_init:000000000000007a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:125    .text.exti_init:0000000000000084 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:127    .text.exti_init:0000000000000088 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:128    .text.exti_init:0000000000000088 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:133    .text.exti_init:0000000000000092 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:134    .text.exti_init:0000000000000092 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:138    .text.exti_init:0000000000000094 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:139    .text.exti_init:0000000000000094 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:143    .text.exti_init:00000000000000a0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:150    .text.exti_interrupt_enable:0000000000000000 exti_interrupt_enable
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:153    .text.exti_interrupt_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:155    .text.exti_interrupt_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:156    .text.exti_interrupt_enable:0000000000000000 .L0 
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s 			page 13
 
 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:157    .text.exti_interrupt_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:163    .text.exti_interrupt_enable:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:164    .text.exti_interrupt_enable:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:171    .text.exti_event_enable:0000000000000000 exti_event_enable
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:174    .text.exti_event_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:176    .text.exti_event_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:177    .text.exti_event_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:178    .text.exti_event_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:184    .text.exti_event_enable:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:185    .text.exti_event_enable:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:192    .text.exti_interrupt_disable:0000000000000000 exti_interrupt_disable
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:195    .text.exti_interrupt_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:197    .text.exti_interrupt_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:198    .text.exti_interrupt_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:199    .text.exti_interrupt_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:202    .text.exti_interrupt_disable:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:205    .text.exti_interrupt_disable:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:209    .text.exti_interrupt_disable:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:210    .text.exti_interrupt_disable:0000000000000014 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:217    .text.exti_event_disable:0000000000000000 exti_event_disable
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:220    .text.exti_event_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:222    .text.exti_event_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:223    .text.exti_event_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:224    .text.exti_event_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:227    .text.exti_event_disable:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:230    .text.exti_event_disable:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:234    .text.exti_event_disable:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:235    .text.exti_event_disable:0000000000000014 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:242    .text.exti_flag_get:0000000000000000 exti_flag_get
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:245    .text.exti_flag_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:247    .text.exti_flag_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:248    .text.exti_flag_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:249    .text.exti_flag_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:252    .text.exti_flag_get:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:255    .text.exti_flag_get:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:257    .text.exti_flag_get:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:264    .text.exti_flag_clear:0000000000000000 exti_flag_clear
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:267    .text.exti_flag_clear:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:269    .text.exti_flag_clear:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:270    .text.exti_flag_clear:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:271    .text.exti_flag_clear:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:274    .text.exti_flag_clear:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:275    .text.exti_flag_clear:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:282    .text.exti_interrupt_flag_get:0000000000000000 exti_interrupt_flag_get
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:285    .text.exti_interrupt_flag_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:287    .text.exti_interrupt_flag_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:288    .text.exti_interrupt_flag_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:289    .text.exti_interrupt_flag_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:290    .text.exti_interrupt_flag_get:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:293    .text.exti_interrupt_flag_get:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:295    .text.exti_interrupt_flag_get:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:298    .text.exti_interrupt_flag_get:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:299    .text.exti_interrupt_flag_get:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:302    .text.exti_interrupt_flag_get:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:303    .text.exti_interrupt_flag_get:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:305    .text.exti_interrupt_flag_get:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:308    .text.exti_interrupt_flag_get:0000000000000016 .L0 
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s 			page 14
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:157    .text.exti_interrupt_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:163    .text.exti_interrupt_enable:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:164    .text.exti_interrupt_enable:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:171    .text.exti_event_enable:0000000000000000 exti_event_enable
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:174    .text.exti_event_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:176    .text.exti_event_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:177    .text.exti_event_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:178    .text.exti_event_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:184    .text.exti_event_enable:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:185    .text.exti_event_enable:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:192    .text.exti_interrupt_disable:0000000000000000 exti_interrupt_disable
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:195    .text.exti_interrupt_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:197    .text.exti_interrupt_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:198    .text.exti_interrupt_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:199    .text.exti_interrupt_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:202    .text.exti_interrupt_disable:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:205    .text.exti_interrupt_disable:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:209    .text.exti_interrupt_disable:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:210    .text.exti_interrupt_disable:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:217    .text.exti_event_disable:0000000000000000 exti_event_disable
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:220    .text.exti_event_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:222    .text.exti_event_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:223    .text.exti_event_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:224    .text.exti_event_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:227    .text.exti_event_disable:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:230    .text.exti_event_disable:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:234    .text.exti_event_disable:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:235    .text.exti_event_disable:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:242    .text.exti_flag_get:0000000000000000 exti_flag_get
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:245    .text.exti_flag_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:247    .text.exti_flag_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:248    .text.exti_flag_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:249    .text.exti_flag_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:252    .text.exti_flag_get:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:255    .text.exti_flag_get:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:257    .text.exti_flag_get:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:264    .text.exti_flag_clear:0000000000000000 exti_flag_clear
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:267    .text.exti_flag_clear:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:269    .text.exti_flag_clear:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:270    .text.exti_flag_clear:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:271    .text.exti_flag_clear:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:274    .text.exti_flag_clear:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:275    .text.exti_flag_clear:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:282    .text.exti_interrupt_flag_get:0000000000000000 exti_interrupt_flag_get
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:285    .text.exti_interrupt_flag_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:287    .text.exti_interrupt_flag_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:288    .text.exti_interrupt_flag_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:289    .text.exti_interrupt_flag_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:290    .text.exti_interrupt_flag_get:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:293    .text.exti_interrupt_flag_get:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:295    .text.exti_interrupt_flag_get:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:298    .text.exti_interrupt_flag_get:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:299    .text.exti_interrupt_flag_get:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:302    .text.exti_interrupt_flag_get:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:303    .text.exti_interrupt_flag_get:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:305    .text.exti_interrupt_flag_get:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:308    .text.exti_interrupt_flag_get:0000000000000016 .L0 
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s 			page 14
 
 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:312    .text.exti_interrupt_flag_get:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:313    .text.exti_interrupt_flag_get:000000000000001c .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:320    .text.exti_interrupt_flag_clear:0000000000000000 exti_interrupt_flag_clear
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:322    .text.exti_interrupt_flag_clear:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:326    .text.exti_interrupt_flag_clear:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:333    .text.exti_software_interrupt_enable:0000000000000000 exti_software_interrupt_enable
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:336    .text.exti_software_interrupt_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:338    .text.exti_software_interrupt_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:339    .text.exti_software_interrupt_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:340    .text.exti_software_interrupt_enable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:346    .text.exti_software_interrupt_enable:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:347    .text.exti_software_interrupt_enable:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:354    .text.exti_software_interrupt_disable:0000000000000000 exti_software_interrupt_disable
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:357    .text.exti_software_interrupt_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:359    .text.exti_software_interrupt_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:360    .text.exti_software_interrupt_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:361    .text.exti_software_interrupt_disable:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:364    .text.exti_software_interrupt_disable:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:367    .text.exti_software_interrupt_disable:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:371    .text.exti_software_interrupt_disable:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:372    .text.exti_software_interrupt_disable:0000000000000014 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:39     .text.exti_deinit:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:146    .text.exti_init:00000000000000a0 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:167    .text.exti_interrupt_enable:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:188    .text.exti_event_enable:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:213    .text.exti_interrupt_disable:0000000000000014 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:238    .text.exti_event_disable:0000000000000014 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:260    .text.exti_flag_get:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:278    .text.exti_flag_clear:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:316    .text.exti_interrupt_flag_get:000000000000001c .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:350    .text.exti_software_interrupt_enable:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:375    .text.exti_software_interrupt_disable:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:312    .text.exti_interrupt_flag_get:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:313    .text.exti_interrupt_flag_get:000000000000001c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:320    .text.exti_interrupt_flag_clear:0000000000000000 exti_interrupt_flag_clear
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:322    .text.exti_interrupt_flag_clear:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:326    .text.exti_interrupt_flag_clear:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:333    .text.exti_software_interrupt_enable:0000000000000000 exti_software_interrupt_enable
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:336    .text.exti_software_interrupt_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:338    .text.exti_software_interrupt_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:339    .text.exti_software_interrupt_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:340    .text.exti_software_interrupt_enable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:346    .text.exti_software_interrupt_enable:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:347    .text.exti_software_interrupt_enable:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:354    .text.exti_software_interrupt_disable:0000000000000000 exti_software_interrupt_disable
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:357    .text.exti_software_interrupt_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:359    .text.exti_software_interrupt_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:360    .text.exti_software_interrupt_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:361    .text.exti_software_interrupt_disable:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:364    .text.exti_software_interrupt_disable:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:367    .text.exti_software_interrupt_disable:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:371    .text.exti_software_interrupt_disable:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:372    .text.exti_software_interrupt_disable:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:39     .text.exti_deinit:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:146    .text.exti_init:00000000000000a0 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:167    .text.exti_interrupt_enable:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:188    .text.exti_event_enable:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:213    .text.exti_interrupt_disable:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:238    .text.exti_event_disable:0000000000000014 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:260    .text.exti_flag_get:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:278    .text.exti_flag_clear:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:316    .text.exti_interrupt_flag_get:000000000000001c .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:350    .text.exti_software_interrupt_enable:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:375    .text.exti_software_interrupt_disable:0000000000000014 .L0 
                      .debug_frame:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:84     .text.exti_init:0000000000000048 .L3
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:92     .text.exti_init:0000000000000054 .L4
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:117    .text.exti_init:000000000000007a .L6
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:100    .text.exti_init:0000000000000060 .L7
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:136    .text.exti_init:0000000000000094 .L8
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:76     .text.exti_init:0000000000000038 .L5
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:123    .text.exti_init:0000000000000084 .L10
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:310    .text.exti_interrupt_flag_get:000000000000001a .L17
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:891    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1499   .debug_str:0000000000000013 .LASF56
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1599   .debug_str:000000000000032c .LASF57
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1501   .debug_str:000000000000009b .LASF58
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1469   .debug_ranges:0000000000000000 .Ldebug_ranges0
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1495   .debug_line:0000000000000000 .Ldebug_line0
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1565   .debug_str:0000000000000270 .LASF0
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1517   .debug_str:0000000000000144 .LASF1
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1543   .debug_str:0000000000000210 .LASF2
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1507   .debug_str:00000000000000ff .LASF3
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1593   .debug_str:00000000000002f7 .LASF4
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1531   .debug_str:00000000000001bf .LASF5
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1503   .debug_str:00000000000000ef .LASF9
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1603   .debug_str:0000000000000393 .LASF6
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1525   .debug_str:0000000000000189 .LASF7
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1527   .debug_str:0000000000000197 .LASF8
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s 			page 15
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:84     .text.exti_init:0000000000000048 .L3
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:92     .text.exti_init:0000000000000054 .L4
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:117    .text.exti_init:000000000000007a .L6
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:100    .text.exti_init:0000000000000060 .L7
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:136    .text.exti_init:0000000000000094 .L8
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:76     .text.exti_init:0000000000000038 .L5
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:123    .text.exti_init:0000000000000084 .L10
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:310    .text.exti_interrupt_flag_get:000000000000001a .L17
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:891    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1499   .debug_str:0000000000000013 .LASF56
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1599   .debug_str:000000000000032c .LASF57
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1501   .debug_str:000000000000009b .LASF58
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1469   .debug_ranges:0000000000000000 .Ldebug_ranges0
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1495   .debug_line:0000000000000000 .Ldebug_line0
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1565   .debug_str:0000000000000270 .LASF0
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1517   .debug_str:0000000000000144 .LASF1
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1543   .debug_str:0000000000000210 .LASF2
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1507   .debug_str:00000000000000ff .LASF3
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1593   .debug_str:00000000000002f7 .LASF4
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1531   .debug_str:00000000000001bf .LASF5
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1503   .debug_str:00000000000000ef .LASF9
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1603   .debug_str:0000000000000393 .LASF6
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1525   .debug_str:0000000000000189 .LASF7
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1527   .debug_str:0000000000000197 .LASF8
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s 			page 15
 
 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1515   .debug_str:000000000000013b .LASF10
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1595   .debug_str:000000000000030a .LASF59
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1613   .debug_str:00000000000003e8 .LASF11
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1621   .debug_str:0000000000000419 .LASF12
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1539   .debug_str:00000000000001f8 .LASF13
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1567   .debug_str:000000000000027d .LASF14
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1569   .debug_str:0000000000000284 .LASF15
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1571   .debug_str:000000000000028b .LASF16
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1573   .debug_str:0000000000000292 .LASF17
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1575   .debug_str:0000000000000299 .LASF18
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1577   .debug_str:00000000000002a0 .LASF19
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1579   .debug_str:00000000000002a7 .LASF20
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1581   .debug_str:00000000000002ae .LASF21
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1583   .debug_str:00000000000002b5 .LASF22
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1585   .debug_str:00000000000002bc .LASF23
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1547   .debug_str:0000000000000228 .LASF24
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1549   .debug_str:0000000000000230 .LASF25
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1551   .debug_str:0000000000000238 .LASF26
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1553   .debug_str:0000000000000240 .LASF27
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1555   .debug_str:0000000000000248 .LASF28
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1557   .debug_str:0000000000000250 .LASF29
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1559   .debug_str:0000000000000258 .LASF30
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1561   .debug_str:0000000000000260 .LASF31
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1563   .debug_str:0000000000000268 .LASF32
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1605   .debug_str:00000000000003a5 .LASF33
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1533   .debug_str:00000000000001c8 .LASF34
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1607   .debug_str:00000000000003b4 .LASF35
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1537   .debug_str:00000000000001e9 .LASF36
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1529   .debug_str:00000000000001ae .LASF37
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1597   .debug_str:000000000000031a .LASF38
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1521   .debug_str:0000000000000164 .LASF39
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1611   .debug_str:00000000000003d9 .LASF40
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1519   .debug_str:0000000000000150 .LASF41
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1601   .debug_str:0000000000000373 .LASF42
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:355    .text.exti_software_interrupt_disable:0000000000000000 .LFB13
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:373    .text.exti_software_interrupt_disable:0000000000000014 .LFE13
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1615   .debug_str:00000000000003ee .LASF44
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1238   .debug_loc:0000000000000000 .LLST10
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1591   .debug_str:00000000000002d8 .LASF43
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:334    .text.exti_software_interrupt_enable:0000000000000000 .LFB12
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:348    .text.exti_software_interrupt_enable:0000000000000010 .LFE12
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1259   .debug_loc:000000000000002f .LLST9
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1609   .debug_str:00000000000003bf .LASF60
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1513   .debug_str:0000000000000123 .LASF47
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:283    .text.exti_interrupt_flag_get:0000000000000000 .LFB10
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:314    .text.exti_interrupt_flag_get:000000000000001c .LFE10
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1273   .debug_loc:0000000000000050 .LLST6
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1587   .debug_str:00000000000002c3 .LASF45
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1284   .debug_loc:000000000000006e .LLST7
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1589   .debug_str:00000000000002cd .LASF46
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1291   .debug_loc:0000000000000081 .LLST8
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1509   .debug_str:0000000000000109 .LASF61
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1617   .debug_str:00000000000003f4 .LASF48
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:243    .text.exti_flag_get:0000000000000000 .LFB8
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:258    .text.exti_flag_get:0000000000000010 .LFE8
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1316   .debug_loc:00000000000000b4 .LLST5
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1497   .debug_str:0000000000000000 .LASF49
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s 			page 16
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1515   .debug_str:000000000000013b .LASF10
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1595   .debug_str:000000000000030a .LASF59
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1613   .debug_str:00000000000003e8 .LASF11
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1621   .debug_str:0000000000000419 .LASF12
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1539   .debug_str:00000000000001f8 .LASF13
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1567   .debug_str:000000000000027d .LASF14
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1569   .debug_str:0000000000000284 .LASF15
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1571   .debug_str:000000000000028b .LASF16
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1573   .debug_str:0000000000000292 .LASF17
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1575   .debug_str:0000000000000299 .LASF18
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1577   .debug_str:00000000000002a0 .LASF19
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1579   .debug_str:00000000000002a7 .LASF20
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1581   .debug_str:00000000000002ae .LASF21
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1583   .debug_str:00000000000002b5 .LASF22
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1585   .debug_str:00000000000002bc .LASF23
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1547   .debug_str:0000000000000228 .LASF24
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1549   .debug_str:0000000000000230 .LASF25
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1551   .debug_str:0000000000000238 .LASF26
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1553   .debug_str:0000000000000240 .LASF27
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1555   .debug_str:0000000000000248 .LASF28
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1557   .debug_str:0000000000000250 .LASF29
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1559   .debug_str:0000000000000258 .LASF30
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1561   .debug_str:0000000000000260 .LASF31
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1563   .debug_str:0000000000000268 .LASF32
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1605   .debug_str:00000000000003a5 .LASF33
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1533   .debug_str:00000000000001c8 .LASF34
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1607   .debug_str:00000000000003b4 .LASF35
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1537   .debug_str:00000000000001e9 .LASF36
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1529   .debug_str:00000000000001ae .LASF37
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1597   .debug_str:000000000000031a .LASF38
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1521   .debug_str:0000000000000164 .LASF39
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1611   .debug_str:00000000000003d9 .LASF40
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1519   .debug_str:0000000000000150 .LASF41
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1601   .debug_str:0000000000000373 .LASF42
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:355    .text.exti_software_interrupt_disable:0000000000000000 .LFB13
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:373    .text.exti_software_interrupt_disable:0000000000000014 .LFE13
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1615   .debug_str:00000000000003ee .LASF44
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1238   .debug_loc:0000000000000000 .LLST10
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1591   .debug_str:00000000000002d8 .LASF43
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:334    .text.exti_software_interrupt_enable:0000000000000000 .LFB12
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:348    .text.exti_software_interrupt_enable:0000000000000010 .LFE12
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1259   .debug_loc:000000000000002f .LLST9
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1609   .debug_str:00000000000003bf .LASF60
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1513   .debug_str:0000000000000123 .LASF47
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:283    .text.exti_interrupt_flag_get:0000000000000000 .LFB10
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:314    .text.exti_interrupt_flag_get:000000000000001c .LFE10
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1273   .debug_loc:0000000000000050 .LLST6
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1587   .debug_str:00000000000002c3 .LASF45
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1284   .debug_loc:000000000000006e .LLST7
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1589   .debug_str:00000000000002cd .LASF46
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1291   .debug_loc:0000000000000081 .LLST8
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1509   .debug_str:0000000000000109 .LASF61
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1617   .debug_str:00000000000003f4 .LASF48
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:243    .text.exti_flag_get:0000000000000000 .LFB8
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:258    .text.exti_flag_get:0000000000000010 .LFE8
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1316   .debug_loc:00000000000000b4 .LLST5
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1497   .debug_str:0000000000000000 .LASF49
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s 			page 16
 
 
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:218    .text.exti_event_disable:0000000000000000 .LFB7
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:236    .text.exti_event_disable:0000000000000014 .LFE7
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1330   .debug_loc:00000000000000d5 .LLST4
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1619   .debug_str:0000000000000402 .LASF50
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:193    .text.exti_interrupt_disable:0000000000000000 .LFB6
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:211    .text.exti_interrupt_disable:0000000000000014 .LFE6
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1351   .debug_loc:0000000000000104 .LLST3
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1535   .debug_str:00000000000001d7 .LASF51
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:172    .text.exti_event_enable:0000000000000000 .LFB5
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:186    .text.exti_event_enable:0000000000000010 .LFE5
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1372   .debug_loc:0000000000000133 .LLST2
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1523   .debug_str:0000000000000173 .LASF52
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:151    .text.exti_interrupt_enable:0000000000000000 .LFB4
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:165    .text.exti_interrupt_enable:0000000000000010 .LFE4
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1386   .debug_loc:0000000000000154 .LLST1
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1545   .debug_str:000000000000021e .LASF53
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:44     .text.exti_init:0000000000000000 .LFB3
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:144    .text.exti_init:00000000000000a0 .LFE3
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1400   .debug_loc:0000000000000175 .LLST0
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1505   .debug_str:00000000000000fa .LASF54
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1511   .debug_str:0000000000000119 .LASF55
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:1541   .debug_str:0000000000000204 .LASF62
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:14     .text.exti_deinit:0000000000000000 .LFB2
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:37     .text.exti_deinit:000000000000001a .LFE2
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:265    .text.exti_flag_clear:0000000000000000 .LFB9
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:276    .text.exti_flag_clear:000000000000000a .LFE9
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:358    .text.exti_software_interrupt_disable:0000000000000000 .LVL26
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:365    .text.exti_software_interrupt_disable:000000000000000c .LVL27
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:368    .text.exti_software_interrupt_disable:000000000000000e .LVL28
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:337    .text.exti_software_interrupt_enable:0000000000000000 .LVL24
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:343    .text.exti_software_interrupt_enable:000000000000000a .LVL25
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:286    .text.exti_interrupt_flag_get:0000000000000000 .LVL19
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:296    .text.exti_interrupt_flag_get:000000000000000c .LVL20
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:306    .text.exti_interrupt_flag_get:0000000000000016 .LVL22
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:300    .text.exti_interrupt_flag_get:0000000000000010 .LVL21
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:309    .text.exti_interrupt_flag_get:000000000000001a .LVL23
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:246    .text.exti_flag_get:0000000000000000 .LVL16
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:253    .text.exti_flag_get:000000000000000a .LVL17
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:221    .text.exti_event_disable:0000000000000000 .LVL13
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:228    .text.exti_event_disable:000000000000000c .LVL14
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:231    .text.exti_event_disable:000000000000000e .LVL15
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:196    .text.exti_interrupt_disable:0000000000000000 .LVL10
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:203    .text.exti_interrupt_disable:000000000000000c .LVL11
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:206    .text.exti_interrupt_disable:000000000000000e .LVL12
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:175    .text.exti_event_enable:0000000000000000 .LVL8
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:181    .text.exti_event_enable:000000000000000a .LVL9
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:154    .text.exti_interrupt_enable:0000000000000000 .LVL6
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:160    .text.exti_interrupt_enable:000000000000000a .LVL7
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:47     .text.exti_init:0000000000000000 .LVL0
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:106    .text.exti_init:000000000000006a .LVL1
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:112    .text.exti_init:0000000000000074 .LVL2
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:116    .text.exti_init:000000000000007a .LVL3
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:130    .text.exti_init:000000000000008e .LVL4
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:135    .text.exti_init:0000000000000094 .LVL5
-C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s:383    .debug_info:0000000000000000 .Ldebug_info0
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:218    .text.exti_event_disable:0000000000000000 .LFB7
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:236    .text.exti_event_disable:0000000000000014 .LFE7
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1330   .debug_loc:00000000000000d5 .LLST4
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1619   .debug_str:0000000000000402 .LASF50
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:193    .text.exti_interrupt_disable:0000000000000000 .LFB6
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:211    .text.exti_interrupt_disable:0000000000000014 .LFE6
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1351   .debug_loc:0000000000000104 .LLST3
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1535   .debug_str:00000000000001d7 .LASF51
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:172    .text.exti_event_enable:0000000000000000 .LFB5
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:186    .text.exti_event_enable:0000000000000010 .LFE5
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1372   .debug_loc:0000000000000133 .LLST2
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1523   .debug_str:0000000000000173 .LASF52
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:151    .text.exti_interrupt_enable:0000000000000000 .LFB4
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:165    .text.exti_interrupt_enable:0000000000000010 .LFE4
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1386   .debug_loc:0000000000000154 .LLST1
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1545   .debug_str:000000000000021e .LASF53
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:44     .text.exti_init:0000000000000000 .LFB3
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:144    .text.exti_init:00000000000000a0 .LFE3
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1400   .debug_loc:0000000000000175 .LLST0
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1505   .debug_str:00000000000000fa .LASF54
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1511   .debug_str:0000000000000119 .LASF55
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:1541   .debug_str:0000000000000204 .LASF62
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:14     .text.exti_deinit:0000000000000000 .LFB2
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:37     .text.exti_deinit:000000000000001a .LFE2
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:265    .text.exti_flag_clear:0000000000000000 .LFB9
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:276    .text.exti_flag_clear:000000000000000a .LFE9
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:358    .text.exti_software_interrupt_disable:0000000000000000 .LVL26
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:365    .text.exti_software_interrupt_disable:000000000000000c .LVL27
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:368    .text.exti_software_interrupt_disable:000000000000000e .LVL28
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:337    .text.exti_software_interrupt_enable:0000000000000000 .LVL24
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:343    .text.exti_software_interrupt_enable:000000000000000a .LVL25
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:286    .text.exti_interrupt_flag_get:0000000000000000 .LVL19
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:296    .text.exti_interrupt_flag_get:000000000000000c .LVL20
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:306    .text.exti_interrupt_flag_get:0000000000000016 .LVL22
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:300    .text.exti_interrupt_flag_get:0000000000000010 .LVL21
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:309    .text.exti_interrupt_flag_get:000000000000001a .LVL23
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:246    .text.exti_flag_get:0000000000000000 .LVL16
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:253    .text.exti_flag_get:000000000000000a .LVL17
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:221    .text.exti_event_disable:0000000000000000 .LVL13
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:228    .text.exti_event_disable:000000000000000c .LVL14
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:231    .text.exti_event_disable:000000000000000e .LVL15
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:196    .text.exti_interrupt_disable:0000000000000000 .LVL10
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:203    .text.exti_interrupt_disable:000000000000000c .LVL11
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:206    .text.exti_interrupt_disable:000000000000000e .LVL12
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:175    .text.exti_event_enable:0000000000000000 .LVL8
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:181    .text.exti_event_enable:000000000000000a .LVL9
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:154    .text.exti_interrupt_enable:0000000000000000 .LVL6
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:160    .text.exti_interrupt_enable:000000000000000a .LVL7
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:47     .text.exti_init:0000000000000000 .LVL0
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:106    .text.exti_init:000000000000006a .LVL1
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:112    .text.exti_init:0000000000000074 .LVL2
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:116    .text.exti_init:000000000000007a .LVL3
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:130    .text.exti_init:000000000000008e .LVL4
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:135    .text.exti_init:0000000000000094 .LVL5
+C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s:383    .debug_info:0000000000000000 .Ldebug_info0
 
 NO UNDEFINED SYMBOLS
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccC8I84Y.s 			page 17
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\ccEkFHkC.s 			page 17
 
 

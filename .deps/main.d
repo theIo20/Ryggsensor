@@ -30,9 +30,7 @@ build/main.o: main.c \
  mpu6500_driver.h mpu6500_registers.h gd32v_tf_card_if.h tf_card.h \
  gd32v_pjt_include.h \
  ../../firmware/GD32VF103_standard_peripheral/gd32vf103_libopt.h diskio.h \
- ff.h ffconf.h systick.h usb_serial_if.h cdc_acm_core.h usbd_enum.h \
- usbd_core.h drv_usb_core.h drv_usb_regs.h usb_conf.h usb_ch9_std.h \
- drv_usb_dev.h usbd_conf.h usbd_transc.h usb_delay.h
+ ff.h ffconf.h systick.h
 
 ../../firmware/GD32VF103_standard_peripheral/gd32vf103.h:
 
@@ -113,27 +111,3 @@ ff.h:
 ffconf.h:
 
 systick.h:
-
-usb_serial_if.h:
-
-cdc_acm_core.h:
-
-usbd_enum.h:
-
-usbd_core.h:
-
-drv_usb_core.h:
-
-drv_usb_regs.h:
-
-usb_conf.h:
-
-usb_ch9_std.h:
-
-drv_usb_dev.h:
-
-usbd_conf.h:
-
-usbd_transc.h:
-
-usb_delay.h:

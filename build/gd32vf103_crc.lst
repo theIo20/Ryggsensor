@@ -1,4 +1,4 @@
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s 			page 1
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s 			page 1
 
 
    1              		.file	"gd32vf103_crc.c"
@@ -58,7 +58,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s 			page 1
   41:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_crc.c **** /*!
   42:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_crc.c ****     \brief      deinit CRC calculation unit
   43:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_crc.c ****     \param[in]  none
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s 			page 2
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s 			page 2
 
 
   44:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_crc.c ****     \param[out] none
@@ -118,7 +118,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s 			page 1
   52              	.LFE3:
   54              		.section	.text.crc_data_register_read,"ax",@progbits
   55              		.align	1
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s 			page 3
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s 			page 3
 
 
   56              		.globl	crc_data_register_read
@@ -178,7 +178,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s 			page 1
   88              		.loc 1 88 5 is_stmt 1
   89:./../../firmware/GD32VF103_standard_peripheral/Source/gd32vf103_crc.c **** }
   89              		.loc 1 89 1 is_stmt 0
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s 			page 4
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s 			page 4
 
 
   90 0006 1375F50F 		andi	a0,a0,0xff
@@ -238,7 +238,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s 			page 1
  126              		.loc 1 111 5 is_stmt 1
  127              		.loc 1 111 13 is_stmt 0
  128 0006 8843     		lw	a0,0(a5)
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s 			page 5
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s 			page 5
 
 
  129              	.LVL4:
@@ -298,7 +298,7 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s 			page 1
  165              		.loc 1 125 25 is_stmt 0 discriminator 3
  166 0012 13972700 		slli	a4,a5,2
  167 0016 2A97     		add	a4,a0,a4
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s 			page 6
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s 			page 6
 
 
  168 0018 1843     		lw	a4,0(a4)
@@ -317,154 +317,154 @@ GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s 			page 1
  180              		.file 2 "c:\\kth\\he1043\\toolchain-gd32v-v202-win\\toolchain-gd32v-v202-win\\compiler\\riscv64-un
  181              		.file 3 "c:\\kth\\he1043\\toolchain-gd32v-v202-win\\toolchain-gd32v-v202-win\\compiler\\riscv64-un
  182              		.file 4 "./../../firmware/GD32VF103_standard_peripheral/system_gd32vf103.h"
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s 			page 7
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s 			page 7
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 gd32vf103_crc.c
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:13     .text.crc_deinit:0000000000000000 crc_deinit
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:17     .text.crc_deinit:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:18     .text.crc_deinit:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:19     .text.crc_deinit:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:20     .text.crc_deinit:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:24     .text.crc_deinit:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:25     .text.crc_deinit:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:27     .text.crc_deinit:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:28     .text.crc_deinit:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:31     .text.crc_deinit:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:32     .text.crc_deinit:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:39     .text.crc_data_register_reset:0000000000000000 crc_data_register_reset
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:42     .text.crc_data_register_reset:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:43     .text.crc_data_register_reset:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:44     .text.crc_data_register_reset:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:45     .text.crc_data_register_reset:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:50     .text.crc_data_register_reset:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:51     .text.crc_data_register_reset:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:58     .text.crc_data_register_read:0000000000000000 crc_data_register_read
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:61     .text.crc_data_register_read:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:62     .text.crc_data_register_read:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:63     .text.crc_data_register_read:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:64     .text.crc_data_register_read:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:65     .text.crc_data_register_read:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:69     .text.crc_data_register_read:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:70     .text.crc_data_register_read:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:71     .text.crc_data_register_read:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:78     .text.crc_free_data_register_read:0000000000000000 crc_free_data_register_read
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:81     .text.crc_free_data_register_read:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:82     .text.crc_free_data_register_read:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:83     .text.crc_free_data_register_read:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:84     .text.crc_free_data_register_read:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:85     .text.crc_free_data_register_read:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:89     .text.crc_free_data_register_read:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:90     .text.crc_free_data_register_read:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:92     .text.crc_free_data_register_read:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:99     .text.crc_free_data_register_write:0000000000000000 crc_free_data_register_write
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:102    .text.crc_free_data_register_write:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:104    .text.crc_free_data_register_write:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:105    .text.crc_free_data_register_write:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:106    .text.crc_free_data_register_write:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:109    .text.crc_free_data_register_write:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:110    .text.crc_free_data_register_write:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:117    .text.crc_single_data_calculate:0000000000000000 crc_single_data_calculate
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:120    .text.crc_single_data_calculate:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:122    .text.crc_single_data_calculate:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:123    .text.crc_single_data_calculate:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:124    .text.crc_single_data_calculate:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:127    .text.crc_single_data_calculate:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:128    .text.crc_single_data_calculate:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:131    .text.crc_single_data_calculate:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:132    .text.crc_single_data_calculate:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:139    .text.crc_block_data_calculate:0000000000000000 crc_block_data_calculate
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:142    .text.crc_block_data_calculate:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:144    .text.crc_block_data_calculate:0000000000000000 .L0 
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s 			page 8
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:13     .text.crc_deinit:0000000000000000 crc_deinit
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:17     .text.crc_deinit:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:18     .text.crc_deinit:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:19     .text.crc_deinit:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:20     .text.crc_deinit:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:24     .text.crc_deinit:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:25     .text.crc_deinit:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:27     .text.crc_deinit:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:28     .text.crc_deinit:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:31     .text.crc_deinit:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:32     .text.crc_deinit:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:39     .text.crc_data_register_reset:0000000000000000 crc_data_register_reset
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:42     .text.crc_data_register_reset:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:43     .text.crc_data_register_reset:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:44     .text.crc_data_register_reset:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:45     .text.crc_data_register_reset:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:50     .text.crc_data_register_reset:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:51     .text.crc_data_register_reset:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:58     .text.crc_data_register_read:0000000000000000 crc_data_register_read
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:61     .text.crc_data_register_read:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:62     .text.crc_data_register_read:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:63     .text.crc_data_register_read:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:64     .text.crc_data_register_read:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:65     .text.crc_data_register_read:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:69     .text.crc_data_register_read:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:70     .text.crc_data_register_read:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:71     .text.crc_data_register_read:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:78     .text.crc_free_data_register_read:0000000000000000 crc_free_data_register_read
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:81     .text.crc_free_data_register_read:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:82     .text.crc_free_data_register_read:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:83     .text.crc_free_data_register_read:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:84     .text.crc_free_data_register_read:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:85     .text.crc_free_data_register_read:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:89     .text.crc_free_data_register_read:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:90     .text.crc_free_data_register_read:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:92     .text.crc_free_data_register_read:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:99     .text.crc_free_data_register_write:0000000000000000 crc_free_data_register_write
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:102    .text.crc_free_data_register_write:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:104    .text.crc_free_data_register_write:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:105    .text.crc_free_data_register_write:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:106    .text.crc_free_data_register_write:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:109    .text.crc_free_data_register_write:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:110    .text.crc_free_data_register_write:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:117    .text.crc_single_data_calculate:0000000000000000 crc_single_data_calculate
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:120    .text.crc_single_data_calculate:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:122    .text.crc_single_data_calculate:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:123    .text.crc_single_data_calculate:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:124    .text.crc_single_data_calculate:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:127    .text.crc_single_data_calculate:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:128    .text.crc_single_data_calculate:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:131    .text.crc_single_data_calculate:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:132    .text.crc_single_data_calculate:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:139    .text.crc_block_data_calculate:0000000000000000 crc_block_data_calculate
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:142    .text.crc_block_data_calculate:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:144    .text.crc_block_data_calculate:0000000000000000 .L0 
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s 			page 8
 
 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:145    .text.crc_block_data_calculate:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:146    .text.crc_block_data_calculate:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:147    .text.crc_block_data_calculate:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:149    .text.crc_block_data_calculate:0000000000000002 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:153    .text.crc_block_data_calculate:0000000000000006 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:155    .text.crc_block_data_calculate:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:156    .text.crc_block_data_calculate:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:161    .text.crc_block_data_calculate:0000000000000010 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:165    .text.crc_block_data_calculate:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:166    .text.crc_block_data_calculate:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:170    .text.crc_block_data_calculate:000000000000001a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:173    .text.crc_block_data_calculate:000000000000001c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:175    .text.crc_block_data_calculate:0000000000000020 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:35     .text.crc_deinit:0000000000000012 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:54     .text.crc_data_register_reset:000000000000000e .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:74     .text.crc_data_register_read:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:95     .text.crc_free_data_register_read:000000000000000c .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:113    .text.crc_free_data_register_write:0000000000000008 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:135    .text.crc_single_data_calculate:000000000000000a .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:178    .text.crc_block_data_calculate:0000000000000020 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:145    .text.crc_block_data_calculate:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:146    .text.crc_block_data_calculate:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:147    .text.crc_block_data_calculate:0000000000000000 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:149    .text.crc_block_data_calculate:0000000000000002 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:153    .text.crc_block_data_calculate:0000000000000006 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:155    .text.crc_block_data_calculate:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:156    .text.crc_block_data_calculate:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:161    .text.crc_block_data_calculate:0000000000000010 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:165    .text.crc_block_data_calculate:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:166    .text.crc_block_data_calculate:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:170    .text.crc_block_data_calculate:000000000000001a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:173    .text.crc_block_data_calculate:000000000000001c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:175    .text.crc_block_data_calculate:0000000000000020 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:35     .text.crc_deinit:0000000000000012 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:54     .text.crc_data_register_reset:000000000000000e .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:74     .text.crc_data_register_read:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:95     .text.crc_free_data_register_read:000000000000000c .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:113    .text.crc_free_data_register_write:0000000000000008 .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:135    .text.crc_single_data_calculate:000000000000000a .L0 
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:178    .text.crc_block_data_calculate:0000000000000020 .L0 
                      .debug_frame:0000000000000000 .L0 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:163    .text.crc_block_data_calculate:0000000000000012 .L9
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:151    .text.crc_block_data_calculate:0000000000000006 .L8
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:437    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:817    .debug_str:00000000000001e0 .LASF27
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:805    .debug_str:0000000000000154 .LASF28
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:775    .debug_str:000000000000002e .LASF29
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:747    .debug_ranges:0000000000000000 .Ldebug_ranges0
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:765    .debug_line:0000000000000000 .Ldebug_line0
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:789    .debug_str:00000000000000e2 .LASF0
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:825    .debug_str:0000000000000286 .LASF1
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:767    .debug_str:0000000000000000 .LASF6
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:783    .debug_str:00000000000000ad .LASF2
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:815    .debug_str:00000000000001d6 .LASF3
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:779    .debug_str:0000000000000094 .LASF4
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:821    .debug_str:0000000000000271 .LASF5
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:787    .debug_str:00000000000000d7 .LASF7
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:777    .debug_str:0000000000000082 .LASF8
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:807    .debug_str:000000000000019a .LASF9
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:795    .debug_str:00000000000000ff .LASF10
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:797    .debug_str:0000000000000116 .LASF11
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:819    .debug_str:0000000000000268 .LASF12
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:809    .debug_str:00000000000001a8 .LASF30
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:823    .debug_str:000000000000027a .LASF13
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:803    .debug_str:000000000000013b .LASF16
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:140    .text.crc_block_data_calculate:0000000000000000 .LFB8
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:176    .text.crc_block_data_calculate:0000000000000020 .LFE8
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:781    .debug_str:00000000000000a7 .LASF14
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:676    .debug_loc:0000000000000000 .LLST1
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:773    .debug_str:0000000000000029 .LASF15
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:811    .debug_str:00000000000001b8 .LASF21
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:694    .debug_loc:000000000000002c .LLST2
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:769    .debug_str:000000000000000a .LASF17
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:118    .text.crc_single_data_calculate:0000000000000000 .LFB7
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:133    .text.crc_single_data_calculate:000000000000000a .LFE7
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:799    .debug_str:000000000000011e .LASF18
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:710    .debug_loc:0000000000000056 .LLST0
-GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s 			page 9
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:163    .text.crc_block_data_calculate:0000000000000012 .L9
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:151    .text.crc_block_data_calculate:0000000000000006 .L8
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:437    .debug_abbrev:0000000000000000 .Ldebug_abbrev0
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:817    .debug_str:00000000000001e0 .LASF27
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:805    .debug_str:0000000000000154 .LASF28
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:775    .debug_str:000000000000002e .LASF29
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:747    .debug_ranges:0000000000000000 .Ldebug_ranges0
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:765    .debug_line:0000000000000000 .Ldebug_line0
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:789    .debug_str:00000000000000e2 .LASF0
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:825    .debug_str:0000000000000286 .LASF1
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:767    .debug_str:0000000000000000 .LASF6
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:783    .debug_str:00000000000000ad .LASF2
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:815    .debug_str:00000000000001d6 .LASF3
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:779    .debug_str:0000000000000094 .LASF4
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:821    .debug_str:0000000000000271 .LASF5
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:787    .debug_str:00000000000000d7 .LASF7
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:777    .debug_str:0000000000000082 .LASF8
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:807    .debug_str:000000000000019a .LASF9
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:795    .debug_str:00000000000000ff .LASF10
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:797    .debug_str:0000000000000116 .LASF11
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:819    .debug_str:0000000000000268 .LASF12
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:809    .debug_str:00000000000001a8 .LASF30
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:823    .debug_str:000000000000027a .LASF13
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:803    .debug_str:000000000000013b .LASF16
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:140    .text.crc_block_data_calculate:0000000000000000 .LFB8
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:176    .text.crc_block_data_calculate:0000000000000020 .LFE8
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:781    .debug_str:00000000000000a7 .LASF14
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:676    .debug_loc:0000000000000000 .LLST1
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:773    .debug_str:0000000000000029 .LASF15
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:811    .debug_str:00000000000001b8 .LASF21
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:694    .debug_loc:000000000000002c .LLST2
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:769    .debug_str:000000000000000a .LASF17
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:118    .text.crc_single_data_calculate:0000000000000000 .LFB7
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:133    .text.crc_single_data_calculate:000000000000000a .LFE7
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:799    .debug_str:000000000000011e .LASF18
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:710    .debug_loc:0000000000000056 .LLST0
+GAS LISTING C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s 			page 9
 
 
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:829    .debug_str:000000000000029d .LASF31
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:100    .text.crc_free_data_register_write:0000000000000000 .LFB6
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:111    .text.crc_free_data_register_write:0000000000000008 .LFE6
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:791    .debug_str:00000000000000ef .LASF19
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:785    .debug_str:00000000000000bb .LASF20
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:79     .text.crc_free_data_register_read:0000000000000000 .LFB5
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:93     .text.crc_free_data_register_read:000000000000000c .LFE5
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:793    .debug_str:00000000000000f9 .LASF22
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:801    .debug_str:0000000000000124 .LASF23
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:59     .text.crc_data_register_read:0000000000000000 .LFB4
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:72     .text.crc_data_register_read:0000000000000008 .LFE4
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:771    .debug_str:0000000000000024 .LASF24
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:813    .debug_str:00000000000001be .LASF25
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:40     .text.crc_data_register_reset:0000000000000000 .LFB3
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:52     .text.crc_data_register_reset:000000000000000e .LFE3
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:827    .debug_str:0000000000000292 .LASF26
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:14     .text.crc_deinit:0000000000000000 .LFB2
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:33     .text.crc_deinit:0000000000000012 .LFE2
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:143    .text.crc_block_data_calculate:0000000000000000 .LVL5
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:159    .text.crc_block_data_calculate:0000000000000010 .LVL8
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:162    .text.crc_block_data_calculate:0000000000000012 .LVL9
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:150    .text.crc_block_data_calculate:0000000000000006 .LVL6
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:157    .text.crc_block_data_calculate:000000000000000e .LVL7
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:121    .text.crc_single_data_calculate:0000000000000000 .LVL3
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:129    .text.crc_single_data_calculate:0000000000000008 .LVL4
-C:\Users\Uzair\AppData\Local\Temp\cck8kCHf.s:184    .debug_info:0000000000000000 .Ldebug_info0
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:829    .debug_str:000000000000029d .LASF31
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:100    .text.crc_free_data_register_write:0000000000000000 .LFB6
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:111    .text.crc_free_data_register_write:0000000000000008 .LFE6
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:791    .debug_str:00000000000000ef .LASF19
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:785    .debug_str:00000000000000bb .LASF20
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:79     .text.crc_free_data_register_read:0000000000000000 .LFB5
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:93     .text.crc_free_data_register_read:000000000000000c .LFE5
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:793    .debug_str:00000000000000f9 .LASF22
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:801    .debug_str:0000000000000124 .LASF23
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:59     .text.crc_data_register_read:0000000000000000 .LFB4
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:72     .text.crc_data_register_read:0000000000000008 .LFE4
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:771    .debug_str:0000000000000024 .LASF24
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:813    .debug_str:00000000000001be .LASF25
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:40     .text.crc_data_register_reset:0000000000000000 .LFB3
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:52     .text.crc_data_register_reset:000000000000000e .LFE3
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:827    .debug_str:0000000000000292 .LASF26
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:14     .text.crc_deinit:0000000000000000 .LFB2
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:33     .text.crc_deinit:0000000000000012 .LFE2
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:143    .text.crc_block_data_calculate:0000000000000000 .LVL5
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:159    .text.crc_block_data_calculate:0000000000000010 .LVL8
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:162    .text.crc_block_data_calculate:0000000000000012 .LVL9
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:150    .text.crc_block_data_calculate:0000000000000006 .LVL6
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:157    .text.crc_block_data_calculate:000000000000000e .LVL7
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:121    .text.crc_single_data_calculate:0000000000000000 .LVL3
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:129    .text.crc_single_data_calculate:0000000000000008 .LVL4
+C:\Users\Uzair\AppData\Local\Temp\cc3EwoXV.s:184    .debug_info:0000000000000000 .Ldebug_info0
 
 NO UNDEFINED SYMBOLS

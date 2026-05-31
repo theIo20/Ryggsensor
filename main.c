@@ -6,15 +6,13 @@
 #include "stdio.h"
 #include "string.h"
 #include "systick.h"
-#include "usb_serial_if.h"
-#include "usb_delay.h"
 
 #define VIBRATOR_PIN        GPIO_PIN_5
 #define MAX_AVVIKELSER      300
 
 typedef struct {
-    uint32_t minuter;
-    uint32_t sekunder;
+    uint32_t timme;
+    uint32_t minut;
     float avvikelse;
 } avvikelse_t;
 
@@ -37,6 +35,7 @@ void sd_init(void) {
     }
 }
 
+
 void spara_logg(void) {
     if (!sd_monterad || antal_avvikelser == 0) return;
 
@@ -44,22 +43,24 @@ void spara_logg(void) {
     if (fr != FR_OK) return;
 
     if (f_size(&fil) == 0) {
-        f_write(&fil, "Minuter,Sekunder,Avvikelse\n", 27, &bw);
+        f_write(&fil, "Timme,Minut,Avvikelse\n", 22, &bw);
     }
 
     char rad[64];
     for (int i = 0; i < antal_avvikelser; i++) {
         int len = snprintf(rad, sizeof(rad), "%lu,%lu,%d\n",
-            logg[i].minuter,
-            logg[i].sekunder,
+            logg[i].timme,
+            logg[i].minut,
             (int)logg[i].avvikelse);
         f_write(&fil, rad, len, &bw);
     }
 
     f_sync(&fil);
     f_close(&fil);
-    antal_avvikelser = 0;
+    
+    antal_avvikelser = 0; 
 }
+
 
 void interrupt_config(void) {
     timer_oc_parameter_struct timer_ocinitpara;
@@ -104,11 +105,7 @@ int main(void) {
     float nollvinkel = 0.0;
     int har_kalibrerat = 0;
     int utanfor = 0;
-    uint32_t millis_kopia = 0; // ÄNDRAT: Variabel för att spara en säker kopia av tiden
-
-    configure_usb_serial();
-    while (!usb_serial_available()) usb_delay_1ms(100);
-    usb_delay_1ms(1000);
+    uint32_t millis_kopia = 0; 
 
     rcu_periph_clock_enable(RCU_GPIOA);
     gpio_init(GPIOA, GPIO_MODE_IN_FLOATING, GPIO_OSPEED_50MHZ, GPIO_PIN_5);
@@ -131,12 +128,11 @@ int main(void) {
     while (1) {
         mpu6500_getAccel(&vec);
         
-        // ÄNDRAT: Pythagoras sats kombinerar Z och X för att skapa en stabil bas när man vrider sig sidledes
-        float stabil_bas = sqrt((vec.z * vec.z) + (vec.x * vec.x)); 
+        float stabil_bas = sqrt((vec.z * vec.z) + (vec.x * vec.x));
+        float nuvarande_vinkel = -atan2(vec.y, stabil_bas) * (180.0 / M_PI);
         
-        // ÄNDRAT: Använder nu den stabila basen. Förhindrar flippande vinklar vid sidorörelser
-        float nuvarande_vinkel = -atan2(vec.y, stabil_bas) * (180.0 / M_PI); 
-
+        millis_kopia = millis; 
+        
         if (gpio_input_bit_get(GPIOA, GPIO_PIN_5) == 0) {
             nollvinkel = nuvarande_vinkel;
             har_kalibrerat = 1;
@@ -148,12 +144,6 @@ int main(void) {
 
         float avvikelse = nuvarande_vinkel - nollvinkel;
 
-        printf("X: %d  Y: %d  Z: %d\n", (int)vec.x, (int)vec.y, (int)vec.z);
-        printf("Avvikelse: %d  Nollvinkel: %d\n", (int)avvikelse, (int)nollvinkel);
-        fflush(0);
-
-        usb_delay_1ms(100);
-
         if (har_kalibrerat == 1) {
 
             if (avvikelse > 25) {
@@ -161,22 +151,14 @@ int main(void) {
                 if (utanfor == 0) {
                     utanfor = 1;
                     if (antal_avvikelser < MAX_AVVIKELSER) {
-                        
-                        // ÄNDRAT: Stänger av avbrott kort för att säkert läsa av millis utan krockar
-                        eclic_global_interrupt_disable(); 
-                        millis_kopia = millis;            
-                        eclic_global_interrupt_enable();  // ÄNDRAT: Slår på avbrott direkt igen
-                        
-                        // ÄNDRAT: Använder nu millis_kopia istället för millis (fixar "197-problemet" i Excel)
-                        logg[antal_avvikelser].minuter  = millis_kopia / 60000;
-                        logg[antal_avvikelser].sekunder = (millis_kopia % 60000) / 1000;
+                        logg[antal_avvikelser].timme  = millis_kopia / 3600000;
+                        logg[antal_avvikelser].minut = (millis_kopia % 3600000) / 60000;
                         logg[antal_avvikelser].avvikelse = avvikelse;
                         antal_avvikelser++;
                     }
                     if (antal_avvikelser >= MAX_AVVIKELSER) {
-                        spara_logg();
-                        
-                        // ÄNDRAT: Säker uppdatering av senaste_sparning med skyddade tids-kopian
+
+                        antal_avvikelser = 0; 
                         senaste_sparning = millis_kopia; 
                     }
                 }
@@ -185,14 +167,11 @@ int main(void) {
                 utanfor = 0;
             }
 
-            // ÄNDRAT: Gör en säker tidsavläsning även för den automatiska 20-sekunderssparandet
-            eclic_global_interrupt_disable();
-            uint32_t nuvarande_tid = millis;
-            eclic_global_interrupt_enable();
+            uint32_t nuvarande_tid = millis;   
 
             if (nuvarande_tid - senaste_sparning >= 20000) {
                 spara_logg();
-                senaste_sparning = nuvarande_tid; // ÄNDRAT: Uppdaterar spar-tiden med det säkra värdet
+                senaste_sparning = nuvarande_tid; 
             }
         }
     }
